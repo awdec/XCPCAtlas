@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = ROOT / "web" / "public" / "data"
 
 # 题号列表
-PROBLEM_LETTERS = list("ABCDEFGHIJKLM")
+PROBLEM_LETTERS = list("ABCDEFGHIJKLMN")
 
 # 城市名称映射（英文小写 → 中文）
 CITY_MAP = {
@@ -74,6 +74,11 @@ FILENAME_OVERRIDES = {
     "2021/ccpc nanjing.xlsx": ("CCPC", "final", "南京", "CCPC 南京"),
     "2022/ccpc final.xlsx": ("CCPC", "final", "广州", "CCPC 广州（总决赛）"),
     "2024/ccpc guangzhou.xlsx": ("CCPC", "final", "广州", "CCPC 广州"),
+    # 网络预选赛为线上赛，无举办城市，city_cn 用"网络"占位；ICPC 网络预选赛
+    # 每年两场，文件名以数字区分场次，id 同步带场次号。
+    "2026/ccpc online.xlsx": ("CCPC", "online", "网络", "CCPC 网络预选赛"),
+    "2026/icpc online 1.xlsx": ("ICPC", "online1", "网络", "ICPC 网络预选赛（第一场）"),
+    "2026/icpc online 2.xlsx": ("ICPC", "online2", "网络", "ICPC 网络预选赛（第二场）"),
 }
 
 
@@ -127,13 +132,8 @@ def parse_submission(raw):
 
 
 def parse_team(row, problem_cols, has_coaches=False, oi_records=None):
-    """将一行数据解析为队伍记录。"""
-    problems = {}
-    for letter in PROBLEM_LETTERS:
-        if letter in problem_cols:
-            problems[letter] = parse_submission(row[letter])
-        else:
-            problems[letter] = {"status": "none", "attempts": 0, "time": None}
+    """将一行数据解析为队伍记录。题号键取自表内实际存在的题列（题数逐年不同）。"""
+    problems = {letter: parse_submission(row[letter]) for letter in problem_cols}
 
     school = str(row["Organization"]).strip() if pd.notna(row["Organization"]) else ""
     members = []
@@ -263,6 +263,10 @@ def load_oi_records(year):
     if not oi_path.exists():
         print(f"警告: {year} 年 OI 记录不存在，跳过 OI 记录嵌入")
         return {}
+    if not (OUTPUT_DIR / str(year) / "oi_records.json").exists():
+        # 根目录 oi_records.json 是未按年份过滤的旧文件，新年份用它嵌入会把
+        # 不在大学年份窗口内的记录挂上去；应先跑 extract_oi_records.py 生成按年文件
+        print(f"警告: {year} 年缺少按年 oi_records.json，正在回退到根目录旧文件（未按年份过滤，结果可能不准）")
     with open(oi_path, "r", encoding="utf-8") as f:
         return json.load(f)
 

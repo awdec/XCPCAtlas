@@ -23,6 +23,15 @@ const error = ref('')
 const searchMember = ref('')
 const searchTeam = ref('')
 const searchSchool = ref('')
+// 搜索输入防抖（300ms）：输入即时回显，筛选按防抖值计算，避免大数据量榜单逐键重渲染
+const debouncedSearch = ref({ school: '', team: '', member: '' })
+let searchTimer = null
+watch([searchSchool, searchTeam, searchMember], () => {
+  clearTimeout(searchTimer)
+  searchTimer = setTimeout(() => {
+    debouncedSearch.value = { school: searchSchool.value, team: searchTeam.value, member: searchMember.value }
+  }, 300)
+})
 const filterSchoolType = ref('')
 const filterOiCount = ref('')
 const activeTab = ref('rank')
@@ -30,12 +39,16 @@ const selectedTeam = ref(null)
 const showTeamDetail = ref(false)
 const schoolTags = ref({ set985: new Set(), set211: new Set() })
 
+// 前端分页：大榜单（2000+ 队）全量渲染 el-table 会卡顿，只渲染当前页
+const PAGE_SIZE = 100
+const currentPage = ref(1)
+
 const currentTeams = computed(() => {
   if (!contest.value) return []
   let teams = contest.value.sheets['正式队伍'] || []
-  const qSchool = searchSchool.value.trim().toLowerCase()
-  const qTeam = searchTeam.value.trim().toLowerCase()
-  const qMember = searchMember.value.trim().toLowerCase()
+  const qSchool = debouncedSearch.value.school.trim().toLowerCase()
+  const qTeam = debouncedSearch.value.team.trim().toLowerCase()
+  const qMember = debouncedSearch.value.member.trim().toLowerCase()
   if (qSchool) teams = teams.filter(t => t.school.toLowerCase().includes(qSchool))
   if (qTeam) teams = teams.filter(t => t.team.toLowerCase().includes(qTeam))
   if (qMember) teams = teams.filter(t => t.members.some(m => m.name.toLowerCase().includes(qMember)))
@@ -51,6 +64,31 @@ const currentTeams = computed(() => {
   }
   return teams
 })
+
+// 任一筛选条件变化（含防抖后的搜索词）回到第 1 页
+watch([debouncedSearch, filterSchoolType, filterOiCount], () => {
+  currentPage.value = 1
+})
+
+const totalPages = computed(() => Math.ceil(currentTeams.value.length / PAGE_SIZE))
+// 页码按钮：当前页 ± 二进制偏移（1, 2, 4, 8, 16），不越界（与全部成绩页一致）
+const pageButtons = computed(() => {
+  const cur = currentPage.value
+  const total = totalPages.value
+  const set = new Set([cur])
+  for (let step = 1; step <= 16; step *= 2) {
+    if (cur - step >= 1) set.add(cur - step)
+    if (cur + step <= total) set.add(cur + step)
+  }
+  return [...set].sort((a, b) => a - b)
+})
+const pagedTeams = computed(() => {
+  const start = (currentPage.value - 1) * PAGE_SIZE
+  return currentTeams.value.slice(start, start + PAGE_SIZE)
+})
+const goToPage = (page) => {
+  currentPage.value = page
+}
 
 const schoolStats = computed(() => {
   if (!contest.value) return []
@@ -70,6 +108,7 @@ const loadContest = async (year, id) => {
     if (seq !== loadSeq) return
     contest.value = data
     schoolTags.value = tags
+    currentPage.value = 1
   } catch (e) {
     if (seq !== loadSeq) return
     console.error('加载赛区数据失败:', e)
@@ -151,10 +190,26 @@ const openTeamDetail = (team) => {
 
       <!-- 排名表格 -->
       <RankTable
-        :teams="currentTeams"
+        :teams="pagedTeams"
         :year="year"
         @team-click="openTeamDetail"
       />
+
+      <!-- 分页（与全部成绩页一致：二进制偏移页码） -->
+      <div v-if="currentTeams.length" class="flex items-center justify-center gap-2 mt-4 flex-wrap">
+        <span class="text-sm text-gray-500 mr-2">每页 {{ PAGE_SIZE }} 条，共 {{ totalPages }} 页</span>
+        <button
+          v-for="page in pageButtons"
+          :key="page"
+          @click="goToPage(page)"
+          class="px-3 py-1.5 rounded text-sm font-medium border transition-colors"
+          :class="currentPage === page
+            ? 'bg-blue-600 text-white border-blue-600'
+            : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'"
+        >
+          {{ page }}
+        </button>
+      </div>
     </div>
 
     <!-- 学校统计 Tab -->

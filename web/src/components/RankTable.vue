@@ -55,69 +55,34 @@ const playerPath = (name) => `/${props.year}/player/${encodeURIComponent(name)}`
       </template>
     </el-table-column>
 
-    <el-table-column label="选手1" min-width="100">
+    <!-- tooltip 仅在有 OI 记录时挂载：2000+ 行榜单上 tooltip 实例数是渲染卡顿主因 -->
+    <el-table-column v-for="i in 3" :key="i" :label="`选手${i}`" min-width="100">
       <template #default="{ row }">
-        <el-tooltip v-if="row.members[0]" placement="top" :show-after="300" :disabled="!row.members[0].oi?.length">
-          <template #content>
-            <div class="max-w-xs">
-              <div v-for="(r, j) in row.members[0].oi" :key="j" class="text-xs py-0.5">
-                {{ r['比赛'] }} · {{ r['奖项'] }}
+        <template v-if="row.members[i - 1]">
+          <el-tooltip v-if="row.members[i - 1].oi?.length" placement="top" :show-after="300">
+            <template #content>
+              <div class="max-w-xs">
+                <div v-for="(r, j) in row.members[i - 1].oi" :key="j" class="text-xs py-0.5">
+                  {{ r['比赛'] }} · {{ r['奖项'] }}
+                </div>
               </div>
-            </div>
-          </template>
-          <span class="inline-flex items-center">
-            <router-link
-              :to="playerPath(row.members[0].name)"
-              class="text-gray-700 hover:text-blue-600 hover:underline"
-              @click.stop
-            >{{ row.members[0].name }}</router-link>
-            <span v-if="row.members[0].oi?.length" class="ml-0.5">☀️</span>
-          </span>
-        </el-tooltip>
-      </template>
-    </el-table-column>
-
-    <el-table-column label="选手2" min-width="100">
-      <template #default="{ row }">
-        <el-tooltip v-if="row.members[1]" placement="top" :show-after="300" :disabled="!row.members[1].oi?.length">
-          <template #content>
-            <div class="max-w-xs">
-              <div v-for="(r, j) in row.members[1].oi" :key="j" class="text-xs py-0.5">
-                {{ r['比赛'] }} · {{ r['奖项'] }}
-              </div>
-            </div>
-          </template>
-          <span class="inline-flex items-center">
-            <router-link
-              :to="playerPath(row.members[1].name)"
-              class="text-gray-700 hover:text-blue-600 hover:underline"
-              @click.stop
-            >{{ row.members[1].name }}</router-link>
-            <span v-if="row.members[1].oi?.length" class="ml-0.5">☀️</span>
-          </span>
-        </el-tooltip>
-      </template>
-    </el-table-column>
-
-    <el-table-column label="选手3" min-width="100">
-      <template #default="{ row }">
-        <el-tooltip v-if="row.members[2]" placement="top" :show-after="300" :disabled="!row.members[2].oi?.length">
-          <template #content>
-            <div class="max-w-xs">
-              <div v-for="(r, j) in row.members[2].oi" :key="j" class="text-xs py-0.5">
-                {{ r['比赛'] }} · {{ r['奖项'] }}
-              </div>
-            </div>
-          </template>
-          <span class="inline-flex items-center">
-            <router-link
-              :to="playerPath(row.members[2].name)"
-              class="text-gray-700 hover:text-blue-600 hover:underline"
-              @click.stop
-            >{{ row.members[2].name }}</router-link>
-            <span v-if="row.members[2].oi?.length" class="ml-0.5">☀️</span>
-          </span>
-        </el-tooltip>
+            </template>
+            <span class="inline-flex items-center">
+              <router-link
+                :to="playerPath(row.members[i - 1].name)"
+                class="text-gray-700 hover:text-blue-600 hover:underline"
+                @click.stop
+              >{{ row.members[i - 1].name }}</router-link>
+              <span class="ml-0.5">☀️</span>
+            </span>
+          </el-tooltip>
+          <router-link
+            v-else
+            :to="playerPath(row.members[i - 1].name)"
+            class="text-gray-700 hover:text-blue-600 hover:underline"
+            @click.stop
+          >{{ row.members[i - 1].name }}</router-link>
+        </template>
       </template>
     </el-table-column>
   </el-table>

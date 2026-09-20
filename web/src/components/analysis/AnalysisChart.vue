@@ -11,8 +11,11 @@ defineProps({
   option: { type: Object, required: true },
   height: { type: String, default: '360px' },
 })
+
+// 转发 ECharts 元素级 click（仅在点到系列数据元素时触发，params 为 ECElementEvent）
+const emit = defineEmits(['click'])
 </script>
 
 <template>
-  <v-chart :option="option" :style="{ height }" autoresize />
+  <v-chart :option="option" :style="{ height }" autoresize @click="emit('click', $event)" />
 </template>

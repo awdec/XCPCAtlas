@@ -1,0 +1,41 @@
+[
+  {
+    "id": "online",
+    "name": "CCPC 网络预选赛",
+    "org": "CCPC",
+    "city": "网络",
+    "teams": 2169,
+    "champion": {
+      "school": "北京大学",
+      "team": "飞带不长队",
+      "solved": 13,
+      "penalty": 1237
+    }
+  },
+  {
+    "id": "online1",
+    "name": "ICPC 网络预选赛（第一场）",
+    "org": "ICPC",
+    "city": "网络",
+    "teams": 2535,
+    "champion": {
+      "school": "清华大学",
+      "team": "PERFECT GIRL",
+      "solved": 12,
+      "penalty": 1368
+    }
+  },
+  {
+    "id": "online2",
+    "name": "ICPC 网络预选赛（第二场）",
+    "org": "ICPC",
+    "city": "网络",
+    "teams": 2622,
+    "champion": {
+      "school": "清华大学",
+      "team": "零基础新生 1 队",
+      "solved": 10,
+      "penalty": 1258
+    }
+  }
+]

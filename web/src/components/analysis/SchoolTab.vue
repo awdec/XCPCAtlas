@@ -96,6 +96,12 @@ const tierSummary = computed(() => stats.value.tierNames.map(name => {
   const s = stats.value.tierStats[name]
   return { name, teams: s.teams, players: s.total, goldRate: fmtPct(s.goldRate), medalRate: fmtPct(s.medalRate), oierRate: fmtPct(s.oierRate) }
 }))
+
+// 有金牌院校名单的展示配置（title 用于标题/空态文案拼接）
+const goldSchoolSections = [
+  { tier: '211', title: ' 211 ' },
+  { tier: '双非', title: '双非' },
+]
 </script>
 
 <template>
@@ -128,7 +134,7 @@ const tierSummary = computed(() => stats.value.tierNames.map(name => {
     </div>
 
     <!-- 无金牌的 985 -->
-    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
       <h3 class="text-base font-semibold text-gray-800 mb-1">本年无金牌的 985 院校（{{ stats.noGold985.length }} 所）</h3>
       <p class="text-xs text-gray-400 mb-3">该年有队伍参赛但无队伍获得金牌的 985 院校</p>
       <div v-if="stats.noGold985.length" class="flex flex-wrap gap-2">
@@ -141,6 +147,28 @@ const tierSummary = computed(() => stats.value.tierNames.map(name => {
         >{{ school }}</el-tag>
       </div>
       <p v-else class="text-sm text-gray-500">本届所有参赛的 985 院校均有金牌入账。</p>
+    </div>
+
+    <!-- 有金牌的 211 / 双非 -->
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+      <div
+        v-for="g in goldSchoolSections"
+        :key="g.tier"
+        class="bg-white rounded-lg shadow-sm border border-gray-100 p-4"
+      >
+        <h3 class="text-base font-semibold text-gray-800 mb-1">本年有金牌的{{ g.title }}院校（{{ stats.goldSchools[g.tier].length }} 所）</h3>
+        <p class="text-xs text-gray-400 mb-3">该年至少有一支队伍获得金牌的{{ g.title }}院校</p>
+        <div v-if="stats.goldSchools[g.tier].length" class="flex flex-wrap gap-2">
+          <el-tag
+            v-for="school in stats.goldSchools[g.tier]"
+            :key="school"
+            type="success"
+            effect="plain"
+            disable-transitions
+          >{{ school }}</el-tag>
+        </div>
+        <p v-else class="text-sm text-gray-500">本届无{{ g.title }}院校获得金牌。</p>
+      </div>
     </div>
   </div>
 </template>

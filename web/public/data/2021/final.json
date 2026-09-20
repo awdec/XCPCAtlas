@@ -72,11 +72,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 17
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -389,11 +384,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 58
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -694,11 +684,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 42
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1029,11 +1014,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 83
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1322,11 +1302,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 33
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1513,11 +1488,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 40
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1716,11 +1686,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 36
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1906,11 +1871,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 46
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2139,11 +2099,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 39
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2318,11 +2273,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 21
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2587,11 +2537,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 36
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2724,11 +2669,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 69
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2903,11 +2843,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 48
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3106,11 +3041,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 46
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3255,11 +3185,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 60
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3422,11 +3347,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 86
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3625,11 +3545,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 71
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3858,11 +3773,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 53
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4013,11 +3923,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 52
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4192,11 +4097,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 74
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4328,11 +4228,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 68
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4452,11 +4347,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 46
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4637,11 +4527,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 60
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4754,11 +4639,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 72
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4901,11 +4781,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 65
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5080,11 +4955,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 60
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5343,11 +5213,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 105
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5510,11 +5375,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 74
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5671,11 +5531,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 41
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5904,11 +5759,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 47
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6015,11 +5865,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 51
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6218,11 +6063,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 31
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6379,11 +6219,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 74
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6496,11 +6331,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 81
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6657,11 +6487,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 98
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6878,11 +6703,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 109
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7075,11 +6895,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 71
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7314,11 +7129,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 51
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7475,11 +7285,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 120
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7636,11 +7441,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 55
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7821,11 +7621,6 @@
             "status": "solved",
             "attempts": 7,
             "time": 262
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8024,11 +7819,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 47
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8215,11 +8005,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 79
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8368,11 +8153,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 117
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8577,11 +8357,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 155
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8725,11 +8500,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 157
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8849,11 +8619,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 72
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9034,11 +8799,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 67
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9237,11 +8997,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 68
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9458,11 +9213,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 53
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9607,11 +9357,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 73
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9827,11 +9572,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 57
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10006,11 +9746,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 53
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10245,11 +9980,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 75
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10368,11 +10098,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 73
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10619,11 +10344,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 72
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10882,11 +10602,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 92
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11030,11 +10745,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 108
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11148,11 +10858,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 118
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11247,11 +10952,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 84
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11358,11 +11058,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 96
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11543,11 +11238,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 64
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11751,11 +11441,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 123
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11843,11 +11528,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 89
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11942,11 +11622,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 91
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12079,11 +11754,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 28
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12288,11 +11958,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 63
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12491,11 +12156,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 75
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12640,11 +12300,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 112
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12807,11 +12462,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 88
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12944,11 +12594,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 84
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13091,11 +12736,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 51
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13276,11 +12916,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 85
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13436,11 +13071,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 191
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13573,11 +13203,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 65
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13746,11 +13371,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 87
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13900,11 +13520,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 75
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14017,11 +13632,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 98
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14109,11 +13719,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 114
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14201,11 +13806,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 62
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14293,11 +13893,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 113
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14385,11 +13980,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 111
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14526,11 +14116,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 99
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14625,11 +14210,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 147
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14828,11 +14408,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 142
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14964,11 +14539,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 70
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15056,11 +14626,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 164
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15179,11 +14744,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 203
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15284,11 +14844,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 123
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15438,11 +14993,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 60
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15574,11 +15124,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 71
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15716,11 +15261,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 41
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15827,11 +15367,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 98
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15988,11 +15523,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 78
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16191,11 +15721,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 126
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16346,11 +15871,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 100
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16465,11 +15985,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 118
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16557,11 +16072,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 89
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16649,11 +16159,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 148
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16761,11 +16266,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 96
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16884,11 +16384,6 @@
             "status": "solved",
             "attempts": 6,
             "time": 156
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16990,11 +16485,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 174
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17126,11 +16616,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 181
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17268,11 +16753,6 @@
             "status": "solved",
             "attempts": 6,
             "time": 188
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17489,11 +16969,6 @@
             "status": "solved",
             "attempts": 5,
             "time": 223
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17636,11 +17111,6 @@
             "status": "solved",
             "attempts": 8,
             "time": 228
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17784,11 +17254,6 @@
             "status": "solved",
             "attempts": 7,
             "time": 286
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17876,11 +17341,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 218
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17975,11 +17435,6 @@
             "status": "solved",
             "attempts": 6,
             "time": 187
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18074,11 +17529,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 86
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18173,11 +17623,6 @@
             "status": "unsolved",
             "attempts": 3,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18264,11 +17709,6 @@
           "L": {
             "status": "unsolved",
             "attempts": 17,
-            "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
             "time": null
           }
         },
@@ -18370,11 +17810,6 @@
             "status": "unsolved",
             "attempts": 10,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18462,11 +17897,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18551,11 +17981,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null

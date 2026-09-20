@@ -12,7 +12,7 @@ const props = defineProps({
 
 const stats = computed(() => computeOIerStats(props.dataset))
 
-// 最高 OI 奖项分布：赛区选择（null = 全部）
+// 最高 OI 奖项分布：金/银/铜三个奖牌档共享赛区筛选（null = 全部）
 const awardRegion = ref(null)
 const regionOptions = computed(() => {
   const seen = new Map()
@@ -21,7 +21,14 @@ const regionOptions = computed(() => {
   }
   return [...seen.entries()].map(([id, name]) => ({ id, name }))
 })
-const awardStats = computed(() => computeOIAwardStats(props.dataset, awardRegion.value))
+const tierSections = [
+  { tier: 'gold', name: '金牌选手' },
+  { tier: 'silver', name: '银牌选手' },
+  { tier: 'bronze', name: '铜牌选手' },
+]
+const awardStatsByTier = computed(() => Object.fromEntries(
+  tierSections.map(s => [s.tier, computeOIAwardStats(props.dataset, awardRegion.value, s.tier)])
+))
 
 // 各奖牌档选手中 OIer 占比
 const playerRateOption = computed(() => ({
@@ -53,6 +60,8 @@ const playerRateOption = computed(() => ({
 
 // 各奖牌档队伍的 OIer 人数构成（堆叠百分比）
 const oiColors = ['#dcdfe6', '#a0cfff', '#409eff', '#1d6fd8']
+// OI 奖项等级配色（0~3 沿用上面的蓝色梯度，IOI 用金牌色）
+const oiLevelColors = ['#dcdfe6', '#a0cfff', '#409eff', '#1d6fd8', '#e6a23c']
 const teamCompOption = computed(() => ({
   tooltip: {
     trigger: 'axis',
@@ -84,9 +93,13 @@ const teamCompOption = computed(() => ({
   })),
 }))
 
-// 金牌选手最高 OI 奖项分布（横向柱，按等级排序）
-const awardOption = computed(() => {
-  const items = awardStats.value.items
+// 各奖牌档最高 OI 奖项分布（横向柱，按等级排序）
+const buildAwardOption = (stats) => {
+  const items = stats.items
+  // "该档及以上"：等级更高、或同等级且档位（国际金/金/银/铜）不低于该条的人数之和
+  const atLeastCount = (item) => items.reduce(
+    (s, e) => (e.level > item.level || (e.level === item.level && e.rank <= item.rank) ? s + e.count : s), 0
+  )
   return {
     tooltip: {
       trigger: 'axis',
@@ -94,7 +107,7 @@ const awardOption = computed(() => {
       formatter: (params) => {
         const p = params[0]
         const d = items[p.dataIndex]
-        return `${d.label}<br/>人数：${d.count}（${fmtPct(d.count / Math.max(awardStats.value.withOi, 1))}，占有 OI 记录者）`
+        return `${d.label}<br/>人数：${d.count}（${fmtPct(d.count / Math.max(stats.withOi, 1))}）· 该档及以上：${atLeastCount(d)} 人`
       },
     },
     grid: { left: 110, right: 40, top: 10, bottom: 30 },
@@ -108,11 +121,17 @@ const awardOption = computed(() => {
     series: [{
       type: 'bar',
       barMaxWidth: 18,
-      itemStyle: { color: '#409eff', borderRadius: [0, 4, 4, 0] },
-      data: items.map(d => d.count),
+      data: items.map(d => ({
+        value: d.count,
+        itemStyle: { color: oiLevelColors[d.level], borderRadius: [0, 4, 4, 0] },
+      })),
     }],
   }
-})
+}
+const awardOptionsByTier = computed(() => Object.fromEntries(
+  tierSections.map(s => [s.tier, buildAwardOption(awardStatsByTier.value[s.tier])])
+))
+const awardChartHeight = (stats) => Math.max(320, stats.items.length * 26 + 60) + 'px'
 </script>
 
 <template>
@@ -120,36 +139,55 @@ const awardOption = computed(() => {
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
       <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
         <h3 class="text-base font-semibold text-gray-800 mb-1">各奖牌档选手的 OIer 占比</h3>
-        <p class="text-xs text-gray-400 mb-2">选手按 学校+姓名 跨赛区去重，取当年最高奖牌；OIer 指有 OI 获奖记录的选手</p>
+        <p class="text-xs text-gray-400 mb-2">选手按 学校+姓名 跨赛区去重，取当年最高奖牌</p>
         <AnalysisChart :option="playerRateOption" />
       </div>
 
       <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
         <h3 class="text-base font-semibold text-gray-800 mb-1">各奖牌档队伍的 OIer 人数构成</h3>
-        <p class="text-xs text-gray-400 mb-2">按队伍内 OIer 人数（0~3 名）统计队伍占比；2 人队按实际人数归入对应档</p>
+        <p class="text-xs text-gray-400 mb-2">按队伍内 OIer 人数（0~3 名）统计队伍占比</p>
         <AnalysisChart :option="teamCompOption" />
       </div>
     </div>
 
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mt-4">
       <div class="flex flex-wrap items-center gap-3 mb-1">
-        <h3 class="text-base font-semibold text-gray-800">金牌选手的最高 OI 奖项分布</h3>
+        <h3 class="text-base font-semibold text-gray-800">
+          <el-tooltip placement="top" :show-after="200">
+            <template #content>
+              <div class="max-w-xs leading-relaxed">
+                金/银/铜牌选手指当年获得过对应档奖牌的选手（按 学校+姓名 跨赛区去重）。同一选手跨赛站获得过多个奖牌档时，会同时计入多张图（并非按全年最高奖牌互斥划分）。
+              </div>
+            </template>
+            <span class="text-gray-400 cursor-help mr-1">ⓘ</span>
+          </el-tooltip>
+          各奖牌档选手的最高 OI 奖项分布
+        </h3>
         <el-select
           v-model="awardRegion"
           placeholder="全部赛区"
           clearable
           size="small"
-          class="w-44"
+          style="width: 8rem"
         >
           <el-option v-for="r in regionOptions" :key="r.id" :label="r.name" :value="r.id" />
         </el-select>
       </div>
       <p class="text-xs text-gray-400 mb-2">
-        奖项等级：CSP-J / NOIP普及 &lt; CSP-S / NOIP / 春季测试 / NGOI &lt; WC / APIO &lt; NOI / CTSC 等 &lt; IOI；
-        统计 {{ awardStats.total }} 名金牌选手（所选赛区金牌队伍成员，按 学校+姓名 去重），其中 {{ awardStats.withOi }} 人有 OI 记录
+        奖项等级：IOI &gt; NOI &gt; WC 级 &gt; 提高 &gt; 入门
       </p>
-      <AnalysisChart v-if="awardStats.items.length" :option="awardOption" :height="Math.max(320, awardStats.items.length * 26 + 60) + 'px'" />
-      <p v-else class="text-sm text-gray-500 py-8 text-center">该范围内金牌选手均无 OI 记录。</p>
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
+        <div v-for="t in tierSections" :key="t.tier">
+          <h4 class="text-sm font-semibold text-gray-700 mb-0.5">{{ t.name }}</h4>
+          <p class="text-xs text-gray-400 mb-2">统计 {{ awardStatsByTier[t.tier].total }} 名，其中 {{ awardStatsByTier[t.tier].withOi }} 人有 OI 记录</p>
+          <AnalysisChart
+            v-if="awardStatsByTier[t.tier].items.length"
+            :option="awardOptionsByTier[t.tier]"
+            :height="awardChartHeight(awardStatsByTier[t.tier])"
+          />
+          <p v-else class="text-sm text-gray-500 py-8 text-center">该范围内{{ t.name }}均无 OI 记录。</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

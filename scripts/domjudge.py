@@ -11,10 +11,10 @@ DOMjudge 导出的特征是: 无"正式队伍" sheet， Official/Main 等表首�
 import re
 import pandas as pd
 
-PROBLEM_LETTERS = list("ABCDEFGHIJKLM")
+PROBLEM_LETTERS = list("ABCDEFGHIJKLMN")
 
 # 表头名 → 含义: '# ' 列含排名与奖牌标注（如 "1 (金奖)"）
-PROBLEM_HEADER_RE = re.compile(r"^([A-M])\s*\(\d+/\d+\)$")
+PROBLEM_HEADER_RE = re.compile(r"^([A-N])\s*\(\d+/\d+\)$")
 SUBMISSION_RE = re.compile(r"^([A-Za-z]+)/(\d+)(?:/(\d+):(\d+):(\d+))?$")
 TIME_RE = re.compile(r"^(\d+):(\d+):(\d+)$")
 
@@ -160,11 +160,12 @@ def _split_members(raw):
     return [p.strip() for p in str(raw).split(",") if p.strip()]
 
 
-def read_domjudge_teams(xlsx_path, sheet_name, problem_letters=PROBLEM_LETTERS):
+def read_domjudge_teams(xlsx_path, sheet_name):
     """
     读取 DOMjudge 榜单的一个 sheet（名称由 domjudge_sheet_name 探测），返回与"正式队伍"
     原始行等价的中间结构列表: { rank, org_rank, medal, school, team, members[], coaches[],
     solved, penalty, problems }。
+    题目键取自榜单实际出现的题列（榜单题数逐年不同，2026 网络赛已有 14 题到 N）。
     CCPC 总决赛报名单把教练跟在 3 名队员之后（如 2024 广州），超出 3 人的部分归入 coaches。
     """
     df = pd.read_excel(xlsx_path, sheet_name=sheet_name, header=None)
@@ -190,12 +191,8 @@ def read_domjudge_teams(xlsx_path, sheet_name, problem_letters=PROBLEM_LETTERS):
         if pd.isna(school) or not str(school).strip():
             continue
         problems = {}
-        for letter in problem_letters:
-            idx = next((i for l, i in problem_cols if l == letter), None)
-            if idx is not None:
-                problems[letter] = parse_submission(row.iloc[idx])
-            else:
-                problems[letter] = {"status": "none", "attempts": 0, "time": None}
+        for letter, idx in problem_cols:
+            problems[letter] = parse_submission(row.iloc[idx])
 
         solved = row.iloc[solved_col]
         penalty = row.iloc[penalty_col]

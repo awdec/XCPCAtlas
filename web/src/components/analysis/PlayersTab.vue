@@ -1,11 +1,15 @@
 <script setup>
 import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 import AnalysisChart from './AnalysisChart.vue'
 import { computePlayerStats, MEDAL_ORDER, MEDAL_LABELS, MEDAL_COLORS, fmtPct } from '../../utils/analysis'
 
 const props = defineProps({
   dataset: { type: Object, required: true },
+  year: { type: String, required: true },
 })
+
+const router = useRouter()
 
 const stats = computed(() => computePlayerStats(props.dataset))
 
@@ -78,12 +82,19 @@ const scatterOption = computed(() => ({
     name: MEDAL_LABELS[tier],
     type: 'scatter',
     symbolSize: 8,
-    itemStyle: { color: MEDAL_COLORS[tier], opacity: 0.75 },
+    itemStyle: { color: MEDAL_COLORS[tier], opacity: 0.75, cursor: 'pointer' },
     data: stabilityPoints.value
       .filter(s => s.tier === tier)
       .map(s => [s.mean, s.std, { name: s.name, school: s.school, tier, n: s.n, mean: s.mean, std: s.std, range: s.range }]),
   })),
 }))
+
+// 散点点击 → 选手个人页（个人页按姓名检索，与全站选手链接口径一致）
+const onScatterClick = (params) => {
+  if (params.componentType !== 'series' || params.seriesType !== 'scatter') return
+  const meta = params.data?.[2]
+  if (meta?.name) router.push(`/${props.year}/player/${encodeURIComponent(meta.name)}`)
+}
 
 // 各档稳定性汇总
 const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
@@ -113,9 +124,9 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
       <h3 class="text-base font-semibold text-gray-800 mb-1">多场选手的排名稳定性</h3>
       <p class="text-xs text-gray-400 mb-2">
-        仅统计参赛 ≥2 场的选手（共 {{ stabilityPoints.length }} 人）；排名跨赛区可比性有限，仅作趋势参考
+        仅统计参赛 ≥2 场的选手（共 {{ stabilityPoints.length }} 人）；排名跨赛区可比性有限，仅作趋势参考；点击数据点可跳转选手个人页
       </p>
-      <AnalysisChart :option="scatterOption" height="460px" />
+      <AnalysisChart :option="scatterOption" height="460px" @click="onScatterClick" />
     </div>
 
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">

@@ -72,11 +72,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 147
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -450,11 +445,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 188
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -732,11 +722,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 293
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1068,11 +1053,6 @@
             "status": "solved",
             "attempts": 4,
             "time": 205
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1452,11 +1432,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 275
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -1691,11 +1666,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 247
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2045,11 +2015,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 275
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2288,11 +2253,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -2549,11 +2509,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 286
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -2741,11 +2696,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 263
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3125,11 +3075,6 @@
             "status": "unsolved",
             "attempts": 4,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3443,11 +3388,6 @@
             "status": "unsolved",
             "attempts": 1,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3713,11 +3653,6 @@
             "status": "solved",
             "attempts": 3,
             "time": 287
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -3863,11 +3798,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 233
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4271,11 +4201,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4508,11 +4433,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -4793,11 +4713,6 @@
             "status": "unsolved",
             "attempts": 1,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -4985,11 +4900,6 @@
             "status": "solved",
             "attempts": 2,
             "time": 294
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5163,11 +5073,6 @@
           "L": {
             "status": "unsolved",
             "attempts": 4,
-            "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
             "time": null
           }
         },
@@ -5416,11 +5321,6 @@
             "status": "unsolved",
             "attempts": 2,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -5580,11 +5480,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -5799,11 +5694,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6006,11 +5896,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -6222,11 +6107,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -6471,11 +6351,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6669,11 +6544,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -6791,11 +6661,6 @@
             "time": 271
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -7010,11 +6875,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7205,11 +7065,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -7430,11 +7285,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -7582,11 +7432,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -7828,11 +7673,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -8149,11 +7989,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8338,11 +8173,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -8539,11 +8369,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -8697,11 +8522,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -8982,11 +8802,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9144,11 +8959,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9264,11 +9074,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -9379,11 +9184,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -9583,11 +9383,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -9862,11 +9657,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10063,11 +9853,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -10288,11 +10073,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10404,11 +10184,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -10559,11 +10334,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -10742,11 +10512,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -10922,11 +10687,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11019,11 +10779,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -11127,11 +10882,6 @@
           "L": {
             "status": "unsolved",
             "attempts": 6,
-            "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
             "time": null
           }
         },
@@ -11343,11 +11093,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11477,11 +11222,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -11672,11 +11412,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11815,11 +11550,6 @@
             "status": "unsolved",
             "attempts": 2,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -11931,11 +11661,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -12198,11 +11923,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12325,11 +12045,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -12535,11 +12250,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -12784,11 +12494,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -12954,11 +12659,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -13176,11 +12876,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -13466,11 +13161,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13657,11 +13347,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -13747,11 +13432,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -13971,11 +13651,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14133,11 +13808,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14236,11 +13906,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -14373,11 +14038,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -14574,11 +14234,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14704,11 +14359,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -14826,11 +14476,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -15057,11 +14702,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15221,11 +14861,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -15404,11 +15039,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15541,11 +15171,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -15638,11 +15263,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -15762,11 +15382,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -15914,11 +15529,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16007,11 +15617,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16097,11 +15702,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -16298,11 +15898,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16475,11 +16070,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -16718,11 +16308,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -16880,11 +16465,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17039,11 +16619,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -17207,11 +16782,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -17381,11 +16951,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -17576,11 +17141,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17666,11 +17226,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -17812,11 +17367,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -17922,11 +17472,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -18052,11 +17597,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -18246,11 +17786,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18343,11 +17878,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -18515,11 +18045,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -18692,11 +18217,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18785,11 +18305,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -18875,11 +18390,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -19064,11 +18574,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -19195,11 +18700,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -19292,11 +18792,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -19426,11 +18921,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -19553,11 +19043,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -19699,11 +19184,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -19803,11 +19283,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -19959,11 +19434,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -20214,11 +19684,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -20304,11 +19769,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -20410,11 +19870,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -20586,11 +20041,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -20676,11 +20126,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -20847,11 +20292,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -20968,11 +20408,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -21115,11 +20550,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -21212,11 +20642,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -21363,11 +20788,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -21470,11 +20890,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -21560,11 +20975,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -21678,11 +21088,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -21818,11 +21223,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -21908,11 +21308,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22069,11 +21464,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22237,11 +21627,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22432,11 +21817,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -22522,11 +21902,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22634,11 +22009,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22784,11 +22154,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -22984,11 +22349,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23096,11 +22456,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23189,11 +22544,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23279,11 +22629,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -23432,11 +22777,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23544,11 +22884,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23648,11 +22983,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -23819,11 +23149,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -23941,11 +23266,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -24094,11 +23414,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -24235,11 +23550,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -24380,11 +23690,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -24480,11 +23785,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -24570,11 +23870,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -24682,11 +23977,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -24852,11 +24142,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -24989,11 +24274,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -25114,11 +24394,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -25204,11 +24479,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -25319,11 +24589,6 @@
             "status": "unsolved",
             "attempts": 1,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -25409,11 +24674,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -25509,11 +24769,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -25655,11 +24910,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -25745,11 +24995,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -25888,11 +25133,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -26113,11 +25353,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -26299,11 +25534,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -26396,11 +25626,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -26615,11 +25840,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -26705,11 +25925,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -26893,11 +26108,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -26983,11 +26193,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -27129,11 +26334,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -27248,11 +26448,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -27338,11 +26533,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -27444,11 +26634,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -27587,11 +26772,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -27757,11 +26937,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -27847,11 +27022,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -27981,11 +27151,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -28084,11 +27249,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -28220,11 +27380,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -28397,11 +27552,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -28490,11 +27640,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -28580,11 +27725,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -28727,11 +27867,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -28845,11 +27980,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -28945,11 +28075,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -29035,11 +28160,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -29141,11 +28261,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -29281,11 +28396,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -29387,11 +28497,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -29477,11 +28582,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -29635,11 +28735,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -29762,11 +28857,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -29895,11 +28985,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30014,11 +29099,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30114,11 +29194,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30211,11 +29286,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -30326,11 +29396,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30435,11 +29500,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -30630,11 +29690,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30749,11 +29804,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30842,11 +29892,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -30932,11 +29977,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -31032,11 +30072,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -31226,11 +30261,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -31348,11 +30378,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -31510,11 +30535,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -31705,11 +30725,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -31878,11 +30893,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -31971,11 +30981,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -32061,11 +31066,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -32231,11 +31231,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -32340,11 +31335,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -32505,11 +31495,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -32595,11 +31580,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -32701,11 +31681,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -32816,11 +31791,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -32919,11 +31889,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -33047,11 +32012,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -33150,11 +32110,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -33292,11 +32247,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -33475,11 +32425,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -33599,11 +32544,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -33689,11 +32629,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -33785,11 +32720,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -33875,11 +32805,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -33971,11 +32896,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -34061,11 +32981,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -34268,11 +33183,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -34454,11 +33364,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -34591,11 +33496,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -34691,11 +33591,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -34781,11 +33676,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -34969,11 +33859,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -35084,11 +33969,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -35357,11 +34237,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -35447,11 +34322,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -35565,11 +34435,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -35699,11 +34564,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -35789,11 +34649,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -35889,11 +34744,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -35995,11 +34845,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -36128,11 +34973,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -36234,11 +35074,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -36334,11 +35169,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -36424,11 +35254,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -36569,11 +35394,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -36659,11 +35479,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -36772,11 +35587,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -36943,11 +35753,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37036,11 +35841,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37126,11 +35926,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -37241,11 +36036,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37334,11 +36124,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37424,11 +36209,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -37607,11 +36387,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37707,11 +36482,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -37797,11 +36567,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -37897,11 +36662,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -38030,11 +36790,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -38146,11 +36901,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -38268,11 +37018,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -38380,11 +37125,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -38470,11 +37210,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -38635,11 +37370,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -38753,11 +37483,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -38850,11 +37575,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -39021,11 +37741,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39189,11 +37904,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39286,11 +37996,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -39395,11 +38100,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39495,11 +38195,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39585,11 +38280,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -39681,11 +38371,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39771,11 +38456,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -39886,11 +38566,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -39979,11 +38654,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40069,11 +38739,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -40184,11 +38849,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40284,11 +38944,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40374,11 +39029,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -40470,11 +39120,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40560,11 +39205,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -40656,11 +39296,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40746,11 +39381,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -40842,11 +39472,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -40932,11 +39557,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -41041,11 +39661,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -41131,11 +39746,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -41266,11 +39876,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -41358,11 +39963,6 @@
           "L": {
             "status": "unsolved",
             "attempts": 1,
-            "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
             "time": null
           }
         },
@@ -41474,11 +40074,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -41657,11 +40252,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -41789,11 +40379,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -41879,11 +40464,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -42044,11 +40624,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42150,11 +40725,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42243,11 +40813,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42333,11 +40898,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -42436,11 +40996,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42529,11 +41084,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42619,11 +41169,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -42754,11 +41299,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -42844,11 +41384,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -42978,11 +41513,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43071,11 +41601,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43161,11 +41686,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -43261,11 +41781,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -43389,11 +41904,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43482,11 +41992,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43572,11 +42077,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -43713,11 +42213,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43833,11 +42328,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -43933,11 +42423,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -44023,11 +42508,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -44163,11 +42643,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -44253,11 +42728,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -44386,11 +42856,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -44476,11 +42941,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -44591,11 +43051,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -44688,11 +43143,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -44791,11 +43241,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -44881,11 +43326,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -44996,11 +43436,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -45093,11 +43528,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -45264,11 +43694,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -45364,11 +43789,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -45461,11 +43881,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -45655,11 +44070,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -45789,11 +44199,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -45965,11 +44370,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -46055,11 +44455,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -46177,11 +44572,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -46267,11 +44657,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -46373,11 +44758,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -46531,11 +44911,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -46634,11 +45009,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -46749,11 +45119,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -46839,11 +45204,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -46935,11 +45295,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -47025,11 +45380,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -47128,11 +45478,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -47221,11 +45566,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -47311,11 +45651,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -47427,11 +45762,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -47530,11 +45860,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -47637,11 +45962,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -47763,11 +46083,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -47903,11 +46218,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -47993,11 +46303,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -48096,11 +46401,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -48186,11 +46486,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -48282,11 +46577,6 @@
             "status": "none",
             "attempts": 0,
             "time": null
-          },
-          "M": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
           }
         },
         "members": [
@@ -48372,11 +46662,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null
@@ -48478,11 +46763,6 @@
             "time": null
           },
           "L": {
-            "status": "none",
-            "attempts": 0,
-            "time": null
-          },
-          "M": {
             "status": "none",
             "attempts": 0,
             "time": null

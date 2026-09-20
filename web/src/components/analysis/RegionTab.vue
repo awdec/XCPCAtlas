@@ -126,7 +126,7 @@ const cellText = (c) => (c.n === 0 && c.pct === 0) ? '—' : `${c.n}（${fmtPct(
         </el-select>
       </div>
       <p class="text-xs text-gray-400 mb-2">
-        在<b>{{ activeRegionName }}</b>获得某档奖牌的选手（按 学校+姓名 去重），其当年在其他赛站的最好成绩分布；仅统计还参加过其他赛站的选手
+        在<b>{{ activeRegionName }}</b>获得某档奖牌的选手，其当年在其他赛站的最好成绩分布；仅统计还参加过其他赛站的选手
       </p>
       <AnalysisChart v-if="migrationRows.length" :option="matrixOption" height="300px" />
 

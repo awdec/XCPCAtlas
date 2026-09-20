@@ -156,7 +156,8 @@ export function computeOIerStats(dataset) {
 }
 
 /**
- * 学校层次统计：各层次选手奖牌分布、获奖率、无金牌的 985 名单
+ * 学校层次统计：各层次选手奖牌分布、获奖率、无金牌的 985 名单、
+ * 有金牌的 211/双非 名单（层次仍按 985 > 211 > 双非 优先级归类）
  */
 export function computeSchoolStats(dataset, tags) {
   const { set985, set211 } = tags
@@ -201,7 +202,16 @@ export function computeSchoolStats(dataset, tags) {
     .filter(school => !teams.some(t => t.school === school && t.tier === 'gold'))
     .sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
 
-  return { tierNames, tierStats, noGold985 }
+  // 本年有金牌的 211 / 双非 院校（有金牌队伍即有参赛资格，无需再过滤参赛）
+  const goldSchools = { '211': [], '双非': [] }
+  const schoolsWithGold = new Set(teams.filter(t => t.tier === 'gold').map(t => t.school))
+  for (const school of schoolsWithGold) {
+    const tier = schoolTierOf(school, set985, set211)
+    if (tier in goldSchools) goldSchools[tier].push(school)
+  }
+  for (const list of Object.values(goldSchools)) list.sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
+
+  return { tierNames, tierStats, noGold985, goldSchools }
 }
 
 /**
@@ -280,50 +290,61 @@ export function computePlayerStats(dataset) {
 
 // ---------- OI 最高奖项统计（OIer 分析 Tab） ----------
 
-// 比赛名去掉年份后的家族 → 等级（文章口径：CSP-J < CSP-S/NOIP/春季测试 < WC/APIO < NOI < IOI）
+// 比赛名去掉年份后的家族 → 等级（文章阶梯：CSP-J < CSP-S/NOIP/春季测试 < WC/APIO < NOI < IOI；
+// 用户决策 2026-09：CTSC 从 NOI 层移入 WC/APIO 层）
 const OI_FAMILY_LEVEL = {
   CSP入门: 0, NOIP普及: 0,
   CSP提高: 1, NOIP: 1, NOIP提高: 1, 春季测试: 1, NGOI: 1,
-  WC: 2, APIO: 2, APIO线上: 2,
-  NOI: 3, NOI夏令营: 3, CTS: 3, CTSC: 3, NOID类: 3,
+  WC: 2, APIO: 2, APIO线上: 2, CTS: 2, CTSC: 2,
+  NOI: 3, NOI夏令营: 3, NOID类: 3,
   IOI: 4,
 }
 // 展示名归一（其余家族用原名）
-const OI_FAMILY_LABEL = { CSP入门: 'CSP-J', CSP提高: 'CSP-S', NOIP提高: 'NOIP', CTS: 'CTSC', NOID类: 'NOI D类' }
+const OI_FAMILY_LABEL = {
+  CSP入门: '入门', NOIP普及: '入门',
+  CSP提高: '提高', NOIP: '提高', NOIP提高: '提高', 春季测试: '提高', NGOI: '提高',
+  CTS: 'CTSC', NOID类: 'NOI D类',
+}
+// 同档展示合并（用户决策 2026-09）：WC/APIO/CTSC→"WC 级"、NOI夏令营→NOI
+//（国际金按 rank 0 单行展示，同样参与家族合并，如 "WC 级 国际金"）
+const OI_MERGE_FAMILY = { WC: 'WC 级', APIO: 'WC 级', APIO线上: 'WC 级', CTS: 'WC 级', CTSC: 'WC 级', NOI夏令营: 'NOI' }
 
 /**
  * 解析一条 OI 记录为可比等级；无法识别的比赛或奖项返回 null
- * 等级内排序：国际金(0) < 金/一等(1) < 银/二等(2) < 铜/三等(3)
+ * 等级内排序：金/一等(1) < 银/二等(2) < 铜/三等(3)
  */
 export function parseOIAward(compName, award) {
   const famRaw = compName.replace(/\d{4}/g, '')
   const level = OI_FAMILY_LEVEL[famRaw]
   if (level == null) return null
   const fam = OI_FAMILY_LABEL[famRaw] || famRaw
+  // "国际"视作比赛届别名（用户决策 2026-09）：国际金牌 即 金牌
+  const normalizedAward = award.replace(/国际/g, '')
   let rank, short
-  if (award.includes('国际')) { rank = 0; short = '国际金' }
-  else if (/金|一等/.test(award)) { rank = 1; short = award.includes('等') ? '一等' : '金' }
-  else if (/银|二等/.test(award)) { rank = 2; short = award.includes('等') ? '二等' : '银' }
-  else if (/铜|三等/.test(award)) { rank = 3; short = award.includes('等') ? '三等' : '铜' }
+  if (/金|一等/.test(normalizedAward)) { rank = 1; short = normalizedAward.includes('等') ? '一等' : '金' }
+  else if (/银|二等/.test(normalizedAward)) { rank = 2; short = normalizedAward.includes('等') ? '二等' : '银' }
+  else if (/铜|三等/.test(normalizedAward)) { rank = 3; short = normalizedAward.includes('等') ? '三等' : '铜' }
   else return null
   const y = compName.match(/\d{4}/)
-  return { level, rank, label: `${fam} ${short}`, year: y ? Number(y[0]) : 0 }
+  const displayFam = OI_MERGE_FAMILY[famRaw] || fam
+  return { level, rank, label: `${displayFam} ${short}`, year: y ? Number(y[0]) : 0 }
 }
 
 /**
- * 金牌选手的最高 OI 奖项分布
- * @param {string|null} regionId 赛区 id；null 表示全部赛区（即当年所有金牌选手）
+ * 指定奖牌档选手的最高 OI 奖项分布
+ * @param {string|null} regionId 赛区 id；null 表示全部赛区
+ * @param {string} tier 奖牌档 gold/silver/bronze（默认 gold）
  */
-export function computeOIAwardStats(dataset, regionId = null) {
-  const goldKeys = new Set(
+export function computeOIAwardStats(dataset, regionId = null, tier = 'gold') {
+  const medalKeys = new Set(
     dataset.teams
-      .filter(t => t.tier === 'gold' && (!regionId || t.regionId === regionId))
+      .filter(t => t.tier === tier && (!regionId || t.regionId === regionId))
       .flatMap(t => t.members.map(m => `${m.name}@${t.school}`))
   )
-  const goldPlayers = dataset.players.filter(p => goldKeys.has(p.key))
+  const medalPlayers = dataset.players.filter(p => medalKeys.has(p.key))
 
   const bestByKey = new Map()
-  for (const p of goldPlayers) {
+  for (const p of medalPlayers) {
     p.oi.forEach((rec) => {
       const a = parseOIAward(rec['比赛'], rec['奖项'])
       if (!a) return
@@ -344,7 +365,7 @@ export function computeOIAwardStats(dataset, regionId = null) {
   const items = [...buckets.values()].sort((x, y) =>
     y.level - x.level || x.rank - y.rank || y.count - x.count || x.label.localeCompare(y.label, 'zh-Hans-CN')
   )
-  return { total: goldPlayers.length, withOi: bestByKey.size, items }
+  return { total: medalPlayers.length, withOi: bestByKey.size, items }
 }
 
 // ---------- 赛站维度统计（赛站分析 Tab） ----------

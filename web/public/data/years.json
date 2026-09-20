@@ -28,5 +28,10 @@
     "year": 2025,
     "contest_count": 12,
     "total_teams": 3683
+  },
+  {
+    "year": 2026,
+    "contest_count": 3,
+    "total_teams": 7326
   }
 ]

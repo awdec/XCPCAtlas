@@ -90,7 +90,7 @@ watch(() => props.year, (newYear) => {
       </el-tab-pane>
 
       <el-tab-pane label="选手分析" name="players">
-        <PlayersTab v-if="dataset" :dataset="dataset" />
+        <PlayersTab v-if="dataset" :dataset="dataset" :year="year" />
       </el-tab-pane>
 
       <el-tab-pane label="OIer 分析" name="oier">
