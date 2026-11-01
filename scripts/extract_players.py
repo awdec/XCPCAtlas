@@ -8,6 +8,8 @@ import pandas as pd
 from pathlib import Path
 
 from domjudge import is_domjudge_format, domjudge_sheet_name, read_domjudge_teams
+from team_members import supplement_members
+from iccpc_rank import read_iccpc_teams
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "players.json"
@@ -30,7 +32,7 @@ def main():
 
     for year_dir in year_dirs:
         year = year_dir.name
-        xlsx_files = sorted(year_dir.glob("*.xlsx"))
+        xlsx_files = sorted([*year_dir.glob("*.xlsx"), *year_dir.glob("*.rank.json")])
         if not xlsx_files:
             print(f"跳过: {year} 目录下未找到 xlsx 文件")
             continue
@@ -40,6 +42,11 @@ def main():
             if xlsx_path.name.startswith("~$"):
                 continue  # Excel 锁文件
             try:
+                if xlsx_path.name.endswith(".rank.json"):
+                    for team in read_iccpc_teams(xlsx_path):
+                        for member in team["members"]:
+                            pairs.add((team["school"], member))
+                    continue
                 xls = pd.ExcelFile(xlsx_path)
                 if "正式队伍" not in xls.sheet_names:
                     # DOMjudge 榜单导出: 从探测到的榜单表提取队员
@@ -53,6 +60,7 @@ def main():
                     if sheet_name != "正式队伍":
                         continue
                     df = pd.read_excel(xls, sheet_name=sheet_name, header=1)
+                    df = supplement_members(df, xlsx_path)
                     for _, row in df.iterrows():
                         school = row.get("Organization")
                         if pd.isna(school):

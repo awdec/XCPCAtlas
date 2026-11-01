@@ -6,7 +6,31 @@ import { loadYears } from '../utils/dataLoader'
 const years = ref([])
 const loading = ref(true)
 
+// 首次进入首页弹窗介绍项目：localStorage 记录上次关闭时间戳，超过 7 天再次弹出；key 带版本号，文案改版时升版本让用户再看一次（版本号不展示）
+const INTRO_SEEN_KEY = 'xcpc_intro_seen_v1'
+const INTRO_INTERVAL_MS = 7 * 24 * 60 * 60 * 1000
+const showIntro = ref(false)
+
+// 弹窗文案：\n 分段（white-space: pre-line 渲染；模板内直接换行会被 Vue 编译压缩成空格）
+const introText = '本平台收录了 2020-2026 赛季 ICPC/CCPC 各赛区的比赛结果。您可以通过首页查看各赛区概况，在"全部成绩"页搜索和筛选所有队伍，并查看选手的 OI 竞赛获奖经历。\n\n同时还提供了各个赛站和当年赛站总情况的数据分析，可以通过具体年份的"数据分析"查看具体内容：包括获奖率、赛站之间的获奖重合度、各奖牌具体 OI 奖项数量等。'
+
+const closeIntro = () => {
+  showIntro.value = false
+  try {
+    localStorage.setItem(INTRO_SEEN_KEY, String(Date.now()))
+  } catch {
+    // 隐私模式等存储不可用时忽略，页面不受影响（下次进入会再弹）
+  }
+}
+
 onMounted(async () => {
+  let lastSeen = 0
+  try {
+    lastSeen = Number(localStorage.getItem(INTRO_SEEN_KEY)) || 0
+  } catch {
+    lastSeen = 0
+  }
+  showIntro.value = !lastSeen || Date.now() - lastSeen > INTRO_INTERVAL_MS
   try {
     years.value = await loadYears()
   } catch (e) {
@@ -67,5 +91,20 @@ onMounted(async () => {
         </div>
       </router-link>
     </div>
+
+    <!-- 首次访问介绍弹窗（仅"知道了"按钮可关闭，关闭时写入已读标志） -->
+    <el-dialog
+      v-model="showIntro"
+      title="网站说明"
+      width="480px"
+      :close-on-click-modal="false"
+      :close-on-press-escape="false"
+      :show-close="false"
+    >
+      <p class="text-base text-gray-600 leading-relaxed" style="white-space: pre-line">{{ introText }}</p>
+      <template #footer>
+        <el-button type="primary" @click="closeIntro">知道了</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>

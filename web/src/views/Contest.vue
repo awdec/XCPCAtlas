@@ -3,10 +3,8 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
 import { loadContestData, loadSchoolTags } from '../utils/dataLoader'
-import { aggregateBySchool } from '../utils/formatters'
 import RankTable from '../components/RankTable.vue'
 import TeamDetail from '../components/TeamDetail.vue'
-import SchoolStats from '../components/SchoolStats.vue'
 
 const props = defineProps({
   year: {
@@ -34,7 +32,6 @@ watch([searchSchool, searchTeam, searchMember], () => {
 })
 const filterSchoolType = ref('')
 const filterOiCount = ref('')
-const activeTab = ref('rank')
 const selectedTeam = ref(null)
 const showTeamDetail = ref(false)
 const schoolTags = ref({ set985: new Set(), set211: new Set() })
@@ -90,12 +87,6 @@ const goToPage = (page) => {
   currentPage.value = page
 }
 
-const schoolStats = computed(() => {
-  if (!contest.value) return []
-  const formal = contest.value.sheets['正式队伍'] || []
-  return aggregateBySchool(formal)
-})
-
 let loadSeq = 0
 
 const loadContest = async (year, id) => {
@@ -149,14 +140,8 @@ const openTeamDetail = (team) => {
       </div>
     </div>
 
-    <!-- Tab 切换 -->
-    <el-tabs v-model="activeTab" class="mb-4">
-      <el-tab-pane label="📋 排名" name="rank" />
-      <el-tab-pane label="🏫 学校统计" name="schools" />
-    </el-tabs>
-
-    <!-- 排名 Tab -->
-    <div v-if="activeTab === 'rank'">
+    <!-- 排名 -->
+    <div>
       <!-- 搜索 + 筛选 -->
       <div class="flex items-center gap-3 mb-3">
         <div class="w-40 shrink-0">
@@ -210,11 +195,6 @@ const openTeamDetail = (team) => {
           {{ page }}
         </button>
       </div>
-    </div>
-
-    <!-- 学校统计 Tab -->
-    <div v-if="activeTab === 'schools'">
-      <SchoolStats :stats="schoolStats" :year="year" />
     </div>
 
     <!-- 队伍详情弹窗 -->

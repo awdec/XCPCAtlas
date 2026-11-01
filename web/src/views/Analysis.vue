@@ -1,10 +1,12 @@
 <script setup>
 import { ref, computed, watch, onMounted, nextTick } from 'vue'
-import { loadContestsIndex, loadContestData, loadSchoolTags } from '../utils/dataLoader'
+import { useRoute, useRouter } from 'vue-router'
+import { loadContestsIndex, loadContestData, loadSchoolTags, loadTrajectories } from '../utils/dataLoader'
 import { buildYearDataset, computeOverview } from '../utils/analysis'
 import OverviewTab from '../components/analysis/OverviewTab.vue'
 import RegionTab from '../components/analysis/RegionTab.vue'
 import PlayersTab from '../components/analysis/PlayersTab.vue'
+import TrajectoryTab from '../components/analysis/TrajectoryTab.vue'
 import OIerTab from '../components/analysis/OIerTab.vue'
 import SchoolTab from '../components/analysis/SchoolTab.vue'
 
@@ -15,13 +17,20 @@ const props = defineProps({
   }
 })
 
-const activeTab = ref('overview')
+const route = useRoute()
+const router = useRouter()
+const TAB_NAMES = new Set(['overview', 'region', 'players', 'trajectory', 'oier', 'school'])
+const activeTab = computed({
+  get: () => TAB_NAMES.has(route.query.tab) ? route.query.tab : 'overview',
+  set: tab => router.replace({ query: { ...route.query, tab } }),
+})
 const loading = ref(true)
 const error = ref('')
 const loadProgress = ref(0)
 const loadTotal = ref(0)
 
 const dataset = ref(null)
+const trajectories = ref(null)
 const tags = ref({ set985: new Set(), set211: new Set() })
 let loadSeq = 0
 
@@ -33,6 +42,11 @@ const loadData = async (year) => {
   error.value = ''
   loadProgress.value = 0
   dataset.value = null
+  trajectories.value = null
+  // 轨迹数据为预生成 JSON，失败不影响主体统计（tab 内显示「暂不可用」）
+  loadTrajectories(year).then(d => {
+    if (seq === loadSeq) trajectories.value = d
+  }).catch(() => {})
 
   try {
     tags.value = await loadSchoolTags()
@@ -90,7 +104,11 @@ watch(() => props.year, (newYear) => {
       </el-tab-pane>
 
       <el-tab-pane label="选手分析" name="players">
-        <PlayersTab v-if="dataset" :dataset="dataset" :year="year" />
+        <PlayersTab v-if="dataset" :dataset="dataset" :year="year" :trajectories="trajectories" />
+      </el-tab-pane>
+
+      <el-tab-pane label="轨迹分析" name="trajectory">
+        <TrajectoryTab :data="trajectories" :year="year" />
       </el-tab-pane>
 
       <el-tab-pane label="OIer 分析" name="oier">

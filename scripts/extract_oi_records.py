@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 为 players.json 中的每个选手，从 raw.txt 中提取有效 OI 奖项记录。
-规则：根据比赛时的年级推算指定年份是否在大一~大五范围内。
+规则：按 OI 比赛年级推算 XCPC 当年年级；通常为大一~大五，
+西安交通大学、中国科学技术大学放宽为高一~大五。
 输出：web/public/data/{year}/oi_records.json
 """
 
@@ -13,6 +14,9 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "raw.txt"
 PLAYERS = ROOT / "players.json"
 OUTPUT_DIR = ROOT / "web" / "public" / "data"
+
+# 按 XCPC 所属学校应用；大学年级 0/-1/-2 分别对应推算高三/高二/高一。
+HIGH_SCHOOL_WINDOW_SCHOOLS = {"西安交通大学", "中国科学技术大学"}
 
 
 def parse_grade(grade_str):
@@ -74,6 +78,7 @@ def extract_oi_records_for_year(target_year):
         players = json.load(f)
 
     records = {}
+    extended_records = {}
     with open(RAW, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
@@ -98,26 +103,29 @@ def extract_oi_records_for_year(target_year):
             comp_year = int(year_match.group(1))
 
             college_year = calc_college_year(target_year, comp_year, grade_num, comp_name)
-            if not (1 <= college_year <= 5):
+            if not (-2 <= college_year <= 5):
                 continue
 
-            if name not in records:
-                records[name] = []
-            records[name].append({
+            record = {
                 "比赛": comp_name,
                 "奖项": award,
                 "学校": school,
                 "年级": grade,
-            })
+            }
+            extended_records.setdefault(name, []).append(record)
+            if 1 <= college_year <= 5:
+                records.setdefault(name, []).append(record)
 
     # 已知取舍：上面 records 仅按姓名聚合，因此跨校同名选手会把同一份 OI 记录
-    # 挂到每所学校的同名选手上（raw.txt 中无唯一身份标识，无法区分）
+    # 挂到每所学校的同名选手上（raw.txt 中无唯一身份标识，无法区分）。
+    # 扩展窗口仅按 XCPC 学校选用，不能把两校的额外记录混入普通学校。
     result = {}
     matched = 0
     for school, name in players:
-        if name in records:
+        school_records = extended_records if school in HIGH_SCHOOL_WINDOW_SCHOOLS else records
+        if name in school_records:
             key = f"{name}@{school}"
-            result[key] = records[name]
+            result[key] = school_records[name]
             matched += 1
 
     # 输出到年份目录
@@ -129,7 +137,7 @@ def extract_oi_records_for_year(target_year):
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     print(f"选手总数: {len(players)}")
-    print(f"有 OI 记录且在大一~大五范围: {matched}")
+    print(f"符合 OI 年级窗口（两校高一~大五，其他大一~大五）: {matched}")
     print(f"输出: {output_path}")
 
     return result

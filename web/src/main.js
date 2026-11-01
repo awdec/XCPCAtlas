@@ -14,6 +14,7 @@ const routes = [
   { path: '/:year/contest/:id', name: 'Contest', component: () => import('./views/Contest.vue'), props: true },
   { path: '/:year/summary', name: 'Summary', component: () => import('./views/Summary.vue'), props: true },
   { path: '/:year/analysis', name: 'Analysis', component: () => import('./views/Analysis.vue'), props: true },
+  { path: '/:year/trajectory/:code', name: 'TrajectoryDetail', component: () => import('./views/TrajectoryDetail.vue'), props: true },
   { path: '/:year/school/:name', name: 'School', component: () => import('./views/School.vue'), props: true },
   { path: '/:year/players', name: 'Players', component: () => import('./views/Players.vue'), props: true },
   { path: '/:year/player/:name', name: 'Player', component: () => import('./views/Player.vue'), props: true },

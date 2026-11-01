@@ -7,6 +7,8 @@ import { computePlayerStats, MEDAL_ORDER, MEDAL_LABELS, MEDAL_COLORS, fmtPct } f
 const props = defineProps({
   dataset: { type: Object, required: true },
   year: { type: String, required: true },
+  // gen_trajectories.py 预生成数据（含 first_best_tiers / all_time_best_tiers）；null = 加载失败
+  trajectories: { type: Object, default: null },
 })
 
 const router = useRouter()
@@ -103,6 +105,15 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
   avgRange: a.n ? a.avgRange.toFixed(1) : '-',
   avgStd: a.n ? a.avgStd.toFixed(1) : '-',
 })))
+
+// 「第一次最高获奖」（预生成数据）：当年获奖且档位为个人历史新高（含首次获奖）的选手数
+const FIRST_BEST_TIERS = ['gold', 'silver', 'bronze']
+const firstBestRows = computed(() => FIRST_BEST_TIERS.map(t => ({
+  tier: MEDAL_LABELS[t],
+  n: props.trajectories?.first_best_tiers?.[t] ?? 0,
+  cumulative: props.trajectories?.all_time_best_tiers?.[t] ?? '—',
+})))
+const firstBestTotal = computed(() => firstBestRows.value.reduce((s, r) => s + r.n, 0))
 </script>
 
 <template>
@@ -122,6 +133,44 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
     </div>
 
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
+      <h3 class="text-base font-semibold text-gray-800 mb-1">第一次最高获奖</h3>
+      <p v-if="trajectories" class="text-xs text-gray-400 mb-2">
+        选手数统计当年创造个人历史最好成绩的获奖选手，共 {{ firstBestTotal }} 人；至今累计数统计 2020 年至 {{ year }} 年，每人仅计截至该年的最高奖牌
+      </p>
+      <el-table v-if="trajectories" :data="firstBestRows" stripe border style="width: 480px; margin-left: auto; margin-right: auto; font-size: 16px">
+        <el-table-column width="140" align="center">
+          <template #header>
+            <span>奖牌档
+              <el-tooltip placement="top" :show-after="200">
+                <template #content>
+                  <div class="max-w-xs leading-relaxed">先看选手当年的最高奖牌档，若此前所有年份都未获得过不低于该档的奖牌（即当年为个人历史最好成绩，含首次获奖），则计入该档</div>
+                </template>
+                <span class="text-gray-400 cursor-help ml-0.5">ⓘ</span>
+              </el-tooltip>
+            </span>
+          </template>
+          <template #default="{ row }">
+            <span :class="{ 'text-yellow-600 font-semibold': row.tier === '金牌', 'text-gray-500 font-semibold': row.tier === '银牌', 'text-amber-700 font-semibold': row.tier === '铜牌' }">{{ row.tier }}</span>
+          </template>
+        </el-table-column>
+        <el-table-column prop="n" label="选手数" width="160" align="center" />
+        <el-table-column prop="cumulative" label="至今累计数" width="180" align="center">
+          <template #header>
+            <span>至今累计数
+              <el-tooltip placement="top" :show-after="200">
+                <template #content>
+                  <div class="max-w-xs leading-relaxed">统计 2020 年至 {{ year }} 年（含）的全部记录，按学校+姓名去重</div>
+                </template>
+                <span class="text-gray-400 cursor-help ml-0.5">ⓘ</span>
+              </el-tooltip>
+            </span>
+          </template>
+        </el-table-column>
+      </el-table>
+      <p v-else class="text-sm text-gray-500 py-4 text-center">第一次最高获奖数据暂不可用</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
       <h3 class="text-base font-semibold text-gray-800 mb-1">多场选手的排名稳定性</h3>
       <p class="text-xs text-gray-400 mb-2">
         仅统计参赛 ≥2 场的选手（共 {{ stabilityPoints.length }} 人）；排名跨赛区可比性有限，仅作趋势参考；点击数据点可跳转选手个人页
@@ -131,9 +180,20 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
 
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
       <h3 class="text-base font-semibold text-gray-800 mb-3">各奖牌档稳定性汇总</h3>
-      <el-table :data="aggRows" stripe border size="small">
-        <el-table-column prop="tier" label="奖牌档" width="120" align="center" />
-        <el-table-column prop="n" width="120" align="center">
+      <el-table :data="aggRows" stripe border style="width: 640px; margin-left: auto; margin-right: auto; font-size: 16px">
+        <el-table-column prop="tier" width="120" align="center">
+          <template #header>
+            <span>奖牌档
+              <el-tooltip placement="top" :show-after="200">
+                <template #content>
+                  <div class="max-w-xs leading-relaxed">按选手当年所有赛区的最高奖牌档归档</div>
+                </template>
+                <span class="text-gray-400 cursor-help ml-0.5">ⓘ</span>
+              </el-tooltip>
+            </span>
+          </template>
+        </el-table-column>
+        <el-table-column prop="n" width="140" align="center">
           <template #header>
             <span>多场选手数
               <el-tooltip placement="top" :show-after="200">
@@ -145,7 +205,7 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
             </span>
           </template>
         </el-table-column>
-        <el-table-column prop="avgRange" width="140" align="center">
+        <el-table-column prop="avgRange" width="180" align="center">
           <template #header>
             <span>排名极差的平均值
               <el-tooltip placement="top" :show-after="200">
@@ -157,7 +217,7 @@ const aggRows = computed(() => stats.value.stabilityAgg.map(a => ({
             </span>
           </template>
         </el-table-column>
-        <el-table-column prop="avgStd" width="160" align="center">
+        <el-table-column prop="avgStd" width="200" align="center">
           <template #header>
             <span>排名标准差的平均值
               <el-tooltip placement="top" :show-after="200">

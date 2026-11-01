@@ -37,11 +37,18 @@ pip install openpyxl pandas
 python scripts/extract_players.py      # 提取选手列表
 python scripts/extract_oi_records.py   # 匹配 OI 记录（需要 raw.txt）
 python scripts/convert_xlsx.py         # 主脚本：xlsx → 赛区 JSON（支持多年份）
+python scripts/gen_trajectories.py     # 赛区 JSON → 分析页「轨迹分析」用的 trajectories.json
 ```
 
-注意首次接入新年份时需按上述顺序执行（convert 需要该年份的 `oi_records.json` 来给队员嵌入 OI 记录）。
+注意首次接入新年份时需按上述顺序执行（convert 需要该年份的 `oi_records.json` 来给队员嵌入 OI 记录）；convert 会清空年份目录下除 `oi_records.json` 外的 JSON，因此 `gen_trajectories.py` 必须在 convert 之后运行。
+
+OIer 按姓名匹配 OI 获奖记录，并根据获奖时年级推算 XCPC 参赛当年的年级：通常接受大一至大五；西安交通大学、中国科学技术大学的选手接受高一至大五。学校以 XCPC 名单为准，例外适用于所有年份。
 
 输出到 `web/public/data/{year}/` 目录。
+
+同时支持 `rank.iccpc.cn` 的完整赛后提交快照：保存为 `xcpc/{year}/年份 CCPC 城市.rank.json`，由同一处理流程提取正式队伍、队员并生成赛事 JSON，无需转换为 Excel。2026 长春站原始快照来自[官方榜单](https://rank.iccpc.cn/r/8a3a28e3-f6b3-4a58-b4ac-fa8039fb2c72)，保留来源地址和下载时间；按网站规则收录有提交的正式队伍（包括女队），不收录打星队及无提交队伍。CE 不计罚时，首次 AC 后的提交忽略，总罚时按秒累计后取整为分钟，奖牌按快照内配置计算。目前只支持单赛事归属、题号和结果完整公开的快照。
+
+原表缺少队员姓名时，可在同目录提供同名 `.members.json`，按“学校＋队名”精确匹配补充；选手提取和成绩转换共用该名单，原表已有姓名时以原表为准。2026 西安站的补充名单来自 [XCPC Sight](https://junjiecharles.github.io/xcpc-sight/?series=2026-2027&previewContest=icpc-2026-xian&view=preview)（其来源为赛站参赛手册），覆盖成绩表中的 402 队、1205 个队员条目。佛山大学“我的刀盾”按来源保留 2 人。更新补充名单后，同样按上述三个步骤重新生成数据，OI 记录仍由本项目的 `raw.txt` 和年级窗口规则匹配。
 
 ### 2. 启动前端
 
@@ -94,7 +101,7 @@ npm run build
 │   ├── 2023/                    # 2023 赛季原始成绩文件
 │   ├── 2024/                    # 2024 赛季原始成绩文件
 │   ├── 2025/                    # 2025 赛季原始成绩文件
-│   └── 2026/                    # 2026 赛季网络预选赛（CCPC ×1、ICPC ×2）
+│   └── 2026/                    # 2026 赛季：ICPC 西安、成都、武汉及 CCPC 长春
 ├── raw.txt                       # OI 原始记录（~25MB）
 ├── CLAUDE.md                     # Claude Code 项目指引
 ├── docs/
@@ -116,7 +123,7 @@ npm run build
 │   │   └── favicon.svg           # 网站图标（蓝底金色奖杯）
 │   ├── src/
 │   │   ├── views/                # 页面
-│   │   │   ├── Home.vue          # 首页（年份选择）
+│   │   │   ├── Home.vue          # 首页（年份选择，每 7 天弹一次网站说明）
 │   │   │   ├── YearHome.vue      # 年份首页（赛区列表）
 │   │   │   ├── Contest.vue       # 赛区详情
 │   │   │   ├── Summary.vue       # 全部成绩汇总

@@ -123,7 +123,7 @@ const goldSchoolSections = [
     <!-- 层次概览表 -->
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
       <h3 class="text-base font-semibold text-gray-800 mb-3">学校层次概览</h3>
-      <el-table :data="tierSummary" stripe border size="small">
+      <el-table :data="tierSummary" stripe border style="width: 600px; margin-left: auto; margin-right: auto; font-size: 16px">
         <el-table-column prop="name" label="层次" width="100" align="center" />
         <el-table-column prop="teams" label="队伍数" width="100" align="center" />
         <el-table-column prop="players" label="去重选手" width="100" align="center" />

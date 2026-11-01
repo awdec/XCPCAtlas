@@ -14,6 +14,8 @@ import pandas as pd
 from pathlib import Path
 
 from domjudge import is_domjudge_format, domjudge_sheet_name, read_domjudge_teams, read_domjudge_girl_teams
+from team_members import supplement_members
+from iccpc_rank import read_iccpc_teams
 
 # 项目根目录
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,15 +72,12 @@ CN_TO_ID = {v: k for k, v in CITY_MAP.items()}
 # 2022 年总决赛以 "ccpc final" 命名但举办地同样在广州，且同年已有 id "guangzhou"
 # 的普通分站，显示名加"（总决赛）"后缀消歧义。
 FILENAME_OVERRIDES = {
+    "2026/icpc2026chengdu.xlsx": ("ICPC", "chengdu", "成都", "ICPC 成都"),
+    "2026/icpc2026wuhan.xlsx": ("ICPC", "wuhan", "武汉", "ICPC 武汉"),
     "2020/ccpc beijing.xlsx": ("CCPC", "final", "北京", "CCPC 北京"),
     "2021/ccpc nanjing.xlsx": ("CCPC", "final", "南京", "CCPC 南京"),
     "2022/ccpc final.xlsx": ("CCPC", "final", "广州", "CCPC 广州（总决赛）"),
     "2024/ccpc guangzhou.xlsx": ("CCPC", "final", "广州", "CCPC 广州"),
-    # 网络预选赛为线上赛，无举办城市，city_cn 用"网络"占位；ICPC 网络预选赛
-    # 每年两场，文件名以数字区分场次，id 同步带场次号。
-    "2026/ccpc online.xlsx": ("CCPC", "online", "网络", "CCPC 网络预选赛"),
-    "2026/icpc online 1.xlsx": ("ICPC", "online1", "网络", "ICPC 网络预选赛（第一场）"),
-    "2026/icpc online 2.xlsx": ("ICPC", "online2", "网络", "ICPC 网络预选赛（第二场）"),
 }
 
 
@@ -314,7 +313,6 @@ def convert_domjudge_file(xlsx_path, oi_records):
 
 def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
     """转换单个 xlsx 文件为 JSON。"""
-    xls = pd.ExcelFile(xlsx_path)
     result = {
         "id": contest_id,
         "org": org,
@@ -323,6 +321,19 @@ def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
         "sheets": {}
     }
 
+    if xlsx_path.name.endswith(".rank.json"):
+        teams = read_iccpc_teams(xlsx_path)
+        for team in teams:
+            team["members"] = [
+                {"name": member, "oi": oi_records.get(f"{member}@{team['school']}", [])}
+                for member in team["members"]
+            ]
+        result["sheets"]["正式队伍"] = teams
+        print(f"  ICCPC 榜单: {len(teams)} 支正式队伍")
+        return result
+
+    xls = pd.ExcelFile(xlsx_path)
+
     if "正式队伍" in xls.sheet_names:
         for sheet_name in xls.sheet_names:
             if sheet_name != "正式队伍":
@@ -330,6 +341,8 @@ def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
             df = pd.read_excel(xls, sheet_name=sheet_name, header=1)
             if len(df) == 0:
                 continue
+
+            df = supplement_members(df, xlsx_path)
 
             problem_cols = detect_problem_columns(df.columns.tolist())
             has_coaches = "Coaches" in df.columns
@@ -363,7 +376,7 @@ def process_year(year_dir):
     # 文件名字典序决定赛区在列表中的显示顺序；忽略大小写，使小写命名（如 "2025 ccpc nanyang"）
     # 与同类命名相邻，而不是按 ASCII 排到全部大写命名之后
     xlsx_files = sorted(
-        (p for p in year_dir.glob("*.xlsx") if not p.name.startswith("~$")),
+        (p for p in [*year_dir.glob("*.xlsx"), *year_dir.glob("*.rank.json")] if not p.name.startswith("~$")),
         key=lambda p: p.name.lower(),
     )
     if not xlsx_files:
@@ -383,7 +396,7 @@ def process_year(year_dir):
         if override_key in FILENAME_OVERRIDES:
             org, contest_id, city_cn, name = FILENAME_OVERRIDES[override_key]
         else:
-            result = parse_contest_filename(xlsx_path.name)
+            result = parse_contest_filename(xlsx_path.name.replace(".rank.json", ".xlsx"))
             if result is None:
                 print(f"跳过: {xlsx_path.name} (无法解析赛区)")
                 continue

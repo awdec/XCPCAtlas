@@ -62,6 +62,16 @@ export async function loadOIRecords(year) {
 }
 
 /**
+ * 加载预计算的选手五年奖牌轨迹（scripts/gen_trajectories.py 生成）
+ */
+export async function loadTrajectories(year) {
+  const key = `_traj_${year}`
+  if (cache[key]) return cache[key]
+  cache[key] = await fetchJSON(`./data/${year}/trajectories.json`)
+  return cache[key]
+}
+
+/**
  * 加载 985/211 学校名单（全局共享）
  */
 export async function loadSchoolTags() {

@@ -168,7 +168,9 @@ def read_domjudge_teams(xlsx_path, sheet_name):
     题目键取自榜单实际出现的题列（榜单题数逐年不同，2026 网络赛已有 14 题到 N）。
     CCPC 总决赛报名单把教练跟在 3 名队员之后（如 2024 广州），超出 3 人的部分归入 coaches。
     """
-    df = pd.read_excel(xlsx_path, sheet_name=sheet_name, header=None)
+    # 队名可能就是 "#N/A"；只把空单元格视为缺失，保留这类字面文本。
+    df = pd.read_excel(xlsx_path, sheet_name=sheet_name, header=None,
+                       keep_default_na=False, na_values=[""])
     cols, problem_cols = _header_map(df)
     missing = [c for c in DOMJUDGE_REQUIRED_COLS if c not in cols]
     if missing:
@@ -231,7 +233,8 @@ def read_domjudge_girl_teams(xlsx_path):
     girl_sheet = next((n for n in ("女队", "Female") if n in xls.sheet_names), None)
     if girl_sheet is None:
         return set()
-    df = pd.read_excel(xls, sheet_name=girl_sheet, header=None)
+    df = pd.read_excel(xls, sheet_name=girl_sheet, header=None,
+                       keep_default_na=False, na_values=[""])
     cols, _ = _header_map(df)
     school_col = cols.get("Organization")
     team_col = cols.get("Name")

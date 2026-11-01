@@ -72,8 +72,8 @@ const regionOption = computed(() => {
 
     <!-- 分赛事奖牌汇总 -->
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mt-4">
-      <h3 class="text-base font-semibold text-gray-800 mb-3">分赛事奖牌发放数（CCPC / ICPC）</h3>
-      <el-table :data="props.overview.orgMedals" stripe border size="small" style="max-width: 460px">
+      <h3 class="text-base font-semibold text-gray-800 mb-3">奖牌发放数（CCPC / ICPC）</h3>
+      <el-table :data="props.overview.orgMedals" stripe border style="max-width: 560px; margin: 0 auto; font-size: 16px">
         <el-table-column prop="org" label="赛事" width="100" align="center" />
         <el-table-column prop="gold" label="金牌" align="center" />
         <el-table-column prop="silver" label="银牌" align="center" />

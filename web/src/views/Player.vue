@@ -1,8 +1,9 @@
 <script setup>
 import { ref, watch, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
-import { loadAllContests, loadOIRecords } from '../utils/dataLoader'
+import { loadAllContests, loadOIRecords, loadYears } from '../utils/dataLoader'
+import { MEDAL_LABELS, MEDAL_COLORS, medalTier } from '../utils/analysis'
 
 const props = defineProps({
   year: {
@@ -12,9 +13,11 @@ const props = defineProps({
 })
 
 const route = useRoute()
-const router = useRouter()
+const medalTextColors = { ...MEDAL_COLORS, iron: '#6b7280' }
 
 const playerName = computed(() => decodeURIComponent(route.params.name))
+const allYears = computed(() => route.query.scope === 'all')
+const playerSchool = computed(() => allYears.value && typeof route.query.school === 'string' ? route.query.school : '')
 const activeView = ref('icpc')
 const icpcRecords = ref([])
 const oiRecords = ref([])
@@ -22,21 +25,31 @@ const loading = ref(true)
 const error = ref('')
 let loadRequestId = 0
 
-const loadData = async (year, name) => {
+const loadData = async (year, name, includeAllYears, school) => {
   const requestId = ++loadRequestId
   loading.value = true
   error.value = ''
   try {
-    const [contests, oi] = await Promise.all([loadAllContests(year), loadOIRecords(year)])
+    const years = includeAllYears ? (await loadYears()).map(y => y.year) : [year]
+    const [contestYears, oi] = await Promise.all([
+      Promise.all(years.map(async recordYear => ({
+        year: recordYear,
+        contests: await loadAllContests(recordYear),
+      }))),
+      loadOIRecords(year),
+    ])
     if (requestId !== loadRequestId) return
 
     // ICPC/CCPC 记录
     const results = []
-    contests.forEach(c => {
-      const teams = c.sheets['正式队伍'] || []
-      teams.forEach(t => {
-        if (t.members.some(m => m.name === name)) {
+    for (const { year: recordYear, contests } of contestYears) {
+      for (const c of contests) {
+        const teams = c.sheets['正式队伍'] || []
+        for (const t of teams) {
+          if (school && t.school !== school) continue
+          if (!t.members.some(m => m.name === name)) continue
           results.push({
+            year: recordYear,
             contest: c.name,
             contestId: c.id,
             school: t.school,
@@ -47,15 +60,16 @@ const loadData = async (year, name) => {
             medal: t.medal,
           })
         }
-      })
-    })
-    icpcRecords.value = results.sort((a, b) => (a.rank || 999) - (b.rank || 999))
+      }
+    }
+    icpcRecords.value = results.sort((a, b) => a.year - b.year || (a.rank || 999) - (b.rank || 999))
 
-    // OI 记录（按 name@school 的 name 部分匹配，按比赛+奖项去重）
+    // OI 记录（轨迹入口匹配完整 name@school，普通入口只匹配姓名；按比赛+奖项去重）
     const seen = new Set()
     const oiResults = []
     Object.entries(oi).forEach(([key, records]) => {
       if (key.split('@')[0] !== name) return
+      if (school && key !== `${name}@${school}`) return
       records.forEach(r => {
         const dedupKey = `${r['比赛']}|${r['奖项']}`
         if (!seen.has(dedupKey)) {
@@ -77,9 +91,9 @@ const loadData = async (year, name) => {
 }
 
 watch(
-  [() => props.year, playerName],
-  ([year, name]) => {
-    if (year && name) loadData(year, name)
+  [() => props.year, playerName, allYears, playerSchool],
+  ([year, name, includeAllYears, school]) => {
+    if (year && name) loadData(year, name, includeAllYears, school)
   },
   { immediate: true }
 )
@@ -97,6 +111,9 @@ watch(
 
     <div v-else>
       <h2 class="text-2xl font-bold text-gray-800 mb-4">{{ playerName }}</h2>
+      <p v-if="allYears" class="text-sm text-gray-500 mb-4">
+        <span v-if="playerSchool">{{ playerSchool }} · </span>历年 ICPC/CCPC 获奖记录
+      </p>
 
       <el-radio-group v-model="activeView" size="default" class="mb-4">
         <el-radio-button value="icpc">ICPC/CCPC ({{ icpcRecords.length }})</el-radio-button>
@@ -108,14 +125,15 @@ watch(
         <el-table-column type="index" label="#" width="50" />
         <el-table-column label="赛区" min-width="160">
           <template #default="{ row }">
-            <router-link :to="`/${year}/contest/${row.contestId}`" class="text-blue-600 hover:underline">
+            <router-link :to="`/${row.year}/contest/${row.contestId}`" class="text-blue-600 hover:underline">
+              <span v-if="allYears">{{ row.year }} 年 </span>
               {{ row.contest }}
             </router-link>
           </template>
         </el-table-column>
         <el-table-column label="学校" min-width="160">
           <template #default="{ row }">
-            <router-link :to="`/${year}/school/${encodeURIComponent(row.school)}`" class="text-blue-600 hover:underline">
+            <router-link :to="`/${row.year}/school/${encodeURIComponent(row.school)}`" class="text-blue-600 hover:underline">
               {{ row.school }}
             </router-link>
           </template>
@@ -126,7 +144,9 @@ watch(
         <el-table-column prop="penalty" label="罚时" width="75" align="center" />
         <el-table-column label="奖牌" width="80" align="center">
           <template #default="{ row }">
-            <span v-if="row.medal" class="text-yellow-600 font-bold">{{ row.medal }}</span>
+            <span :style="{ color: medalTextColors[medalTier(row.medal)] }" class="font-bold">
+              {{ MEDAL_LABELS[medalTier(row.medal)] }}
+            </span>
           </template>
         </el-table-column>
       </el-table>

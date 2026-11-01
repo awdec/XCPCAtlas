@@ -114,13 +114,11 @@ const cellText = (c) => (c.n === 0 && c.pct === 0) ? '—' : `${c.n}（${fmtPct(
   <div>
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 mb-4">
       <h3 class="text-base font-semibold text-gray-800 mb-1">各赛站获奖人数</h3>
-      <p class="text-xs text-gray-400 mb-2">选手口径：每名选手在每个赛站只计一次（取该站最好成绩），与总览页的队伍口径不同</p>
       <AnalysisChart :option="perSiteOption" height="420px" />
     </div>
 
     <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
-      <div class="flex flex-wrap items-center gap-3 mb-1">
-        <h3 class="text-base font-semibold text-gray-800">跨赛站获奖迁移</h3>
+      <div class="mb-1">
         <el-select v-model="regionId" placeholder="选择赛站" size="small" style="width: 11rem">
           <el-option v-for="r in regionOptions" :key="r.id" :label="r.name" :value="r.id" />
         </el-select>
@@ -130,9 +128,9 @@ const cellText = (c) => (c.n === 0 && c.pct === 0) ? '—' : `${c.n}（${fmtPct(
       </p>
       <AnalysisChart v-if="migrationRows.length" :option="matrixOption" height="300px" />
 
-      <el-table :data="migrationRows" stripe border size="small" class="mt-4" style="max-width: 760px">
+      <el-table :data="migrationRows" stripe border class="mt-4" style="max-width: 880px; margin-left: auto; margin-right: auto; font-size: 16px">
         <el-table-column prop="tier" label="本站奖牌" width="110" align="center" />
-        <el-table-column prop="total" label="有其他站记录" width="120" align="center" />
+        <el-table-column prop="total" label="有其他站记录" width="140" align="center" />
         <el-table-column
           v-for="t in MEDAL_ORDER"
           :key="t"

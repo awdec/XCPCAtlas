@@ -25,11 +25,16 @@ Requires Python 3 with `openpyxl` and `pandas`.
 python scripts/convert_xlsx.py         # xlsx → JSON in web/public/data/{year}/
 python scripts/extract_players.py      # xlsx → players.json (unique school+name pairs)
 python scripts/extract_oi_records.py   # matches raw.txt OI records to players → web/public/data/{year}/oi_records.json
+python scripts/gen_trajectories.py    # contest JSONs → {year}/trajectories.json (analysis trajectory tab)
 ```
 
 `convert_xlsx.py` is the main pipeline — it reads each xlsx file's "正式队伍" sheet and outputs per-contest JSON plus a `contests.json` index. Run it after adding or updating xlsx source files.
 
+The pipeline also reads `xcpc/{year}/*.rank.json` snapshots from `rank.iccpc.cn`, via `scripts/iccpc_rank.py`. Keep their source URL and retrieval time. Only complete, single-group post-contest snapshots are supported; exclude starred and no-submission teams, ignore CE and submissions after first AC, and floor the summed penalty seconds to minutes. `extract_players.py` uses the same reader.
+
 **接入新年份时必须按 `extract_players.py` → `extract_oi_records.py` → `convert_xlsx.py` 的顺序跑**：convert 在转换时按 `name@school` 把该年的 OI 记录嵌入队员，若该年还没有按年的 `oi_records.json`，会静默回退到根目录未按年份过滤的旧文件（现有年份都有按年文件，不受影响）。
+
+`gen_trajectories.py` 消费的是 convert 的产物，且 convert 每次重跑会清空年份目录（仅保留 `oi_records.json`），所以它必须在 convert 之后运行；被清掉后分析页「轨迹分析」tab 会显示「暂不可用」，重跑即恢复。
 
 ## Architecture
 
@@ -43,6 +48,7 @@ python scripts/extract_oi_records.py   # matches raw.txt OI records to players �
   - `/:year/analysis` → Analysis (per-year statistics; see `docs/analysis-page.md`)
   - `/:year/school/:name` → School detail
   - `/:year/player/:name` → Player detail
+  - `/:year/trajectory/:code` → Trajectory detail (player list of one 5-year medal trajectory, e.g. `b-g-g-n-n`; see `docs/analysis-page.md`)
   - `/announcement` → Announcement (global)
 - Views are **lazy-loaded** via dynamic `import()` in `web/src/main.js`
 - **No backend/API** — `web/src/utils/dataLoader.js` fetches static JSON from `web/public/data/` with in-memory caching
@@ -61,13 +67,15 @@ python scripts/extract_oi_records.py   # matches raw.txt OI records to players �
 ### Data Pipeline (`scripts/`)
 1. `convert_xlsx.py` — primary: xlsx → contest JSON files (supports multiple years)
 2. `extract_players.py` — secondary: extracts unique (school, name) pairs across all years
-3. `extract_oi_records.py` — enrichment: matches OI competition history from `raw.txt` to XCPC players per year, calculates expected college year based on high school grade at competition time
+3. `extract_oi_records.py` — enrichment: matches OI competition history from `raw.txt` to XCPC players per year, calculates expected grade in the XCPC year. Default window: college years 1–5; for 西安交通大学 and 中国科学技术大学 (XCPC school), extend to high school years 1–3 as well (college-year values -2–5). The exception is based on inferred XCPC-year grade, not the grade written in the OI award record.
+4. `gen_trajectories.py` — post-processing: aggregates per-year contest JSONs into `{year}/trajectories.json` (5-year medal trajectories of the page year's medalists, window `[Y-4, Y]`, for the analysis page's trajectory tab). Runs after `convert_xlsx.py`, which wipes year dirs except `oi_records.json`.
 
 ### Key Data Files
 - `web/public/data/years.json` — available years index
 - `web/public/data/{year}/contests.json` — contest index per year
 - `web/public/data/{year}/{contest_id}.json` — per-contest team data
 - `web/public/data/{year}/oi_records.json` — OI history per player per year
+- `web/public/data/{year}/trajectories.json` — precomputed 5-year medal trajectories for the analysis page (regenerate via `scripts/gen_trajectories.py`)
 - `web/public/data/985.json` / `211.json` — university tier lists (global)
 - `raw.txt` — source OI records (root level, not served to frontend)
 - `xcpc/{year}/*.xlsx` — source contest result files
