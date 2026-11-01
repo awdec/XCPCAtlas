@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__executeCode",
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(python scripts/convert_xlsx.py)",
+      "Bash(npm create *)",
+      "Bash(mv web/public/data /tmp/icpc_data)",
+      "Bash(rm -rf web)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(timeout 3)",
+      "Bash(python3 -c ' *)",
+      "Bash(python scripts/extract_players.py)",
+      "Bash(python scripts/extract_oi_records.py)",
+      "WebSearch",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 5352)",
+      "Bash(taskkill //F //PID 3676)",
+      "Bash(taskkill *)",
+      "Bash(findstr \":5173 :5174\")",
+      "Bash(rm -f _probe.json _probe2.json)",
+      "Bash(grep -rn 'src=\"/\\\\|href=\"/\\\\|url\\(/' web/src web/index.html)",
+      "Bash(git ls-files *)",
+      "Bash(rm -f _files.txt)",
+      "Bash(rm -f ../_map.json)",
+      "Bash(grep -rn '\\\\`/school/\\\\|\\\\`/player/\\\\|\\\\`/contest/\\\\|\\\\`/summary\\\\|\\\\`/players' web/src)",
+      "Bash(git -c core.quotepath=false log --diff-filter=D --name-only --oneline -- xcpc/)",
+      "Bash(git -c core.quotepath=false log --diff-filter=A --name-only --pretty=format: -- xcpc/)"
+    ]
+  }
+}

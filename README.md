@@ -103,7 +103,7 @@ npm run build
 │   ├── 2025/                    # 2025 赛季原始成绩文件
 │   └── 2026/                    # 2026 赛季：ICPC 西安、成都、武汉及 CCPC 长春
 ├── raw.txt                       # OI 原始记录（~25MB）
-├── CLAUDE.md                     # Claude Code 项目指引
+├── AGENTS.md                     # AI 编程助手项目指引
 ├── docs/
 │   └── analysis-page.md          # 数据分析页开发文档（口径/约定/坑/验证方法）
 ├── .github/
