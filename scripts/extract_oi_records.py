@@ -18,6 +18,11 @@ OUTPUT_DIR = ROOT / "web" / "public" / "data"
 # 按 XCPC 所属学校应用；大学年级 0/-1/-2 分别对应推算高三/高二/高一。
 HIGH_SCHOOL_WINDOW_SCHOOLS = {"西安交通大学", "中国科学技术大学"}
 
+# 已确认的同名误匹配，按 XCPC 学校+姓名排除，不影响其他学校的同名选手。
+NON_OI_PLAYERS = {
+    ("大连理工大学", "宋润"),  # 八角楼一队，用户确认非 OIer。
+}
+
 
 def parse_grade(grade_str):
     """解析年级，返回学制编号（高一=10, 高二=11, 高三=12, 初三=9, 初二=8, 初一=7）。"""
@@ -116,12 +121,14 @@ def extract_oi_records_for_year(target_year):
             if 1 <= college_year <= 5:
                 records.setdefault(name, []).append(record)
 
-    # 已知取舍：上面 records 仅按姓名聚合，因此跨校同名选手会把同一份 OI 记录
-    # 挂到每所学校的同名选手上（raw.txt 中无唯一身份标识，无法区分）。
+    # 已知取舍：上面 records 仅按姓名聚合，除已确认的同名误匹配外，跨校同名
+    # 选手仍会共享 OI 记录（raw.txt 中无唯一身份标识，无法自动区分）。
     # 扩展窗口仅按 XCPC 学校选用，不能把两校的额外记录混入普通学校。
     result = {}
     matched = 0
     for school, name in players:
+        if (school, name) in NON_OI_PLAYERS:
+            continue
         school_records = extended_records if school in HIGH_SCHOOL_WINDOW_SCHOOLS else records
         if name in school_records:
             key = f"{name}@{school}"

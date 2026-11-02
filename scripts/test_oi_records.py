@@ -61,6 +61,21 @@ class OIRecordsTest(unittest.TestCase):
         self.raw.write_text("CSP-S2020,一等奖,同名选手,未知,某学校\n", encoding="utf-8")
         self.assertEqual(self.extract(2023), {})
 
+    def test_confirmed_non_oier_does_not_affect_namesakes_or_teammates(self):
+        self.players.write_text(json.dumps([
+            ["大连理工大学", "宋润"],
+            ["北京大学", "宋润"],
+            ["大连理工大学", "其他选手"],
+        ]), encoding="utf-8")
+        self.raw.write_text(
+            "CSP-S2021,二等奖,宋润,高一,某高中\n"
+            "CSP-S2021,一等奖,其他选手,高一,某高中\n", encoding="utf-8"
+        )
+        for year in (2025, 2026):
+            with self.subTest(year=year):
+                result = self.extract(year)
+                self.assertEqual(set(result), {"宋润@北京大学", "其他选手@大连理工大学"})
+
 
 if __name__ == "__main__":
     unittest.main()
