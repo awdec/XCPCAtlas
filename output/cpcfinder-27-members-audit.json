@@ -1,0 +1,4013 @@
+{
+  "checkedDate": "2026-11-03",
+  "source": "https://cpcfinder.com/contest/27",
+  "contest": "第 46 届 ICPC 国际大学生程序设计竞赛亚洲区域赛昆明站",
+  "contestDate": "2022-04-17",
+  "method": "在所有队伍视图逐一点击页面所列210支队伍的队名，读取各队详情中的成员姓名链接，保留原始文字，识别无及两人队等非姓名项目。",
+  "scope": "仅该页面当前列出的210支获奖队伍，页面提示当前缺少完整数据，不能据此判断比赛全部参赛队伍。",
+  "summary": {
+    "checkedTeams": 210,
+    "teamsWithAtLeastOneConcreteName": 210,
+    "threeConcreteNames": 202,
+    "twoPersonTeamMarkers": 1,
+    "teamsWithPlaceholderNames": 7,
+    "teamsWithoutConcreteNames": 0,
+    "memberEntries": 624,
+    "concreteNameEntries": 616,
+    "placeholderEntries": 7,
+    "teamSizeMarkerEntries": 1
+  },
+  "limitations": [
+    "至少一个具体姓名不等于全部队员姓名完整。",
+    "两人队按原始标记单列，不能据此自动认定第三人姓名缺失。",
+    "原始姓名有疑似错字或识别错误，本次不核实姓名真伪或擅自改名。"
+  ],
+  "results": [
+    {
+      "index": 0,
+      "rank": "1",
+      "school": "清华大学",
+      "team": "窗边明月",
+      "names": [
+        "杨骏昭",
+        "陈孙立",
+        "徐翊轩"
+      ],
+      "concreteNames": [
+        "杨骏昭",
+        "陈孙立",
+        "徐翊轩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 1,
+      "rank": "2",
+      "school": "北京大学",
+      "team": "重生之我是菜狗",
+      "names": [
+        "王展鹏",
+        "罗煜翔",
+        "蒋凌宇"
+      ],
+      "concreteNames": [
+        "王展鹏",
+        "罗煜翔",
+        "蒋凌宇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 2,
+      "rank": "3",
+      "school": "清华大学",
+      "team": "一更人",
+      "names": [
+        "周欣",
+        "叶卓睿",
+        "虞皓翔"
+      ],
+      "concreteNames": [
+        "周欣",
+        "叶卓睿",
+        "虞皓翔"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 3,
+      "rank": "4",
+      "school": "北京大学",
+      "team": "巨大的金刚鸽子",
+      "names": [
+        "郭城志",
+        "陈宇",
+        "徐舟子"
+      ],
+      "concreteNames": [
+        "郭城志",
+        "陈宇",
+        "徐舟子"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 4,
+      "rank": "5",
+      "school": "北京大学",
+      "team": "十三陵小丑",
+      "names": [
+        "任轩笛",
+        "吴瑾昭",
+        "黄致焕"
+      ],
+      "concreteNames": [
+        "任轩笛",
+        "吴瑾昭",
+        "黄致焕"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 5,
+      "rank": "6",
+      "school": "清华大学",
+      "team": "老年组",
+      "names": [
+        "陈雨昕",
+        "林昊翰",
+        "周镇东"
+      ],
+      "concreteNames": [
+        "陈雨昕",
+        "林昊翰",
+        "周镇东"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 6,
+      "rank": "7",
+      "school": "南京邮电大学",
+      "team": "Citrus",
+      "names": [
+        "何乐晗",
+        "陈以信",
+        "赵一舟"
+      ],
+      "concreteNames": [
+        "何乐晗",
+        "陈以信",
+        "赵一舟"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 7,
+      "rank": "8",
+      "school": "南京大学",
+      "team": "白日",
+      "names": [
+        "王淳扬",
+        "冉雨杭",
+        "张昕渊"
+      ],
+      "concreteNames": [
+        "王淳扬",
+        "冉雨杭",
+        "张昕渊"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 8,
+      "rank": "9",
+      "school": "北京理工大学",
+      "team": "ddl战神",
+      "names": [
+        "林恺",
+        "邹知秋",
+        "朱子林"
+      ],
+      "concreteNames": [
+        "林恺",
+        "邹知秋",
+        "朱子林"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 9,
+      "rank": "10",
+      "school": "浙江大学",
+      "team": "Heltion & 11115 & SSerxhs",
+      "names": [
+        "赵广泽",
+        "吕耀维",
+        "凌子恒"
+      ],
+      "concreteNames": [
+        "赵广泽",
+        "吕耀维",
+        "凌子恒"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 10,
+      "rank": "11",
+      "school": "北京航空航天大学",
+      "team": "大吉大利，今晚吃mian () ;",
+      "names": [
+        "潘天蔚",
+        "刘佳睿",
+        "郝泽钰"
+      ],
+      "concreteNames": [
+        "潘天蔚",
+        "刘佳睿",
+        "郝泽钰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 11,
+      "rank": "12",
+      "school": "北京师范大学",
+      "team": "内测度",
+      "names": [
+        "林靖轩",
+        "李鼎懋",
+        "李明泽"
+      ],
+      "concreteNames": [
+        "林靖轩",
+        "李鼎懋",
+        "李明泽"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 12,
+      "rank": "13",
+      "school": "北京航空航天大学",
+      "team": "玄学过题",
+      "names": [
+        "王宇龙",
+        "吴湛宇",
+        "权尚浩然"
+      ],
+      "concreteNames": [
+        "王宇龙",
+        "吴湛宇",
+        "权尚浩然"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 13,
+      "rank": "14",
+      "school": "清华大学",
+      "team": "光辉",
+      "names": [
+        "蒋昊迪",
+        "邢竞择",
+        "陈桐飞"
+      ],
+      "concreteNames": [
+        "蒋昊迪",
+        "邢竞择",
+        "陈桐飞"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 14,
+      "rank": "15",
+      "school": "中山大学",
+      "team": "最后的午餐",
+      "names": [
+        "欧梓洋",
+        "黄途亮",
+        "梁梓豪"
+      ],
+      "concreteNames": [
+        "欧梓洋",
+        "黄途亮",
+        "梁梓豪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 15,
+      "rank": "16",
+      "school": "浙江大学",
+      "team": "老师饿饿让让芙兰",
+      "names": [
+        "陈彦博",
+        "沈哲贝",
+        "王海纳"
+      ],
+      "concreteNames": [
+        "陈彦博",
+        "沈哲贝",
+        "王海纳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 16,
+      "rank": "17",
+      "school": "杭州电子科技大学",
+      "team": "杭电十五队",
+      "names": [
+        "柴汉锋",
+        "陈载元",
+        "陈思豪"
+      ],
+      "concreteNames": [
+        "柴汉锋",
+        "陈载元",
+        "陈思豪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 17,
+      "rank": "18",
+      "school": "北京大学",
+      "team": "你对队伍名有头猪吗?",
+      "names": [
+        "曹原",
+        "陈胤戳",
+        "吴孟周"
+      ],
+      "concreteNames": [
+        "曹原",
+        "陈胤戳",
+        "吴孟周"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 18,
+      "rank": "19",
+      "school": "山东大学",
+      "team": "说好不秃",
+      "names": [
+        "门建彤",
+        "张丁祎",
+        "吴羲勇"
+      ],
+      "concreteNames": [
+        "门建彤",
+        "张丁祎",
+        "吴羲勇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 19,
+      "rank": "20",
+      "school": "香港中文大学",
+      "team": "ICPCP[O(log n)o(1)]",
+      "names": [
+        "衙家熙",
+        "吴有孚",
+        "吴晓峻"
+      ],
+      "concreteNames": [
+        "衙家熙",
+        "吴有孚",
+        "吴晓峻"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 20,
+      "rank": "21",
+      "school": "天津大学",
+      "team": "哈皮，拉ki，思迈露，耶",
+      "names": [
+        "马凯",
+        "张博凯",
+        "叶泽侬"
+      ],
+      "concreteNames": [
+        "马凯",
+        "张博凯",
+        "叶泽侬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 21,
+      "rank": "22",
+      "school": "复旦大学",
+      "team": "莱布尼兹惊坐起",
+      "names": [
+        "许逸培",
+        "刘明君",
+        "薛振梁"
+      ],
+      "concreteNames": [
+        "许逸培",
+        "刘明君",
+        "薛振梁"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 22,
+      "rank": "23",
+      "school": "浙江工业大学",
+      "team": "地球猫猫",
+      "names": [
+        "张宇翔",
+        "李亚伦",
+        "陈洁怡"
+      ],
+      "concreteNames": [
+        "张宇翔",
+        "李亚伦",
+        "陈洁怡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 23,
+      "rank": "24",
+      "school": "西安电子科技大学",
+      "team": "辛几何旋律",
+      "names": [
+        "冯畅",
+        "湛忠胜",
+        "周灿"
+      ],
+      "concreteNames": [
+        "冯畅",
+        "湛忠胜",
+        "周灿"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 24,
+      "rank": "25",
+      "school": "哈尔滨工业大学（深圳）",
+      "team": "骗分大队",
+      "names": [
+        "曹杨",
+        "潘思成",
+        "沈文"
+      ],
+      "concreteNames": [
+        "曹杨",
+        "潘思成",
+        "沈文"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 25,
+      "rank": "26",
+      "school": "电子科技大学",
+      "team": "UESTC_泳者",
+      "names": [
+        "刘轩",
+        "张鸿皓",
+        "黄博奕"
+      ],
+      "concreteNames": [
+        "刘轩",
+        "张鸿皓",
+        "黄博奕"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 26,
+      "rank": "27",
+      "school": "哈尔滨工业大学",
+      "team": "花盆种大蒜",
+      "names": [
+        "祁展华",
+        "朱峰",
+        "王羽婷"
+      ],
+      "concreteNames": [
+        "祁展华",
+        "朱峰",
+        "王羽婷"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 27,
+      "rank": "28",
+      "school": "河海大学常州校区",
+      "team": "几何杀手",
+      "names": [
+        "俞天骋",
+        "孙嘉昊",
+        "王英吉"
+      ],
+      "concreteNames": [
+        "俞天骋",
+        "孙嘉昊",
+        "王英吉"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 28,
+      "rank": "29",
+      "school": "上海交通大学",
+      "team": "重叠之梦",
+      "names": [
+        "范能",
+        "王子奕",
+        "冯跃洋"
+      ],
+      "concreteNames": [
+        "范能",
+        "王子奕",
+        "冯跃洋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 29,
+      "rank": "30",
+      "school": "浙江师范大学",
+      "team": "妖怪被srk抓走了QAQ",
+      "names": [
+        "周天辰",
+        "蒋润浩",
+        "余知航"
+      ],
+      "concreteNames": [
+        "周天辰",
+        "蒋润浩",
+        "余知航"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 30,
+      "rank": "31",
+      "school": "中国矿业大学",
+      "team": "塞尔达",
+      "names": [
+        "肖扬航",
+        "周俊峰",
+        "雷毅"
+      ],
+      "concreteNames": [
+        "肖扬航",
+        "周俊峰",
+        "雷毅"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 31,
+      "rank": "32",
+      "school": "烟台大学",
+      "team": "老年人",
+      "names": [
+        "肖毅欣",
+        "胡春宁",
+        "刘聪聪"
+      ],
+      "concreteNames": [
+        "肖毅欣",
+        "胡春宁",
+        "刘聪聪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 32,
+      "rank": "33",
+      "school": "南方科技大学",
+      "team": "合并肘子",
+      "names": [
+        "曹哲振",
+        "周轶凡",
+        "田若载"
+      ],
+      "concreteNames": [
+        "曹哲振",
+        "周轶凡",
+        "田若载"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 33,
+      "rank": "34",
+      "school": "大连理工大学",
+      "team": "三带一",
+      "names": [
+        "濮凡轶",
+        "江雨桐",
+        "李冠霖"
+      ],
+      "concreteNames": [
+        "濮凡轶",
+        "江雨桐",
+        "李冠霖"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 34,
+      "rank": "35",
+      "school": "北京航空航天大学",
+      "team": "起名苦手",
+      "names": [
+        "雷骧逸",
+        "樊佳昊",
+        "丁家玮"
+      ],
+      "concreteNames": [
+        "雷骧逸",
+        "樊佳昊",
+        "丁家玮"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 35,
+      "rank": "36",
+      "school": "南京大学",
+      "team": "徒手抓蛾子",
+      "names": [
+        "陈思睿",
+        "周子杰",
+        "徐沐杰"
+      ],
+      "concreteNames": [
+        "陈思睿",
+        "周子杰",
+        "徐沐杰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 36,
+      "rank": "37",
+      "school": "电子科技大学",
+      "team": "UESTC_大大卷",
+      "names": [
+        "李佳骏",
+        "李奕聪",
+        "陈奕可"
+      ],
+      "concreteNames": [
+        "李佳骏",
+        "李奕聪",
+        "陈奕可"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 37,
+      "rank": "38",
+      "school": "重庆大学",
+      "team": "cQU_2=1",
+      "names": [
+        "余康",
+        "蒋云豪",
+        "两人队"
+      ],
+      "concreteNames": [
+        "余康",
+        "蒋云豪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [
+        "两人队"
+      ],
+      "classification": "两人队标记"
+    },
+    {
+      "index": 38,
+      "rank": "39",
+      "school": "北京科技大学",
+      "team": "随机队名",
+      "names": [
+        "刘伟浩",
+        "裘嘉欣",
+        "宋博文"
+      ],
+      "concreteNames": [
+        "刘伟浩",
+        "裘嘉欣",
+        "宋博文"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 39,
+      "rank": "40",
+      "school": "香港城市大学",
+      "team": "九龙塘妙妙屋",
+      "names": [
+        "李嘉乾",
+        "黄一笑",
+        "戴晨岳"
+      ],
+      "concreteNames": [
+        "李嘉乾",
+        "黄一笑",
+        "戴晨岳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 40,
+      "rank": "41",
+      "school": "中山大学",
+      "team": "中山大学_天作之合",
+      "names": [
+        "刘彦莹",
+        "杨天行",
+        "罗以彬"
+      ],
+      "concreteNames": [
+        "刘彦莹",
+        "杨天行",
+        "罗以彬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 41,
+      "rank": "42",
+      "school": "同济大学",
+      "team": "达拉崩吧班得贝迪卜多比鲁翁",
+      "names": [
+        "孙治弘",
+        "张乐天",
+        "刘依杨"
+      ],
+      "concreteNames": [
+        "孙治弘",
+        "张乐天",
+        "刘依杨"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 42,
+      "rank": "43",
+      "school": "上海交通大学",
+      "team": "洒满黄浦江",
+      "names": [
+        "杨宗翰",
+        "杨尚靠",
+        "谭博仁"
+      ],
+      "concreteNames": [
+        "杨宗翰",
+        "杨尚靠",
+        "谭博仁"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 43,
+      "rank": "44",
+      "school": "北京大学",
+      "team": "淹园外被鸽的鸽子",
+      "names": [
+        "吴清月",
+        "胡晋侨",
+        "袁傲慕飞"
+      ],
+      "concreteNames": [
+        "吴清月",
+        "胡晋侨",
+        "袁傲慕飞"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 44,
+      "rank": "45",
+      "school": "中国科学技术大学",
+      "team": "freedive",
+      "names": [
+        "李泽林",
+        "欧阳博丁",
+        "舒英特"
+      ],
+      "concreteNames": [
+        "李泽林",
+        "欧阳博丁",
+        "舒英特"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 45,
+      "rank": "46",
+      "school": "北京邮电大学",
+      "team": "三只唶唶一锅汤",
+      "names": [
+        "陈冠州",
+        "李亦非",
+        "赵昕鹏"
+      ],
+      "concreteNames": [
+        "陈冠州",
+        "李亦非",
+        "赵昕鹏"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 46,
+      "rank": "47",
+      "school": "西安交通大学",
+      "team": "怎么会是呢?",
+      "names": [
+        "郭修屹",
+        "栾家骏",
+        "刘一可"
+      ],
+      "concreteNames": [
+        "郭修屹",
+        "栾家骏",
+        "刘一可"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 47,
+      "rank": "48",
+      "school": "哈尔滨工业大学（深圳）",
+      "team": "删库跑路",
+      "names": [
+        "卢郡然",
+        "梁珊",
+        "任秦江"
+      ],
+      "concreteNames": [
+        "卢郡然",
+        "梁珊",
+        "任秦江"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 48,
+      "rank": "49",
+      "school": "山东大学",
+      "team": "梦天使",
+      "names": [
+        "耿浩天",
+        "张昊雨",
+        "蒋裕成"
+      ],
+      "concreteNames": [
+        "耿浩天",
+        "张昊雨",
+        "蒋裕成"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 49,
+      "rank": "50",
+      "school": "北京理工大学",
+      "team": ".JK之星",
+      "names": [
+        "王崧乔",
+        "罗博文",
+        "黄子越"
+      ],
+      "concreteNames": [
+        "王崧乔",
+        "罗博文",
+        "黄子越"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 50,
+      "rank": "51",
+      "school": "北京工业大学",
+      "team": "WA好厉害",
+      "names": [
+        "葛中正",
+        "周榆忱",
+        "管丹辰"
+      ],
+      "concreteNames": [
+        "葛中正",
+        "周榆忱",
+        "管丹辰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 51,
+      "rank": "52",
+      "school": "哈尔滨工程大学",
+      "team": "丝划拿铁",
+      "names": [
+        "吴兆昕",
+        "于子涵",
+        "位振林"
+      ],
+      "concreteNames": [
+        "吴兆昕",
+        "于子涵",
+        "位振林"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 52,
+      "rank": "53",
+      "school": "东北大学",
+      "team": "东北大学寄",
+      "names": [
+        "李泽仁",
+        "王乐言",
+        "陈少皇"
+      ],
+      "concreteNames": [
+        "李泽仁",
+        "王乐言",
+        "陈少皇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 53,
+      "rank": "54",
+      "school": "南京邮电大学",
+      "team": "事末鸽者",
+      "names": [
+        "刁煜凡",
+        "张帅青",
+        "柏广凡"
+      ],
+      "concreteNames": [
+        "刁煜凡",
+        "张帅青",
+        "柏广凡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 54,
+      "rank": "55",
+      "school": "北京建筑大学",
+      "team": "RE:从爆零开始的ACM生活",
+      "names": [
+        "齐思恺",
+        "无"
+      ],
+      "concreteNames": [
+        "齐思恺"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 55,
+      "rank": "56",
+      "school": "哈尔滨工业大学",
+      "team": "三个演员",
+      "names": [
+        "李杰",
+        "宋珂源",
+        "崔玉坤"
+      ],
+      "concreteNames": [
+        "李杰",
+        "宋珂源",
+        "崔玉坤"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 56,
+      "rank": "57",
+      "school": "中国人民大学",
+      "team": "我的心里只有感恩",
+      "names": [
+        "刘书玮",
+        "罗倍",
+        "陈志朋"
+      ],
+      "concreteNames": [
+        "刘书玮",
+        "罗倍",
+        "陈志朋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 57,
+      "rank": "58",
+      "school": "电子科技大学",
+      "team": "UESTC_Guest_WiFi",
+      "names": [
+        "弋竞为",
+        "周湘阳",
+        "喻鹏云"
+      ],
+      "concreteNames": [
+        "弋竞为",
+        "周湘阳",
+        "喻鹏云"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 58,
+      "rank": "59",
+      "school": "浙江工商大学",
+      "team": "希望代码一次敲队",
+      "names": [
+        "徐晨威",
+        "田博宇",
+        "朱徐研"
+      ],
+      "concreteNames": [
+        "徐晨威",
+        "田博宇",
+        "朱徐研"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 59,
+      "rank": "60",
+      "school": "杭州电子科技大学",
+      "team": "杭电五队",
+      "names": [
+        "杜志远",
+        "刘梓灞",
+        "李丰"
+      ],
+      "concreteNames": [
+        "杜志远",
+        "刘梓灞",
+        "李丰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 60,
+      "rank": "61",
+      "school": "西安交通大学",
+      "team": "舞文弄墨",
+      "names": [
+        "张晓昊",
+        "曹思宇",
+        "王珩"
+      ],
+      "concreteNames": [
+        "张晓昊",
+        "曹思宇",
+        "王珩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 61,
+      "rank": "62",
+      "school": "中山大学",
+      "team": "中山大学-版本答案",
+      "names": [
+        "陈星辉",
+        "方展鸿",
+        "陈银超"
+      ],
+      "concreteNames": [
+        "陈星辉",
+        "方展鸿",
+        "陈银超"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 62,
+      "rank": "63",
+      "school": "南开大学",
+      "team": "万事不干屋",
+      "names": [
+        "卢麒聋",
+        "宋秩睿",
+        "杜岱玮"
+      ],
+      "concreteNames": [
+        "卢麒聋",
+        "宋秩睿",
+        "杜岱玮"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 63,
+      "rank": "64",
+      "school": "浙江师范大学",
+      "team": "星际猫",
+      "names": [
+        "温启涛",
+        "倪伟聪",
+        "厉文浩"
+      ],
+      "concreteNames": [
+        "温启涛",
+        "倪伟聪",
+        "厉文浩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 64,
+      "rank": "65",
+      "school": "吉林大学",
+      "team": "H-Z-.J树",
+      "names": [
+        "黄哲霖",
+        "郑佳策",
+        "蒋致欧"
+      ],
+      "concreteNames": [
+        "黄哲霖",
+        "郑佳策",
+        "蒋致欧"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 65,
+      "rank": "66",
+      "school": "浙江大学",
+      "team": "超对称夸克",
+      "names": [
+        "徐琪杰",
+        "杨予晟",
+        "任庭旭"
+      ],
+      "concreteNames": [
+        "徐琪杰",
+        "杨予晟",
+        "任庭旭"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 66,
+      "rank": "67",
+      "school": "浙江农林大学",
+      "team": "临阵磨枪，不快也光",
+      "names": [
+        "朱泽华",
+        "戴振龙",
+        "盛洪涛"
+      ],
+      "concreteNames": [
+        "朱泽华",
+        "戴振龙",
+        "盛洪涛"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 67,
+      "rank": "68",
+      "school": "浙江师范大学",
+      "team": "巴巴托斯",
+      "names": [
+        "邓鹏",
+        "陈骏鹏",
+        "方天笑"
+      ],
+      "concreteNames": [
+        "邓鹏",
+        "陈骏鹏",
+        "方天笑"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 68,
+      "rank": "69",
+      "school": "福州大学",
+      "team": "两极反转",
+      "names": [
+        "叶林忠",
+        "丁凌烁",
+        "潘泓岳"
+      ],
+      "concreteNames": [
+        "叶林忠",
+        "丁凌烁",
+        "潘泓岳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 69,
+      "rank": "70",
+      "school": "南华大学",
+      "team": "旨春猪头ACMer不会梦到怀梦出题",
+      "names": [
+        "周楷磔",
+        "余伟豪",
+        "王思进"
+      ],
+      "concreteNames": [
+        "周楷磔",
+        "余伟豪",
+        "王思进"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 70,
+      "rank": "71",
+      "school": "东北大学秦皇岛分校",
+      "team": "GNK48-101",
+      "names": [
+        "刘泽铭",
+        "罗潇阳",
+        "昊一玄"
+      ],
+      "concreteNames": [
+        "刘泽铭",
+        "罗潇阳",
+        "昊一玄"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 71,
+      "rank": "72",
+      "school": "南京邮电大学",
+      "team": "收收心找个电子厂上班了",
+      "names": [
+        "张禹健",
+        "冯一帆",
+        "文超航"
+      ],
+      "concreteNames": [
+        "张禹健",
+        "冯一帆",
+        "文超航"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 72,
+      "rank": "73",
+      "school": "哈尔滨工业大学",
+      "team": "哥谭市委书记",
+      "names": [
+        "胡罡沣",
+        "刘宇哲",
+        "谢明东"
+      ],
+      "concreteNames": [
+        "胡罡沣",
+        "刘宇哲",
+        "谢明东"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 73,
+      "rank": "74",
+      "school": "河海大学",
+      "team": "艾派克斯",
+      "names": [
+        "高康悦",
+        "张星宇",
+        "肖潇"
+      ],
+      "concreteNames": [
+        "高康悦",
+        "张星宇",
+        "肖潇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 74,
+      "rank": "75",
+      "school": "吉林大学",
+      "team": "柴郡猫猫QuQ",
+      "names": [
+        "陈铭豪",
+        "黄昌盛",
+        "李光赫"
+      ],
+      "concreteNames": [
+        "陈铭豪",
+        "黄昌盛",
+        "李光赫"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 75,
+      "rank": "76",
+      "school": "中山大学",
+      "team": "中山大学_晴栀",
+      "names": [
+        "刘思然",
+        "谭嘉伟",
+        "谢泽熙"
+      ],
+      "concreteNames": [
+        "刘思然",
+        "谭嘉伟",
+        "谢泽熙"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 76,
+      "rank": "77",
+      "school": "西南大学",
+      "team": "做的全队",
+      "names": [
+        "徐畅",
+        "马博涵",
+        "何一"
+      ],
+      "concreteNames": [
+        "徐畅",
+        "马博涵",
+        "何一"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 77,
+      "rank": "78",
+      "school": "江西师范大学",
+      "team": "Watch A-SOUL and become Au",
+      "names": [
+        "陈哲",
+        "颜玮琦",
+        "张天福"
+      ],
+      "concreteNames": [
+        "陈哲",
+        "颜玮琦",
+        "张天福"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 78,
+      "rank": "79",
+      "school": "兰州大学",
+      "team": "一个猜想不一定对",
+      "names": [
+        "王徐笙",
+        "孟戴浓达",
+        "狄农雨"
+      ],
+      "concreteNames": [
+        "王徐笙",
+        "孟戴浓达",
+        "狄农雨"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 79,
+      "rank": "80",
+      "school": "武汉工程大学",
+      "team": "用队长一年单身换牌子",
+      "names": [
+        "刘典",
+        "罗云祥",
+        "符轩豪"
+      ],
+      "concreteNames": [
+        "刘典",
+        "罗云祥",
+        "符轩豪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 80,
+      "rank": "81",
+      "school": "电子科技大学",
+      "team": "UESTC七海大大大鲨鱼",
+      "names": [
+        "诸人豪",
+        "彭帅康",
+        "李纪甫"
+      ],
+      "concreteNames": [
+        "诸人豪",
+        "彭帅康",
+        "李纪甫"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 81,
+      "rank": "82",
+      "school": "华南理工大学",
+      "team": "智能人工",
+      "names": [
+        "谢丰泽",
+        "范天予",
+        "杨鸿飞"
+      ],
+      "concreteNames": [
+        "谢丰泽",
+        "范天予",
+        "杨鸿飞"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 82,
+      "rank": "83",
+      "school": "西安交通大学",
+      "team": "钻石海",
+      "names": [
+        "何卓霖",
+        "田雨阳",
+        "史耀睿"
+      ],
+      "concreteNames": [
+        "何卓霖",
+        "田雨阳",
+        "史耀睿"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 83,
+      "rank": "84",
+      "school": "浙江财经大学",
+      "team": "秃如其来",
+      "names": [
+        "张连毒",
+        "朱新宇",
+        "张维康"
+      ],
+      "concreteNames": [
+        "张连毒",
+        "朱新宇",
+        "张维康"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 84,
+      "rank": "85",
+      "school": "华南理工大学",
+      "team": "写不出了，饮茶先",
+      "names": [
+        "许一多",
+        "林靖沅",
+        "马家俊"
+      ],
+      "concreteNames": [
+        "许一多",
+        "林靖沅",
+        "马家俊"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 85,
+      "rank": "86",
+      "school": "t州电子科技大学信息工程学!",
+      "team": "胜机",
+      "names": [
+        "毛一枭",
+        "王权",
+        "梁孝铨"
+      ],
+      "concreteNames": [
+        "毛一枭",
+        "王权",
+        "梁孝铨"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 86,
+      "rank": "87",
+      "school": "中南大学",
+      "team": "摸鱼自动机",
+      "names": [
+        "黄道煜",
+        "周霄羽",
+        "张皓然"
+      ],
+      "concreteNames": [
+        "黄道煜",
+        "周霄羽",
+        "张皓然"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 87,
+      "rank": "88",
+      "school": "南昌大学",
+      "team": "超新星",
+      "names": [
+        "赖澄宇",
+        "王福源",
+        "黄晨曦"
+      ],
+      "concreteNames": [
+        "赖澄宇",
+        "王福源",
+        "黄晨曦"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 88,
+      "rank": "89",
+      "school": "香港中文大学（深圳）",
+      "team": "icpc摆大烂",
+      "names": [
+        "金德容",
+        "陈建文",
+        "苏哲楷"
+      ],
+      "concreteNames": [
+        "金德容",
+        "陈建文",
+        "苏哲楷"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 89,
+      "rank": "90",
+      "school": "大连理工大学",
+      "team": "梦觉流莺时一声",
+      "names": [
+        "李胤驰",
+        "高盛轩",
+        "袁振"
+      ],
+      "concreteNames": [
+        "李胤驰",
+        "高盛轩",
+        "袁振"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 90,
+      "rank": "91",
+      "school": "齐鲁工业大学（山东省科学院）",
+      "team": "生死时速",
+      "names": [
+        "杨熠辰",
+        "刘鑫龙",
+        "王励翔"
+      ],
+      "concreteNames": [
+        "杨熠辰",
+        "刘鑫龙",
+        "王励翔"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 91,
+      "rank": "92",
+      "school": "四川大学锦城学院",
+      "team": "三核单线程",
+      "names": [
+        "喻若舟",
+        "陈柯源",
+        "张智源"
+      ],
+      "concreteNames": [
+        "喻若舟",
+        "陈柯源",
+        "张智源"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 92,
+      "rank": "93",
+      "school": "青岛大学",
+      "team": "蓝色空间",
+      "names": [
+        "王宪泉",
+        "张锦峰",
+        "武彬"
+      ],
+      "concreteNames": [
+        "王宪泉",
+        "张锦峰",
+        "武彬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 93,
+      "rank": "94",
+      "school": "浙江农林大学",
+      "team": "学习使我快乐",
+      "names": [
+        "张烨浩",
+        "薛卫东",
+        "张凌赫"
+      ],
+      "concreteNames": [
+        "张烨浩",
+        "薛卫东",
+        "张凌赫"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 94,
+      "rank": "95",
+      "school": "广西大学",
+      "team": "这小家伙也许能改写战局",
+      "names": [
+        "王利明",
+        "金珉瑞",
+        "陈嘉怡"
+      ],
+      "concreteNames": [
+        "王利明",
+        "金珉瑞",
+        "陈嘉怡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 95,
+      "rank": "96",
+      "school": "西安电子科技大学",
+      "team": "吾好梦中AC",
+      "names": [
+        "王逸",
+        "王志利",
+        "欧心缘"
+      ],
+      "concreteNames": [
+        "王逸",
+        "王志利",
+        "欧心缘"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 96,
+      "rank": "97",
+      "school": "哈尔滨工业大学",
+      "team": "再也没有树树了",
+      "names": [
+        "王晓亮",
+        "徐放",
+        "金义扬"
+      ],
+      "concreteNames": [
+        "王晓亮",
+        "徐放",
+        "金义扬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 97,
+      "rank": "98",
+      "school": "西北工业大学",
+      "team": "除了风暴都能击倒大树",
+      "names": [
+        "孟祥瑞",
+        "徐浩洋",
+        "黄康宁"
+      ],
+      "concreteNames": [
+        "孟祥瑞",
+        "徐浩洋",
+        "黄康宁"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 98,
+      "rank": "99",
+      "school": "四川大学",
+      "team": "魔理沙",
+      "names": [
+        "张新",
+        "向宇",
+        "朱奕杰"
+      ],
+      "concreteNames": [
+        "张新",
+        "向宇",
+        "朱奕杰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 99,
+      "rank": "100",
+      "school": "山东大学",
+      "team": "追光者",
+      "names": [
+        "战绪丰",
+        "庞天祥",
+        "褚瑞凡"
+      ],
+      "concreteNames": [
+        "战绪丰",
+        "庞天祥",
+        "褚瑞凡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 100,
+      "rank": "101",
+      "school": "香港中文大学",
+      "team": "焦糖布丁",
+      "names": [
+        "袁桀勤",
+        "锺j哲",
+        "到汶楷"
+      ],
+      "concreteNames": [
+        "袁桀勤",
+        "锺j哲",
+        "到汶楷"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 101,
+      "rank": "102",
+      "school": "集美大学",
+      "team": "抱歉，这没有集美",
+      "names": [
+        "林贝宁",
+        "蔡万杰",
+        "张弛"
+      ],
+      "concreteNames": [
+        "林贝宁",
+        "蔡万杰",
+        "张弛"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 102,
+      "rank": "103",
+      "school": "杭州电子科技大学",
+      "team": "杭电三队",
+      "names": [
+        "高义雄",
+        "赵章恺",
+        "方博"
+      ],
+      "concreteNames": [
+        "高义雄",
+        "赵章恺",
+        "方博"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 103,
+      "rank": "104",
+      "school": "中国石油大学(北京)",
+      "team": "云雾深处把井打",
+      "names": [
+        "潘耀宇",
+        "陈若朋",
+        "夏方略"
+      ],
+      "concreteNames": [
+        "潘耀宇",
+        "陈若朋",
+        "夏方略"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 104,
+      "rank": "105",
+      "school": "上海理工大学",
+      "team": "教练叫我来爆0",
+      "names": [
+        "刘斌然",
+        "无"
+      ],
+      "concreteNames": [
+        "刘斌然"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 105,
+      "rank": "106",
+      "school": "武汉科技大学",
+      "team": "呐，你也想要KiraKira吗?",
+      "names": [
+        "王印德",
+        "王忠齐",
+        "翁锦瑞"
+      ],
+      "concreteNames": [
+        "王印德",
+        "王忠齐",
+        "翁锦瑞"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 106,
+      "rank": "107",
+      "school": "深圳大学",
+      "team": "SZU-Archimedes",
+      "names": [
+        "郭泽森",
+        "苏梓瀚",
+        "陈俊明"
+      ],
+      "concreteNames": [
+        "郭泽森",
+        "苏梓瀚",
+        "陈俊明"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 107,
+      "rank": "108",
+      "school": "武汉纺织大学",
+      "team": "极东魔术昼寝结社",
+      "names": [
+        "种佳琪",
+        "张亮",
+        "孟龙"
+      ],
+      "concreteNames": [
+        "种佳琪",
+        "张亮",
+        "孟龙"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 108,
+      "rank": "109",
+      "school": "中国科学技术大学",
+      "team": "一轮游队",
+      "names": [
+        "潘廷岳",
+        "郑以勒",
+        "曹高翔"
+      ],
+      "concreteNames": [
+        "潘廷岳",
+        "郑以勒",
+        "曹高翔"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 109,
+      "rank": "110",
+      "school": "香港中文大学",
+      "team": "破壤性演算法",
+      "names": [
+        "周敬泓",
+        "郯希哲",
+        "淡知衡"
+      ],
+      "concreteNames": [
+        "周敬泓",
+        "郯希哲",
+        "淡知衡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 110,
+      "rank": "111",
+      "school": "哈尔滨理工大学",
+      "team": "哈理工17队",
+      "names": [
+        "郑然",
+        "王令开",
+        "陈思艺"
+      ],
+      "concreteNames": [
+        "郑然",
+        "王令开",
+        "陈思艺"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 111,
+      "rank": "112",
+      "school": "杭州师范大学",
+      "team": "异世相逢，尽享编程",
+      "names": [
+        "林宏磊",
+        "陈银桦",
+        "葛嘉辉"
+      ],
+      "concreteNames": [
+        "林宏磊",
+        "陈银桦",
+        "葛嘉辉"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 112,
+      "rank": "113",
+      "school": "西南科技大学",
+      "team": "寺传乘絮鸢",
+      "names": [
+        "陆承长",
+        "潘俊杰",
+        "毛宝文"
+      ],
+      "concreteNames": [
+        "陆承长",
+        "潘俊杰",
+        "毛宝文"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 113,
+      "rank": "114",
+      "school": "湘潭大学",
+      "team": "出签到题就算成功",
+      "names": [
+        "李越",
+        "田楚天",
+        "蒋文彬"
+      ],
+      "concreteNames": [
+        "李越",
+        "田楚天",
+        "蒋文彬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 114,
+      "rank": "115",
+      "school": "杭州电子科技大学",
+      "team": "杭电八队",
+      "names": [
+        "冯军荣",
+        "王子习",
+        "李企峥"
+      ],
+      "concreteNames": [
+        "冯军荣",
+        "王子习",
+        "李企峥"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 115,
+      "rank": "116",
+      "school": "湖北工业大学",
+      "team": "百分之六十拿牌",
+      "names": [
+        "徐僚祥",
+        "贺鑫宇",
+        "颜潇冉"
+      ],
+      "concreteNames": [
+        "徐僚祥",
+        "贺鑫宇",
+        "颜潇冉"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 116,
+      "rank": "117",
+      "school": "武汉理工大学",
+      "team": "不会计数怎么办",
+      "names": [
+        "罗越",
+        "徐亚萌",
+        "奚兆阳"
+      ],
+      "concreteNames": [
+        "罗越",
+        "徐亚萌",
+        "奚兆阳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 117,
+      "rank": "118",
+      "school": "华东师范大学",
+      "team": "加不出来",
+      "names": [
+        "漆宇祥",
+        "范晨阳",
+        "王晨阳"
+      ],
+      "concreteNames": [
+        "漆宇祥",
+        "范晨阳",
+        "王晨阳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 118,
+      "rank": "119",
+      "school": "中南大学",
+      "team": "行但不行",
+      "names": [
+        "何晨",
+        "祖凌铠",
+        "叶则杨"
+      ],
+      "concreteNames": [
+        "何晨",
+        "祖凌铠",
+        "叶则杨"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 119,
+      "rank": "120",
+      "school": "成都理工大学",
+      "team": "没有名字的队伍",
+      "names": [
+        "陈永铿",
+        "汤昱力",
+        "雷笙达"
+      ],
+      "concreteNames": [
+        "陈永铿",
+        "汤昱力",
+        "雷笙达"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 120,
+      "rank": "121",
+      "school": "国防科技大学",
+      "team": "湘江后浪",
+      "names": [
+        "孙晓帆",
+        "张星宇",
+        "陈铭"
+      ],
+      "concreteNames": [
+        "孙晓帆",
+        "张星宇",
+        "陈铭"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 121,
+      "rank": "122",
+      "school": "哈尔滨工程大学",
+      "team": "噔噔咚",
+      "names": [
+        "王昊宇",
+        "官毅",
+        "王洋"
+      ],
+      "concreteNames": [
+        "王昊宇",
+        "官毅",
+        "王洋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 122,
+      "rank": "123",
+      "school": "太原理工大学",
+      "team": "鸽剧魅影",
+      "names": [
+        "桑坤",
+        "郭宇霄",
+        "赵云霄"
+      ],
+      "concreteNames": [
+        "桑坤",
+        "郭宇霄",
+        "赵云霄"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 123,
+      "rank": "124",
+      "school": "西南科技大学",
+      "team": "勿以寄小而为之，勿以赢小而不墨",
+      "names": [
+        "郭智超",
+        "黄小诚",
+        "杨展鹏"
+      ],
+      "concreteNames": [
+        "郭智超",
+        "黄小诚",
+        "杨展鹏"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 124,
+      "rank": "125",
+      "school": "山东大学（威海)",
+      "team": "先占个位置",
+      "names": [
+        "周润杰",
+        "陈格",
+        "尚书尧"
+      ],
+      "concreteNames": [
+        "周润杰",
+        "陈格",
+        "尚书尧"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 125,
+      "rank": "126",
+      "school": "浙江工商大学",
+      "team": "澳门牌王大战狙击美佐",
+      "names": [
+        "王铭阳",
+        "陈侠",
+        "许嘉俊"
+      ],
+      "concreteNames": [
+        "王铭阳",
+        "陈侠",
+        "许嘉俊"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 126,
+      "rank": "127",
+      "school": "武汉大学",
+      "team": "大本钟下开邮局",
+      "names": [
+        "万宇恒",
+        "苏禹畅",
+        "林锯扬"
+      ],
+      "concreteNames": [
+        "万宇恒",
+        "苏禹畅",
+        "林锯扬"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 127,
+      "rank": "128",
+      "school": "宁波大学",
+      "team": "转世成为丘丘人这件事",
+      "names": [
+        "曾佳敏",
+        "余嘉瑜",
+        "俞智超"
+      ],
+      "concreteNames": [
+        "曾佳敏",
+        "余嘉瑜",
+        "俞智超"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 128,
+      "rank": "129",
+      "school": "成都信息工程大学",
+      "team": "自动wawa机",
+      "names": [
+        "胡峻搏",
+        "周博文",
+        "黄俊杰"
+      ],
+      "concreteNames": [
+        "胡峻搏",
+        "周博文",
+        "黄俊杰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 129,
+      "rank": "130",
+      "school": "新疆大学",
+      "team": "xju01",
+      "names": [
+        "李佳胜",
+        "罗逸聪",
+        "邹炎均"
+      ],
+      "concreteNames": [
+        "李佳胜",
+        "罗逸聪",
+        "邹炎均"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 130,
+      "rank": "131",
+      "school": "湖南农业大学",
+      "team": "取队名就是量子技术",
+      "names": [
+        "胡忠祥",
+        "刘嘉诚",
+        "王溪超"
+      ],
+      "concreteNames": [
+        "胡忠祥",
+        "刘嘉诚",
+        "王溪超"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 131,
+      "rank": "132",
+      "school": "四川大学",
+      "team": "江山代有才人秃",
+      "names": [
+        "辛梓杰",
+        "李毓",
+        "牛佳文"
+      ],
+      "concreteNames": [
+        "辛梓杰",
+        "李毓",
+        "牛佳文"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 132,
+      "rank": "133",
+      "school": "福州大学",
+      "team": "精准",
+      "names": [
+        "李鸿宇",
+        "王奕然",
+        "林铮翔"
+      ],
+      "concreteNames": [
+        "李鸿宇",
+        "王奕然",
+        "林铮翔"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 133,
+      "rank": "134",
+      "school": "南京信息工程大学",
+      "team": "三个蓝桥杯选手",
+      "names": [
+        "张逸凡",
+        "鲁哲豪",
+        "吴昊"
+      ],
+      "concreteNames": [
+        "张逸凡",
+        "鲁哲豪",
+        "吴昊"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 134,
+      "rank": "135",
+      "school": "四川大学",
+      "team": "给郭哥哥泡一池子大红袍",
+      "names": [
+        "吴咏蔚",
+        "郭尧",
+        "周雪妍"
+      ],
+      "concreteNames": [
+        "吴咏蔚",
+        "郭尧",
+        "周雪妍"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 135,
+      "rank": "136",
+      "school": "湖南理工学院",
+      "team": "木头儿子最好",
+      "names": [
+        "王斯威",
+        "陈睿轩",
+        "魏文轩"
+      ],
+      "concreteNames": [
+        "王斯威",
+        "陈睿轩",
+        "魏文轩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 136,
+      "rank": "137",
+      "school": "成都信息工程大学",
+      "team": "打上花火",
+      "names": [
+        "黄亚军",
+        "赵钰",
+        "李佳彤"
+      ],
+      "concreteNames": [
+        "黄亚军",
+        "赵钰",
+        "李佳彤"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 137,
+      "rank": "138",
+      "school": "浙江工业大学",
+      "team": "ZJUT一earn3",
+      "names": [
+        "谢洋帆",
+        "胡圣烩",
+        "吴昊天"
+      ],
+      "concreteNames": [
+        "谢洋帆",
+        "胡圣烩",
+        "吴昊天"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 138,
+      "rank": "139",
+      "school": "湖南理工学院",
+      "team": "你很有希望",
+      "names": [
+        "向杰",
+        "李居航",
+        "李维逸"
+      ],
+      "concreteNames": [
+        "向杰",
+        "李居航",
+        "李维逸"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 139,
+      "rank": "140",
+      "school": "中国矿业大学",
+      "team": "拿牌子教练就女装",
+      "names": [
+        "温耀林",
+        "尉高耀",
+        "杨忻至"
+      ],
+      "concreteNames": [
+        "温耀林",
+        "尉高耀",
+        "杨忻至"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 140,
+      "rank": "141",
+      "school": "东北大学秦皇岛分校",
+      "team": "升空的奖牌，从台上看还是台下看",
+      "names": [
+        "胡鸿捷",
+        "袁茂恒",
+        "刘琛"
+      ],
+      "concreteNames": [
+        "胡鸿捷",
+        "袁茂恒",
+        "刘琛"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 141,
+      "rank": "142",
+      "school": "绍兴文理学院",
+      "team": "大吉大利",
+      "names": [
+        "孟嘉政",
+        "郑柏成",
+        "周建伟"
+      ],
+      "concreteNames": [
+        "孟嘉政",
+        "郑柏成",
+        "周建伟"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 142,
+      "rank": "143",
+      "school": "中国地质大学(北京)",
+      "team": "为美好的世界献上祝福!",
+      "names": [
+        "胡世琦",
+        "伍泽鑫",
+        "赵笑天"
+      ],
+      "concreteNames": [
+        "胡世琦",
+        "伍泽鑫",
+        "赵笑天"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 143,
+      "rank": "144",
+      "school": "闽南师范大学",
+      "team": "JV哥哥爱上我",
+      "names": [
+        "唐鑫程",
+        "傅俊斌",
+        "林俊逸"
+      ],
+      "concreteNames": [
+        "唐鑫程",
+        "傅俊斌",
+        "林俊逸"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 144,
+      "rank": "145",
+      "school": "深圳大学",
+      "team": "SZU-YanranLee",
+      "names": [
+        "费楚雯",
+        "齐宇轩",
+        "陈希哲"
+      ],
+      "concreteNames": [
+        "费楚雯",
+        "齐宇轩",
+        "陈希哲"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 145,
+      "rank": "146",
+      "school": "香港中文大学",
+      "team": "马料水职业技术学院",
+      "names": [
+        "杨译琉",
+        "王刘剑夫",
+        "周逸祥"
+      ],
+      "concreteNames": [
+        "杨译琉",
+        "王刘剑夫",
+        "周逸祥"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 146,
+      "rank": "147",
+      "school": "郑州大学",
+      "team": "感觉不如线下。。线上",
+      "names": [
+        "杨宇航",
+        "余清扬",
+        "凌鑫"
+      ],
+      "concreteNames": [
+        "杨宇航",
+        "余清扬",
+        "凌鑫"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 147,
+      "rank": "148",
+      "school": "中国矿业大学",
+      "team": "一般性随机忆墨人",
+      "names": [
+        "宋明潇",
+        "杨斌涵",
+        "钟泽旭"
+      ],
+      "concreteNames": [
+        "宋明潇",
+        "杨斌涵",
+        "钟泽旭"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 148,
+      "rank": "149",
+      "school": "湖南师范大学",
+      "team": "猫猫能量",
+      "names": [
+        "姜远仁",
+        "胡昀靠",
+        "陈代康"
+      ],
+      "concreteNames": [
+        "姜远仁",
+        "胡昀靠",
+        "陈代康"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 149,
+      "rank": "150",
+      "school": "南京理工大学",
+      "team": "饼干",
+      "names": [
+        "陈一涵",
+        "代领",
+        "谢东娜"
+      ],
+      "concreteNames": [
+        "陈一涵",
+        "代领",
+        "谢东娜"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 150,
+      "rank": "151",
+      "school": "新疆大学",
+      "team": "x.ju02",
+      "names": [
+        "吕昂",
+        "陈永园",
+        "吴昌坤"
+      ],
+      "concreteNames": [
+        "吕昂",
+        "陈永园",
+        "吴昌坤"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 151,
+      "rank": "152",
+      "school": "浙江科技学院",
+      "team": "枸杞泡澡",
+      "names": [
+        "袁佳菲",
+        "蔡炳旭",
+        "蒋贤潇"
+      ],
+      "concreteNames": [
+        "袁佳菲",
+        "蔡炳旭",
+        "蒋贤潇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 152,
+      "rank": "153",
+      "school": "北京理工大学珠海学院",
+      "team": "星火燎原",
+      "names": [
+        "张润泽",
+        "洪宇勋",
+        "郑润民"
+      ],
+      "concreteNames": [
+        "张润泽",
+        "洪宇勋",
+        "郑润民"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 153,
+      "rank": "154",
+      "school": "南京理工大学",
+      "team": "尔有这时间翻队名不是再能a两道是",
+      "names": [
+        "张悦熠",
+        "何丰辰",
+        "王一萌"
+      ],
+      "concreteNames": [
+        "张悦熠",
+        "何丰辰",
+        "王一萌"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 154,
+      "rank": "155",
+      "school": "北京理工大学",
+      "team": "阿夸滑滑蛋喝冰红茶",
+      "names": [
+        "李嘉政",
+        "李轩宇",
+        "彭程"
+      ],
+      "concreteNames": [
+        "李嘉政",
+        "李轩宇",
+        "彭程"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 155,
+      "rank": "156",
+      "school": "泉州师范学院",
+      "team": "AC再爱我亿次",
+      "names": [
+        "陈佳乐",
+        "施维康",
+        "张自力"
+      ],
+      "concreteNames": [
+        "陈佳乐",
+        "施维康",
+        "张自力"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 156,
+      "rank": "157",
+      "school": "中南大学",
+      "team": "我们去昆明吃什么",
+      "names": [
+        "许宸哲",
+        "郑逸程",
+        "霍旭洋"
+      ],
+      "concreteNames": [
+        "许宸哲",
+        "郑逸程",
+        "霍旭洋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 157,
+      "rank": "158",
+      "school": "南京大学",
+      "team": "菜根队",
+      "names": [
+        "贺柄毓",
+        "柴浩天",
+        "陈荣错"
+      ],
+      "concreteNames": [
+        "贺柄毓",
+        "柴浩天",
+        "陈荣错"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 158,
+      "rank": "159",
+      "school": "吉林大学",
+      "team": "代码搬运工",
+      "names": [
+        "侯德亮",
+        "无"
+      ],
+      "concreteNames": [
+        "侯德亮"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 159,
+      "rank": "160",
+      "school": "厦门大学",
+      "team": "柳下桃蹊",
+      "names": [
+        "韩可可",
+        "黄凯佳",
+        "黄勖"
+      ],
+      "concreteNames": [
+        "韩可可",
+        "黄凯佳",
+        "黄勖"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 160,
+      "rank": "161",
+      "school": "华中科技大学",
+      "team": "偏远小山村传统弱校",
+      "names": [
+        "李根",
+        "陈贤坤",
+        "陈开宇"
+      ],
+      "concreteNames": [
+        "李根",
+        "陈贤坤",
+        "陈开宇"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 161,
+      "rank": "162",
+      "school": "南京大学",
+      "team": "还没想好叫什么",
+      "names": [
+        "王恺予",
+        "张乃仁",
+        "王锦朋"
+      ],
+      "concreteNames": [
+        "王恺予",
+        "张乃仁",
+        "王锦朋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 162,
+      "rank": "163",
+      "school": "山东师范大学",
+      "team": "浩然今天吃了么",
+      "names": [
+        "王位毅",
+        "李明阳",
+        "聂晓阳"
+      ],
+      "concreteNames": [
+        "王位毅",
+        "李明阳",
+        "聂晓阳"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 163,
+      "rank": "164",
+      "school": "北京邮电大学",
+      "team": "六目相对",
+      "names": [
+        "崔家瑞",
+        "崔芳洲",
+        "罗毅锐"
+      ],
+      "concreteNames": [
+        "崔家瑞",
+        "崔芳洲",
+        "罗毅锐"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 164,
+      "rank": "165",
+      "school": "上海理工大学",
+      "team": "面向样例编程",
+      "names": [
+        "李明懿",
+        "韩昱川",
+        "无"
+      ],
+      "concreteNames": [
+        "李明懿",
+        "韩昱川"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 165,
+      "rank": "166",
+      "school": "重庆邮电大学",
+      "team": "怎么会是呢",
+      "names": [
+        "江骏扬",
+        "罗昊",
+        "康德"
+      ],
+      "concreteNames": [
+        "江骏扬",
+        "罗昊",
+        "康德"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 166,
+      "rank": "167",
+      "school": "武汉工程大学",
+      "team": "真的有人学了几年还在打铁吗?",
+      "names": [
+        "刘超",
+        "黎永琪",
+        "刘宣聋"
+      ],
+      "concreteNames": [
+        "刘超",
+        "黎永琪",
+        "刘宣聋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 167,
+      "rank": "168",
+      "school": "南京航空航天大学",
+      "team": "在ICPC中寻求AC是否搞错了什么?",
+      "names": [
+        "钱品亦",
+        "李亚宁",
+        "岑嘉诚"
+      ],
+      "concreteNames": [
+        "钱品亦",
+        "李亚宁",
+        "岑嘉诚"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 168,
+      "rank": "169",
+      "school": "山东大学（威海)",
+      "team": "无敌暴龙冰河可爱爆了",
+      "names": [
+        "祁盛文",
+        "宁涛",
+        "汤子锋"
+      ],
+      "concreteNames": [
+        "祁盛文",
+        "宁涛",
+        "汤子锋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 169,
+      "rank": "170",
+      "school": "广州大学",
+      "team": "啊对对对",
+      "names": [
+        "林希栋",
+        "罗锦祺",
+        "李泽刚"
+      ],
+      "concreteNames": [
+        "林希栋",
+        "罗锦祺",
+        "李泽刚"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 170,
+      "rank": "171",
+      "school": "哈尔滨工业大学（威海",
+      "team": "阿波罗11",
+      "names": [
+        "陈柏羽",
+        "阮文哲",
+        "纪鑫鹏"
+      ],
+      "concreteNames": [
+        "陈柏羽",
+        "阮文哲",
+        "纪鑫鹏"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 171,
+      "rank": "172",
+      "school": "南昌大学",
+      "team": "酸甜泡芙",
+      "names": [
+        "万钧",
+        "蔡定中",
+        "惠鹏程"
+      ],
+      "concreteNames": [
+        "万钧",
+        "蔡定中",
+        "惠鹏程"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 172,
+      "rank": "173",
+      "school": "南京理工大学",
+      "team": "瑟瑟发抖",
+      "names": [
+        "刘星辰",
+        "季若曦",
+        "王瀚楠"
+      ],
+      "concreteNames": [
+        "刘星辰",
+        "季若曦",
+        "王瀚楠"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 173,
+      "rank": "174",
+      "school": "北京交通大学",
+      "team": "有三个人前来买瓜",
+      "names": [
+        "韦正豪",
+        "无"
+      ],
+      "concreteNames": [
+        "韦正豪"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 174,
+      "rank": "175",
+      "school": "香港科技大学",
+      "team": "树状数组不能维护01背包",
+      "names": [
+        "温子奇",
+        "张重",
+        "张瑜隽"
+      ],
+      "concreteNames": [
+        "温子奇",
+        "张重",
+        "张瑜隽"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 175,
+      "rank": "176",
+      "school": "平顶山学院",
+      "team": "平院一队",
+      "names": [
+        "邢玉龙",
+        "朱梦飞",
+        "刘力宾"
+      ],
+      "concreteNames": [
+        "邢玉龙",
+        "朱梦飞",
+        "刘力宾"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 176,
+      "rank": "177",
+      "school": "西安电子科技大学",
+      "team": "布鲁特福斯惊呼内行",
+      "names": [
+        "谭升阳",
+        "谢铭松",
+        "郭浩杰"
+      ],
+      "concreteNames": [
+        "谭升阳",
+        "谢铭松",
+        "郭浩杰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 177,
+      "rank": "178",
+      "school": "北京理工大学",
+      "team": "贝尔曼福德大战浮士德",
+      "names": [
+        "杨予宸",
+        "刘志丹",
+        "焦鹏屹"
+      ],
+      "concreteNames": [
+        "杨予宸",
+        "刘志丹",
+        "焦鹏屹"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 178,
+      "rank": "179",
+      "school": "长沙理工大学",
+      "team": "老面油条",
+      "names": [
+        "杨韬",
+        "侯骏哲",
+        "张禹轩"
+      ],
+      "concreteNames": [
+        "杨韬",
+        "侯骏哲",
+        "张禹轩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 179,
+      "rank": "180",
+      "school": "上海大学",
+      "team": "噫吁喊",
+      "names": [
+        "谢奕",
+        "陶钧",
+        "李梓航"
+      ],
+      "concreteNames": [
+        "谢奕",
+        "陶钧",
+        "李梓航"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 180,
+      "rank": "181",
+      "school": "宁波大学",
+      "team": "知世小天使请别难过喔",
+      "names": [
+        "李嘉琪",
+        "梁航锋",
+        "王茹月"
+      ],
+      "concreteNames": [
+        "李嘉琪",
+        "梁航锋",
+        "王茹月"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 181,
+      "rank": "182",
+      "school": "阜阳师范大学",
+      "team": "正宗太和羊肉板面",
+      "names": [
+        "谢天意",
+        "谢腾飞",
+        "储思晴"
+      ],
+      "concreteNames": [
+        "谢天意",
+        "谢腾飞",
+        "储思晴"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 182,
+      "rank": "182",
+      "school": "中国海洋大学",
+      "team": "黑夜犬人Pro",
+      "names": [
+        "蹇浩航",
+        "解正源",
+        "张成玺"
+      ],
+      "concreteNames": [
+        "蹇浩航",
+        "解正源",
+        "张成玺"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 183,
+      "rank": "184",
+      "school": "鲁东大学",
+      "team": "三带一",
+      "names": [
+        "武远博",
+        "王敬仪",
+        "马业森"
+      ],
+      "concreteNames": [
+        "武远博",
+        "王敬仪",
+        "马业森"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 184,
+      "rank": "185",
+      "school": "东北大学",
+      "team": "东北大学_河童重工",
+      "names": [
+        "郝思成",
+        "陈锦绥",
+        "吴钰璋"
+      ],
+      "concreteNames": [
+        "郝思成",
+        "陈锦绥",
+        "吴钰璋"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 185,
+      "rank": "186",
+      "school": "浙江科技学院",
+      "team": "重庆鸡公煲",
+      "names": [
+        "蒋银帆",
+        "丁好",
+        "卢超翼"
+      ],
+      "concreteNames": [
+        "蒋银帆",
+        "丁好",
+        "卢超翼"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 186,
+      "rank": "187",
+      "school": "武昌理工学院",
+      "team": "昆仑虚",
+      "names": [
+        "常毅威",
+        "周思豪",
+        "常康腾"
+      ],
+      "concreteNames": [
+        "常毅威",
+        "周思豪",
+        "常康腾"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 187,
+      "rank": "188",
+      "school": "南开大学",
+      "team": "我没意见",
+      "names": [
+        "黄子懿",
+        "苑华莹",
+        "郑原"
+      ],
+      "concreteNames": [
+        "黄子懿",
+        "苑华莹",
+        "郑原"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 188,
+      "rank": "189",
+      "school": "福州大学",
+      "team": "coder和他的两个眼缘队友",
+      "names": [
+        "庄佳霖",
+        "吴泽凯",
+        "林文浩"
+      ],
+      "concreteNames": [
+        "庄佳霖",
+        "吴泽凯",
+        "林文浩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 189,
+      "rank": "190",
+      "school": "南昌航空大学",
+      "team": "冰与火之歌",
+      "names": [
+        "王旻镐",
+        "张豪",
+        "蔡威"
+      ],
+      "concreteNames": [
+        "王旻镐",
+        "张豪",
+        "蔡威"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 190,
+      "rank": "191",
+      "school": "西南民族大学",
+      "team": "刻晴想吃cherrv么",
+      "names": [
+        "张玷开",
+        "肖振威",
+        "汪湘衡"
+      ],
+      "concreteNames": [
+        "张玷开",
+        "肖振威",
+        "汪湘衡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 191,
+      "rank": "192",
+      "school": "浙江理工大学",
+      "team": "赚钱小分队",
+      "names": [
+        "瞿程浩",
+        "昊士超",
+        "楼家豪"
+      ],
+      "concreteNames": [
+        "瞿程浩",
+        "昊士超",
+        "楼家豪"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 192,
+      "rank": "193",
+      "school": "浙大宁波理工学院",
+      "team": "笛卡尔鸡",
+      "names": [
+        "胡向东",
+        "夏宇",
+        "吴亦初"
+      ],
+      "concreteNames": [
+        "胡向东",
+        "夏宇",
+        "吴亦初"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 193,
+      "rank": "194",
+      "school": "浙江工业大学",
+      "team": "Z.JUT6",
+      "names": [
+        "陈天阳",
+        "苗子豪",
+        "薛予凡"
+      ],
+      "concreteNames": [
+        "陈天阳",
+        "苗子豪",
+        "薛予凡"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 194,
+      "rank": "195",
+      "school": "河南工业大学",
+      "team": "攻壳机动队",
+      "names": [
+        "孔维飒",
+        "李志豪",
+        "张君毅"
+      ],
+      "concreteNames": [
+        "孔维飒",
+        "李志豪",
+        "张君毅"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 195,
+      "rank": "196",
+      "school": "深圳大学",
+      "team": "SZU-Euclid",
+      "names": [
+        "梁泽荣",
+        "蒋术焜",
+        "林烨堃"
+      ],
+      "concreteNames": [
+        "梁泽荣",
+        "蒋术焜",
+        "林烨堃"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 196,
+      "rank": "197",
+      "school": "福建师范大学",
+      "team": "随机队名",
+      "names": [
+        "许泽昊",
+        "陈杨涛",
+        "周奕帆"
+      ],
+      "concreteNames": [
+        "许泽昊",
+        "陈杨涛",
+        "周奕帆"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 197,
+      "rank": "198",
+      "school": "北京邮电大学",
+      "team": "珊瑚宫心海",
+      "names": [
+        "董凯文",
+        "高畅",
+        "董建威"
+      ],
+      "concreteNames": [
+        "董凯文",
+        "高畅",
+        "董建威"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 198,
+      "rank": "199",
+      "school": "西安电子科技大学",
+      "team": "二重虹",
+      "names": [
+        "石潇",
+        "花煦",
+        "周益全"
+      ],
+      "concreteNames": [
+        "石潇",
+        "花煦",
+        "周益全"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 199,
+      "rank": "200",
+      "school": "西北工业大学",
+      "team": "东大村三巫师",
+      "names": [
+        "杨莫凡",
+        "季昕泽",
+        "肖宇涵"
+      ],
+      "concreteNames": [
+        "杨莫凡",
+        "季昕泽",
+        "肖宇涵"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 200,
+      "rank": "201",
+      "school": "苏州大学",
+      "team": "咕咕咕咕咕咕咕咕",
+      "names": [
+        "殷九思",
+        "林志诚",
+        "徐一"
+      ],
+      "concreteNames": [
+        "殷九思",
+        "林志诚",
+        "徐一"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 201,
+      "rank": "202",
+      "school": "哈尔滨工程大学",
+      "team": "人菜瘾大",
+      "names": [
+        "周智",
+        "常一帆",
+        "管袁菲"
+      ],
+      "concreteNames": [
+        "周智",
+        "常一帆",
+        "管袁菲"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 202,
+      "rank": "203",
+      "school": "南昌航空大学",
+      "team": "斩首之夜",
+      "names": [
+        "吴博雄",
+        "吕错伦",
+        "王复兴"
+      ],
+      "concreteNames": [
+        "吴博雄",
+        "吕错伦",
+        "王复兴"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 203,
+      "rank": "204",
+      "school": "华东师范大学",
+      "team": "正式参赛好开心",
+      "names": [
+        "汪鼎尊",
+        "无"
+      ],
+      "concreteNames": [
+        "汪鼎尊"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 204,
+      "rank": "205",
+      "school": "中南大学",
+      "team": "只能靠签到维生这样子",
+      "names": [
+        "郭欣澜",
+        "包晗",
+        "周硕"
+      ],
+      "concreteNames": [
+        "郭欣澜",
+        "包晗",
+        "周硕"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 205,
+      "rank": "206",
+      "school": "上海理工大学",
+      "team": "令和三年的上海爱丽丝",
+      "names": [
+        "潘孝安",
+        "无"
+      ],
+      "concreteNames": [
+        "潘孝安"
+      ],
+      "placeholderNames": [
+        "无"
+      ],
+      "teamSizeMarkers": [],
+      "classification": "姓名含占位值"
+    },
+    {
+      "index": 206,
+      "rank": "207",
+      "school": "上海大学",
+      "team": "还是你懂的多啊",
+      "names": [
+        "王启隆",
+        "彭昊辉",
+        "康高熙"
+      ],
+      "concreteNames": [
+        "王启隆",
+        "彭昊辉",
+        "康高熙"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 207,
+      "rank": "208",
+      "school": "电子科技大学中山学院",
+      "team": "文君志鸿队2022",
+      "names": [
+        "陈佳宝",
+        "吴宝",
+        "林国杰"
+      ],
+      "concreteNames": [
+        "陈佳宝",
+        "吴宝",
+        "林国杰"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 208,
+      "rank": "209",
+      "school": "金华职业技术学院",
+      "team": "XQ DDw",
+      "names": [
+        "兰强强",
+        "褚茂誉",
+        "林宇浩"
+      ],
+      "concreteNames": [
+        "兰强强",
+        "褚茂誉",
+        "林宇浩"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    },
+    {
+      "index": 209,
+      "rank": "210",
+      "school": "中国地质大学（武汉)",
+      "team": "特困生",
+      "names": [
+        "曹世杰",
+        "刘剑峰",
+        "秦浩然"
+      ],
+      "concreteNames": [
+        "曹世杰",
+        "刘剑峰",
+        "秦浩然"
+      ],
+      "placeholderNames": [],
+      "teamSizeMarkers": [],
+      "classification": "三名具体姓名"
+    }
+  ]
+}

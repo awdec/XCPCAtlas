@@ -65,6 +65,32 @@
     }
   },
   {
+    "id": "kunming",
+    "name": "ICPC 昆明",
+    "org": "ICPC",
+    "city": "昆明",
+    "teams": 753,
+    "champion": {
+      "school": "清华大学",
+      "team": "窗边明月",
+      "solved": 11,
+      "penalty": 1704
+    }
+  },
+  {
+    "id": "shanghai",
+    "name": "ICPC 上海",
+    "org": "ICPC",
+    "city": "上海",
+    "teams": 632,
+    "champion": {
+      "school": "清华大学",
+      "team": "重启征途",
+      "solved": 13,
+      "penalty": 1486
+    }
+  },
+  {
     "id": "jinan",
     "name": "ICPC 济南",
     "org": "ICPC",

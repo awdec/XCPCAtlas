@@ -1,0 +1,4652 @@
+[
+  {
+    "cpcfinderIndex": 0,
+    "cpcfinderRank": "1",
+    "cpcfinderSchool": "清华大学",
+    "cpcfinderTeam": "窗边明月",
+    "rawMemberEntries": [
+      "杨骏昭",
+      "陈孙立",
+      "徐翊轩"
+    ],
+    "concreteNames": [
+      "杨骏昭",
+      "陈孙立",
+      "徐翊轩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007846",
+    "sourceSchool": "清华大学",
+    "sourceTeam": "窗边明月"
+  },
+  {
+    "cpcfinderIndex": 1,
+    "cpcfinderRank": "2",
+    "cpcfinderSchool": "北京大学",
+    "cpcfinderTeam": "重生之我是菜狗",
+    "rawMemberEntries": [
+      "王展鹏",
+      "罗煜翔",
+      "蒋凌宇"
+    ],
+    "concreteNames": [
+      "王展鹏",
+      "罗煜翔",
+      "蒋凌宇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007458",
+    "sourceSchool": "北京大学",
+    "sourceTeam": "重生之我是菜狗"
+  },
+  {
+    "cpcfinderIndex": 2,
+    "cpcfinderRank": "3",
+    "cpcfinderSchool": "清华大学",
+    "cpcfinderTeam": "一更人",
+    "rawMemberEntries": [
+      "周欣",
+      "叶卓睿",
+      "虞皓翔"
+    ],
+    "concreteNames": [
+      "周欣",
+      "叶卓睿",
+      "虞皓翔"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007849",
+    "sourceSchool": "清华大学",
+    "sourceTeam": "一更人"
+  },
+  {
+    "cpcfinderIndex": 3,
+    "cpcfinderRank": "4",
+    "cpcfinderSchool": "北京大学",
+    "cpcfinderTeam": "巨大的金刚鸽子",
+    "rawMemberEntries": [
+      "郭城志",
+      "陈宇",
+      "徐舟子"
+    ],
+    "concreteNames": [
+      "郭城志",
+      "陈宇",
+      "徐舟子"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007454",
+    "sourceSchool": "北京大学",
+    "sourceTeam": "巨大的金刚鸽子"
+  },
+  {
+    "cpcfinderIndex": 4,
+    "cpcfinderRank": "5",
+    "cpcfinderSchool": "北京大学",
+    "cpcfinderTeam": "十三陵小丑",
+    "rawMemberEntries": [
+      "任轩笛",
+      "吴瑾昭",
+      "黄致焕"
+    ],
+    "concreteNames": [
+      "任轩笛",
+      "吴瑾昭",
+      "黄致焕"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007456",
+    "sourceSchool": "北京大学",
+    "sourceTeam": "十三陵小丑"
+  },
+  {
+    "cpcfinderIndex": 5,
+    "cpcfinderRank": "6",
+    "cpcfinderSchool": "清华大学",
+    "cpcfinderTeam": "老年组",
+    "rawMemberEntries": [
+      "陈雨昕",
+      "林昊翰",
+      "周镇东"
+    ],
+    "concreteNames": [
+      "陈雨昕",
+      "林昊翰",
+      "周镇东"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007848",
+    "sourceSchool": "清华大学",
+    "sourceTeam": "老年组"
+  },
+  {
+    "cpcfinderIndex": 6,
+    "cpcfinderRank": "7",
+    "cpcfinderSchool": "南京邮电大学",
+    "cpcfinderTeam": "Citrus",
+    "rawMemberEntries": [
+      "何乐晗",
+      "陈以信",
+      "赵一舟"
+    ],
+    "concreteNames": [
+      "何乐晗",
+      "陈以信",
+      "赵一舟"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007809",
+    "sourceSchool": "南京邮电大学",
+    "sourceTeam": "Citrus"
+  },
+  {
+    "cpcfinderIndex": 7,
+    "cpcfinderRank": "8",
+    "cpcfinderSchool": "南京大学",
+    "cpcfinderTeam": "白日",
+    "rawMemberEntries": [
+      "王淳扬",
+      "冉雨杭",
+      "张昕渊"
+    ],
+    "concreteNames": [
+      "王淳扬",
+      "冉雨杭",
+      "张昕渊"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007792",
+    "sourceSchool": "南京大学",
+    "sourceTeam": "白日"
+  },
+  {
+    "cpcfinderIndex": 8,
+    "cpcfinderRank": "9",
+    "cpcfinderSchool": "北京理工大学",
+    "cpcfinderTeam": "ddl战神",
+    "rawMemberEntries": [
+      "林恺",
+      "邹知秋",
+      "朱子林"
+    ],
+    "concreteNames": [
+      "林恺",
+      "邹知秋",
+      "朱子林"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007478",
+    "sourceSchool": "北京理工大学",
+    "sourceTeam": "ddl战神"
+  },
+  {
+    "cpcfinderIndex": 9,
+    "cpcfinderRank": "10",
+    "cpcfinderSchool": "浙江大学",
+    "cpcfinderTeam": "Heltion & 11115 & SSerxhs",
+    "rawMemberEntries": [
+      "赵广泽",
+      "吕耀维",
+      "凌子恒"
+    ],
+    "concreteNames": [
+      "赵广泽",
+      "吕耀维",
+      "凌子恒"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008068",
+    "sourceSchool": "浙江大学",
+    "sourceTeam": "Heltion & l1ll5 & SSerxhs",
+    "mappingEvidence": "同为浙江大学；Heltion、SSerxhs及连接符一致，中间l/1字符发生OCR混淆；正式榜第10名与CPCFinder第10名及金牌一致。"
+  },
+  {
+    "cpcfinderIndex": 10,
+    "cpcfinderRank": "11",
+    "cpcfinderSchool": "北京航空航天大学",
+    "cpcfinderTeam": "大吉大利，今晚吃mian () ;",
+    "rawMemberEntries": [
+      "潘天蔚",
+      "刘佳睿",
+      "郝泽钰"
+    ],
+    "concreteNames": [
+      "潘天蔚",
+      "刘佳睿",
+      "郝泽钰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007464",
+    "sourceSchool": "北京航空航天大学",
+    "sourceTeam": "大吉大利，今晚吃 mian();",
+    "mappingEvidence": "同为北京航空航天大学，队名仅不换行空格及mian括号分号周围空格不同；双方第11名、金牌一致。"
+  },
+  {
+    "cpcfinderIndex": 11,
+    "cpcfinderRank": "12",
+    "cpcfinderSchool": "北京师范大学",
+    "cpcfinderTeam": "内测度",
+    "rawMemberEntries": [
+      "林靖轩",
+      "李鼎懋",
+      "李明泽"
+    ],
+    "concreteNames": [
+      "林靖轩",
+      "李鼎懋",
+      "李明泽"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007483",
+    "sourceSchool": "北京师范大学",
+    "sourceTeam": "内测度"
+  },
+  {
+    "cpcfinderIndex": 12,
+    "cpcfinderRank": "13",
+    "cpcfinderSchool": "北京航空航天大学",
+    "cpcfinderTeam": "玄学过题",
+    "rawMemberEntries": [
+      "王宇龙",
+      "吴湛宇",
+      "权尚浩然"
+    ],
+    "concreteNames": [
+      "王宇龙",
+      "吴湛宇",
+      "权尚浩然"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007466",
+    "sourceSchool": "北京航空航天大学",
+    "sourceTeam": "玄学过题"
+  },
+  {
+    "cpcfinderIndex": 13,
+    "cpcfinderRank": "14",
+    "cpcfinderSchool": "清华大学",
+    "cpcfinderTeam": "光辉",
+    "rawMemberEntries": [
+      "蒋昊迪",
+      "邢竞择",
+      "陈桐飞"
+    ],
+    "concreteNames": [
+      "蒋昊迪",
+      "邢竞择",
+      "陈桐飞"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007847",
+    "sourceSchool": "清华大学",
+    "sourceTeam": "光辉"
+  },
+  {
+    "cpcfinderIndex": 14,
+    "cpcfinderRank": "15",
+    "cpcfinderSchool": "中山大学",
+    "cpcfinderTeam": "最后的午餐",
+    "rawMemberEntries": [
+      "欧梓洋",
+      "黄途亮",
+      "梁梓豪"
+    ],
+    "concreteNames": [
+      "欧梓洋",
+      "黄途亮",
+      "梁梓豪"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008175",
+    "sourceSchool": "中山大学",
+    "sourceTeam": "最后的午餐"
+  },
+  {
+    "cpcfinderIndex": 15,
+    "cpcfinderRank": "16",
+    "cpcfinderSchool": "浙江大学",
+    "cpcfinderTeam": "老师饿饿让让芙兰",
+    "rawMemberEntries": [
+      "陈彦博",
+      "沈哲贝",
+      "王海纳"
+    ],
+    "concreteNames": [
+      "陈彦博",
+      "沈哲贝",
+      "王海纳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008070",
+    "sourceSchool": "浙江大学",
+    "sourceTeam": "老师饿饿让让芙兰"
+  },
+  {
+    "cpcfinderIndex": 16,
+    "cpcfinderRank": "17",
+    "cpcfinderSchool": "杭州电子科技大学",
+    "cpcfinderTeam": "杭电十五队",
+    "rawMemberEntries": [
+      "柴汉锋",
+      "陈载元",
+      "陈思豪"
+    ],
+    "concreteNames": [
+      "柴汉锋",
+      "陈载元",
+      "陈思豪"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007613",
+    "sourceSchool": "杭州电子科技大学",
+    "sourceTeam": "杭电十五队"
+  },
+  {
+    "cpcfinderIndex": 17,
+    "cpcfinderRank": "18",
+    "cpcfinderSchool": "北京大学",
+    "cpcfinderTeam": "你对队伍名有头猪吗?",
+    "rawMemberEntries": [
+      "曹原",
+      "陈胤戳",
+      "吴孟周"
+    ],
+    "concreteNames": [
+      "曹原",
+      "陈胤戳",
+      "吴孟周"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007455",
+    "sourceSchool": "北京大学",
+    "sourceTeam": "你对队伍名有头猪吗？",
+    "mappingEvidence": "同为北京大学，队名仅末尾问号全半角不同；双方第18名、金牌一致。"
+  },
+  {
+    "cpcfinderIndex": 18,
+    "cpcfinderRank": "19",
+    "cpcfinderSchool": "山东大学",
+    "cpcfinderTeam": "说好不秃",
+    "rawMemberEntries": [
+      "门建彤",
+      "张丁祎",
+      "吴羲勇"
+    ],
+    "concreteNames": [
+      "门建彤",
+      "张丁祎",
+      "吴羲勇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007864",
+    "sourceSchool": "山东大学",
+    "sourceTeam": "说好不秃"
+  },
+  {
+    "cpcfinderIndex": 19,
+    "cpcfinderRank": "20",
+    "cpcfinderSchool": "香港中文大学",
+    "cpcfinderTeam": "ICPCP[O(log n)o(1)]",
+    "rawMemberEntries": [
+      "衙家熙",
+      "吴有孚",
+      "吴晓峻"
+    ],
+    "concreteNames": [
+      "衙家熙",
+      "吴有孚",
+      "吴晓峻"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008019",
+    "sourceSchool": "香港中文大学",
+    "sourceTeam": "ICPCP[O(log n), O(1)]",
+    "mappingEvidence": "同为香港中文大学；队名ICPCP及O(log n)、O(1)表达式和方括号一致，逗号空格及字母大小写转录不同；双方第20名、金牌一致。"
+  },
+  {
+    "cpcfinderIndex": 20,
+    "cpcfinderRank": "21",
+    "cpcfinderSchool": "天津大学",
+    "cpcfinderTeam": "哈皮，拉ki，思迈露，耶",
+    "rawMemberEntries": [
+      "马凯",
+      "张博凯",
+      "叶泽侬"
+    ],
+    "concreteNames": [
+      "马凯",
+      "张博凯",
+      "叶泽侬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007934",
+    "sourceSchool": "天津大学",
+    "sourceTeam": "哈皮，拉ki，思迈露，耶"
+  },
+  {
+    "cpcfinderIndex": 21,
+    "cpcfinderRank": "22",
+    "cpcfinderSchool": "复旦大学",
+    "cpcfinderTeam": "莱布尼兹惊坐起",
+    "rawMemberEntries": [
+      "许逸培",
+      "刘明君",
+      "薛振梁"
+    ],
+    "concreteNames": [
+      "许逸培",
+      "刘明君",
+      "薛振梁"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007556",
+    "sourceSchool": "复旦大学",
+    "sourceTeam": "莱布尼兹惊坐起"
+  },
+  {
+    "cpcfinderIndex": 22,
+    "cpcfinderRank": "23",
+    "cpcfinderSchool": "浙江工业大学",
+    "cpcfinderTeam": "地球猫猫",
+    "rawMemberEntries": [
+      "张宇翔",
+      "李亚伦",
+      "陈洁怡"
+    ],
+    "concreteNames": [
+      "张宇翔",
+      "李亚伦",
+      "陈洁怡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008079",
+    "sourceSchool": "浙江工业大学",
+    "sourceTeam": "地球猫猫"
+  },
+  {
+    "cpcfinderIndex": 23,
+    "cpcfinderRank": "24",
+    "cpcfinderSchool": "西安电子科技大学",
+    "cpcfinderTeam": "辛几何旋律",
+    "rawMemberEntries": [
+      "冯畅",
+      "湛忠胜",
+      "周灿"
+    ],
+    "concreteNames": [
+      "冯畅",
+      "湛忠胜",
+      "周灿"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007970",
+    "sourceSchool": "西安电子科技大学",
+    "sourceTeam": "辛几何旋律"
+  },
+  {
+    "cpcfinderIndex": 24,
+    "cpcfinderRank": "25",
+    "cpcfinderSchool": "哈尔滨工业大学（深圳）",
+    "cpcfinderTeam": "骗分大队",
+    "rawMemberEntries": [
+      "曹杨",
+      "潘思成",
+      "沈文"
+    ],
+    "concreteNames": [
+      "曹杨",
+      "潘思成",
+      "沈文"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007600",
+    "sourceSchool": "哈尔滨工业大学（深圳）",
+    "sourceTeam": "骗分大队"
+  },
+  {
+    "cpcfinderIndex": 25,
+    "cpcfinderRank": "26",
+    "cpcfinderSchool": "电子科技大学",
+    "cpcfinderTeam": "UESTC_泳者",
+    "rawMemberEntries": [
+      "刘轩",
+      "张鸿皓",
+      "黄博奕"
+    ],
+    "concreteNames": [
+      "刘轩",
+      "张鸿皓",
+      "黄博奕"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007515",
+    "sourceSchool": "电子科技大学",
+    "sourceTeam": "UESTC_泳者"
+  },
+  {
+    "cpcfinderIndex": 26,
+    "cpcfinderRank": "27",
+    "cpcfinderSchool": "哈尔滨工业大学",
+    "cpcfinderTeam": "花盆种大蒜",
+    "rawMemberEntries": [
+      "祁展华",
+      "朱峰",
+      "王羽婷"
+    ],
+    "concreteNames": [
+      "祁展华",
+      "朱峰",
+      "王羽婷"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007598",
+    "sourceSchool": "哈尔滨工业大学",
+    "sourceTeam": "花盆种大蒜"
+  },
+  {
+    "cpcfinderIndex": 27,
+    "cpcfinderRank": "28",
+    "cpcfinderSchool": "河海大学常州校区",
+    "cpcfinderTeam": "几何杀手",
+    "rawMemberEntries": [
+      "俞天骋",
+      "孙嘉昊",
+      "王英吉"
+    ],
+    "concreteNames": [
+      "俞天骋",
+      "孙嘉昊",
+      "王英吉"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007636",
+    "sourceSchool": "河海大学常州校区",
+    "sourceTeam": "几何杀手"
+  },
+  {
+    "cpcfinderIndex": 28,
+    "cpcfinderRank": "29",
+    "cpcfinderSchool": "上海交通大学",
+    "cpcfinderTeam": "重叠之梦",
+    "rawMemberEntries": [
+      "范能",
+      "王子奕",
+      "冯跃洋"
+    ],
+    "concreteNames": [
+      "范能",
+      "王子奕",
+      "冯跃洋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007899",
+    "sourceSchool": "上海交通大学",
+    "sourceTeam": "重叠之梦"
+  },
+  {
+    "cpcfinderIndex": 29,
+    "cpcfinderRank": "30",
+    "cpcfinderSchool": "浙江师范大学",
+    "cpcfinderTeam": "妖怪被srk抓走了QAQ",
+    "rawMemberEntries": [
+      "周天辰",
+      "蒋润浩",
+      "余知航"
+    ],
+    "concreteNames": [
+      "周天辰",
+      "蒋润浩",
+      "余知航"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008103",
+    "sourceSchool": "浙江师范大学",
+    "sourceTeam": "妖怪被srk抓走了QAQ"
+  },
+  {
+    "cpcfinderIndex": 30,
+    "cpcfinderRank": "31",
+    "cpcfinderSchool": "中国矿业大学",
+    "cpcfinderTeam": "塞尔达",
+    "rawMemberEntries": [
+      "肖扬航",
+      "周俊峰",
+      "雷毅"
+    ],
+    "concreteNames": [
+      "肖扬航",
+      "周俊峰",
+      "雷毅"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008141",
+    "sourceSchool": "中国矿业大学",
+    "sourceTeam": "塞尔达"
+  },
+  {
+    "cpcfinderIndex": 31,
+    "cpcfinderRank": "32",
+    "cpcfinderSchool": "烟台大学",
+    "cpcfinderTeam": "老年人",
+    "rawMemberEntries": [
+      "肖毅欣",
+      "胡春宁",
+      "刘聪聪"
+    ],
+    "concreteNames": [
+      "肖毅欣",
+      "胡春宁",
+      "刘聪聪"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008032",
+    "sourceSchool": "烟台大学",
+    "sourceTeam": "老年人"
+  },
+  {
+    "cpcfinderIndex": 32,
+    "cpcfinderRank": "33",
+    "cpcfinderSchool": "南方科技大学",
+    "cpcfinderTeam": "合并肘子",
+    "rawMemberEntries": [
+      "曹哲振",
+      "周轶凡",
+      "田若载"
+    ],
+    "concreteNames": [
+      "曹哲振",
+      "周轶凡",
+      "田若载"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007786",
+    "sourceSchool": "南方科技大学",
+    "sourceTeam": "合并肘子"
+  },
+  {
+    "cpcfinderIndex": 33,
+    "cpcfinderRank": "34",
+    "cpcfinderSchool": "大连理工大学",
+    "cpcfinderTeam": "三带一",
+    "rawMemberEntries": [
+      "濮凡轶",
+      "江雨桐",
+      "李冠霖"
+    ],
+    "concreteNames": [
+      "濮凡轶",
+      "江雨桐",
+      "李冠霖"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007509",
+    "sourceSchool": "大连理工大学",
+    "sourceTeam": "三带一"
+  },
+  {
+    "cpcfinderIndex": 34,
+    "cpcfinderRank": "35",
+    "cpcfinderSchool": "北京航空航天大学",
+    "cpcfinderTeam": "起名苦手",
+    "rawMemberEntries": [
+      "雷骧逸",
+      "樊佳昊",
+      "丁家玮"
+    ],
+    "concreteNames": [
+      "雷骧逸",
+      "樊佳昊",
+      "丁家玮"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007465",
+    "sourceSchool": "北京航空航天大学",
+    "sourceTeam": "起名苦手"
+  },
+  {
+    "cpcfinderIndex": 35,
+    "cpcfinderRank": "36",
+    "cpcfinderSchool": "南京大学",
+    "cpcfinderTeam": "徒手抓蛾子",
+    "rawMemberEntries": [
+      "陈思睿",
+      "周子杰",
+      "徐沐杰"
+    ],
+    "concreteNames": [
+      "陈思睿",
+      "周子杰",
+      "徐沐杰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007795",
+    "sourceSchool": "南京大学",
+    "sourceTeam": "徒手抓蛾子"
+  },
+  {
+    "cpcfinderIndex": 36,
+    "cpcfinderRank": "37",
+    "cpcfinderSchool": "电子科技大学",
+    "cpcfinderTeam": "UESTC_大大卷",
+    "rawMemberEntries": [
+      "李佳骏",
+      "李奕聪",
+      "陈奕可"
+    ],
+    "concreteNames": [
+      "李佳骏",
+      "李奕聪",
+      "陈奕可"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007513",
+    "sourceSchool": "电子科技大学",
+    "sourceTeam": "UESTC_大大卷"
+  },
+  {
+    "cpcfinderIndex": 37,
+    "cpcfinderRank": "38",
+    "cpcfinderSchool": "重庆大学",
+    "cpcfinderTeam": "cQU_2=1",
+    "rawMemberEntries": [
+      "余康",
+      "蒋云豪",
+      "两人队"
+    ],
+    "concreteNames": [
+      "余康",
+      "蒋云豪"
+    ],
+    "excludedPlaceholders": [
+      "两人队"
+    ],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008181",
+    "sourceSchool": "重庆大学",
+    "sourceTeam": "CQU_2=1",
+    "mappingEvidence": "同为重庆大学，CQU_2=1仅首字母大小写不同；双方第38名、银牌一致；两人队标记不作为选手姓名。"
+  },
+  {
+    "cpcfinderIndex": 38,
+    "cpcfinderRank": "39",
+    "cpcfinderSchool": "北京科技大学",
+    "cpcfinderTeam": "随机队名",
+    "rawMemberEntries": [
+      "刘伟浩",
+      "裘嘉欣",
+      "宋博文"
+    ],
+    "concreteNames": [
+      "刘伟浩",
+      "裘嘉欣",
+      "宋博文"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007477",
+    "sourceSchool": "北京科技大学",
+    "sourceTeam": "随机队名"
+  },
+  {
+    "cpcfinderIndex": 39,
+    "cpcfinderRank": "40",
+    "cpcfinderSchool": "香港城市大学",
+    "cpcfinderTeam": "九龙塘妙妙屋",
+    "rawMemberEntries": [
+      "李嘉乾",
+      "黄一笑",
+      "戴晨岳"
+    ],
+    "concreteNames": [
+      "李嘉乾",
+      "黄一笑",
+      "戴晨岳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008015",
+    "sourceSchool": "香港城市大学",
+    "sourceTeam": "九龙塘妙妙屋"
+  },
+  {
+    "cpcfinderIndex": 40,
+    "cpcfinderRank": "41",
+    "cpcfinderSchool": "中山大学",
+    "cpcfinderTeam": "中山大学_天作之合",
+    "rawMemberEntries": [
+      "刘彦莹",
+      "杨天行",
+      "罗以彬"
+    ],
+    "concreteNames": [
+      "刘彦莹",
+      "杨天行",
+      "罗以彬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008173",
+    "sourceSchool": "中山大学",
+    "sourceTeam": "中山大学_天作之合"
+  },
+  {
+    "cpcfinderIndex": 41,
+    "cpcfinderRank": "42",
+    "cpcfinderSchool": "同济大学",
+    "cpcfinderTeam": "达拉崩吧班得贝迪卜多比鲁翁",
+    "rawMemberEntries": [
+      "孙治弘",
+      "张乐天",
+      "刘依杨"
+    ],
+    "concreteNames": [
+      "孙治弘",
+      "张乐天",
+      "刘依杨"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007941",
+    "sourceSchool": "同济大学",
+    "sourceTeam": "达拉崩吧班得贝迪卜多比鲁翁"
+  },
+  {
+    "cpcfinderIndex": 42,
+    "cpcfinderRank": "43",
+    "cpcfinderSchool": "上海交通大学",
+    "cpcfinderTeam": "洒满黄浦江",
+    "rawMemberEntries": [
+      "杨宗翰",
+      "杨尚靠",
+      "谭博仁"
+    ],
+    "concreteNames": [
+      "杨宗翰",
+      "杨尚靠",
+      "谭博仁"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007898",
+    "sourceSchool": "上海交通大学",
+    "sourceTeam": "洒满黄浦江"
+  },
+  {
+    "cpcfinderIndex": 43,
+    "cpcfinderRank": "44",
+    "cpcfinderSchool": "北京大学",
+    "cpcfinderTeam": "淹园外被鸽的鸽子",
+    "rawMemberEntries": [
+      "吴清月",
+      "胡晋侨",
+      "袁傲慕飞"
+    ],
+    "concreteNames": [
+      "吴清月",
+      "胡晋侨",
+      "袁傲慕飞"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007457",
+    "sourceSchool": "北京大学",
+    "sourceTeam": "淹园外被鸽的鸽子"
+  },
+  {
+    "cpcfinderIndex": 44,
+    "cpcfinderRank": "45",
+    "cpcfinderSchool": "中国科学技术大学",
+    "cpcfinderTeam": "freedive",
+    "rawMemberEntries": [
+      "李泽林",
+      "欧阳博丁",
+      "舒英特"
+    ],
+    "concreteNames": [
+      "李泽林",
+      "欧阳博丁",
+      "舒英特"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008136",
+    "sourceSchool": "中国科学技术大学",
+    "sourceTeam": "freedive"
+  },
+  {
+    "cpcfinderIndex": 45,
+    "cpcfinderRank": "46",
+    "cpcfinderSchool": "北京邮电大学",
+    "cpcfinderTeam": "三只唶唶一锅汤",
+    "rawMemberEntries": [
+      "陈冠州",
+      "李亦非",
+      "赵昕鹏"
+    ],
+    "concreteNames": [
+      "陈冠州",
+      "李亦非",
+      "赵昕鹏"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007487",
+    "sourceSchool": "北京邮电大学",
+    "sourceTeam": "三只喵喵一锅汤",
+    "mappingEvidence": "同为北京邮电大学；三只…一锅汤完整结构一致，重复的喵被转录为唶；同校无其他该队名候选，双方第46名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 46,
+    "cpcfinderRank": "47",
+    "cpcfinderSchool": "西安交通大学",
+    "cpcfinderTeam": "怎么会是呢?",
+    "rawMemberEntries": [
+      "郭修屹",
+      "栾家骏",
+      "刘一可"
+    ],
+    "concreteNames": [
+      "郭修屹",
+      "栾家骏",
+      "刘一可"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007974",
+    "sourceSchool": "西安交通大学",
+    "sourceTeam": "怎么会是呢？",
+    "mappingEvidence": "同为西安交通大学，怎么会是呢仅问号全半角不同；重庆邮电大学同名候选学校不同予以排除；双方第47名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 47,
+    "cpcfinderRank": "48",
+    "cpcfinderSchool": "哈尔滨工业大学（深圳）",
+    "cpcfinderTeam": "删库跑路",
+    "rawMemberEntries": [
+      "卢郡然",
+      "梁珊",
+      "任秦江"
+    ],
+    "concreteNames": [
+      "卢郡然",
+      "梁珊",
+      "任秦江"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007601",
+    "sourceSchool": "哈尔滨工业大学（深圳）",
+    "sourceTeam": "删库跑路"
+  },
+  {
+    "cpcfinderIndex": 48,
+    "cpcfinderRank": "49",
+    "cpcfinderSchool": "山东大学",
+    "cpcfinderTeam": "梦天使",
+    "rawMemberEntries": [
+      "耿浩天",
+      "张昊雨",
+      "蒋裕成"
+    ],
+    "concreteNames": [
+      "耿浩天",
+      "张昊雨",
+      "蒋裕成"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007863",
+    "sourceSchool": "山东大学",
+    "sourceTeam": "梦天使"
+  },
+  {
+    "cpcfinderIndex": 49,
+    "cpcfinderRank": "50",
+    "cpcfinderSchool": "北京理工大学",
+    "cpcfinderTeam": ".JK之星",
+    "rawMemberEntries": [
+      "王崧乔",
+      "罗博文",
+      "黄子越"
+    ],
+    "concreteNames": [
+      "王崧乔",
+      "罗博文",
+      "黄子越"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007479",
+    "sourceSchool": "北京理工大学",
+    "sourceTeam": "JK之星",
+    "mappingEvidence": "同为北京理工大学，JK之星仅前导句点不同；双方第50名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 50,
+    "cpcfinderRank": "51",
+    "cpcfinderSchool": "北京工业大学",
+    "cpcfinderTeam": "WA好厉害",
+    "rawMemberEntries": [
+      "葛中正",
+      "周榆忱",
+      "管丹辰"
+    ],
+    "concreteNames": [
+      "葛中正",
+      "周榆忱",
+      "管丹辰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007461",
+    "sourceSchool": "北京工业大学",
+    "sourceTeam": "WA好厉害"
+  },
+  {
+    "cpcfinderIndex": 51,
+    "cpcfinderRank": "52",
+    "cpcfinderSchool": "哈尔滨工程大学",
+    "cpcfinderTeam": "丝划拿铁",
+    "rawMemberEntries": [
+      "吴兆昕",
+      "于子涵",
+      "位振林"
+    ],
+    "concreteNames": [
+      "吴兆昕",
+      "于子涵",
+      "位振林"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007595",
+    "sourceSchool": "哈尔滨工程大学",
+    "sourceTeam": "丝划拿铁"
+  },
+  {
+    "cpcfinderIndex": 52,
+    "cpcfinderRank": "53",
+    "cpcfinderSchool": "东北大学",
+    "cpcfinderTeam": "东北大学寄",
+    "rawMemberEntries": [
+      "李泽仁",
+      "王乐言",
+      "陈少皇"
+    ],
+    "concreteNames": [
+      "李泽仁",
+      "王乐言",
+      "陈少皇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007523",
+    "sourceSchool": "东北大学",
+    "sourceTeam": "东北大学_寄",
+    "mappingEvidence": "同为东北大学，东北大学_寄仅缺少下划线；其他同校队名主体不同；双方第53名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 53,
+    "cpcfinderRank": "54",
+    "cpcfinderSchool": "南京邮电大学",
+    "cpcfinderTeam": "事末鸽者",
+    "rawMemberEntries": [
+      "刁煜凡",
+      "张帅青",
+      "柏广凡"
+    ],
+    "concreteNames": [
+      "刁煜凡",
+      "张帅青",
+      "柏广凡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007810",
+    "sourceSchool": "南京邮电大学",
+    "sourceTeam": "事末鸽者"
+  },
+  {
+    "cpcfinderIndex": 54,
+    "cpcfinderRank": "55",
+    "cpcfinderSchool": "北京建筑大学",
+    "cpcfinderTeam": "RE:从爆零开始的ACM生活",
+    "rawMemberEntries": [
+      "齐思恺",
+      "无"
+    ],
+    "concreteNames": [
+      "齐思恺"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007471",
+    "sourceSchool": "北京建筑大学",
+    "sourceTeam": "RE：从爆零开始的ACM生活",
+    "mappingEvidence": "同为北京建筑大学，RE：从爆零开始的ACM生活仅冒号全半角不同；南京信息工程大学候选学校和队名前缀不同排除；双方第55名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 55,
+    "cpcfinderRank": "56",
+    "cpcfinderSchool": "哈尔滨工业大学",
+    "cpcfinderTeam": "三个演员",
+    "rawMemberEntries": [
+      "李杰",
+      "宋珂源",
+      "崔玉坤"
+    ],
+    "concreteNames": [
+      "李杰",
+      "宋珂源",
+      "崔玉坤"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007599",
+    "sourceSchool": "哈尔滨工业大学",
+    "sourceTeam": "三个演员"
+  },
+  {
+    "cpcfinderIndex": 56,
+    "cpcfinderRank": "57",
+    "cpcfinderSchool": "中国人民大学",
+    "cpcfinderTeam": "我的心里只有感恩",
+    "rawMemberEntries": [
+      "刘书玮",
+      "罗倍",
+      "陈志朋"
+    ],
+    "concreteNames": [
+      "刘书玮",
+      "罗倍",
+      "陈志朋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008153",
+    "sourceSchool": "中国人民大学",
+    "sourceTeam": "我的心里只有感恩"
+  },
+  {
+    "cpcfinderIndex": 57,
+    "cpcfinderRank": "58",
+    "cpcfinderSchool": "电子科技大学",
+    "cpcfinderTeam": "UESTC_Guest_WiFi",
+    "rawMemberEntries": [
+      "弋竞为",
+      "周湘阳",
+      "喻鹏云"
+    ],
+    "concreteNames": [
+      "弋竞为",
+      "周湘阳",
+      "喻鹏云"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007512",
+    "sourceSchool": "电子科技大学",
+    "sourceTeam": "UESTC_Guest_WiFi"
+  },
+  {
+    "cpcfinderIndex": 58,
+    "cpcfinderRank": "59",
+    "cpcfinderSchool": "浙江工商大学",
+    "cpcfinderTeam": "希望代码一次敲队",
+    "rawMemberEntries": [
+      "徐晨威",
+      "田博宇",
+      "朱徐研"
+    ],
+    "concreteNames": [
+      "徐晨威",
+      "田博宇",
+      "朱徐研"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008075",
+    "sourceSchool": "浙江工商大学",
+    "sourceTeam": "希望代码一次敲队"
+  },
+  {
+    "cpcfinderIndex": 59,
+    "cpcfinderRank": "60",
+    "cpcfinderSchool": "杭州电子科技大学",
+    "cpcfinderTeam": "杭电五队",
+    "rawMemberEntries": [
+      "杜志远",
+      "刘梓灞",
+      "李丰"
+    ],
+    "concreteNames": [
+      "杜志远",
+      "刘梓灞",
+      "李丰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007614",
+    "sourceSchool": "杭州电子科技大学",
+    "sourceTeam": "杭电五队"
+  },
+  {
+    "cpcfinderIndex": 60,
+    "cpcfinderRank": "61",
+    "cpcfinderSchool": "西安交通大学",
+    "cpcfinderTeam": "舞文弄墨",
+    "rawMemberEntries": [
+      "张晓昊",
+      "曹思宇",
+      "王珩"
+    ],
+    "concreteNames": [
+      "张晓昊",
+      "曹思宇",
+      "王珩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007973",
+    "sourceSchool": "西安交通大学",
+    "sourceTeam": "舞文弄墨"
+  },
+  {
+    "cpcfinderIndex": 61,
+    "cpcfinderRank": "62",
+    "cpcfinderSchool": "中山大学",
+    "cpcfinderTeam": "中山大学-版本答案",
+    "rawMemberEntries": [
+      "陈星辉",
+      "方展鸿",
+      "陈银超"
+    ],
+    "concreteNames": [
+      "陈星辉",
+      "方展鸿",
+      "陈银超"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008174",
+    "sourceSchool": "中山大学",
+    "sourceTeam": "中山大学-版本答案"
+  },
+  {
+    "cpcfinderIndex": 62,
+    "cpcfinderRank": "63",
+    "cpcfinderSchool": "南开大学",
+    "cpcfinderTeam": "万事不干屋",
+    "rawMemberEntries": [
+      "卢麒聋",
+      "宋秩睿",
+      "杜岱玮"
+    ],
+    "concreteNames": [
+      "卢麒聋",
+      "宋秩睿",
+      "杜岱玮"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007815",
+    "sourceSchool": "南开大学",
+    "sourceTeam": "万事不干屋"
+  },
+  {
+    "cpcfinderIndex": 63,
+    "cpcfinderRank": "64",
+    "cpcfinderSchool": "浙江师范大学",
+    "cpcfinderTeam": "星际猫",
+    "rawMemberEntries": [
+      "温启涛",
+      "倪伟聪",
+      "厉文浩"
+    ],
+    "concreteNames": [
+      "温启涛",
+      "倪伟聪",
+      "厉文浩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008102",
+    "sourceSchool": "浙江师范大学",
+    "sourceTeam": "星际猫"
+  },
+  {
+    "cpcfinderIndex": 64,
+    "cpcfinderRank": "65",
+    "cpcfinderSchool": "吉林大学",
+    "cpcfinderTeam": "H-Z-.J树",
+    "rawMemberEntries": [
+      "黄哲霖",
+      "郑佳策",
+      "蒋致欧"
+    ],
+    "concreteNames": [
+      "黄哲霖",
+      "郑佳策",
+      "蒋致欧"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007724",
+    "sourceSchool": "吉林大学",
+    "sourceTeam": "H-Z-J树",
+    "mappingEvidence": "同为吉林大学，H-Z-J树仅J前多一转录句点；双方第65名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 65,
+    "cpcfinderRank": "66",
+    "cpcfinderSchool": "浙江大学",
+    "cpcfinderTeam": "超对称夸克",
+    "rawMemberEntries": [
+      "徐琪杰",
+      "杨予晟",
+      "任庭旭"
+    ],
+    "concreteNames": [
+      "徐琪杰",
+      "杨予晟",
+      "任庭旭"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008069",
+    "sourceSchool": "浙江大学",
+    "sourceTeam": "超对称夸克"
+  },
+  {
+    "cpcfinderIndex": 66,
+    "cpcfinderRank": "67",
+    "cpcfinderSchool": "浙江农林大学",
+    "cpcfinderTeam": "临阵磨枪，不快也光",
+    "rawMemberEntries": [
+      "朱泽华",
+      "戴振龙",
+      "盛洪涛"
+    ],
+    "concreteNames": [
+      "朱泽华",
+      "戴振龙",
+      "盛洪涛"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008096",
+    "sourceSchool": "浙江农林大学",
+    "sourceTeam": "临阵磨枪，不快也光"
+  },
+  {
+    "cpcfinderIndex": 67,
+    "cpcfinderRank": "68",
+    "cpcfinderSchool": "浙江师范大学",
+    "cpcfinderTeam": "巴巴托斯",
+    "rawMemberEntries": [
+      "邓鹏",
+      "陈骏鹏",
+      "方天笑"
+    ],
+    "concreteNames": [
+      "邓鹏",
+      "陈骏鹏",
+      "方天笑"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008100",
+    "sourceSchool": "浙江师范大学",
+    "sourceTeam": "巴巴托斯"
+  },
+  {
+    "cpcfinderIndex": 68,
+    "cpcfinderRank": "69",
+    "cpcfinderSchool": "福州大学",
+    "cpcfinderTeam": "两极反转",
+    "rawMemberEntries": [
+      "叶林忠",
+      "丁凌烁",
+      "潘泓岳"
+    ],
+    "concreteNames": [
+      "叶林忠",
+      "丁凌烁",
+      "潘泓岳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007551",
+    "sourceSchool": "福州大学",
+    "sourceTeam": "两极反转"
+  },
+  {
+    "cpcfinderIndex": 69,
+    "cpcfinderRank": "70",
+    "cpcfinderSchool": "南华大学",
+    "cpcfinderTeam": "旨春猪头ACMer不会梦到怀梦出题",
+    "rawMemberEntries": [
+      "周楷磔",
+      "余伟豪",
+      "王思进"
+    ],
+    "concreteNames": [
+      "周楷磔",
+      "余伟豪",
+      "王思进"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007790",
+    "sourceSchool": "南华大学",
+    "sourceTeam": "青春猪头ACMer不会梦到怀梦出题人",
+    "mappingEvidence": "同为南华大学；长队名猪头ACMer不会梦到怀梦出题主体唯一一致，首字青被识别为旨且末尾人漏录；双方第70名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 70,
+    "cpcfinderRank": "71",
+    "cpcfinderSchool": "东北大学秦皇岛分校",
+    "cpcfinderTeam": "GNK48-101",
+    "rawMemberEntries": [
+      "刘泽铭",
+      "罗潇阳",
+      "昊一玄"
+    ],
+    "concreteNames": [
+      "刘泽铭",
+      "罗潇阳",
+      "昊一玄"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007526",
+    "sourceSchool": "东北大学秦皇岛分校",
+    "sourceTeam": "GNK48-101"
+  },
+  {
+    "cpcfinderIndex": 71,
+    "cpcfinderRank": "72",
+    "cpcfinderSchool": "南京邮电大学",
+    "cpcfinderTeam": "收收心找个电子厂上班了",
+    "rawMemberEntries": [
+      "张禹健",
+      "冯一帆",
+      "文超航"
+    ],
+    "concreteNames": [
+      "张禹健",
+      "冯一帆",
+      "文超航"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007811",
+    "sourceSchool": "南京邮电大学",
+    "sourceTeam": "收收心找个电子厂上班了"
+  },
+  {
+    "cpcfinderIndex": 72,
+    "cpcfinderRank": "73",
+    "cpcfinderSchool": "哈尔滨工业大学",
+    "cpcfinderTeam": "哥谭市委书记",
+    "rawMemberEntries": [
+      "胡罡沣",
+      "刘宇哲",
+      "谢明东"
+    ],
+    "concreteNames": [
+      "胡罡沣",
+      "刘宇哲",
+      "谢明东"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007597",
+    "sourceSchool": "哈尔滨工业大学",
+    "sourceTeam": "哥谭市委书记"
+  },
+  {
+    "cpcfinderIndex": 73,
+    "cpcfinderRank": "74",
+    "cpcfinderSchool": "河海大学",
+    "cpcfinderTeam": "艾派克斯",
+    "rawMemberEntries": [
+      "高康悦",
+      "张星宇",
+      "肖潇"
+    ],
+    "concreteNames": [
+      "高康悦",
+      "张星宇",
+      "肖潇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007632",
+    "sourceSchool": "河海大学",
+    "sourceTeam": "艾派克斯"
+  },
+  {
+    "cpcfinderIndex": 74,
+    "cpcfinderRank": "75",
+    "cpcfinderSchool": "吉林大学",
+    "cpcfinderTeam": "柴郡猫猫QuQ",
+    "rawMemberEntries": [
+      "陈铭豪",
+      "黄昌盛",
+      "李光赫"
+    ],
+    "concreteNames": [
+      "陈铭豪",
+      "黄昌盛",
+      "李光赫"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007725",
+    "sourceSchool": "吉林大学",
+    "sourceTeam": "柴郡猫猫QuQ"
+  },
+  {
+    "cpcfinderIndex": 75,
+    "cpcfinderRank": "76",
+    "cpcfinderSchool": "中山大学",
+    "cpcfinderTeam": "中山大学_晴栀",
+    "rawMemberEntries": [
+      "刘思然",
+      "谭嘉伟",
+      "谢泽熙"
+    ],
+    "concreteNames": [
+      "刘思然",
+      "谭嘉伟",
+      "谢泽熙"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008172",
+    "sourceSchool": "中山大学",
+    "sourceTeam": "中山大学_晴栀"
+  },
+  {
+    "cpcfinderIndex": 76,
+    "cpcfinderRank": "77",
+    "cpcfinderSchool": "西南大学",
+    "cpcfinderTeam": "做的全队",
+    "rawMemberEntries": [
+      "徐畅",
+      "马博涵",
+      "何一"
+    ],
+    "concreteNames": [
+      "徐畅",
+      "马博涵",
+      "何一"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007999",
+    "sourceSchool": "西南大学",
+    "sourceTeam": "做的全队"
+  },
+  {
+    "cpcfinderIndex": 77,
+    "cpcfinderRank": "78",
+    "cpcfinderSchool": "江西师范大学",
+    "cpcfinderTeam": "Watch A-SOUL and become Au",
+    "rawMemberEntries": [
+      "陈哲",
+      "颜玮琦",
+      "张天福"
+    ],
+    "concreteNames": [
+      "陈哲",
+      "颜玮琦",
+      "张天福"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007753",
+    "sourceSchool": "江西师范大学",
+    "sourceTeam": "Watch A-SOUL and become Au"
+  },
+  {
+    "cpcfinderIndex": 78,
+    "cpcfinderRank": "79",
+    "cpcfinderSchool": "兰州大学",
+    "cpcfinderTeam": "一个猜想不一定对",
+    "rawMemberEntries": [
+      "王徐笙",
+      "孟戴浓达",
+      "狄农雨"
+    ],
+    "concreteNames": [
+      "王徐笙",
+      "孟戴浓达",
+      "狄农雨"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007760",
+    "sourceSchool": "兰州大学",
+    "sourceTeam": "一个猜想不一定对"
+  },
+  {
+    "cpcfinderIndex": 79,
+    "cpcfinderRank": "80",
+    "cpcfinderSchool": "武汉工程大学",
+    "cpcfinderTeam": "用队长一年单身换牌子",
+    "rawMemberEntries": [
+      "刘典",
+      "罗云祥",
+      "符轩豪"
+    ],
+    "concreteNames": [
+      "刘典",
+      "罗云祥",
+      "符轩豪"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007955",
+    "sourceSchool": "武汉工程大学",
+    "sourceTeam": "用队长一年单身换牌子"
+  },
+  {
+    "cpcfinderIndex": 80,
+    "cpcfinderRank": "81",
+    "cpcfinderSchool": "电子科技大学",
+    "cpcfinderTeam": "UESTC七海大大大鲨鱼",
+    "rawMemberEntries": [
+      "诸人豪",
+      "彭帅康",
+      "李纪甫"
+    ],
+    "concreteNames": [
+      "诸人豪",
+      "彭帅康",
+      "李纪甫"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007514",
+    "sourceSchool": "电子科技大学",
+    "sourceTeam": "UESTC_七海大大大鲨鱼",
+    "mappingEvidence": "同为电子科技大学，UESTC_七海大大大鲨鱼仅下划线缺失；泳者和大大卷候选队名主体不同排除；双方第81名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 81,
+    "cpcfinderRank": "82",
+    "cpcfinderSchool": "华南理工大学",
+    "cpcfinderTeam": "智能人工",
+    "rawMemberEntries": [
+      "谢丰泽",
+      "范天予",
+      "杨鸿飞"
+    ],
+    "concreteNames": [
+      "谢丰泽",
+      "范天予",
+      "杨鸿飞"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007702",
+    "sourceSchool": "华南理工大学",
+    "sourceTeam": "智能人工"
+  },
+  {
+    "cpcfinderIndex": 82,
+    "cpcfinderRank": "83",
+    "cpcfinderSchool": "西安交通大学",
+    "cpcfinderTeam": "钻石海",
+    "rawMemberEntries": [
+      "何卓霖",
+      "田雨阳",
+      "史耀睿"
+    ],
+    "concreteNames": [
+      "何卓霖",
+      "田雨阳",
+      "史耀睿"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007975",
+    "sourceSchool": "西安交通大学",
+    "sourceTeam": "钻石海"
+  },
+  {
+    "cpcfinderIndex": 83,
+    "cpcfinderRank": "84",
+    "cpcfinderSchool": "浙江财经大学",
+    "cpcfinderTeam": "秃如其来",
+    "rawMemberEntries": [
+      "张连毒",
+      "朱新宇",
+      "张维康"
+    ],
+    "concreteNames": [
+      "张连毒",
+      "朱新宇",
+      "张维康"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008067",
+    "sourceSchool": "浙江财经大学",
+    "sourceTeam": "秃如其来"
+  },
+  {
+    "cpcfinderIndex": 84,
+    "cpcfinderRank": "85",
+    "cpcfinderSchool": "华南理工大学",
+    "cpcfinderTeam": "写不出了，饮茶先",
+    "rawMemberEntries": [
+      "许一多",
+      "林靖沅",
+      "马家俊"
+    ],
+    "concreteNames": [
+      "许一多",
+      "林靖沅",
+      "马家俊"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007701",
+    "sourceSchool": "华南理工大学",
+    "sourceTeam": "写不出了，饮茶先"
+  },
+  {
+    "cpcfinderIndex": 85,
+    "cpcfinderRank": "86",
+    "cpcfinderSchool": "t州电子科技大学信息工程学!",
+    "cpcfinderTeam": "胜机",
+    "rawMemberEntries": [
+      "毛一枭",
+      "王权",
+      "梁孝铨"
+    ],
+    "concreteNames": [
+      "毛一枭",
+      "王权",
+      "梁孝铨"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007615",
+    "sourceSchool": "杭州电子科技大学信息工程学院",
+    "sourceTeam": "胜机",
+    "mappingEvidence": "队名胜机在完整榜单中唯一；学校t州电子科技大学信息工程学!是杭州电子科技大学信息工程学院的截断/OCR转录，电子科技大学信息工程学主体一致；双方第86名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 86,
+    "cpcfinderRank": "87",
+    "cpcfinderSchool": "中南大学",
+    "cpcfinderTeam": "摸鱼自动机",
+    "rawMemberEntries": [
+      "黄道煜",
+      "周霄羽",
+      "张皓然"
+    ],
+    "concreteNames": [
+      "黄道煜",
+      "周霄羽",
+      "张皓然"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008164",
+    "sourceSchool": "中南大学",
+    "sourceTeam": "摸鱼自动机"
+  },
+  {
+    "cpcfinderIndex": 87,
+    "cpcfinderRank": "88",
+    "cpcfinderSchool": "南昌大学",
+    "cpcfinderTeam": "超新星",
+    "rawMemberEntries": [
+      "赖澄宇",
+      "王福源",
+      "黄晨曦"
+    ],
+    "concreteNames": [
+      "赖澄宇",
+      "王福源",
+      "黄晨曦"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007775",
+    "sourceSchool": "南昌大学",
+    "sourceTeam": "超新星"
+  },
+  {
+    "cpcfinderIndex": 88,
+    "cpcfinderRank": "89",
+    "cpcfinderSchool": "香港中文大学（深圳）",
+    "cpcfinderTeam": "icpc摆大烂",
+    "rawMemberEntries": [
+      "金德容",
+      "陈建文",
+      "苏哲楷"
+    ],
+    "concreteNames": [
+      "金德容",
+      "陈建文",
+      "苏哲楷"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008021",
+    "sourceSchool": "香港中文大学（深圳）",
+    "sourceTeam": "icpc摆大烂"
+  },
+  {
+    "cpcfinderIndex": 89,
+    "cpcfinderRank": "90",
+    "cpcfinderSchool": "大连理工大学",
+    "cpcfinderTeam": "梦觉流莺时一声",
+    "rawMemberEntries": [
+      "李胤驰",
+      "高盛轩",
+      "袁振"
+    ],
+    "concreteNames": [
+      "李胤驰",
+      "高盛轩",
+      "袁振"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007508",
+    "sourceSchool": "大连理工大学",
+    "sourceTeam": "梦觉流莺时一声"
+  },
+  {
+    "cpcfinderIndex": 90,
+    "cpcfinderRank": "91",
+    "cpcfinderSchool": "齐鲁工业大学（山东省科学院）",
+    "cpcfinderTeam": "生死时速",
+    "rawMemberEntries": [
+      "杨熠辰",
+      "刘鑫龙",
+      "王励翔"
+    ],
+    "concreteNames": [
+      "杨熠辰",
+      "刘鑫龙",
+      "王励翔"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007835",
+    "sourceSchool": "齐鲁工业大学",
+    "sourceTeam": "生死时速",
+    "mappingEvidence": "齐鲁工业大学与CPCFinder带山东省科学院后缀学校名对应，生死时速队名完全一致且候选唯一；双方第91名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 91,
+    "cpcfinderRank": "92",
+    "cpcfinderSchool": "四川大学锦城学院",
+    "cpcfinderTeam": "三核单线程",
+    "rawMemberEntries": [
+      "喻若舟",
+      "陈柯源",
+      "张智源"
+    ],
+    "concreteNames": [
+      "喻若舟",
+      "陈柯源",
+      "张智源"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007921",
+    "sourceSchool": "四川大学锦城学院",
+    "sourceTeam": "三核单线程"
+  },
+  {
+    "cpcfinderIndex": 92,
+    "cpcfinderRank": "93",
+    "cpcfinderSchool": "青岛大学",
+    "cpcfinderTeam": "蓝色空间",
+    "rawMemberEntries": [
+      "王宪泉",
+      "张锦峰",
+      "武彬"
+    ],
+    "concreteNames": [
+      "王宪泉",
+      "张锦峰",
+      "武彬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007838",
+    "sourceSchool": "青岛大学",
+    "sourceTeam": "蓝色空间"
+  },
+  {
+    "cpcfinderIndex": 93,
+    "cpcfinderRank": "94",
+    "cpcfinderSchool": "浙江农林大学",
+    "cpcfinderTeam": "学习使我快乐",
+    "rawMemberEntries": [
+      "张烨浩",
+      "薛卫东",
+      "张凌赫"
+    ],
+    "concreteNames": [
+      "张烨浩",
+      "薛卫东",
+      "张凌赫"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008098",
+    "sourceSchool": "浙江农林大学",
+    "sourceTeam": "学习使我快乐"
+  },
+  {
+    "cpcfinderIndex": 94,
+    "cpcfinderRank": "95",
+    "cpcfinderSchool": "广西大学",
+    "cpcfinderTeam": "这小家伙也许能改写战局",
+    "rawMemberEntries": [
+      "王利明",
+      "金珉瑞",
+      "陈嘉怡"
+    ],
+    "concreteNames": [
+      "王利明",
+      "金珉瑞",
+      "陈嘉怡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007568",
+    "sourceSchool": "广西大学",
+    "sourceTeam": "这小家伙也许能改写战局"
+  },
+  {
+    "cpcfinderIndex": 95,
+    "cpcfinderRank": "96",
+    "cpcfinderSchool": "西安电子科技大学",
+    "cpcfinderTeam": "吾好梦中AC",
+    "rawMemberEntries": [
+      "王逸",
+      "王志利",
+      "欧心缘"
+    ],
+    "concreteNames": [
+      "王逸",
+      "王志利",
+      "欧心缘"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007969",
+    "sourceSchool": "西安电子科技大学",
+    "sourceTeam": "吾好梦中AC"
+  },
+  {
+    "cpcfinderIndex": 96,
+    "cpcfinderRank": "97",
+    "cpcfinderSchool": "哈尔滨工业大学",
+    "cpcfinderTeam": "再也没有树树了",
+    "rawMemberEntries": [
+      "王晓亮",
+      "徐放",
+      "金义扬"
+    ],
+    "concreteNames": [
+      "王晓亮",
+      "徐放",
+      "金义扬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008223",
+    "sourceSchool": "哈尔滨工业大学",
+    "sourceTeam": "再也没有树树了"
+  },
+  {
+    "cpcfinderIndex": 97,
+    "cpcfinderRank": "98",
+    "cpcfinderSchool": "西北工业大学",
+    "cpcfinderTeam": "除了风暴都能击倒大树",
+    "rawMemberEntries": [
+      "孟祥瑞",
+      "徐浩洋",
+      "黄康宁"
+    ],
+    "concreteNames": [
+      "孟祥瑞",
+      "徐浩洋",
+      "黄康宁"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007985",
+    "sourceSchool": "西北工业大学",
+    "sourceTeam": "除了风暴都能击倒大树"
+  },
+  {
+    "cpcfinderIndex": 98,
+    "cpcfinderRank": "99",
+    "cpcfinderSchool": "四川大学",
+    "cpcfinderTeam": "魔理沙",
+    "rawMemberEntries": [
+      "张新",
+      "向宇",
+      "朱奕杰"
+    ],
+    "concreteNames": [
+      "张新",
+      "向宇",
+      "朱奕杰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007919",
+    "sourceSchool": "四川大学",
+    "sourceTeam": "魔理沙"
+  },
+  {
+    "cpcfinderIndex": 99,
+    "cpcfinderRank": "100",
+    "cpcfinderSchool": "山东大学",
+    "cpcfinderTeam": "追光者",
+    "rawMemberEntries": [
+      "战绪丰",
+      "庞天祥",
+      "褚瑞凡"
+    ],
+    "concreteNames": [
+      "战绪丰",
+      "庞天祥",
+      "褚瑞凡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007866",
+    "sourceSchool": "山东大学",
+    "sourceTeam": "追光者"
+  },
+  {
+    "cpcfinderIndex": 100,
+    "cpcfinderRank": "101",
+    "cpcfinderSchool": "香港中文大学",
+    "cpcfinderTeam": "焦糖布丁",
+    "rawMemberEntries": [
+      "袁桀勤",
+      "锺j哲",
+      "到汶楷"
+    ],
+    "concreteNames": [
+      "袁桀勤",
+      "锺j哲",
+      "到汶楷"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008018",
+    "sourceSchool": "香港中文大学",
+    "sourceTeam": "焦糖布丁"
+  },
+  {
+    "cpcfinderIndex": 101,
+    "cpcfinderRank": "102",
+    "cpcfinderSchool": "集美大学",
+    "cpcfinderTeam": "抱歉，这没有集美",
+    "rawMemberEntries": [
+      "林贝宁",
+      "蔡万杰",
+      "张弛"
+    ],
+    "concreteNames": [
+      "林贝宁",
+      "蔡万杰",
+      "张弛"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007729",
+    "sourceSchool": "集美大学",
+    "sourceTeam": "抱歉，这没有集美"
+  },
+  {
+    "cpcfinderIndex": 102,
+    "cpcfinderRank": "103",
+    "cpcfinderSchool": "杭州电子科技大学",
+    "cpcfinderTeam": "杭电三队",
+    "rawMemberEntries": [
+      "高义雄",
+      "赵章恺",
+      "方博"
+    ],
+    "concreteNames": [
+      "高义雄",
+      "赵章恺",
+      "方博"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007612",
+    "sourceSchool": "杭州电子科技大学",
+    "sourceTeam": "杭电三队"
+  },
+  {
+    "cpcfinderIndex": 103,
+    "cpcfinderRank": "104",
+    "cpcfinderSchool": "中国石油大学(北京)",
+    "cpcfinderTeam": "云雾深处把井打",
+    "rawMemberEntries": [
+      "潘耀宇",
+      "陈若朋",
+      "夏方略"
+    ],
+    "concreteNames": [
+      "潘耀宇",
+      "陈若朋",
+      "夏方略"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008157",
+    "sourceSchool": "中国石油大学（北京）",
+    "sourceTeam": "云雾深处把井打",
+    "mappingEvidence": "中国石油大学北京校区学校名仅括号全半角不同，云雾深处把井打队名完全一致；双方第104名、银牌一致。"
+  },
+  {
+    "cpcfinderIndex": 104,
+    "cpcfinderRank": "105",
+    "cpcfinderSchool": "上海理工大学",
+    "cpcfinderTeam": "教练叫我来爆0",
+    "rawMemberEntries": [
+      "刘斌然",
+      "无"
+    ],
+    "concreteNames": [
+      "刘斌然"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007900",
+    "sourceSchool": "上海理工大学",
+    "sourceTeam": "教练叫我来爆0"
+  },
+  {
+    "cpcfinderIndex": 105,
+    "cpcfinderRank": "106",
+    "cpcfinderSchool": "武汉科技大学",
+    "cpcfinderTeam": "呐，你也想要KiraKira吗?",
+    "rawMemberEntries": [
+      "王印德",
+      "王忠齐",
+      "翁锦瑞"
+    ],
+    "concreteNames": [
+      "王印德",
+      "王忠齐",
+      "翁锦瑞"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007958",
+    "sourceSchool": "武汉科技大学",
+    "sourceTeam": "呐，你也想要KiraKira吗？",
+    "mappingEvidence": "同为武汉科技大学，队名仅末尾问号全半角不同；双方第106名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 106,
+    "cpcfinderRank": "107",
+    "cpcfinderSchool": "深圳大学",
+    "cpcfinderTeam": "SZU-Archimedes",
+    "rawMemberEntries": [
+      "郭泽森",
+      "苏梓瀚",
+      "陈俊明"
+    ],
+    "concreteNames": [
+      "郭泽森",
+      "苏梓瀚",
+      "陈俊明"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007909",
+    "sourceSchool": "深圳大学",
+    "sourceTeam": "SZU-Archimedes"
+  },
+  {
+    "cpcfinderIndex": 107,
+    "cpcfinderRank": "108",
+    "cpcfinderSchool": "武汉纺织大学",
+    "cpcfinderTeam": "极东魔术昼寝结社",
+    "rawMemberEntries": [
+      "种佳琪",
+      "张亮",
+      "孟龙"
+    ],
+    "concreteNames": [
+      "种佳琪",
+      "张亮",
+      "孟龙"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007951",
+    "sourceSchool": "武汉纺织大学",
+    "sourceTeam": "极东魔术昼寝结社"
+  },
+  {
+    "cpcfinderIndex": 108,
+    "cpcfinderRank": "109",
+    "cpcfinderSchool": "中国科学技术大学",
+    "cpcfinderTeam": "一轮游队",
+    "rawMemberEntries": [
+      "潘廷岳",
+      "郑以勒",
+      "曹高翔"
+    ],
+    "concreteNames": [
+      "潘廷岳",
+      "郑以勒",
+      "曹高翔"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008138",
+    "sourceSchool": "中国科学技术大学",
+    "sourceTeam": "一轮游队"
+  },
+  {
+    "cpcfinderIndex": 109,
+    "cpcfinderRank": "110",
+    "cpcfinderSchool": "香港中文大学",
+    "cpcfinderTeam": "破壤性演算法",
+    "rawMemberEntries": [
+      "周敬泓",
+      "郯希哲",
+      "淡知衡"
+    ],
+    "concreteNames": [
+      "周敬泓",
+      "郯希哲",
+      "淡知衡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008020",
+    "sourceSchool": "香港中文大学",
+    "sourceTeam": "破壞性演算法",
+    "mappingEvidence": "同为香港中文大学，破壞性演算法被转录成破壤性演算法，其他五字一致且同校候选唯一；双方第110名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 110,
+    "cpcfinderRank": "111",
+    "cpcfinderSchool": "哈尔滨理工大学",
+    "cpcfinderTeam": "哈理工17队",
+    "rawMemberEntries": [
+      "郑然",
+      "王令开",
+      "陈思艺"
+    ],
+    "concreteNames": [
+      "郑然",
+      "王令开",
+      "陈思艺"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007607",
+    "sourceSchool": "哈尔滨理工大学",
+    "sourceTeam": "哈理工17队"
+  },
+  {
+    "cpcfinderIndex": 111,
+    "cpcfinderRank": "112",
+    "cpcfinderSchool": "杭州师范大学",
+    "cpcfinderTeam": "异世相逢，尽享编程",
+    "rawMemberEntries": [
+      "林宏磊",
+      "陈银桦",
+      "葛嘉辉"
+    ],
+    "concreteNames": [
+      "林宏磊",
+      "陈银桦",
+      "葛嘉辉"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007617",
+    "sourceSchool": "杭州师范大学",
+    "sourceTeam": "异世相逢，尽享编程"
+  },
+  {
+    "cpcfinderIndex": 112,
+    "cpcfinderRank": "113",
+    "cpcfinderSchool": "西南科技大学",
+    "cpcfinderTeam": "寺传乘絮鸢",
+    "rawMemberEntries": [
+      "陆承长",
+      "潘俊杰",
+      "毛宝文"
+    ],
+    "concreteNames": [
+      "陆承长",
+      "潘俊杰",
+      "毛宝文"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008005",
+    "sourceSchool": "西南科技大学",
+    "sourceTeam": "寺传乘絮鸢"
+  },
+  {
+    "cpcfinderIndex": 113,
+    "cpcfinderRank": "114",
+    "cpcfinderSchool": "湘潭大学",
+    "cpcfinderTeam": "出签到题就算成功",
+    "rawMemberEntries": [
+      "李越",
+      "田楚天",
+      "蒋文彬"
+    ],
+    "concreteNames": [
+      "李越",
+      "田楚天",
+      "蒋文彬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008023",
+    "sourceSchool": "湘潭大学",
+    "sourceTeam": "出签到题就算成功"
+  },
+  {
+    "cpcfinderIndex": 114,
+    "cpcfinderRank": "115",
+    "cpcfinderSchool": "杭州电子科技大学",
+    "cpcfinderTeam": "杭电八队",
+    "rawMemberEntries": [
+      "冯军荣",
+      "王子习",
+      "李企峥"
+    ],
+    "concreteNames": [
+      "冯军荣",
+      "王子习",
+      "李企峥"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007611",
+    "sourceSchool": "杭州电子科技大学",
+    "sourceTeam": "杭电八队"
+  },
+  {
+    "cpcfinderIndex": 115,
+    "cpcfinderRank": "116",
+    "cpcfinderSchool": "湖北工业大学",
+    "cpcfinderTeam": "百分之六十拿牌",
+    "rawMemberEntries": [
+      "徐僚祥",
+      "贺鑫宇",
+      "颜潇冉"
+    ],
+    "concreteNames": [
+      "徐僚祥",
+      "贺鑫宇",
+      "颜潇冉"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007655",
+    "sourceSchool": "湖北工业大学",
+    "sourceTeam": "百分之六十拿牌"
+  },
+  {
+    "cpcfinderIndex": 116,
+    "cpcfinderRank": "117",
+    "cpcfinderSchool": "武汉理工大学",
+    "cpcfinderTeam": "不会计数怎么办",
+    "rawMemberEntries": [
+      "罗越",
+      "徐亚萌",
+      "奚兆阳"
+    ],
+    "concreteNames": [
+      "罗越",
+      "徐亚萌",
+      "奚兆阳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007962",
+    "sourceSchool": "武汉理工大学",
+    "sourceTeam": "不会计数怎么办"
+  },
+  {
+    "cpcfinderIndex": 117,
+    "cpcfinderRank": "118",
+    "cpcfinderSchool": "华东师范大学",
+    "cpcfinderTeam": "加不出来",
+    "rawMemberEntries": [
+      "漆宇祥",
+      "范晨阳",
+      "王晨阳"
+    ],
+    "concreteNames": [
+      "漆宇祥",
+      "范晨阳",
+      "王晨阳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007696",
+    "sourceSchool": "华东师范大学",
+    "sourceTeam": "加不出来"
+  },
+  {
+    "cpcfinderIndex": 118,
+    "cpcfinderRank": "119",
+    "cpcfinderSchool": "中南大学",
+    "cpcfinderTeam": "行但不行",
+    "rawMemberEntries": [
+      "何晨",
+      "祖凌铠",
+      "叶则杨"
+    ],
+    "concreteNames": [
+      "何晨",
+      "祖凌铠",
+      "叶则杨"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008166",
+    "sourceSchool": "中南大学",
+    "sourceTeam": "行但不行"
+  },
+  {
+    "cpcfinderIndex": 119,
+    "cpcfinderRank": "120",
+    "cpcfinderSchool": "成都理工大学",
+    "cpcfinderTeam": "没有名字的队伍",
+    "rawMemberEntries": [
+      "陈永铿",
+      "汤昱力",
+      "雷笙达"
+    ],
+    "concreteNames": [
+      "陈永铿",
+      "汤昱力",
+      "雷笙达"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007498",
+    "sourceSchool": "成都理工大学",
+    "sourceTeam": "没有名字的队伍"
+  },
+  {
+    "cpcfinderIndex": 120,
+    "cpcfinderRank": "121",
+    "cpcfinderSchool": "国防科技大学",
+    "cpcfinderTeam": "湘江后浪",
+    "rawMemberEntries": [
+      "孙晓帆",
+      "张星宇",
+      "陈铭"
+    ],
+    "concreteNames": [
+      "孙晓帆",
+      "张星宇",
+      "陈铭"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007592",
+    "sourceSchool": "国防科技大学",
+    "sourceTeam": "湘江后浪"
+  },
+  {
+    "cpcfinderIndex": 121,
+    "cpcfinderRank": "122",
+    "cpcfinderSchool": "哈尔滨工程大学",
+    "cpcfinderTeam": "噔噔咚",
+    "rawMemberEntries": [
+      "王昊宇",
+      "官毅",
+      "王洋"
+    ],
+    "concreteNames": [
+      "王昊宇",
+      "官毅",
+      "王洋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007593",
+    "sourceSchool": "哈尔滨工程大学",
+    "sourceTeam": "噔噔咚"
+  },
+  {
+    "cpcfinderIndex": 122,
+    "cpcfinderRank": "123",
+    "cpcfinderSchool": "太原理工大学",
+    "cpcfinderTeam": "鸽剧魅影",
+    "rawMemberEntries": [
+      "桑坤",
+      "郭宇霄",
+      "赵云霄"
+    ],
+    "concreteNames": [
+      "桑坤",
+      "郭宇霄",
+      "赵云霄"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007928",
+    "sourceSchool": "太原理工大学",
+    "sourceTeam": "鸽剧魅影"
+  },
+  {
+    "cpcfinderIndex": 123,
+    "cpcfinderRank": "124",
+    "cpcfinderSchool": "西南科技大学",
+    "cpcfinderTeam": "勿以寄小而为之，勿以赢小而不墨",
+    "rawMemberEntries": [
+      "郭智超",
+      "黄小诚",
+      "杨展鹏"
+    ],
+    "concreteNames": [
+      "郭智超",
+      "黄小诚",
+      "杨展鹏"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008006",
+    "sourceSchool": "西南科技大学",
+    "sourceTeam": "勿以寄小而为之，勿以赢小而不麻",
+    "mappingEvidence": "同为西南科技大学，勿以寄小而为之，勿以赢小而不…长队名仅末字麻/墨转录不同，同校候选唯一；双方第124名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 124,
+    "cpcfinderRank": "125",
+    "cpcfinderSchool": "山东大学（威海)",
+    "cpcfinderTeam": "先占个位置",
+    "rawMemberEntries": [
+      "周润杰",
+      "陈格",
+      "尚书尧"
+    ],
+    "concreteNames": [
+      "周润杰",
+      "陈格",
+      "尚书尧"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007870",
+    "sourceSchool": "山东大学（威海）",
+    "sourceTeam": "先占个位置",
+    "mappingEvidence": "同为山东大学威海校区，学校名仅右括号全半角不同，先占个位置队名完全一致；双方第125名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 125,
+    "cpcfinderRank": "126",
+    "cpcfinderSchool": "浙江工商大学",
+    "cpcfinderTeam": "澳门牌王大战狙击美佐",
+    "rawMemberEntries": [
+      "王铭阳",
+      "陈侠",
+      "许嘉俊"
+    ],
+    "concreteNames": [
+      "王铭阳",
+      "陈侠",
+      "许嘉俊"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008072",
+    "sourceSchool": "浙江工商大学",
+    "sourceTeam": "澳门牌王大战狙击美佐"
+  },
+  {
+    "cpcfinderIndex": 126,
+    "cpcfinderRank": "127",
+    "cpcfinderSchool": "武汉大学",
+    "cpcfinderTeam": "大本钟下开邮局",
+    "rawMemberEntries": [
+      "万宇恒",
+      "苏禹畅",
+      "林锯扬"
+    ],
+    "concreteNames": [
+      "万宇恒",
+      "苏禹畅",
+      "林锯扬"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007948",
+    "sourceSchool": "武汉大学",
+    "sourceTeam": "大本钟下开邮局"
+  },
+  {
+    "cpcfinderIndex": 127,
+    "cpcfinderRank": "128",
+    "cpcfinderSchool": "宁波大学",
+    "cpcfinderTeam": "转世成为丘丘人这件事",
+    "rawMemberEntries": [
+      "曾佳敏",
+      "余嘉瑜",
+      "俞智超"
+    ],
+    "concreteNames": [
+      "曾佳敏",
+      "余嘉瑜",
+      "俞智超"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007829",
+    "sourceSchool": "宁波大学",
+    "sourceTeam": "转世成为丘丘人这件事"
+  },
+  {
+    "cpcfinderIndex": 128,
+    "cpcfinderRank": "129",
+    "cpcfinderSchool": "成都信息工程大学",
+    "cpcfinderTeam": "自动wawa机",
+    "rawMemberEntries": [
+      "胡峻搏",
+      "周博文",
+      "黄俊杰"
+    ],
+    "concreteNames": [
+      "胡峻搏",
+      "周博文",
+      "黄俊杰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007501",
+    "sourceSchool": "成都信息工程大学",
+    "sourceTeam": "自动wawa机"
+  },
+  {
+    "cpcfinderIndex": 129,
+    "cpcfinderRank": "130",
+    "cpcfinderSchool": "新疆大学",
+    "cpcfinderTeam": "xju01",
+    "rawMemberEntries": [
+      "李佳胜",
+      "罗逸聪",
+      "邹炎均"
+    ],
+    "concreteNames": [
+      "李佳胜",
+      "罗逸聪",
+      "邹炎均"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008027",
+    "sourceSchool": "新疆大学",
+    "sourceTeam": "xju01"
+  },
+  {
+    "cpcfinderIndex": 130,
+    "cpcfinderRank": "131",
+    "cpcfinderSchool": "湖南农业大学",
+    "cpcfinderTeam": "取队名就是量子技术",
+    "rawMemberEntries": [
+      "胡忠祥",
+      "刘嘉诚",
+      "王溪超"
+    ],
+    "concreteNames": [
+      "胡忠祥",
+      "刘嘉诚",
+      "王溪超"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007674",
+    "sourceSchool": "湖南农业大学",
+    "sourceTeam": "取队名就是量子技术"
+  },
+  {
+    "cpcfinderIndex": 131,
+    "cpcfinderRank": "132",
+    "cpcfinderSchool": "四川大学",
+    "cpcfinderTeam": "江山代有才人秃",
+    "rawMemberEntries": [
+      "辛梓杰",
+      "李毓",
+      "牛佳文"
+    ],
+    "concreteNames": [
+      "辛梓杰",
+      "李毓",
+      "牛佳文"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007917",
+    "sourceSchool": "四川大学",
+    "sourceTeam": "江山代有才人秃"
+  },
+  {
+    "cpcfinderIndex": 132,
+    "cpcfinderRank": "133",
+    "cpcfinderSchool": "福州大学",
+    "cpcfinderTeam": "精准",
+    "rawMemberEntries": [
+      "李鸿宇",
+      "王奕然",
+      "林铮翔"
+    ],
+    "concreteNames": [
+      "李鸿宇",
+      "王奕然",
+      "林铮翔"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007550",
+    "sourceSchool": "福州大学",
+    "sourceTeam": "精准"
+  },
+  {
+    "cpcfinderIndex": 133,
+    "cpcfinderRank": "134",
+    "cpcfinderSchool": "南京信息工程大学",
+    "cpcfinderTeam": "三个蓝桥杯选手",
+    "rawMemberEntries": [
+      "张逸凡",
+      "鲁哲豪",
+      "吴昊"
+    ],
+    "concreteNames": [
+      "张逸凡",
+      "鲁哲豪",
+      "吴昊"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007808",
+    "sourceSchool": "南京信息工程大学",
+    "sourceTeam": "三个蓝桥杯选手"
+  },
+  {
+    "cpcfinderIndex": 134,
+    "cpcfinderRank": "135",
+    "cpcfinderSchool": "四川大学",
+    "cpcfinderTeam": "给郭哥哥泡一池子大红袍",
+    "rawMemberEntries": [
+      "吴咏蔚",
+      "郭尧",
+      "周雪妍"
+    ],
+    "concreteNames": [
+      "吴咏蔚",
+      "郭尧",
+      "周雪妍"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007920",
+    "sourceSchool": "四川大学",
+    "sourceTeam": "给郭哥哥泡一池子大红袍"
+  },
+  {
+    "cpcfinderIndex": 135,
+    "cpcfinderRank": "136",
+    "cpcfinderSchool": "湖南理工学院",
+    "cpcfinderTeam": "木头儿子最好",
+    "rawMemberEntries": [
+      "王斯威",
+      "陈睿轩",
+      "魏文轩"
+    ],
+    "concreteNames": [
+      "王斯威",
+      "陈睿轩",
+      "魏文轩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007670",
+    "sourceSchool": "湖南理工学院",
+    "sourceTeam": "木头儿子最好"
+  },
+  {
+    "cpcfinderIndex": 136,
+    "cpcfinderRank": "137",
+    "cpcfinderSchool": "成都信息工程大学",
+    "cpcfinderTeam": "打上花火",
+    "rawMemberEntries": [
+      "黄亚军",
+      "赵钰",
+      "李佳彤"
+    ],
+    "concreteNames": [
+      "黄亚军",
+      "赵钰",
+      "李佳彤"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007500",
+    "sourceSchool": "成都信息工程大学",
+    "sourceTeam": "打上花火"
+  },
+  {
+    "cpcfinderIndex": 137,
+    "cpcfinderRank": "138",
+    "cpcfinderSchool": "浙江工业大学",
+    "cpcfinderTeam": "ZJUT一earn3",
+    "rawMemberEntries": [
+      "谢洋帆",
+      "胡圣烩",
+      "吴昊天"
+    ],
+    "concreteNames": [
+      "谢洋帆",
+      "胡圣烩",
+      "吴昊天"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008078",
+    "sourceSchool": "浙江工业大学",
+    "sourceTeam": "ZJUT-earn3",
+    "mappingEvidence": "同为浙江工业大学，ZJUT-earn3中连字符被转录为汉字一，earn3主体与数字3一致；ZJUT6和ZJUT4候选不符；双方第138名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 138,
+    "cpcfinderRank": "139",
+    "cpcfinderSchool": "湖南理工学院",
+    "cpcfinderTeam": "你很有希望",
+    "rawMemberEntries": [
+      "向杰",
+      "李居航",
+      "李维逸"
+    ],
+    "concreteNames": [
+      "向杰",
+      "李居航",
+      "李维逸"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007671",
+    "sourceSchool": "湖南理工学院",
+    "sourceTeam": "你很有希望"
+  },
+  {
+    "cpcfinderIndex": 139,
+    "cpcfinderRank": "140",
+    "cpcfinderSchool": "中国矿业大学",
+    "cpcfinderTeam": "拿牌子教练就女装",
+    "rawMemberEntries": [
+      "温耀林",
+      "尉高耀",
+      "杨忻至"
+    ],
+    "concreteNames": [
+      "温耀林",
+      "尉高耀",
+      "杨忻至"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008140",
+    "sourceSchool": "中国矿业大学",
+    "sourceTeam": "拿牌子教练就女装"
+  },
+  {
+    "cpcfinderIndex": 140,
+    "cpcfinderRank": "141",
+    "cpcfinderSchool": "东北大学秦皇岛分校",
+    "cpcfinderTeam": "升空的奖牌，从台上看还是台下看",
+    "rawMemberEntries": [
+      "胡鸿捷",
+      "袁茂恒",
+      "刘琛"
+    ],
+    "concreteNames": [
+      "胡鸿捷",
+      "袁茂恒",
+      "刘琛"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007528",
+    "sourceSchool": "东北大学秦皇岛分校",
+    "sourceTeam": "升空的奖牌，从台上看还是台下看"
+  },
+  {
+    "cpcfinderIndex": 141,
+    "cpcfinderRank": "142",
+    "cpcfinderSchool": "绍兴文理学院",
+    "cpcfinderTeam": "大吉大利",
+    "rawMemberEntries": [
+      "孟嘉政",
+      "郑柏成",
+      "周建伟"
+    ],
+    "concreteNames": [
+      "孟嘉政",
+      "郑柏成",
+      "周建伟"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007906",
+    "sourceSchool": "绍兴文理学院",
+    "sourceTeam": "大吉大利"
+  },
+  {
+    "cpcfinderIndex": 142,
+    "cpcfinderRank": "143",
+    "cpcfinderSchool": "中国地质大学(北京)",
+    "cpcfinderTeam": "为美好的世界献上祝福!",
+    "rawMemberEntries": [
+      "胡世琦",
+      "伍泽鑫",
+      "赵笑天"
+    ],
+    "concreteNames": [
+      "胡世琦",
+      "伍泽鑫",
+      "赵笑天"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008125",
+    "sourceSchool": "中国地质大学（北京）",
+    "sourceTeam": "为美好的世界献上祝福！",
+    "mappingEvidence": "中国地质大学北京校区学校名括号及队名末尾感叹号仅全半角不同；为美好的世界献上祝福主体完全一致；双方第143名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 143,
+    "cpcfinderRank": "144",
+    "cpcfinderSchool": "闽南师范大学",
+    "cpcfinderTeam": "JV哥哥爱上我",
+    "rawMemberEntries": [
+      "唐鑫程",
+      "傅俊斌",
+      "林俊逸"
+    ],
+    "concreteNames": [
+      "唐鑫程",
+      "傅俊斌",
+      "林俊逸"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007773",
+    "sourceSchool": "闽南师范大学",
+    "sourceTeam": "JV哥哥爱上我"
+  },
+  {
+    "cpcfinderIndex": 144,
+    "cpcfinderRank": "145",
+    "cpcfinderSchool": "深圳大学",
+    "cpcfinderTeam": "SZU-YanranLee",
+    "rawMemberEntries": [
+      "费楚雯",
+      "齐宇轩",
+      "陈希哲"
+    ],
+    "concreteNames": [
+      "费楚雯",
+      "齐宇轩",
+      "陈希哲"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007912",
+    "sourceSchool": "深圳大学",
+    "sourceTeam": "SZU-YanranLee"
+  },
+  {
+    "cpcfinderIndex": 145,
+    "cpcfinderRank": "146",
+    "cpcfinderSchool": "香港中文大学",
+    "cpcfinderTeam": "马料水职业技术学院",
+    "rawMemberEntries": [
+      "杨译琉",
+      "王刘剑夫",
+      "周逸祥"
+    ],
+    "concreteNames": [
+      "杨译琉",
+      "王刘剑夫",
+      "周逸祥"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008017",
+    "sourceSchool": "香港中文大学",
+    "sourceTeam": "马料水职业技术学院"
+  },
+  {
+    "cpcfinderIndex": 146,
+    "cpcfinderRank": "147",
+    "cpcfinderSchool": "郑州大学",
+    "cpcfinderTeam": "感觉不如线下。。线上",
+    "rawMemberEntries": [
+      "杨宇航",
+      "余清扬",
+      "凌鑫"
+    ],
+    "concreteNames": [
+      "杨宇航",
+      "余清扬",
+      "凌鑫"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008114",
+    "sourceSchool": "郑州大学",
+    "sourceTeam": "感觉不如线下。。线上"
+  },
+  {
+    "cpcfinderIndex": 147,
+    "cpcfinderRank": "148",
+    "cpcfinderSchool": "中国矿业大学",
+    "cpcfinderTeam": "一般性随机忆墨人",
+    "rawMemberEntries": [
+      "宋明潇",
+      "杨斌涵",
+      "钟泽旭"
+    ],
+    "concreteNames": [
+      "宋明潇",
+      "杨斌涵",
+      "钟泽旭"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008142",
+    "sourceSchool": "中国矿业大学",
+    "sourceTeam": "一般性随机忆墨人"
+  },
+  {
+    "cpcfinderIndex": 148,
+    "cpcfinderRank": "149",
+    "cpcfinderSchool": "湖南师范大学",
+    "cpcfinderTeam": "猫猫能量",
+    "rawMemberEntries": [
+      "姜远仁",
+      "胡昀靠",
+      "陈代康"
+    ],
+    "concreteNames": [
+      "姜远仁",
+      "胡昀靠",
+      "陈代康"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007682",
+    "sourceSchool": "湖南师范大学",
+    "sourceTeam": "猫猫能量"
+  },
+  {
+    "cpcfinderIndex": 149,
+    "cpcfinderRank": "150",
+    "cpcfinderSchool": "南京理工大学",
+    "cpcfinderTeam": "饼干",
+    "rawMemberEntries": [
+      "陈一涵",
+      "代领",
+      "谢东娜"
+    ],
+    "concreteNames": [
+      "陈一涵",
+      "代领",
+      "谢东娜"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007802",
+    "sourceSchool": "南京理工大学",
+    "sourceTeam": "饼干"
+  },
+  {
+    "cpcfinderIndex": 150,
+    "cpcfinderRank": "151",
+    "cpcfinderSchool": "新疆大学",
+    "cpcfinderTeam": "x.ju02",
+    "rawMemberEntries": [
+      "吕昂",
+      "陈永园",
+      "吴昌坤"
+    ],
+    "concreteNames": [
+      "吕昂",
+      "陈永园",
+      "吴昌坤"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008028",
+    "sourceSchool": "新疆大学",
+    "sourceTeam": "xju02",
+    "mappingEvidence": "同为新疆大学，xju02仅x后多一个转录句点；xju01编号不同且新疆师范大学学校不同排除；双方第151名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 151,
+    "cpcfinderRank": "152",
+    "cpcfinderSchool": "浙江科技学院",
+    "cpcfinderTeam": "枸杞泡澡",
+    "rawMemberEntries": [
+      "袁佳菲",
+      "蔡炳旭",
+      "蒋贤潇"
+    ],
+    "concreteNames": [
+      "袁佳菲",
+      "蔡炳旭",
+      "蒋贤潇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008087",
+    "sourceSchool": "浙江科技学院",
+    "sourceTeam": "枸杞泡澡"
+  },
+  {
+    "cpcfinderIndex": 152,
+    "cpcfinderRank": "153",
+    "cpcfinderSchool": "北京理工大学珠海学院",
+    "cpcfinderTeam": "星火燎原",
+    "rawMemberEntries": [
+      "张润泽",
+      "洪宇勋",
+      "郑润民"
+    ],
+    "concreteNames": [
+      "张润泽",
+      "洪宇勋",
+      "郑润民"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007482",
+    "sourceSchool": "北京理工大学珠海学院",
+    "sourceTeam": "星火燎原"
+  },
+  {
+    "cpcfinderIndex": 153,
+    "cpcfinderRank": "154",
+    "cpcfinderSchool": "南京理工大学",
+    "cpcfinderTeam": "尔有这时间翻队名不是再能a两道是",
+    "rawMemberEntries": [
+      "张悦熠",
+      "何丰辰",
+      "王一萌"
+    ],
+    "concreteNames": [
+      "张悦熠",
+      "何丰辰",
+      "王一萌"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007803",
+    "sourceSchool": "南京理工大学",
+    "sourceTeam": "你有这时间翻队名不是再能a两道题",
+    "mappingEvidence": "同为南京理工大学，长队名有这时间翻队名不是再能a两道主体唯一一致，首尾你/尔、题/是为转录差异；双方第154名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 154,
+    "cpcfinderRank": "155",
+    "cpcfinderSchool": "北京理工大学",
+    "cpcfinderTeam": "阿夸滑滑蛋喝冰红茶",
+    "rawMemberEntries": [
+      "李嘉政",
+      "李轩宇",
+      "彭程"
+    ],
+    "concreteNames": [
+      "李嘉政",
+      "李轩宇",
+      "彭程"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007480",
+    "sourceSchool": "北京理工大学",
+    "sourceTeam": "阿夸滑滑蛋喝冰红茶"
+  },
+  {
+    "cpcfinderIndex": 155,
+    "cpcfinderRank": "156",
+    "cpcfinderSchool": "泉州师范学院",
+    "cpcfinderTeam": "AC再爱我亿次",
+    "rawMemberEntries": [
+      "陈佳乐",
+      "施维康",
+      "张自力"
+    ],
+    "concreteNames": [
+      "陈佳乐",
+      "施维康",
+      "张自力"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007851",
+    "sourceSchool": "泉州师范学院",
+    "sourceTeam": "AC再爱我亿次"
+  },
+  {
+    "cpcfinderIndex": 156,
+    "cpcfinderRank": "157",
+    "cpcfinderSchool": "中南大学",
+    "cpcfinderTeam": "我们去昆明吃什么",
+    "rawMemberEntries": [
+      "许宸哲",
+      "郑逸程",
+      "霍旭洋"
+    ],
+    "concreteNames": [
+      "许宸哲",
+      "郑逸程",
+      "霍旭洋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008165",
+    "sourceSchool": "中南大学",
+    "sourceTeam": "我们去昆明吃什么"
+  },
+  {
+    "cpcfinderIndex": 157,
+    "cpcfinderRank": "158",
+    "cpcfinderSchool": "南京大学",
+    "cpcfinderTeam": "菜根队",
+    "rawMemberEntries": [
+      "贺柄毓",
+      "柴浩天",
+      "陈荣错"
+    ],
+    "concreteNames": [
+      "贺柄毓",
+      "柴浩天",
+      "陈荣错"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007793",
+    "sourceSchool": "南京大学",
+    "sourceTeam": "菜根队"
+  },
+  {
+    "cpcfinderIndex": 158,
+    "cpcfinderRank": "159",
+    "cpcfinderSchool": "吉林大学",
+    "cpcfinderTeam": "代码搬运工",
+    "rawMemberEntries": [
+      "侯德亮",
+      "无"
+    ],
+    "concreteNames": [
+      "侯德亮"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007726",
+    "sourceSchool": "吉林大学",
+    "sourceTeam": "代码搬运工"
+  },
+  {
+    "cpcfinderIndex": 159,
+    "cpcfinderRank": "160",
+    "cpcfinderSchool": "厦门大学",
+    "cpcfinderTeam": "柳下桃蹊",
+    "rawMemberEntries": [
+      "韩可可",
+      "黄凯佳",
+      "黄勖"
+    ],
+    "concreteNames": [
+      "韩可可",
+      "黄凯佳",
+      "黄勖"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007858",
+    "sourceSchool": "厦门大学",
+    "sourceTeam": "柳下桃蹊"
+  },
+  {
+    "cpcfinderIndex": 160,
+    "cpcfinderRank": "161",
+    "cpcfinderSchool": "华中科技大学",
+    "cpcfinderTeam": "偏远小山村传统弱校",
+    "rawMemberEntries": [
+      "李根",
+      "陈贤坤",
+      "陈开宇"
+    ],
+    "concreteNames": [
+      "李根",
+      "陈贤坤",
+      "陈开宇"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007712",
+    "sourceSchool": "华中科技大学",
+    "sourceTeam": "偏远小山村传统弱校"
+  },
+  {
+    "cpcfinderIndex": 161,
+    "cpcfinderRank": "162",
+    "cpcfinderSchool": "南京大学",
+    "cpcfinderTeam": "还没想好叫什么",
+    "rawMemberEntries": [
+      "王恺予",
+      "张乃仁",
+      "王锦朋"
+    ],
+    "concreteNames": [
+      "王恺予",
+      "张乃仁",
+      "王锦朋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007794",
+    "sourceSchool": "南京大学",
+    "sourceTeam": "还没想好叫什么"
+  },
+  {
+    "cpcfinderIndex": 162,
+    "cpcfinderRank": "163",
+    "cpcfinderSchool": "山东师范大学",
+    "cpcfinderTeam": "浩然今天吃了么",
+    "rawMemberEntries": [
+      "王位毅",
+      "李明阳",
+      "聂晓阳"
+    ],
+    "concreteNames": [
+      "王位毅",
+      "李明阳",
+      "聂晓阳"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007884",
+    "sourceSchool": "山东师范大学",
+    "sourceTeam": "浩然今天吃了么"
+  },
+  {
+    "cpcfinderIndex": 163,
+    "cpcfinderRank": "164",
+    "cpcfinderSchool": "北京邮电大学",
+    "cpcfinderTeam": "六目相对",
+    "rawMemberEntries": [
+      "崔家瑞",
+      "崔芳洲",
+      "罗毅锐"
+    ],
+    "concreteNames": [
+      "崔家瑞",
+      "崔芳洲",
+      "罗毅锐"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007486",
+    "sourceSchool": "北京邮电大学",
+    "sourceTeam": "六目相对"
+  },
+  {
+    "cpcfinderIndex": 164,
+    "cpcfinderRank": "165",
+    "cpcfinderSchool": "上海理工大学",
+    "cpcfinderTeam": "面向样例编程",
+    "rawMemberEntries": [
+      "李明懿",
+      "韩昱川",
+      "无"
+    ],
+    "concreteNames": [
+      "李明懿",
+      "韩昱川"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007902",
+    "sourceSchool": "上海理工大学",
+    "sourceTeam": "面向样例编程"
+  },
+  {
+    "cpcfinderIndex": 165,
+    "cpcfinderRank": "166",
+    "cpcfinderSchool": "重庆邮电大学",
+    "cpcfinderTeam": "怎么会是呢",
+    "rawMemberEntries": [
+      "江骏扬",
+      "罗昊",
+      "康德"
+    ],
+    "concreteNames": [
+      "江骏扬",
+      "罗昊",
+      "康德"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008193",
+    "sourceSchool": "重庆邮电大学",
+    "sourceTeam": "怎么会是呢"
+  },
+  {
+    "cpcfinderIndex": 166,
+    "cpcfinderRank": "167",
+    "cpcfinderSchool": "武汉工程大学",
+    "cpcfinderTeam": "真的有人学了几年还在打铁吗?",
+    "rawMemberEntries": [
+      "刘超",
+      "黎永琪",
+      "刘宣聋"
+    ],
+    "concreteNames": [
+      "刘超",
+      "黎永琪",
+      "刘宣聋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007956",
+    "sourceSchool": "武汉工程大学",
+    "sourceTeam": "真的有人学了几年还在打铁吗？",
+    "mappingEvidence": "同为武汉工程大学，真的有人学了几年还在打铁吗仅问号全半角不同；双方第167名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 167,
+    "cpcfinderRank": "168",
+    "cpcfinderSchool": "南京航空航天大学",
+    "cpcfinderTeam": "在ICPC中寻求AC是否搞错了什么?",
+    "rawMemberEntries": [
+      "钱品亦",
+      "李亚宁",
+      "岑嘉诚"
+    ],
+    "concreteNames": [
+      "钱品亦",
+      "李亚宁",
+      "岑嘉诚"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007801",
+    "sourceSchool": "南京航空航天大学",
+    "sourceTeam": "在ICPC中寻求AC是否搞错了什么？",
+    "mappingEvidence": "同为南京航空航天大学，长队名仅问号全半角不同；双方第168名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 168,
+    "cpcfinderRank": "169",
+    "cpcfinderSchool": "山东大学（威海)",
+    "cpcfinderTeam": "无敌暴龙冰河可爱爆了",
+    "rawMemberEntries": [
+      "祁盛文",
+      "宁涛",
+      "汤子锋"
+    ],
+    "concreteNames": [
+      "祁盛文",
+      "宁涛",
+      "汤子锋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007869",
+    "sourceSchool": "山东大学（威海）",
+    "sourceTeam": "无敌暴龙冰河可爱爆了",
+    "mappingEvidence": "同为山东大学威海校区，学校名仅右括号全半角不同，无敌暴龙冰河可爱爆了队名完全一致；双方第169名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 169,
+    "cpcfinderRank": "170",
+    "cpcfinderSchool": "广州大学",
+    "cpcfinderTeam": "啊对对对",
+    "rawMemberEntries": [
+      "林希栋",
+      "罗锦祺",
+      "李泽刚"
+    ],
+    "concreteNames": [
+      "林希栋",
+      "罗锦祺",
+      "李泽刚"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007576",
+    "sourceSchool": "广州大学",
+    "sourceTeam": "啊对对对"
+  },
+  {
+    "cpcfinderIndex": 170,
+    "cpcfinderRank": "171",
+    "cpcfinderSchool": "哈尔滨工业大学（威海",
+    "cpcfinderTeam": "阿波罗11",
+    "rawMemberEntries": [
+      "陈柏羽",
+      "阮文哲",
+      "纪鑫鹏"
+    ],
+    "concreteNames": [
+      "陈柏羽",
+      "阮文哲",
+      "纪鑫鹏"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007602",
+    "sourceSchool": "哈尔滨工业大学（威海）",
+    "sourceTeam": "阿波罗11",
+    "mappingEvidence": "同为哈尔滨工业大学威海校区，学校名漏录右括号，阿波罗11队名完全一致；东华理工大学阿波罗候选学校及编号不符排除；双方第171名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 171,
+    "cpcfinderRank": "172",
+    "cpcfinderSchool": "南昌大学",
+    "cpcfinderTeam": "酸甜泡芙",
+    "rawMemberEntries": [
+      "万钧",
+      "蔡定中",
+      "惠鹏程"
+    ],
+    "concreteNames": [
+      "万钧",
+      "蔡定中",
+      "惠鹏程"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007777",
+    "sourceSchool": "南昌大学",
+    "sourceTeam": "酸甜泡芙"
+  },
+  {
+    "cpcfinderIndex": 172,
+    "cpcfinderRank": "173",
+    "cpcfinderSchool": "南京理工大学",
+    "cpcfinderTeam": "瑟瑟发抖",
+    "rawMemberEntries": [
+      "刘星辰",
+      "季若曦",
+      "王瀚楠"
+    ],
+    "concreteNames": [
+      "刘星辰",
+      "季若曦",
+      "王瀚楠"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007804",
+    "sourceSchool": "南京理工大学",
+    "sourceTeam": "瑟瑟发抖"
+  },
+  {
+    "cpcfinderIndex": 173,
+    "cpcfinderRank": "174",
+    "cpcfinderSchool": "北京交通大学",
+    "cpcfinderTeam": "有三个人前来买瓜",
+    "rawMemberEntries": [
+      "韦正豪",
+      "无"
+    ],
+    "concreteNames": [
+      "韦正豪"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007475",
+    "sourceSchool": "北京交通大学",
+    "sourceTeam": "有三个人前来买瓜"
+  },
+  {
+    "cpcfinderIndex": 174,
+    "cpcfinderRank": "175",
+    "cpcfinderSchool": "香港科技大学",
+    "cpcfinderTeam": "树状数组不能维护01背包",
+    "rawMemberEntries": [
+      "温子奇",
+      "张重",
+      "张瑜隽"
+    ],
+    "concreteNames": [
+      "温子奇",
+      "张重",
+      "张瑜隽"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008016",
+    "sourceSchool": "香港科技大学",
+    "sourceTeam": "树状数组不能维护01背包"
+  },
+  {
+    "cpcfinderIndex": 175,
+    "cpcfinderRank": "176",
+    "cpcfinderSchool": "平顶山学院",
+    "cpcfinderTeam": "平院一队",
+    "rawMemberEntries": [
+      "邢玉龙",
+      "朱梦飞",
+      "刘力宾"
+    ],
+    "concreteNames": [
+      "邢玉龙",
+      "朱梦飞",
+      "刘力宾"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007831",
+    "sourceSchool": "平顶山学院",
+    "sourceTeam": "平院一队"
+  },
+  {
+    "cpcfinderIndex": 176,
+    "cpcfinderRank": "177",
+    "cpcfinderSchool": "西安电子科技大学",
+    "cpcfinderTeam": "布鲁特福斯惊呼内行",
+    "rawMemberEntries": [
+      "谭升阳",
+      "谢铭松",
+      "郭浩杰"
+    ],
+    "concreteNames": [
+      "谭升阳",
+      "谢铭松",
+      "郭浩杰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007967",
+    "sourceSchool": "西安电子科技大学",
+    "sourceTeam": "布鲁特福斯惊呼内行"
+  },
+  {
+    "cpcfinderIndex": 177,
+    "cpcfinderRank": "178",
+    "cpcfinderSchool": "北京理工大学",
+    "cpcfinderTeam": "贝尔曼福德大战浮士德",
+    "rawMemberEntries": [
+      "杨予宸",
+      "刘志丹",
+      "焦鹏屹"
+    ],
+    "concreteNames": [
+      "杨予宸",
+      "刘志丹",
+      "焦鹏屹"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007481",
+    "sourceSchool": "北京理工大学",
+    "sourceTeam": "贝尔曼福德大战浮士德"
+  },
+  {
+    "cpcfinderIndex": 178,
+    "cpcfinderRank": "179",
+    "cpcfinderSchool": "长沙理工大学",
+    "cpcfinderTeam": "老面油条",
+    "rawMemberEntries": [
+      "杨韬",
+      "侯骏哲",
+      "张禹轩"
+    ],
+    "concreteNames": [
+      "杨韬",
+      "侯骏哲",
+      "张禹轩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008054",
+    "sourceSchool": "长沙理工大学",
+    "sourceTeam": "老面油条"
+  },
+  {
+    "cpcfinderIndex": 179,
+    "cpcfinderRank": "180",
+    "cpcfinderSchool": "上海大学",
+    "cpcfinderTeam": "噫吁喊",
+    "rawMemberEntries": [
+      "谢奕",
+      "陶钧",
+      "李梓航"
+    ],
+    "concreteNames": [
+      "谢奕",
+      "陶钧",
+      "李梓航"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007890",
+    "sourceSchool": "上海大学",
+    "sourceTeam": "噫吁嚱",
+    "mappingEvidence": "同为上海大学，噫吁嚱末字生僻字被转录成喊，前两字一致且同校无其他候选；双方第180名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 180,
+    "cpcfinderRank": "181",
+    "cpcfinderSchool": "宁波大学",
+    "cpcfinderTeam": "知世小天使请别难过喔",
+    "rawMemberEntries": [
+      "李嘉琪",
+      "梁航锋",
+      "王茹月"
+    ],
+    "concreteNames": [
+      "李嘉琪",
+      "梁航锋",
+      "王茹月"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007828",
+    "sourceSchool": "宁波大学",
+    "sourceTeam": "知世小天使请别难过喔"
+  },
+  {
+    "cpcfinderIndex": 181,
+    "cpcfinderRank": "182",
+    "cpcfinderSchool": "阜阳师范大学",
+    "cpcfinderTeam": "正宗太和羊肉板面",
+    "rawMemberEntries": [
+      "谢天意",
+      "谢腾飞",
+      "储思晴"
+    ],
+    "concreteNames": [
+      "谢天意",
+      "谢腾飞",
+      "储思晴"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007555",
+    "sourceSchool": "阜阳师范大学",
+    "sourceTeam": "正宗太和羊肉板面"
+  },
+  {
+    "cpcfinderIndex": 182,
+    "cpcfinderRank": "182",
+    "cpcfinderSchool": "中国海洋大学",
+    "cpcfinderTeam": "黑夜犬人Pro",
+    "rawMemberEntries": [
+      "蹇浩航",
+      "解正源",
+      "张成玺"
+    ],
+    "concreteNames": [
+      "蹇浩航",
+      "解正源",
+      "张成玺"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008129",
+    "sourceSchool": "中国海洋大学",
+    "sourceTeam": "黑夜犬人Pro"
+  },
+  {
+    "cpcfinderIndex": 183,
+    "cpcfinderRank": "184",
+    "cpcfinderSchool": "鲁东大学",
+    "cpcfinderTeam": "三带一",
+    "rawMemberEntries": [
+      "武远博",
+      "王敬仪",
+      "马业森"
+    ],
+    "concreteNames": [
+      "武远博",
+      "王敬仪",
+      "马业森"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007770",
+    "sourceSchool": "鲁东大学",
+    "sourceTeam": "三带一"
+  },
+  {
+    "cpcfinderIndex": 184,
+    "cpcfinderRank": "185",
+    "cpcfinderSchool": "东北大学",
+    "cpcfinderTeam": "东北大学_河童重工",
+    "rawMemberEntries": [
+      "郝思成",
+      "陈锦绥",
+      "吴钰璋"
+    ],
+    "concreteNames": [
+      "郝思成",
+      "陈锦绥",
+      "吴钰璋"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007522",
+    "sourceSchool": "东北大学",
+    "sourceTeam": "东北大学_河童重工"
+  },
+  {
+    "cpcfinderIndex": 185,
+    "cpcfinderRank": "186",
+    "cpcfinderSchool": "浙江科技学院",
+    "cpcfinderTeam": "重庆鸡公煲",
+    "rawMemberEntries": [
+      "蒋银帆",
+      "丁好",
+      "卢超翼"
+    ],
+    "concreteNames": [
+      "蒋银帆",
+      "丁好",
+      "卢超翼"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008090",
+    "sourceSchool": "浙江科技学院",
+    "sourceTeam": "重庆鸡公煲"
+  },
+  {
+    "cpcfinderIndex": 186,
+    "cpcfinderRank": "187",
+    "cpcfinderSchool": "武昌理工学院",
+    "cpcfinderTeam": "昆仑虚",
+    "rawMemberEntries": [
+      "常毅威",
+      "周思豪",
+      "常康腾"
+    ],
+    "concreteNames": [
+      "常毅威",
+      "周思豪",
+      "常康腾"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007946",
+    "sourceSchool": "武昌理工学院",
+    "sourceTeam": "昆仑虚"
+  },
+  {
+    "cpcfinderIndex": 187,
+    "cpcfinderRank": "188",
+    "cpcfinderSchool": "南开大学",
+    "cpcfinderTeam": "我没意见",
+    "rawMemberEntries": [
+      "黄子懿",
+      "苑华莹",
+      "郑原"
+    ],
+    "concreteNames": [
+      "黄子懿",
+      "苑华莹",
+      "郑原"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007816",
+    "sourceSchool": "南开大学",
+    "sourceTeam": "我没意见"
+  },
+  {
+    "cpcfinderIndex": 188,
+    "cpcfinderRank": "189",
+    "cpcfinderSchool": "福州大学",
+    "cpcfinderTeam": "coder和他的两个眼缘队友",
+    "rawMemberEntries": [
+      "庄佳霖",
+      "吴泽凯",
+      "林文浩"
+    ],
+    "concreteNames": [
+      "庄佳霖",
+      "吴泽凯",
+      "林文浩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007549",
+    "sourceSchool": "福州大学",
+    "sourceTeam": "coder和他的两个眼缘队友"
+  },
+  {
+    "cpcfinderIndex": 189,
+    "cpcfinderRank": "190",
+    "cpcfinderSchool": "南昌航空大学",
+    "cpcfinderTeam": "冰与火之歌",
+    "rawMemberEntries": [
+      "王旻镐",
+      "张豪",
+      "蔡威"
+    ],
+    "concreteNames": [
+      "王旻镐",
+      "张豪",
+      "蔡威"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007779",
+    "sourceSchool": "南昌航空大学",
+    "sourceTeam": "冰与火之歌"
+  },
+  {
+    "cpcfinderIndex": 190,
+    "cpcfinderRank": "191",
+    "cpcfinderSchool": "西南民族大学",
+    "cpcfinderTeam": "刻晴想吃cherrv么",
+    "rawMemberEntries": [
+      "张玷开",
+      "肖振威",
+      "汪湘衡"
+    ],
+    "concreteNames": [
+      "张玷开",
+      "肖振威",
+      "汪湘衡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008009",
+    "sourceSchool": "西南民族大学",
+    "sourceTeam": "刻晴想吃cherry么",
+    "mappingEvidence": "同为西南民族大学，刻晴想吃cherry么仅字母y被转录为v；同校候选唯一，双方第191名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 191,
+    "cpcfinderRank": "192",
+    "cpcfinderSchool": "浙江理工大学",
+    "cpcfinderTeam": "赚钱小分队",
+    "rawMemberEntries": [
+      "瞿程浩",
+      "昊士超",
+      "楼家豪"
+    ],
+    "concreteNames": [
+      "瞿程浩",
+      "昊士超",
+      "楼家豪"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008094",
+    "sourceSchool": "浙江理工大学",
+    "sourceTeam": "赚钱小分队"
+  },
+  {
+    "cpcfinderIndex": 192,
+    "cpcfinderRank": "193",
+    "cpcfinderSchool": "浙大宁波理工学院",
+    "cpcfinderTeam": "笛卡尔鸡",
+    "rawMemberEntries": [
+      "胡向东",
+      "夏宇",
+      "吴亦初"
+    ],
+    "concreteNames": [
+      "胡向东",
+      "夏宇",
+      "吴亦初"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008063",
+    "sourceSchool": "浙大宁波理工学院",
+    "sourceTeam": "笛卡尔鸡"
+  },
+  {
+    "cpcfinderIndex": 193,
+    "cpcfinderRank": "194",
+    "cpcfinderSchool": "浙江工业大学",
+    "cpcfinderTeam": "Z.JUT6",
+    "rawMemberEntries": [
+      "陈天阳",
+      "苗子豪",
+      "薛予凡"
+    ],
+    "concreteNames": [
+      "陈天阳",
+      "苗子豪",
+      "薛予凡"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008077",
+    "sourceSchool": "浙江工业大学",
+    "sourceTeam": "ZJUT6",
+    "mappingEvidence": "同为浙江工业大学，ZJUT6仅Z后多一个转录句点；ZJUT4及ZJUT-earn3尾部不同排除；双方第194名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 194,
+    "cpcfinderRank": "195",
+    "cpcfinderSchool": "河南工业大学",
+    "cpcfinderTeam": "攻壳机动队",
+    "rawMemberEntries": [
+      "孔维飒",
+      "李志豪",
+      "张君毅"
+    ],
+    "concreteNames": [
+      "孔维飒",
+      "李志豪",
+      "张君毅"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007643",
+    "sourceSchool": "河南工业大学",
+    "sourceTeam": "攻壳机动队"
+  },
+  {
+    "cpcfinderIndex": 195,
+    "cpcfinderRank": "196",
+    "cpcfinderSchool": "深圳大学",
+    "cpcfinderTeam": "SZU-Euclid",
+    "rawMemberEntries": [
+      "梁泽荣",
+      "蒋术焜",
+      "林烨堃"
+    ],
+    "concreteNames": [
+      "梁泽荣",
+      "蒋术焜",
+      "林烨堃"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007911",
+    "sourceSchool": "深圳大学",
+    "sourceTeam": "SZU-Euclid"
+  },
+  {
+    "cpcfinderIndex": 196,
+    "cpcfinderRank": "197",
+    "cpcfinderSchool": "福建师范大学",
+    "cpcfinderTeam": "随机队名",
+    "rawMemberEntries": [
+      "许泽昊",
+      "陈杨涛",
+      "周奕帆"
+    ],
+    "concreteNames": [
+      "许泽昊",
+      "陈杨涛",
+      "周奕帆"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007548",
+    "sourceSchool": "福建师范大学",
+    "sourceTeam": "随机队名"
+  },
+  {
+    "cpcfinderIndex": 197,
+    "cpcfinderRank": "198",
+    "cpcfinderSchool": "北京邮电大学",
+    "cpcfinderTeam": "珊瑚宫心海",
+    "rawMemberEntries": [
+      "董凯文",
+      "高畅",
+      "董建威"
+    ],
+    "concreteNames": [
+      "董凯文",
+      "高畅",
+      "董建威"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007488",
+    "sourceSchool": "北京邮电大学",
+    "sourceTeam": "珊瑚宫心海"
+  },
+  {
+    "cpcfinderIndex": 198,
+    "cpcfinderRank": "199",
+    "cpcfinderSchool": "西安电子科技大学",
+    "cpcfinderTeam": "二重虹",
+    "rawMemberEntries": [
+      "石潇",
+      "花煦",
+      "周益全"
+    ],
+    "concreteNames": [
+      "石潇",
+      "花煦",
+      "周益全"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007968",
+    "sourceSchool": "西安电子科技大学",
+    "sourceTeam": "二重虹"
+  },
+  {
+    "cpcfinderIndex": 199,
+    "cpcfinderRank": "200",
+    "cpcfinderSchool": "西北工业大学",
+    "cpcfinderTeam": "东大村三巫师",
+    "rawMemberEntries": [
+      "杨莫凡",
+      "季昕泽",
+      "肖宇涵"
+    ],
+    "concreteNames": [
+      "杨莫凡",
+      "季昕泽",
+      "肖宇涵"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007986",
+    "sourceSchool": "西北工业大学",
+    "sourceTeam": "东大村三巫师"
+  },
+  {
+    "cpcfinderIndex": 200,
+    "cpcfinderRank": "201",
+    "cpcfinderSchool": "苏州大学",
+    "cpcfinderTeam": "咕咕咕咕咕咕咕咕",
+    "rawMemberEntries": [
+      "殷九思",
+      "林志诚",
+      "徐一"
+    ],
+    "concreteNames": [
+      "殷九思",
+      "林志诚",
+      "徐一"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007925",
+    "sourceSchool": "苏州大学",
+    "sourceTeam": "咕咕咕咕咕咕咕咕咕",
+    "mappingEvidence": "同为苏州大学，队名仅重复咕字数量少录一次，同校候选唯一；双方第201名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 201,
+    "cpcfinderRank": "202",
+    "cpcfinderSchool": "哈尔滨工程大学",
+    "cpcfinderTeam": "人菜瘾大",
+    "rawMemberEntries": [
+      "周智",
+      "常一帆",
+      "管袁菲"
+    ],
+    "concreteNames": [
+      "周智",
+      "常一帆",
+      "管袁菲"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007596",
+    "sourceSchool": "哈尔滨工程大学",
+    "sourceTeam": "人菜瘾大"
+  },
+  {
+    "cpcfinderIndex": 202,
+    "cpcfinderRank": "203",
+    "cpcfinderSchool": "南昌航空大学",
+    "cpcfinderTeam": "斩首之夜",
+    "rawMemberEntries": [
+      "吴博雄",
+      "吕错伦",
+      "王复兴"
+    ],
+    "concreteNames": [
+      "吴博雄",
+      "吕错伦",
+      "王复兴"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007782",
+    "sourceSchool": "南昌航空大学",
+    "sourceTeam": "斩首之夜"
+  },
+  {
+    "cpcfinderIndex": 203,
+    "cpcfinderRank": "204",
+    "cpcfinderSchool": "华东师范大学",
+    "cpcfinderTeam": "正式参赛好开心",
+    "rawMemberEntries": [
+      "汪鼎尊",
+      "无"
+    ],
+    "concreteNames": [
+      "汪鼎尊"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007698",
+    "sourceSchool": "华东师范大学",
+    "sourceTeam": "正式参赛好开心"
+  },
+  {
+    "cpcfinderIndex": 204,
+    "cpcfinderRank": "205",
+    "cpcfinderSchool": "中南大学",
+    "cpcfinderTeam": "只能靠签到维生这样子",
+    "rawMemberEntries": [
+      "郭欣澜",
+      "包晗",
+      "周硕"
+    ],
+    "concreteNames": [
+      "郭欣澜",
+      "包晗",
+      "周硕"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030008167",
+    "sourceSchool": "中南大学",
+    "sourceTeam": "只能靠签到维生这样子"
+  },
+  {
+    "cpcfinderIndex": 205,
+    "cpcfinderRank": "206",
+    "cpcfinderSchool": "上海理工大学",
+    "cpcfinderTeam": "令和三年的上海爱丽丝",
+    "rawMemberEntries": [
+      "潘孝安",
+      "无"
+    ],
+    "concreteNames": [
+      "潘孝安"
+    ],
+    "excludedPlaceholders": [
+      "无"
+    ],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007901",
+    "sourceSchool": "上海理工大学",
+    "sourceTeam": "令和三年的上海爱丽丝"
+  },
+  {
+    "cpcfinderIndex": 206,
+    "cpcfinderRank": "207",
+    "cpcfinderSchool": "上海大学",
+    "cpcfinderTeam": "还是你懂的多啊",
+    "rawMemberEntries": [
+      "王启隆",
+      "彭昊辉",
+      "康高熙"
+    ],
+    "concreteNames": [
+      "王启隆",
+      "彭昊辉",
+      "康高熙"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007889",
+    "sourceSchool": "上海大学",
+    "sourceTeam": "还是你懂的多啊"
+  },
+  {
+    "cpcfinderIndex": 207,
+    "cpcfinderRank": "208",
+    "cpcfinderSchool": "电子科技大学中山学院",
+    "cpcfinderTeam": "文君志鸿队2022",
+    "rawMemberEntries": [
+      "陈佳宝",
+      "吴宝",
+      "林国杰"
+    ],
+    "concreteNames": [
+      "陈佳宝",
+      "吴宝",
+      "林国杰"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "exact-school-and-team",
+    "sourceUserId": "1030007518",
+    "sourceSchool": "电子科技大学中山学院",
+    "sourceTeam": "文君志鸿队2022"
+  },
+  {
+    "cpcfinderIndex": 208,
+    "cpcfinderRank": "209",
+    "cpcfinderSchool": "金华职业技术学院",
+    "cpcfinderTeam": "XQ DDw",
+    "rawMemberEntries": [
+      "兰强强",
+      "褚茂誉",
+      "林宇浩"
+    ],
+    "concreteNames": [
+      "兰强强",
+      "褚茂誉",
+      "林宇浩"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030007756",
+    "sourceSchool": "金华职业技术学院",
+    "sourceTeam": "XQ DDW",
+    "mappingEvidence": "同为金华职业技术学院，XQ DDW仅末尾W大小写不同；双方第209名、铜牌一致。"
+  },
+  {
+    "cpcfinderIndex": 209,
+    "cpcfinderRank": "210",
+    "cpcfinderSchool": "中国地质大学（武汉)",
+    "cpcfinderTeam": "特困生",
+    "rawMemberEntries": [
+      "曹世杰",
+      "刘剑峰",
+      "秦浩然"
+    ],
+    "concreteNames": [
+      "曹世杰",
+      "刘剑峰",
+      "秦浩然"
+    ],
+    "excludedPlaceholders": [],
+    "status": "matched",
+    "method": "reviewed-explicit-mapping",
+    "sourceUserId": "1030008127",
+    "sourceSchool": "中国地质大学（武汉）",
+    "sourceTeam": "特困生",
+    "mappingEvidence": "同为中国地质大学武汉校区，学校名仅右括号全半角不同，特困生队名完全一致；双方第210名、铜牌一致。"
+  }
+]

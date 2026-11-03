@@ -50,6 +50,8 @@ OIer 按姓名匹配 OI 获奖记录，并根据获奖时年级推算 XCPC 参�
 
 原表缺少队员姓名时，可在同目录提供同名 `.members.json`，按“学校＋队名”精确匹配补充；选手提取和成绩转换共用该名单，原表已有姓名时以原表为准。2026 西安站的补充名单来自 [XCPC Sight](https://junjiecharles.github.io/xcpc-sight/?series=2026-2027&previewContest=icpc-2026-xian&view=preview)（其来源为赛站参赛手册），覆盖成绩表中的 402 队、1205 个队员条目。佛山大学“我的刀盾”按来源保留 2 人。更新补充名单后，同样按上述三个步骤重新生成数据，OI 记录仍由本项目的 `raw.txt` 和年级窗口规则匹配。
 
+2021 赛季补充第 46 届 ICPC 上海站（2021-11-28）和昆明站（2022-04-17）。完整成绩取自 RankLand 公开 SRK 榜单，队员取自 [CPCFinder 上海站](https://cpcfinder.com/contest/48)和[昆明站](https://cpcfinder.com/contest/27)，已写入标准源表的 `Member1`–`Member3` 列。上海收录 632 支正式队伍、1896 条姓名；昆明收录 753 支正式队伍，其中 210 支获奖队有 616 条具体姓名，其余 543 队姓名留空，`无`、`两人队`等占位或备注不作为选手。两站均排除打星队，保留源秒级并列排名，总罚时按源总秒数取整为分钟。原始成绩、名单快照、来源地址、下载日期和名称差异映射保存在 `xcpc/2021/sources/` 及同名 `.source.json`，详见[来源说明](xcpc/2021/sources/README.md)。
+
 ### 2. 启动前端
 
 ```bash

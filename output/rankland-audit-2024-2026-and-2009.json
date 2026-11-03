@@ -1,0 +1,26 @@
+{
+  "method": "逐场浏览器打开比赛，读取数据完整度→队伍成员；非零场次打开队伍详情确认具体姓名",
+  "checked": 20,
+  "results": [
+    {"rankId":"icpc2026xi_an","label":"西安站","covered":418,"total":418,"status":"complete","sample":"UTG（北京大学）：全柏锋 / 汪飞鸿 / 龚咏乔"},
+    {"rankId":"icpc2026chengdu","label":"成都站","covered":328,"total":328,"status":"complete","sample":"CF皇帝（代码源）：杜瑜皓 / 蒋凌宇 / 许淇文"},
+    {"rankId":"icpc2026wuhan","label":"武汉站","covered":438,"total":438,"status":"complete","sample":"CF 皇帝（代码源）：杜瑜皓 / 蒋凌宇 / 许淇文 / 杜瑜皓 (coach)"},
+    {"rankId":"icpc2025xi_an","label":"西安站","covered":417,"total":418,"status":"partial","displayedPercent":"100%","sample":"夏日影（上海交通大学）：刘家宁 / 朱泽木 / 冯启豫"},
+    {"rankId":"icpc2025chengdu","label":"成都站","covered":328,"total":328,"status":"complete","sample":"CF 皇帝（代码源）：杜瑜皓 / 蒋凌宇 / 许淇文"},
+    {"rankId":"icpc2025wuhan","label":"武汉站","covered":520,"total":520,"status":"complete","sample":"CF 皇帝（代码源）：杜瑜皓 / 蒋凌宇 / 许淇文 / 周秋辰 (coach)"},
+    {"rankId":"icpc2025nanjing","label":"南京站","covered":359,"total":359,"status":"complete","sample":"耿耿于怀（代码源）：杜瑜皓 / 许庭强 / 许淇文"},
+    {"rankId":"icpc2025shenyang","label":"沈阳站","covered":411,"total":411,"status":"complete","sample":"不渡轮回（北京大学）：郭羽冲 / 沈吉滪 / 陈昕阳"},
+    {"rankId":"icpc2025shanghai","label":"上海站","covered":356,"total":356,"status":"complete","sample":"一步之遥（北京大学）：钱易 / 彭博 / 施开成"},
+    {"rankId":"icpc2025hongkong","label":"香港站","covered":136,"total":136,"status":"complete","sample":"Naive Birds（北京大学）：王蔚澄 / 朱剑枫 / 李羿辰"},
+    {"rankId":"icpc2025ecfinal","label":"EC Final","covered":306,"total":306,"status":"complete","sample":"WF皇帝（代码源）：杜瑜皓 / 蒋凌宇 / 邓明扬 / 时庆钰 (coach)"},
+    {"rankId":"icpc2024chengdu","label":"成都站","covered":309,"total":309,"status":"complete","sample":"赤橙黄绿蓝紫（北京大学）：蒋凌宇 / 钱易"},
+    {"rankId":"icpc2024nanjing","label":"南京站","covered":360,"total":360,"status":"complete","sample":"再续夜航（个人参赛）：杜瑜皓 / 许庭强 / 周康阳"},
+    {"rankId":"icpc2024hangzhou","label":"杭州站","covered":391,"total":391,"status":"complete","sample":"学军信友队1队（杭州学军中学）：周康阳 / 章弥炫 / 陈诺"},
+    {"rankId":"icpc2024shanghai","label":"上海站","covered":352,"total":352,"status":"complete","sample":"随机匹配（北京大学）：柯绎思 / 柯怿憬 / 谢梓涵"},
+    {"rankId":"icpc2024shenyang","label":"沈阳站","covered":318,"total":320,"status":"partial","displayedPercent":"99%","sample":"赤橙黄绿蓝紫（北京大学）：蒋凌宇 / 钱易 / 徐安矣"},
+    {"rankId":"icpc2024kunming","label":"昆明站","covered":485,"total":485,"status":"complete","sample":"哥哥来了（代码源）：杜瑜皓 / 蒋凌宇 / 盛通通"},
+    {"rankId":"icpc2024hongkong","label":"香港站","covered":174,"total":174,"status":"complete","sample":"Merry Christmas, Mr You（Peking University）：Siyuan Luo / Ziyue Ge / Yuhao Meng"},
+    {"rankId":"icpc2024ecfinal","label":"EC Final","covered":280,"total":403,"status":"partial","displayedPercent":"69%","sample":"赤橙黄绿蓝紫（北京大学）：钱易 / 蒋凌宇"},
+    {"rankId":"icpc2009wuhan","label":"武汉站","covered":0,"total":132,"status":"missing"}
+  ]
+}

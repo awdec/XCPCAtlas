@@ -1,0 +1,223 @@
+{
+  "season": 2021,
+  "edition": 46,
+  "contest_date": "2021-11-28",
+  "source_page": "https://rl.algoux.cn/collection/official?rankId=icpc2021shanghai",
+  "original_scoreboard": "https://board.xcpcio.com/icpc/46th/shanghai",
+  "ranklist_snapshot": {
+    "path": "sources/icpc2021shanghai.srk.json",
+    "sha256": "1ac018a230950352d3aad785cb0b302dd4278fa5ee3826d37ec33d5b31cf9489",
+    "bytes": 870416,
+    "url": "https://cdn.algoux.cn/rankland/file/70792633718411264/icpc2021shanghai.srk.json",
+    "retrieved_date": "2026-11-03"
+  },
+  "member_snapshot": {
+    "path": "sources/cpcfinder-shanghai.members.json",
+    "sha256": "76367f6a01748f71aa5aebf65c322f1730d9c5d980fee0ba04edf614c7a8a159",
+    "bytes": 224734,
+    "url": "https://cpcfinder.com/contest/48",
+    "retrieved_date": "2026-11-03"
+  },
+  "workbook": {
+    "path": "ICPC shanghai.xlsx",
+    "sha256": "c3fcb95daf62faa8bddc8a19f5ce263632ea689e1f5acdd571c484c1dc0c20ce",
+    "bytes": 101897
+  },
+  "counts": {
+    "source_teams": 682,
+    "official_teams_in_workbook": 632,
+    "excluded_starred_teams": 50,
+    "problems": 13,
+    "official_schools_raw_names": 253,
+    "official_teams_with_zero_solved_retained": 4,
+    "gold": 35,
+    "silver": 70,
+    "bronze": 105,
+    "no_medal": 422,
+    "member_source_teams": 682,
+    "exact_school_team_matches_all_teams": 676,
+    "explicit_alias_school_team_matches_all_teams": 6,
+    "official_teams_with_three_member_names": 632,
+    "official_member_entries": 1896,
+    "team_level_female_markers_present": 0
+  },
+  "member_matching": {
+    "rule": "Exact school AND exact team, otherwise only the two explicitly listed school aliases AND exact team. No rank, position, or team-only fallback.",
+    "school_aliases_for_matching_only": {
+      "齐鲁工业大学": "齐鲁工业大学（山东省科学院）",
+      "中国石油大学(北京)": "中国石油大学（北京）"
+    },
+    "affected_matches": [
+      {
+        "source_user_id": "1030006489",
+        "source_position": 162,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "生死时速",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "生死时速",
+        "member_source_index": 161,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "杨熠辰",
+          "刘鑫龙",
+          "王励翔"
+        ]
+      },
+      {
+        "source_user_id": "1030006488",
+        "source_position": 405,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "滴滴嘟嘟",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "滴滴嘟嘟",
+        "member_source_index": 404,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "赵文涛",
+          "王文正",
+          "任满意"
+        ]
+      },
+      {
+        "source_user_id": "1030006782",
+        "source_position": 408,
+        "official": true,
+        "source_school": "中国石油大学(北京)",
+        "source_team": "锦绣河山美如画",
+        "member_source_school": "中国石油大学（北京）",
+        "member_source_team": "锦绣河山美如画",
+        "member_source_index": 407,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "杨禹含",
+          "张熹",
+          "夏曦乐"
+        ]
+      },
+      {
+        "source_user_id": "1030006486",
+        "source_position": 503,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "队里没有嘉心糖",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "队里没有嘉心糖",
+        "member_source_index": 502,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "王俊越",
+          "李振宇",
+          "杨华展"
+        ]
+      },
+      {
+        "source_user_id": "1030006487",
+        "source_position": 572,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "开局笑嘻嘻",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "开局笑嘻嘻",
+        "member_source_index": 571,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "李德旺",
+          "董国梁",
+          "刘易凡"
+        ]
+      },
+      {
+        "source_user_id": "1030006485",
+        "source_position": 595,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "毫厘",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "毫厘",
+        "member_source_index": 594,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "张丽丽",
+          "李坤朋",
+          "张宇豪"
+        ]
+      }
+    ],
+    "full_audit": "output/import-2021-shanghai/member_matches.json",
+    "full_audit_sha256": "85240f4df7cb25a81e19c24c3e79c4f1c1483a54ba4a4fd4caf1221759e35d12",
+    "workbook_school_team_text": "Unchanged SRK source text; aliases are only used to locate member names."
+  },
+  "rules": [
+    "仅收录user.official为true的队伍，保留正式队伍中零题但有提交的队伍；打星队不参与站内统计。",
+    "保留完整榜单的学校和队名；队员姓名按CPCFinder原文补入，不擅自纠正疑似录入错字。",
+    "排名按原始秒级得分判定并保留并列；总罚时从score.time总秒数向下取整为分钟，不按舍入后的分钟重排。",
+    "按源13题状态保留通过情况、尝试次数，AC/FB用时向下取整为分钟；原始秒数和FB信息保留在SRK快照。",
+    "金/银/铜按源正式排名和35/70/105奖额配置保留；其他队伍不标奖牌。",
+    "原始榜单队伍ID不冒充ICPC官方ID；源表Source User ID列用于溯源，不输出为icpc_id。"
+  ],
+  "limitations": [
+    "全部632支正式队伍均有三名具体选手姓名；源682队中的50支打星队伍不纳入。",
+    "完整榜单只定义女队图例，未标明任何具体队伍为女队，未据此推断女队。",
+    "名单核查确认的是页面提供的姓名字段，未逐人核验姓名真实性或拼写。"
+  ],
+  "validation": {
+    "all_source_team_ids_unique_and_equal_to_xcpcio": true,
+    "all_source_school_team_strings_equal_to_xcpcio": true,
+    "all_source_official_flags_equal_to_xcpcio": true,
+    "all_source_statuses_verified_against_xcpcio": 8866,
+    "official_statuses_round_trip_verified": 8216,
+    "all_solved_counts_equal_statuses": true,
+    "all_raw_score_seconds_equal_sum_of_ac_seconds_plus_wrong_attempt_penalties": true,
+    "all_members_matched_one_to_one": true,
+    "production_parse_team_round_trip_teams": 632,
+    "first_team_example": {
+      "source_user_id": "1030006500",
+      "raw_score_seconds": 89209,
+      "penalty_minutes": 1486,
+      "individually_floored_problem_sum_minutes": 1482
+    },
+    "tied_official_scores": [
+      {
+        "solved": 4,
+        "seconds": 18687,
+        "rank": 237,
+        "teams": 2,
+        "source_user_ids": [
+          "1030006800",
+          "1030006361"
+        ]
+      },
+      {
+        "solved": 2,
+        "seconds": 6303,
+        "rank": 507,
+        "teams": 2,
+        "source_user_ids": [
+          "1030006251",
+          "1030006309"
+        ]
+      },
+      {
+        "solved": 0,
+        "seconds": 0,
+        "rank": 629,
+        "teams": 4,
+        "source_user_ids": [
+          "1030006165",
+          "1030006163",
+          "1030006637",
+          "1030006639"
+        ]
+      }
+    ],
+    "production_convert_file_in_memory_teams": 632,
+    "production_filename_metadata": {
+      "org": "ICPC",
+      "id": "shanghai",
+      "city_cn": "上海",
+      "name": "ICPC 上海"
+    }
+  }
+}

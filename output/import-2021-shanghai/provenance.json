@@ -1,0 +1,302 @@
+{
+  "contest": {
+    "season": 2021,
+    "organization": "ICPC",
+    "edition": 46,
+    "city": "上海",
+    "date": "2021-11-28",
+    "title": "第 46 届 ICPC 国际大学生程序设计竞赛亚洲区域赛（上海）- 正式赛（2021-11-28）"
+  },
+  "created_on": "2026-11-03",
+  "status": "Prepared workbook for review; not installed in xcpc/; pipeline not run by this builder",
+  "sources": [
+    {
+      "path": "output/import-2021-shanghai/rankland.srk.json",
+      "url": "https://cdn.algoux.cn/rankland/file/70792633718411264/icpc2021shanghai.srk.json",
+      "retrieved_on": "2026-11-03",
+      "sha256": "1ac018a230950352d3aad785cb0b302dd4278fa5ee3826d37ec33d5b31cf9489",
+      "bytes": 870416,
+      "role": "Primary complete scoreboard: official flags, raw second scores, statuses, medal rules"
+    },
+    {
+      "path": "output/import-2021-shanghai/rankland.html",
+      "url": "https://rl.algoux.cn/collection/official?rankId=icpc2021shanghai",
+      "retrieved_on": "2026-11-03",
+      "sha256": "934284a43063030aa0e26935e61b2e2daad45284a817dc007132136987ade081",
+      "bytes": 1395613,
+      "role": "Public page identifying the downloadable SRK and contest date; first row displays 1486 penalty minutes"
+    },
+    {
+      "path": "output/import-2021-shanghai/config.json",
+      "url": "https://board.xcpcio.com/data/icpc/46th/shanghai/config.json",
+      "retrieved_on": "2026-11-03",
+      "sha256": "7ab9bfb25e3b726ec6047d88e5e76786bb1d3afc40795cc815859ea43c5f9ce8",
+      "bytes": 1974,
+      "role": "Independent public XCPCIO scoreboard cross-check"
+    },
+    {
+      "path": "output/import-2021-shanghai/team.json",
+      "url": "https://board.xcpcio.com/data/icpc/46th/shanghai/team.json",
+      "retrieved_on": "2026-11-03",
+      "sha256": "7a66376d64576d66523873995e398e1c0b402113a3d515b5b90da4b3a1457e3b",
+      "bytes": 96745,
+      "role": "Independent public XCPCIO scoreboard cross-check"
+    },
+    {
+      "path": "output/import-2021-shanghai/run.json",
+      "url": "https://board.xcpcio.com/data/icpc/46th/shanghai/run.json",
+      "retrieved_on": "2026-11-03",
+      "sha256": "ebbc685f493d79833fb05ddead4a084437ff563ddcfdcb3497e8766d5b9a8957",
+      "bytes": 826097,
+      "role": "Independent public XCPCIO scoreboard cross-check"
+    },
+    {
+      "path": "output/cpcfinder-48-audit-0-169.json",
+      "url": "https://cpcfinder.com/contest/48",
+      "retrieved_on": "2026-11-03",
+      "sha256": "dfadcf320c43bc5fa788f12fbc1d52a2311481129bafab1114f4effa5ddbce26",
+      "bytes": 34723,
+      "role": "Public team-dialog member audit"
+    },
+    {
+      "path": "output/cpcfinder-48-audit-170-339.json",
+      "url": "https://cpcfinder.com/contest/48",
+      "retrieved_on": "2026-11-03",
+      "sha256": "d5801de3db2a8ca03ff34b5c8a98821a85a9067e69ac9f5cef4ecf8ef3b8ad3c",
+      "bytes": 35070,
+      "role": "Public team-dialog member audit"
+    },
+    {
+      "path": "output/cpcfinder-48-audit-340-509.json",
+      "url": "https://cpcfinder.com/contest/48",
+      "retrieved_on": "2026-11-03",
+      "sha256": "b908a14c5412b2739dce4e89d17ec2a8bdb540eef9d17dc6283351512575682c",
+      "bytes": 23851,
+      "role": "Public team-dialog member audit"
+    },
+    {
+      "path": "output/cpcfinder-48-audit-510-681.json",
+      "url": "https://cpcfinder.com/contest/48",
+      "retrieved_on": "2026-11-03",
+      "sha256": "79833259e841fcad45275cfaa38e6bccfc891b82bdf57c7bbd9c2f69c71cbf6d",
+      "bytes": 53150,
+      "role": "Public team-dialog member audit"
+    },
+    {
+      "path": "output/import-2021-shanghai/rankland-styled.js",
+      "url": "https://cdn.algoux.cn/rankland/dist/assets/StyledRanklist.vue_vue_type_script_setup_true_lang-b05f16b5.js",
+      "retrieved_on": "2026-11-03",
+      "sha256": "25003593af6300ad4aa2e51a4cd702c56df9be36de926a1544c81df2d6ce4b58",
+      "bytes": 417603,
+      "role": "Public renderer used to confirm equal-score ranks and first-school-only organization ranks"
+    }
+  ],
+  "output": {
+    "path": "output/import-2021-shanghai/icpc shanghai.xlsx",
+    "sha256": "c3fcb95daf62faa8bddc8a19f5ce263632ea689e1f5acdd571c484c1dc0c20ce",
+    "sheet": "正式队伍",
+    "header_row": 2
+  },
+  "counts": {
+    "source_teams": 682,
+    "official_teams_in_workbook": 632,
+    "excluded_starred_teams": 50,
+    "problems": 13,
+    "official_schools_raw_names": 253,
+    "official_teams_with_zero_solved_retained": 4,
+    "gold": 35,
+    "silver": 70,
+    "bronze": 105,
+    "no_medal": 422,
+    "member_source_teams": 682,
+    "exact_school_team_matches_all_teams": 676,
+    "explicit_alias_school_team_matches_all_teams": 6,
+    "official_teams_with_three_member_names": 632,
+    "official_member_entries": 1896,
+    "team_level_female_markers_present": 0
+  },
+  "identity_matching": {
+    "rule": "Exact school AND exact team, otherwise only the two explicitly listed school aliases AND exact team. No rank, position, or team-only fallback.",
+    "school_aliases_for_matching_only": {
+      "齐鲁工业大学": "齐鲁工业大学（山东省科学院）",
+      "中国石油大学(北京)": "中国石油大学（北京）"
+    },
+    "affected_matches": [
+      {
+        "source_user_id": "1030006489",
+        "source_position": 162,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "生死时速",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "生死时速",
+        "member_source_index": 161,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "杨熠辰",
+          "刘鑫龙",
+          "王励翔"
+        ]
+      },
+      {
+        "source_user_id": "1030006488",
+        "source_position": 405,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "滴滴嘟嘟",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "滴滴嘟嘟",
+        "member_source_index": 404,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "赵文涛",
+          "王文正",
+          "任满意"
+        ]
+      },
+      {
+        "source_user_id": "1030006782",
+        "source_position": 408,
+        "official": true,
+        "source_school": "中国石油大学(北京)",
+        "source_team": "锦绣河山美如画",
+        "member_source_school": "中国石油大学（北京）",
+        "member_source_team": "锦绣河山美如画",
+        "member_source_index": 407,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "杨禹含",
+          "张熹",
+          "夏曦乐"
+        ]
+      },
+      {
+        "source_user_id": "1030006486",
+        "source_position": 503,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "队里没有嘉心糖",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "队里没有嘉心糖",
+        "member_source_index": 502,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "王俊越",
+          "李振宇",
+          "杨华展"
+        ]
+      },
+      {
+        "source_user_id": "1030006487",
+        "source_position": 572,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "开局笑嘻嘻",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "开局笑嘻嘻",
+        "member_source_index": 571,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "李德旺",
+          "董国梁",
+          "刘易凡"
+        ]
+      },
+      {
+        "source_user_id": "1030006485",
+        "source_position": 595,
+        "official": true,
+        "source_school": "齐鲁工业大学",
+        "source_team": "毫厘",
+        "member_source_school": "齐鲁工业大学（山东省科学院）",
+        "member_source_team": "毫厘",
+        "member_source_index": 594,
+        "match_method": "explicit_school_alias_and_exact_team",
+        "members": [
+          "张丽丽",
+          "李坤朋",
+          "张宇豪"
+        ]
+      }
+    ],
+    "full_audit": "output/import-2021-shanghai/member_matches.json",
+    "full_audit_sha256": "85240f4df7cb25a81e19c24c3e79c4f1c1483a54ba4a4fd4caf1221759e35d12",
+    "workbook_school_team_text": "Unchanged SRK source text; aliases are only used to locate member names."
+  },
+  "transformation": {
+    "official_filter": "Include only user.official == true; retain official zero-solved teams.",
+    "rank": "Source row order, official teams only; equal (score.value, score.time seconds) share the first position rank, then skip positions, matching RankLand ICPC renderer.",
+    "organization_rank": "Only the first official team of each exact source organization is assigned its school rank; remaining rows blank. No tied first-school rows occur here.",
+    "medal": "SRK ICPC count rule [35,70,105] => Gold rank<=35, Silver<=105, Bronze<=210; no medal otherwise.",
+    "penalty": "floor(original SRK score.time in seconds / 60), without summing independently floored per-problem minutes.",
+    "problem": "AC/FB => +(tries-1)(floor(AC seconds/60)); RJ => -tries; null/zero => -.",
+    "female": "Girl=N for every row: the SRK defines a global female filter but no team has an explicit female marker. This means unmarked, not proof of mixed gender.",
+    "icpc_id": "Blank: SRK user.id is retained in member_matches.json but its status as an official ICPC ID is not established."
+  },
+  "validation": {
+    "all_source_team_ids_unique_and_equal_to_xcpcio": true,
+    "all_source_school_team_strings_equal_to_xcpcio": true,
+    "all_source_official_flags_equal_to_xcpcio": true,
+    "all_source_statuses_verified_against_xcpcio": 8866,
+    "official_statuses_round_trip_verified": 8216,
+    "all_solved_counts_equal_statuses": true,
+    "all_raw_score_seconds_equal_sum_of_ac_seconds_plus_wrong_attempt_penalties": true,
+    "all_members_matched_one_to_one": true,
+    "production_parse_team_round_trip_teams": 632,
+    "first_team_example": {
+      "source_user_id": "1030006500",
+      "raw_score_seconds": 89209,
+      "penalty_minutes": 1486,
+      "individually_floored_problem_sum_minutes": 1482
+    },
+    "tied_official_scores": [
+      {
+        "solved": 4,
+        "seconds": 18687,
+        "rank": 237,
+        "teams": 2,
+        "source_user_ids": [
+          "1030006800",
+          "1030006361"
+        ]
+      },
+      {
+        "solved": 2,
+        "seconds": 6303,
+        "rank": 507,
+        "teams": 2,
+        "source_user_ids": [
+          "1030006251",
+          "1030006309"
+        ]
+      },
+      {
+        "solved": 0,
+        "seconds": 0,
+        "rank": 629,
+        "teams": 4,
+        "source_user_ids": [
+          "1030006165",
+          "1030006163",
+          "1030006637",
+          "1030006639"
+        ]
+      }
+    ],
+    "production_convert_file_in_memory_teams": 632,
+    "production_filename_metadata": {
+      "org": "ICPC",
+      "id": "shanghai",
+      "city_cn": "上海",
+      "name": "ICPC 上海"
+    }
+  },
+  "known_limitations": [
+    "This workbook is reconstructed from a public complete scoreboard plus CPCFinder member dialogs, not an original organizer-issued XLSX.",
+    "No team-level female markers are supplied. The global female marker definition alone cannot identify female teams.",
+    "Per-problem AC times are floored to the standard workbook's integer-minute format; raw second totals are floored only after summing, so they may differ from summed displayed problem minutes.",
+    "The public run/status solution lists are reconstructed final-score summaries (rejected timestamps may be 0 or synthetic). They do not preserve actual submission chronology.",
+    "CPCFinder ranks are audit context only and are never used for identity matching; official ranks are reconstructed from the complete score source.",
+    "SRK user IDs are source identifiers and are not assumed to be official ICPC IDs."
+  ]
+}

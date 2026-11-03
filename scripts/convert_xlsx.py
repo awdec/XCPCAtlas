@@ -69,8 +69,7 @@ CN_TO_ID = {v: k for k, v in CITY_MAP.items()}
 # "年份/文件名" → 赛区身份的显式覆盖 (org, contest_id, city_cn, name)。
 # 用于文件名无法自解释的情况。如 2020/2021/2024 年 CCPC 总决赛以举办城市命名
 # （分站赛齐备 + 总决赛规模的队伍数可辨认为总决赛），故保留 id "final" 并将显示名改为城市。
-# 2022 年总决赛以 "ccpc final" 命名但举办地同样在广州，且同年已有 id "guangzhou"
-# 的普通分站，显示名加"（总决赛）"后缀消歧义。
+# 2022 年广州的两场 CCPC 保留各自的 id，总决赛显示名加后缀以区分。
 FILENAME_OVERRIDES = {
     "2026/icpc2026chengdu.xlsx": ("ICPC", "chengdu", "成都", "ICPC 成都"),
     "2026/icpc2026wuhan.xlsx": ("ICPC", "wuhan", "武汉", "ICPC 武汉"),
@@ -79,6 +78,35 @@ FILENAME_OVERRIDES = {
     "2022/ccpc final.xlsx": ("CCPC", "final", "广州", "CCPC 广州（总决赛）"),
     "2024/ccpc guangzhou.xlsx": ("CCPC", "final", "广州", "CCPC 广州"),
 }
+
+# 源表缺少奖牌时，按指定校排队伍的成绩（含边界）划定金、银、铜牌。
+SCHOOL_RANK_MEDAL_CUTOFFS = {
+    "2021/ccpc nanjing.xlsx": (10, 30, 60),
+    "2022/ccpc final.xlsx": (10, 30, 60),
+}
+
+
+def apply_school_rank_medals(teams, cutoffs):
+    """校排仅标在各校首队上；其他队伍按自身成绩与奖牌线比较。"""
+    boundaries = []
+    for school_rank, medal in zip(cutoffs, ("Gold", "Silver", "Bronze")):
+        boundary = next(
+            (team for team in teams
+             if not team["unofficial"] and team["org_rank"] == school_rank),
+            None,
+        )
+        if boundary is None:
+            raise ValueError(f"缺少校排 {school_rank} 的队伍，无法划定奖牌线")
+        boundaries.append(((boundary["solved"], -boundary["penalty"]), medal))
+
+    for team in teams:
+        if team["unofficial"]:
+            continue
+        score = (team["solved"], -team["penalty"])
+        team["medal"] = next(
+            (medal for boundary, medal in boundaries if score >= boundary),
+            "Honorable",
+        )
 
 
 def parse_submission(raw):
@@ -361,6 +389,10 @@ def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
         result["sheets"] = convert_domjudge_file(xlsx_path, oi_records)
     else:
         print(f"  警告: 未找到 正式队伍 sheet，也不是 DOMjudge 格式，跳过转换")
+
+    cutoffs = SCHOOL_RANK_MEDAL_CUTOFFS.get(f"{xlsx_path.parent.name}/{xlsx_path.name}")
+    if cutoffs:
+        apply_school_rank_medals(result["sheets"].get("正式队伍", []), cutoffs)
 
     return result
 
