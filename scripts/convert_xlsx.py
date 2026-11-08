@@ -45,6 +45,7 @@ CITY_MAP = {
     "weihai": "威海",
     "qinhuangdao": "秦皇岛",
     "changchun": "长春",
+    "leshan": "乐山",
     "mianyang": "绵阳",
     "hefei": "合肥",
     "xiamen": "厦门",

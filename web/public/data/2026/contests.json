@@ -13,6 +13,19 @@
     }
   },
   {
+    "id": "leshan",
+    "name": "CCPC 乐山",
+    "org": "CCPC",
+    "city": "乐山",
+    "teams": 299,
+    "champion": {
+      "school": "北京大学",
+      "team": "飞带不长队",
+      "solved": 10,
+      "penalty": 1017
+    }
+  },
+  {
     "id": "xian",
     "name": "ICPC 西安",
     "org": "ICPC",
