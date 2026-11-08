@@ -11,6 +11,28 @@ from convert_xlsx import (
 
 
 class ConvertXlsxTest(unittest.TestCase):
+    def test_2026_nanjing_submission_counts_match_source_penalty(self):
+        source = ROOT / "xcpc/2026/icpc2026nanjing.xlsx"
+        org, contest_id, city, name = FILENAME_OVERRIDES["2026/icpc2026nanjing.xlsx"]
+        data = convert_file(source, contest_id, org, city, name, {})
+        teams = data["sheets"]["正式队伍"]
+
+        self.assertEqual((data["id"], data["name"]), ("nanjing", "ICPC 南京"))
+        self.assertEqual(len(teams), 332)
+        self.assertEqual(Counter(team["medal"] for team in teams),
+                         {"Gold": 33, "Silver": 66, "Bronze": 99, "Honorable": 134})
+        champion = teams[0]
+        self.assertEqual((champion["school"], champion["solved"], champion["penalty"]),
+                         ("清华大学", 11, 1845))
+        self.assertEqual(champion["problems"]["D"],
+                         {"status": "solved", "attempts": 1, "time": 118})
+        for team in teams:
+            with self.subTest(rank=team["rank"]):
+                solved = [p for p in team["problems"].values() if p["status"] == "solved"]
+                self.assertEqual(len(solved), team["solved"])
+                self.assertEqual(sum(p["time"] + 20 * (p["attempts"] - 1) for p in solved),
+                                 team["penalty"])
+
     def test_2022_ccpc_guangzhou_school_rank_medals(self):
         source = ROOT / "xcpc/2022/ccpc final.xlsx"
         org, contest_id, city, name = FILENAME_OVERRIDES["2022/ccpc final.xlsx"]

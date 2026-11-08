@@ -52,6 +52,19 @@
     }
   },
   {
+    "id": "nanjing",
+    "name": "ICPC 南京",
+    "org": "ICPC",
+    "city": "南京",
+    "teams": 332,
+    "champion": {
+      "school": "清华大学",
+      "team": "零基础新生 1 队",
+      "solved": 11,
+      "penalty": 1845
+    }
+  },
+  {
     "id": "wuhan",
     "name": "ICPC 武汉",
     "org": "ICPC",

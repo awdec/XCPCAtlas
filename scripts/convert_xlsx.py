@@ -74,6 +74,7 @@ CN_TO_ID = {v: k for k, v in CITY_MAP.items()}
 FILENAME_OVERRIDES = {
     "2026/icpc2026chengdu.xlsx": ("ICPC", "chengdu", "成都", "ICPC 成都"),
     "2026/icpc2026wuhan.xlsx": ("ICPC", "wuhan", "武汉", "ICPC 武汉"),
+    "2026/icpc2026nanjing.xlsx": ("ICPC", "nanjing", "南京", "ICPC 南京"),
     "2020/ccpc beijing.xlsx": ("CCPC", "final", "北京", "CCPC 北京"),
     "2021/ccpc nanjing.xlsx": ("CCPC", "final", "南京", "CCPC 南京"),
     "2022/ccpc final.xlsx": ("CCPC", "final", "广州", "CCPC 广州（总决赛）"),
@@ -85,6 +86,9 @@ SCHOOL_RANK_MEDAL_CUTOFFS = {
     "2021/ccpc nanjing.xlsx": (10, 30, 60),
     "2022/ccpc final.xlsx": (10, 30, 60),
 }
+
+# 这些源表的 +N(M) 中 N 为包含成功提交的总次数；其余源表沿用原有解析口径。
+TOTAL_ATTEMPTS_FILES = {"2026/icpc2026nanjing.xlsx"}
 
 
 def apply_school_rank_medals(teams, cutoffs):
@@ -110,7 +114,7 @@ def apply_school_rank_medals(teams, cutoffs):
         )
 
 
-def parse_submission(raw):
+def parse_submission(raw, attempts_include_ac=False):
     """
     解析提交记录，返回结构化数据。
     格式示例:
@@ -118,18 +122,19 @@ def parse_submission(raw):
       '-1'      -> {status: 'unsolved', attempts: 1, time: null}
       '-5'      -> {status: 'unsolved', attempts: 5, time: null}
       '-'       -> {status: 'none', attempts: 0, time: null}
+    attempts_include_ac=True 时，+N 中的 N 直接作为总提交次数。
     """
     if pd.isna(raw):
         return {"status": "none", "attempts": 0, "time": None}
 
     raw = str(raw).strip()
 
-    # 通过: +N(M) 表示第N+1次提交正确，用时M分钟
+    # 默认 +N(M) 表示 N 次错误后通过；部分源表的 N 已包含成功提交。
     m = re.match(r'\+(\d+)\((\d+)\)', raw)
     if m:
         return {
             "status": "solved",
-            "attempts": int(m.group(1)) + 1,
+            "attempts": int(m.group(1)) + (0 if attempts_include_ac else 1),
             "time": int(m.group(2))
         }
 
@@ -159,9 +164,9 @@ def parse_submission(raw):
     return {"status": "none", "attempts": 0, "time": None}
 
 
-def parse_team(row, problem_cols, has_coaches=False, oi_records=None):
+def parse_team(row, problem_cols, has_coaches=False, oi_records=None, attempts_include_ac=False):
     """将一行数据解析为队伍记录。题号键取自表内实际存在的题列（题数逐年不同）。"""
-    problems = {letter: parse_submission(row[letter]) for letter in problem_cols}
+    problems = {letter: parse_submission(row[letter], attempts_include_ac) for letter in problem_cols}
 
     school = str(row["Organization"]).strip() if pd.notna(row["Organization"]) else ""
     members = []
@@ -364,6 +369,7 @@ def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
     xls = pd.ExcelFile(xlsx_path)
 
     if "正式队伍" in xls.sheet_names:
+        attempts_include_ac = f"{xlsx_path.parent.name}/{xlsx_path.name}" in TOTAL_ATTEMPTS_FILES
         for sheet_name in xls.sheet_names:
             if sheet_name != "正式队伍":
                 continue
@@ -379,7 +385,7 @@ def convert_file(xlsx_path, contest_id, org, city_cn, name, oi_records):
             teams = []
             for _, row in df.iterrows():
                 try:
-                    team = parse_team(row, problem_cols, has_coaches, oi_records)
+                    team = parse_team(row, problem_cols, has_coaches, oi_records, attempts_include_ac)
                     teams.append(team)
                 except Exception as e:
                     print(f"  警告: 跳过一行 ({sheet_name}): {e}")
