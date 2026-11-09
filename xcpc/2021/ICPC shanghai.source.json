@@ -145,7 +145,7 @@
         ]
       }
     ],
-    "full_audit": "output/import-2021-shanghai/member_matches.json",
+    "full_audit": "xcpc/2021/sources/member_matches.json",
     "full_audit_sha256": "85240f4df7cb25a81e19c24c3e79c4f1c1483a54ba4a4fd4caf1221759e35d12",
     "workbook_school_team_text": "Unchanged SRK source text; aliases are only used to locate member names."
   },

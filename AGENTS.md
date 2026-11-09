@@ -32,7 +32,7 @@ python scripts/gen_trajectories.py    # contest JSONs → {year}/trajectories.js
 
 The pipeline also reads `xcpc/{year}/*.rank.json` snapshots from `rank.iccpc.cn`, via `scripts/iccpc_rank.py`. Keep their source URL and retrieval time. Only complete, single-group post-contest snapshots are supported; exclude starred and no-submission teams, ignore CE and submissions after first AC, and floor the summed penalty seconds to minutes. `extract_players.py` uses the same reader.
 
-**接入新年份时必须按 `extract_players.py` → `extract_oi_records.py` → `convert_xlsx.py` 的顺序跑**：convert 在转换时按 `name@school` 把该年的 OI 记录嵌入队员，若该年还没有按年的 `oi_records.json`，会静默回退到根目录未按年份过滤的旧文件（现有年份都有按年文件，不受影响）。
+**接入新年份时必须按 `extract_players.py` → `extract_oi_records.py` → `convert_xlsx.py` 的顺序跑**：convert 在转换时按 `name@school` 把该年的 OI 记录嵌入队员，若该年还没有按年的 `oi_records.json`，会跳过 OI 嵌入并打印警告（不再回退到未按年份过滤的旧数据）。
 
 `gen_trajectories.py` 消费的是 convert 的产物，且 convert 每次重跑会清空年份目录（仅保留 `oi_records.json`），所以它必须在 convert 之后运行；被清掉后分析页「轨迹分析」tab 会显示「暂不可用」，重跑即恢复。
 

@@ -4,3 +4,9 @@ __pycache__/
 
 # Excel 锁文件
 ~$*
+
+# 导入/审核脚本的本地临时工作目录
+output/
+
+# 本地 AI 助手权限缓存
+.agents/settings.local.json

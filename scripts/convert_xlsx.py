@@ -291,15 +291,10 @@ def load_oi_records(year):
     """加载指定年份的 OI 奖项记录。"""
     oi_path = OUTPUT_DIR / str(year) / "oi_records.json"
     if not oi_path.exists():
-        # 尝试根目录
-        oi_path = ROOT / "oi_records.json"
-    if not oi_path.exists():
-        print(f"警告: {year} 年 OI 记录不存在，跳过 OI 记录嵌入")
+        # 按年文件由 extract_oi_records.py 生成；缺失时不能回退到未按年份过滤的旧数据，
+        # 否则会把不在大学年份窗口内的记录挂到队员身上
+        print(f"警告: {year} 年 OI 记录不存在，跳过 OI 记录嵌入（请先运行 extract_oi_records.py）")
         return {}
-    if not (OUTPUT_DIR / str(year) / "oi_records.json").exists():
-        # 根目录 oi_records.json 是未按年份过滤的旧文件，新年份用它嵌入会把
-        # 不在大学年份窗口内的记录挂上去；应先跑 extract_oi_records.py 生成按年文件
-        print(f"警告: {year} 年缺少按年 oi_records.json，正在回退到根目录旧文件（未按年份过滤，结果可能不准）")
     with open(oi_path, "r", encoding="utf-8") as f:
         return json.load(f)
 

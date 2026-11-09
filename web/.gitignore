@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# create_icons.py 的中间产物，站点只引用 .ico / favicon.svg / apple-touch-icon.png
+public/app-icon.png
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -11,6 +11,7 @@
 
 - `icpc2021shanghai.srk.json`、`icpc2021kunming.srk.json`：公开完整成绩快照，保留原始秒级罚时、分题状态及正式队标识。
 - `cpcfinder-shanghai.members.json`、`cpcfinder-kunming.members.json`：逐队打开队伍详情读取的学校、队名、姓名原文；`members` 仅保留具体姓名，`raw_members` 同时保留页面占位或备注以便核查。
+- `member_matches.json`：上海站逐队名单匹配的完整审核记录，含源队伍 ID、名次、匹配方式与最终姓名；`ICPC shanghai.source.json` 的 `member_matching.full_audit` 指向本文件，`full_audit_sha256` 为其校验值。
 - 上级目录 `ICPC shanghai.source.json`、`ICPC kunming.source.json`：来源 URL、下载日期、快照和工作簿 SHA256、计数、学校别名及人工审核的队名差异映射。
 - 上级目录两张同名 `.xlsx`：供现有数据管道直接读取，采用第二行表头的“正式队伍”工作表，已填入已知的 `Member1`–`Member3`。
 
