@@ -11,6 +11,9 @@ output/
 # 本地 AI 助手权限缓存
 .agents/settings.local.json
 
+# 工作完成报告（本地归档，不入库）
+report/
+
 # 前端测试产物
 web/test-results/
 web/playwright-report/
