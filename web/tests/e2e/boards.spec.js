@@ -159,7 +159,7 @@ test('B-C2 加载失败提示', async ({ page }) => {
 })
 
 test.describe('D2 未知赛区（M3 启用）', () => {
-  test.fixme('B-N2 未知赛区 id 显示「赛区不存在」', async ({ page }) => {
+  test('B-N2 未知赛区 id 显示「赛区不存在」', async ({ page }) => {
     await po.open(page, '/2025/contest/no-such-contest')
     await expect(po.main(page)).toContainText('赛区不存在')
     await expect(po.main(page)).toContainText('2025 赛季没有该赛区')
@@ -192,7 +192,7 @@ test.describe('B-S 全部成绩 /2025/summary', () => {
   })
 
   test('B-S6 整行文字按奖牌着色', async ({ page }) => {
-    await expect(po.tableRows(page).first()).toHaveClass(/text-yellow-600/)
+    await po.expectRowTextTone(po.tableRows(page).first(), 'gold')
   })
 
   const cases = [
@@ -243,7 +243,7 @@ test('B-S2 Summary 顺序加载并显示进度', async ({ page }) => {
 })
 
 test.describe('D1 去掉 120ms 等待（M4 启用）', () => {
-  test.fixme('B-S2 每个文件之间无人为等待', async ({ page }) => {
+  test('B-S2 每个文件之间无人为等待', async ({ page }) => {
     const times = []
     await page.route('**/data/2025/*.json', async (r) => {
       times.push(Date.now())
@@ -258,7 +258,7 @@ test.describe('D1 去掉 120ms 等待（M4 启用）', () => {
 })
 
 test.describe('D4 Summary/Players 搜索防抖（M4 启用）', () => {
-  test.fixme('Summary 搜索在 300ms 内不触发筛选', async ({ page }) => {
+  test('Summary 搜索在 300ms 内不触发筛选', async ({ page }) => {
     await po.open(page, '/2025/summary')
     await po.waitRows(page)
     await page.clock.install()
@@ -268,7 +268,7 @@ test.describe('D4 Summary/Players 搜索防抖（M4 启用）', () => {
     const expected = ref.summaryFilter(summary2025, { ...EMPTY, school: '北京大学' }, tags)
     await expect(po.countText(page)).toHaveText(`共 ${expected.length} 条记录`)
   })
-  test.fixme('Players 搜索在 300ms 内不触发筛选', async ({ page }) => {
+  test('Players 搜索在 300ms 内不触发筛选', async ({ page }) => {
     await po.open(page, '/2025/players')
     await po.waitRows(page)
     await page.clock.install()

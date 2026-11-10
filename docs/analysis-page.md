@@ -5,10 +5,10 @@
 
 ## 1. 定位与入口
 
-- 页面视图：`web/src/views/Analysis.vue`（懒加载）；路由 `/:year/analysis`（`web/src/main.js`，受年份校验守卫约束）
-- 导航项：`web/src/App.vue` 的 `yearNavItems` 末尾（"📈 数据分析"），仅进入具体年份后显示
-- 页面标题只写"📈 数据分析"，不带年份括号（年份由页面上下文确定，用户决策）
-- Tab 顺序：总览 → 赛站分析 → 选手分析 → 轨迹分析 → OIer 分析 → 学校分析（`el-tabs`，非懒加载）
+- 页面视图：`web/src/pages/analysis/AnalysisPage.vue`（懒加载）；路由 `/:year/analysis`（`web/src/app/router/routes.ts`，受年份校验守卫约束）
+- 导航项：`web/src/layouts/nav.ts` 的 `yearNavItems` 末尾（"数据分析"，图标为 lucide 柱状图），仅进入具体年份后显示
+- 页面标题只写"数据分析"（图标替代原 📈 emoji，读屏仍读出 📈），不带年份括号（年份由页面上下文确定，用户决策）
+- Tab 顺序：总览 → 赛站分析 → 选手分析 → 轨迹分析 → OIer 分析 → 学校分析（Reka `Tabs`；**首次访问才挂载**，之后保持挂载，避免一次创建 9 个 canvas）
 - 当前 Tab 由 URL 查询参数 `tab` 保存（`overview/region/players/trajectory/oier/school`）；切换用 `router.replace`，刷新和浏览器前进/后退均恢复对应 Tab，不为每次切换新增历史记录。未指定或参数无效时显示总览；轨迹名单页的“返回数据分析”链接显式携带 `tab=trajectory`。
 - 分析方向源自作者的两篇洛谷文章（2025 XCPC-region data 及其 OIerdb 番外），数值曾逐项对照验证
 
@@ -16,18 +16,19 @@
 
 | 文件 | 职责 |
 |---|---|
-| `web/src/utils/analysis.js` | **唯一计算层**。全部口径、纯函数，不依赖 Vue/ECharts |
-| `web/src/components/analysis/AnalysisChart.vue` | ECharts 封装（按需注册：Bar/Pie/Line/Scatter/Heatmap + Grid/Tooltip/Legend/VisualMap + Canvas）；转发元素级 click 事件 |
-| `web/src/components/analysis/OverviewTab.vue` | 总览：6 张统计卡片、各赛区队伍奖牌分布（堆叠）、奖牌发放数表格（CCPC/ICPC，独立卡片、表格居中） |
-| `web/src/components/analysis/RegionTab.vue` | 赛站分析：各赛站获奖人数（选手口径）、跨赛站获奖迁移（赛站下拉 + 4×4 热力图 + 明细表） |
-| `web/src/components/analysis/PlayersTab.vue` | 选手分析：获奖分布饼图、参赛场次×无奖牌率（柱线双轴）、**「第一次最高获奖」表**（金银铜三行，当年选手数来自 trajectories.json 的 `first_best_tiers`；“至今累计数”来自 `all_time_best_tiers`，累计至页面年份的最高档互斥计数）、排名稳定性散点（≥2 场，点击数据点跳转选手个人页）+ 汇总表（三列带 ⓘ 说明） |
-| `web/src/components/analysis/TrajectoryTab.vue` | 轨迹分析：五年奖牌轨迹表（第一年~第五年 + 选手数，0 人行不显示，仅统计当年获奖选手，表头可按列排序，**行点击跳转名单页**）。**不走 dataset/analysis.js**，读预生成 `data/{year}/trajectories.json`（`Analysis.vue` 里非阻塞加载，失败显示「暂不可用」不炸整页） |
-| `web/src/views/TrajectoryDetail.vue` | 轨迹名单页（`/:year/trajectory/:code`）：该轨迹全部选手的学校+姓名表；姓名链接 `/:year/player/:name?scope=all&school=学校`，按**学校+姓名**汇总项目全部年份的 ICPC/CCPC 记录，避免跨学校同名记录合并；赛区标注年份，按年份升序、同年按排名排列，赛区与学校链接使用记录年份。OI 仍读取页面所属年份，按完整 `name@school` 键匹配；普通年度个人页继续只按姓名检索。共享 `utils/trajectory.js` 的编解码（tiers↔`i-b-g-n-n` 式 code） |
-| `web/src/components/analysis/OIerTab.vue` | OIer 分析：各奖牌档 OIer 占比、队伍 OIer 人数构成（0~3 堆叠百分比）、金银铜牌选手最高 OI 奖项分布（三列并排，共享赛区下拉） |
-| `web/src/components/analysis/SchoolTab.vue` | 学校分析：985/211/双非 奖牌分布堆叠、获奖率与 OIer 率、层次概览表、无金牌 985 名单、有金牌 211/双非 名单 |
-| `web/src/views/Analysis.vue` | Tab 容器 + 顺序加载进度条 + 年份切换 watch + dataset/tags 构建 |
+| `web/src/domain/analysis.ts` | **唯一计算层**。全部口径、纯函数，不依赖 Vue/ECharts（由旧 `utils/analysis.js` 1:1 移植，golden 测试锁定） |
+| `web/src/features/analysis/charts/options.ts` | **全部图表 option 构建器**（纯函数，由旧各 Tab 组件逐字移植）；golden 测试固定其结构与 formatter 输出。改图表先改这里 |
+| `web/src/features/analysis/charts/ChartBox.vue` | ECharts 封装（按需注册：Bar/Pie/Line/Scatter/Heatmap + Grid/Tooltip/Legend/VisualMap/Aria + Canvas）；亮暗主题（仅非数据元素）、减弱动效时关闭动画；转发元素级 click，`linkResolver` 支持 Ctrl/中键新标签打开 |
+| `web/src/features/analysis/tabs/OverviewTab.vue` | 总览：6 张统计卡片（count-up）、各赛区队伍奖牌分布（堆叠）、奖牌发放数表格（CCPC/ICPC，独立卡片、表格居中） |
+| `web/src/features/analysis/tabs/RegionTab.vue` | 赛站分析：各赛站获奖人数（选手口径）、跨赛站获奖迁移（赛站下拉 + 4×4 热力图 + 明细表） |
+| `web/src/features/analysis/tabs/PlayersTab.vue` | 选手分析：获奖分布饼图、参赛场次×无奖牌率（柱线双轴）、**「第一次最高获奖」表**（金银铜三行，当年选手数来自 trajectories.json 的 `first_best_tiers`；“至今累计数”来自 `all_time_best_tiers`，累计至页面年份的最高档互斥计数）、排名稳定性散点（≥2 场，点击数据点跳转选手个人页，Ctrl/中键新标签）+ 汇总表（四列带 ⓘ 说明） |
+| `web/src/features/analysis/tabs/TrajectoryTab.vue` | 轨迹分析：五年奖牌轨迹表（第一年~第五年 + 选手数，0 人行不显示，仅统计当年获奖选手，表头可按列三态排序，**每行是指向名单页的真实链接**）。**不走 dataset/analysis.ts**，读预生成 `data/{year}/trajectories.json`（`AnalysisPage.vue` 里非阻塞加载，失败显示「暂不可用」不炸整页） |
+| `web/src/pages/trajectory/TrajectoryPage.vue` | 轨迹名单页（`/:year/trajectory/:code`）：该轨迹全部选手的学校+姓名表（超过 200 人虚拟滚动）；姓名链接 `/:year/player/:name?scope=all&school=学校`，按**学校+姓名**汇总项目全部年份的 ICPC/CCPC 记录，避免跨学校同名记录合并；赛区标注年份，按年份升序、同年按排名排列，赛区与学校链接使用记录年份。OI 仍读取页面所属年份，按完整 `name@school` 键匹配；普通年度个人页继续只按姓名检索。共享 `domain/trajectory.ts` 的编解码（tiers↔`i-b-g-n-n` 式 code） |
+| `web/src/features/analysis/tabs/OIerTab.vue` | OIer 分析：各奖牌档 OIer 占比、队伍 OIer 人数构成（0~3 堆叠百分比）、金银铜牌选手最高 OI 奖项分布（三列并排，共享赛区下拉） |
+| `web/src/features/analysis/tabs/SchoolTab.vue` | 学校分析：985/211/双非 奖牌分布堆叠、获奖率与 OIer 率、层次概览表、无金牌 985 名单、有金牌 211/双非 名单 |
+| `web/src/pages/analysis/AnalysisPage.vue` | Tab 容器（URL `?tab` 驱动）+ 顺序加载进度条 + dataset/tags/trajectories 查询 |
 
-数据源：`web/public/data/{year}/contests.json`（索引）+ `{contest_id}.json`（`sheets['正式队伍']`）+ 全局 `985.json`/`211.json`。加载用 `dataLoader.js`（`loadSchoolTags` + 顺序 `loadContestData` 带进度）。轨迹分析另读预生成 `data/{year}/trajectories.json`（`scripts/gen_trajectories.py` 在 convert 之后运行生成；convert 重跑会清掉它，见 §3 口径与 README 管道说明）。
+数据源：`web/public/data/{year}/contests.json`（索引）+ `{contest_id}.json`（`sheets['正式队伍']`）+ 全局 `985.json`/`211.json`。整年数据由 `web/src/workers/year.worker.ts` 在后台线程**按索引顺序逐个加载**（带 x/n 进度）并调用 `buildYearDataset`，结果经 Vue Query（`useYearDataset`）缓存。轨迹分析另读预生成 `data/{year}/trajectories.json`（`useTrajectories`；`scripts/gen_trajectories.py` 在 convert 之后运行生成；convert 重跑会清掉它，见 §3 口径与 README 管道说明）。
 
 ## 3. 数据口径（核心，改前先想清楚）
 
@@ -67,28 +68,28 @@
 - **奖牌堆叠顺序**：视觉自下而上 铁→铜→银→金（即 series 数组用 `[...MEDAL_ORDER].reverse()`），金牌段永远在柱顶；tooltip formatter 手动按 `b.seriesIndex - a.seriesIndex` 排序保证列表从金牌开始；legend 用显式 `data: MEDAL_ORDER.map(MEDAL_LABELS)` 保持 金银铜铁 阅读顺序
 - **颜色**：`MEDAL_COLORS = { gold: '#e6a23c', silver: '#909399', bronze: '#b3703c', iron: '#dcdfe6' }`；OIer 构成图 0~3 名用 `['#dcdfe6','#a0cfff','#409eff','#1d6fd8']`；OI 奖项分布图按等级配色（0~3 沿用同组蓝色梯度、等级 4 IOI 用金牌色，`oiLevelColors[level]`）
 - **横向条形图排序**：不要 reverse 数据数组，用 `yAxis.inverse: true` 控制方向——formatter 里 `items[p.dataIndex]` 才能天然对齐（见坑 6.1）
-- **表头 ⓘ 模式**：`el-table-column` 的 `#header` 插槽 + `el-tooltip`，图标 `<span class="text-gray-400 cursor-help ml-0.5">ⓘ</span>`（PlayersTab 三列已用）；小节标题内同样适用（OIerTab 奖项分布标题左侧 ⓘ 解释金银铜牌选手口径）
-- **图表点击跳转**：AnalysisChart 把 ECharts 元素级 click 转发为组件 `@click`（仅点到系列数据时触发，空白区不触发）。散点数据第 3 位放元数据对象，点击处理从 `params.data[2]` 取 `name` 后 `router.push('/'+year+'/player/'+encodeURIComponent(name))`；普通年度个人页按**姓名**检索（同名选手个人页会聚合），轨迹名单入口的历年页携带学校并按**学校+姓名**匹配。PlayersTab 散点已用
-- ECharts 新图表类型需在 `AnalysisChart.vue` 的 `use([...])` 里补注册
+- **表头 ⓘ 模式**：DataTable 列定义的 `hint` 字段（渲染为可聚焦的 `InfoHint` 按钮，悬停或聚焦弹出原文）；小节标题内直接用 `<InfoHint text="…" />`（OIerTab 奖项分布标题左侧 ⓘ 解释金银铜牌选手口径）
+- **图表点击跳转**：ChartBox 把 ECharts 元素级 click 转发为组件 `@click`（仅点到系列数据时触发，空白区不触发）；需要跳转时传 `linkResolver(params) → 路由 | null`，普通点击当前页跳转、Ctrl/Cmd/Shift+点击与中键在新标签打开。散点数据第 3 位放元数据对象，PlayersTab 的 resolver 从 `params.data[2]` 取 `name` 返回 `'/'+year+'/player/'+encodeURIComponent(name)`；普通年度个人页按**姓名**检索（同名选手个人页会聚合），轨迹名单入口的历年页携带学校并按**学校+姓名**匹配。PlayersTab 散点已用
+- ECharts 新图表类型需在 `ChartBox.vue` 的 `use([...])` 里补注册
 
 ## 6. 已知坑（历次踩过）
 
 1. **tooltip 索引镜像/串位（出过两个 bug）**：axis 触发的 tooltip 里 `dataIndex` 是类目索引、`seriesIndex` 是系列索引；凡数据数组做过 `reverse()`，formatter 就不能再直接用源数组下标。修复后约定见第 5 节
 2. **Vite dev server 文件监听偶尔漏更新**（Windows）：表现为页面/模块内容落后于磁盘。`curl http://localhost:11451/XCPCAtlas/src/<file>` 对比磁盘内容，落后则 `touch` 该文件；必要时重启
 3. **杀 dev server 要杀 vite 子进程**：`TaskStop`/Ctrl+C 只杀外层 shell 时端口仍被占。`netstat -ano | grep :11451` 找 PID 后 `taskkill //F //PID <pid>`
-4. **el-tab-pane 非懒加载**：全部图表随页面挂载（当前 9 个 canvas）。图多卡顿时给 `el-tab-pane` 加 `lazy`
-5. **el-select 拉满整行**：必须内联 `style="width: 8rem"` 之类显式限宽；Tailwind 的 `w-*` 宽度类对 el-select 无效（实测样式表中未生成对应规则，`w-44` 曾因此长期全宽）
-6. **canvas 图表交互必须用真实鼠标**：ECharts 6/zrender 不响应 JS 合成事件（对 canvas/host `dispatchEvent` 的 mousemove/pointermove 全部无效，既无 tooltip 也不改 cursor）。验证 tooltip/点击一律用 `tab.cua.move({x,y})` / `cua.click({x,y})` 真实鼠标。要精确点击某个数据点：从 `x-vue-echarts` 元素的 `__vueParentComponent.exposed` 拿图表实例（`exposed.chart._value` 才是 ECharts 实例；exposed 上也有 convertToPixel/getOption 等直通方法），`convertToPixel({xAxisIndex:0,yAxisIndex:0},[x,y])` 换算像素坐标（加 canvas 的 getBoundingClientRect 偏移）后 `cua.click`；重叠点会命中绘制在最上层的那个，属正常行为
-8. **el-tabs 真实 click 偶发超时**：Playwright `getByRole('tab', …).click()` 会卡在 waiting for click（元素被判定不稳定），改用 `evaluate(el => el.click())` 合成点击即可正常切换 tab（2026-11 轨迹 tab 实测）。另：el-tabs 非懒加载，所有 pane 同时在 DOM 里，`querySelector('.el-table')` 会命中别的 tab 的表，须用 `#pane-{name}` 作用域
+4. ~~el-tab-pane 非懒加载~~（**已过时**，2026-11 重构后 Tab 首次访问才挂载）
+5. ~~el-select 拉满整行~~（**已过时**，Element Plus 已移除；新 `Select` 组件直接用 Tailwind `w-*`）
+6. **canvas 图表交互必须用真实鼠标**：ECharts 6/zrender 不响应 JS 合成事件（对 canvas/host `dispatchEvent` 的 mousemove/pointermove 全部无效，既无 tooltip 也不改 cursor）。生产构建不暴露图表实例，E2E 用 canvas 像素定位数据点（`tests/e2e/po/app.js` 的 `findScatterPoint`）。验证 tooltip/点击一律用 `tab.cua.move({x,y})` / `cua.click({x,y})` 真实鼠标。要精确点击某个数据点：从 `x-vue-echarts` 元素的 `__vueParentComponent.exposed` 拿图表实例（`exposed.chart._value` 才是 ECharts 实例；exposed 上也有 convertToPixel/getOption 等直通方法），`convertToPixel({xAxisIndex:0,yAxisIndex:0},[x,y])` 换算像素坐标（加 canvas 的 getBoundingClientRect 偏移）后 `cua.click`；重叠点会命中绘制在最上层的那个，属正常行为
+8. ~~el-tabs 真实 click 偶发超时~~（**已过时**，Element Plus 已移除）。注意：新 Tabs 为手动激活模式，测试里可直接 `getByRole('tab').click()`；面板容器 id 仍为 `#pane-{name}`
 7. **数字对照外部文章时**：注意赛站集合（12 vs 10 站）与判重口径（学校+姓名 vs 官方 ID）差异，趋势一致即可，不追小数
 
 ## 7. 验证方法（每次改统计逻辑后必做）
 
-1. **构建**：`cd web && npm run build`
-2. **双实现交叉核对**：用独立 Python（glob 该年 JSON 重算）与 `node -e "import('./src/utils/analysis.js').then(...)"`（cwd 在 `web/`）各算一遍，逐项对比。历史上两次"基线不一致"都是基线脚本自身写错（字母序比较、min/max 反用、cwd 错路径），页面代码反而是对的——先怀疑脚本再怀疑页面
+1. **构建与测试**：`cd web && npm run build && npm test && npm run test:golden && npm run test:e2e`（golden 不一致说明口径被改动：确认新数字正确并经所有者同意后 `npm run gen:golden`）
+2. **双实现交叉核对**：用独立 Python（glob 该年 JSON 重算）与 Vitest 中导入 `src/domain/analysis.ts`各算一遍，逐项对比。历史上两次"基线不一致"都是基线脚本自身写错（字母序比较、min/max 反用、cwd 错路径），页面代码反而是对的——先怀疑脚本再怀疑页面
 3. **文章基准**（2025 年，学校+姓名口径）：获奖分布 金11.6%/银20%/铜27.6%/铁40.8%；各档 OIer 率 88%/64%/41%/26%、总 44.7%；无奖牌率 1 场 69.4% → 4+ 场 1.6%；郑州站金 68 人、95.6% 其他站也金（文章 96%）；重庆站最高 OI 奖项 NOI银 21 与文章一致（NOI夏令营当时单列；2026-09 并入 NOI 后该桶为 29）
 4. **浏览器实测**：dev server `http://localhost:11451/XCPCAtlas/#/2025/analysis`（Hash 路由，vite base 为 `/XCPCAtlas/`）。逐 Tab 截图；tooltip 类交互用第 6 节方法
-5. **轨迹分析 tab**：改口径后重跑 `python scripts/gen_trajectories.py`，用独立 node 脚本（`import './src/utils/analysis.js'` 的 `medalTier`，cwd 在 `web/`）重算全部年份与 JSON 逐行对比（total/行数/每行 count/排序），再抽 1 条轨迹手查其中 1 名选手的逐年原始奖牌
+5. **轨迹分析 tab**：改口径后重跑 `python scripts/gen_trajectories.py`，用独立 node 脚本（`src/domain/analysis.ts` 的 `medalTier`，cwd 在 `web/`）重算全部年份与 JSON 逐行对比（total/行数/每行 count/排序），再抽 1 条轨迹手查其中 1 名选手的逐年原始奖牌
 
 ## 8. 变更历史（简）
 
@@ -130,3 +131,4 @@
 - 2026-11 轨迹行点击 → 选手名单页（用户需求）：`trajectories.json` 每行新增 `players`（`[学校,姓名]` 按 school/name 排序，单文件最大 ~250KB）；新路由 `/:year/trajectory/:code`（`TrajectoryDetail.vue`，code 由 `utils/trajectory.js` 编码 tiers↔`i-b-g-n-n`，如 `铜 金 金 \ \` = `b-g-g-n-n`），表格仅学校+姓名两列、姓名 router-link 个人页（按姓名检索口径与全站一致）、70vh 滚动；轨迹表行加 `cursor-pointer` + `@row-click` 跳转。实测：2026 页 `铜 \ \ \ \` 行 511 人名单渲染正确，`b-g-g-n-n` 页 3 人（济南大学 肖远志等）与 JSON 一致，点击 肖远志 跳转其个人页正常
 - 2026-11 选手分析新增「第一年最高奖牌分布」表（用户需求）：插在双图卡片行与排名稳定性之间；行=金/银/铜/铁（铁=第一年未获奖但后来获奖，用户枚举金银铜、铁按站内 MEDAL_ORDER 惯例补全），数据为 `trajectories.json` 顶层新字段 `first_year_tiers`（由行数据按 `tiers[0]` 汇总，Σ=total 已验证），口径与轨迹分析一致（当年获奖人群、第一年=统计范围内首次参赛年）；PlayersTab 新增 `trajectories` prop 由 Analysis.vue 传入，数据缺失时显示「暂不可用」
 - 2026-11 「第一年最高奖牌分布」改为「**第一次最高获奖**」（用户口径修正）：先看选手当年最高奖项，往年获得过 ≥ 该档的奖则不计入——即当年为个人历史新高（含首次获奖）；字段更名 `first_year_tiers`→`first_best_tiers`，铁牌行删除（当年获奖人群下不可能出现铁），**往年范围取数据内 Y 之前全部年份而非仅窗口**（往年铁牌不阻挡）；node 双实现核对 7 年全过，案例抽查：张立@新疆大学（2023/2024 铁、2025 铜、2026 银→计入银）与 董雨润@北航（往年金、2026 银→不计入）均符合规则。2026 页数值 金229/银486/铜712（合计 1427，小于当年获奖总数 2085，差额为往年已达同档或更高者）
+- 2026-11-10 前端重构（`docs/frontend-refactor-plan.md`）：TypeScript + Reka UI + Vue Query + Worker；`utils/analysis.js` → `domain/analysis.ts`，各 Tab 图表 option 抽到 `charts/options.ts`（golden 7 个年份逐字节一致，统计口径与图表 option 未变）；Tab 改为首次访问挂载；轨迹行与散点支持 Ctrl/中键新标签；暗色主题只改坐标轴/网格/文字等非数据元素

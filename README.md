@@ -20,11 +20,13 @@
 
 ## 技术栈
 
-- Vue 3 + Vite
-- Element Plus（UI 组件）
-- ECharts（图表可视化）
+- Vue 3.5 + TypeScript（strict）+ Vite 8
+- Reka UI（无障碍基础组件，shadcn-vue 风格封装）+ Tailwind CSS 4（亮/暗主题令牌）
+- TanStack Vue Query（数据获取与缓存）、TanStack Table / Virtual（大表格）、Pinia（界面偏好）
+- Web Worker + Comlink（整年数据在后台线程加载与聚合）
+- ECharts 6（图表可视化）、motion-v + View Transitions API（动效，支持「减少动效」）
 - Vue Router 4（路由，Hash 模式）
-- Tailwind CSS 4（样式）
+- Vitest（单元 + golden 基线）、Playwright（E2E、axe 无障碍检查）、ESLint
 
 ## 快速开始
 
@@ -127,35 +129,19 @@ npm run build
 │   │   │   ├── 985.json          # 学校标签（全局）
 │   │   │   └── 211.json
 │   │   └── favicon.svg           # 网站图标（蓝底金色奖杯）
-│   ├── src/
-│   │   ├── views/                # 页面
-│   │   │   ├── Home.vue          # 首页（年份选择，每 7 天弹一次网站说明）
-│   │   │   ├── YearHome.vue      # 年份首页（赛区列表）
-│   │   │   ├── Contest.vue       # 赛区详情
-│   │   │   ├── Summary.vue       # 全部成绩汇总
-│   │   │   ├── Analysis.vue      # 数据分析（按年份）
-│   │   │   ├── School.vue        # 学校详情
-│   │   │   ├── Player.vue        # 选手详情
-│   │   │   └── Announcement.vue  # 公告
-│   │   ├── components/
-│   │   │   ├── RankTable.vue     # 排名表格
-│   │   │   ├── TeamDetail.vue    # 队伍详情弹窗
-│   │   │   ├── SchoolStats.vue   # 学校统计图表
-│   │   │   └── analysis/         # 数据分析页图表组件
-│   │   │       ├── AnalysisChart.vue  # ECharts 通用封装
-│   │   │       ├── OverviewTab.vue    # 总览
-│   │   │       ├── RegionTab.vue      # 赛站分析
-│   │   │       ├── PlayersTab.vue     # 选手分析
-│   │   │       ├── OIerTab.vue        # OIer 分析
-│   │   │       └── SchoolTab.vue      # 学校分析
-│   │   ├── utils/
-│   │   │   ├── dataLoader.js     # 数据加载（带缓存，支持多年份）
-│   │   │   ├── analysis.js       # 数据分析统计（纯函数）
-│   │   │   └── formatters.js     # 解析/聚合工具
-│   │   ├── App.vue               # 根组件（导航栏）
-│   │   └── main.js               # 入口（路由 + Element Plus）
+│   ├── src/                      # 分层：domain ← data ← shared ← entities ← features ← pages ← layouts ← app
+│   │   ├── app/                  # 入口、路由（含年份守卫、页面过渡）、Provider
+│   │   ├── layouts/              # 外壳、页眉、移动端导航
+│   │   ├── pages/                # 路由页面（首页、年份、赛区、汇总、选手、学校、分析、轨迹、公告、404）
+│   │   ├── features/             # 业务组件（榜单、队伍详情、数据分析各 Tab 与图表 option、介绍弹窗）
+│   │   ├── entities/             # 领域原子组件（学校/选手链接、赛事标签、题目状态、奖牌）
+│   │   ├── shared/               # 通用组件（DataTable、分页、筛选条、加载态）、样式令牌、组合式函数
+│   │   ├── data/                 # 数据获取、Valibot 校验、Vue Query 查询
+│   │   ├── workers/              # 整年数据 Worker
+│   │   └── domain/               # 纯 TS 业务逻辑（统计口径、筛选、分页、聚合）
+│   ├── tests/                    # golden 基线、单元测试、E2E、截图基线
 │   ├── index.html
-│   ├── vite.config.js
+│   ├── vite.config.ts
 │   └── package.json
 └── README.md
 ```

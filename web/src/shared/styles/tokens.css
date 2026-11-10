@@ -18,12 +18,13 @@
   --border-soft: #eef0f3;
   --fg: #1f2937;
   --fg-muted: #4b5563;
-  --fg-subtle: #6b7280;
-  --fg-faint: #9ca3af;
+  --fg-subtle: #5f6672;
+  /* 占位文字等：≥4.5:1（axe 实测旧值 #9ca3af 仅 2.53） */
+  --fg-faint: #687080;
 
   /* 品牌 */
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
   --primary-fg: #ffffff;
   --primary-soft: #eff6ff;
   --primary-soft-fg: #1d4ed8;
@@ -53,7 +54,7 @@
   --medal-bronze: #b3703c;
   --medal-iron: #dcdfe6;
   /* 奖牌：文字色（AA） */
-  --medal-gold-text: #a16207;
+  --medal-gold-text: #8f5606;
   --medal-silver-text: #4b5563;
   --medal-bronze-text: #9a4f1b;
   --medal-iron-text: #6b7280;
@@ -77,10 +78,10 @@
 
   /* 学校层次标签 */
   --tag-985-bg: #fef0f0;
-  --tag-985-fg: #c45656;
+  --tag-985-fg: #b23b3b;
   --tag-985-border: #fbc4c4;
   --tag-211-bg: #fdf6ec;
-  --tag-211-fg: #a8681a;
+  --tag-211-fg: #8a5210;
   --tag-211-border: #f5dab1;
 
   /* 阴影 */
@@ -115,11 +116,12 @@
   --border-soft: #232935;
   --fg: #e6e8ec;
   --fg-muted: #b3bac6;
-  --fg-subtle: #9aa3b2;
-  --fg-faint: #6f7887;
+  --fg-subtle: #a3acba;
+  --fg-faint: #8b94a3;
 
-  --primary: #4f8ff7;
-  --primary-hover: #6aa1f8;
+  /* 链接需在奖牌底色行上也 ≥4.5:1 */
+  --primary: #7aaefb;
+  --primary-hover: #9cc2fc;
   --primary-fg: #0b1220;
   --primary-soft: rgb(59 130 246 / 0.16);
   --primary-soft-fg: #93c5fd;

@@ -43,17 +43,16 @@ export async function waitRows(page, scope) {
 
 export const searchInput = (page, placeholder) => main(page).getByPlaceholder(placeholder, { exact: true })
 
-/** 下拉筛选：按占位文本找到选择框，选中指定选项 */
+/** 下拉筛选：按占位文本（即触发器的无障碍名称）找到选择框，选中指定选项 */
+export const selectTrigger = (page, placeholder) => main(page).getByRole('combobox', { name: placeholder, exact: true })
 export async function chooseSelect(page, placeholder, optionLabel) {
-  const select = main(page).locator('.el-select').filter({ has: page.locator('.el-select__placeholder', { hasText: placeholder }) }).first()
-  await select.click()
-  await page.locator('.el-select-dropdown__item:visible', { hasText: optionLabel }).filter({ hasText: new RegExp(`^\\s*${escapeRe(optionLabel)}\\s*$`) }).first().click()
+  await selectTrigger(page, placeholder).click()
+  await page.getByRole('option', { name: optionLabel, exact: true }).click()
 }
 /** 读取下拉的全部选项文本（打开后读取，再按 Esc 关闭） */
 export async function selectOptions(page, placeholder) {
-  const select = main(page).locator('.el-select').filter({ has: page.locator('.el-select__placeholder', { hasText: placeholder }) }).first()
-  await select.click()
-  const items = page.locator('.el-select-dropdown__item:visible')
+  await selectTrigger(page, placeholder).click()
+  const items = page.getByRole('option')
   await expect(items.first()).toBeVisible()
   const texts = (await items.allInnerTexts()).map(t => t.trim())
   await page.keyboard.press('Escape')
@@ -62,7 +61,7 @@ export async function selectOptions(page, placeholder) {
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
 /** 分页按钮（二进制偏移页码） */
-export const pager = (page) => main(page).locator('div').filter({ has: page.locator('span', { hasText: /^每页/ }) }).last()
+export const pager = (page) => main(page).getByRole('navigation', { name: '分页' })
 export const pagerButtons = (page) => pager(page).locator('button')
 export async function pagerNumbers(page) {
   return (await pagerButtons(page).allInnerTexts()).map(t => Number(t.trim()))
@@ -71,16 +70,16 @@ export async function clickPage(page, n) {
   await pagerButtons(page).filter({ hasText: new RegExp(`^\\s*${n}\\s*$`) }).click()
   await expect(currentPage(page)).toHaveText(String(n))
 }
-/** 当前页按钮（旧实现：bg-blue-600；新实现：aria-current="page"） */
-export const currentPage = (page) => pager(page).locator('button.bg-blue-600, button[aria-current="page"]')
+/** 当前页按钮 */
+export const currentPage = (page) => pager(page).locator('button[aria-current="page"]')
 export const pagerText = (page) => pager(page).locator('span').first()
 
 /** 统计文案（共 n 支队伍 / 条记录 / 位选手） */
 export const countText = (page) => main(page).locator('span', { hasText: /^共 \d+ (支队伍|条记录|位选手)$/ })
 
 /** 加载/错误结果 */
-export const resultTitle = (page) => main(page).locator('.el-result__title')
-export const resultSubtitle = (page) => main(page).locator('.el-result__subtitle')
+export const resultTitle = (page) => main(page).locator('[data-result-title]')
+export const resultSubtitle = (page) => main(page).locator('[data-result-subtitle]')
 
 /** 弹窗 */
 export const dialog = (page) => page.getByRole('dialog')
@@ -95,6 +94,11 @@ export async function clickHeader(page, scope, label) {
   await scope.locator('thead th', { hasText: label }).first().click()
 }
 
+/** B-S6：整行文字按奖牌着色（新实现以 data-text-tone 标注色调） */
+export async function expectRowTextTone(row, tone) {
+  await expect(row).toHaveAttribute('data-text-tone', tone)
+}
+
 /** 进度文案 */
 export const progressText = (page) => main(page).getByText(/正在加载比赛数据（\d+ \/ \d+）/)
 
@@ -104,7 +108,7 @@ export const progressText = (page) => main(page).getByText(/正在加载比赛�
  * 只依赖 Canvas 渲染器，新旧实现通用。
  */
 export async function findScatterPoint(page, panel) {
-  const card = panel.locator('div', { has: page.locator('h3', { hasText: '多场选手的排名稳定性' }) }).last()
+  const card = panel.locator('section', { has: page.locator('h3', { hasText: '多场选手的排名稳定性' }) }).last()
   const canvas = card.locator('canvas').first()
   await canvas.scrollIntoViewIfNeeded()
   await page.waitForTimeout(800) // 等入场动画结束

@@ -118,7 +118,7 @@ test.describe('B-SC 学校页', () => {
 })
 
 test.describe('D3 学校全无排名显示 —（M4 启用）', () => {
-  test.fixme('全部队伍缺排名时最佳排名为 —', async ({ page }) => {
+  test('全部队伍缺排名时最佳排名为 —', async ({ page }) => {
     const index = po.readData('2025/contests.json')
     for (const c of index) {
       await page.route(`**/data/2025/${c.id}.json`, async (r) => {
@@ -134,11 +134,11 @@ test.describe('D3 学校全无排名显示 —（M4 启用）', () => {
 
 test.describe('D7 名称只解码一次（M4 启用）', () => {
   const weird = '百分%之百大学'
-  test.fixme('学校名含 % 可正常打开', async ({ page }) => {
+  test('学校名含 % 可正常打开', async ({ page }) => {
     await po.open(page, `/2025/school/${encodeURIComponent(weird)}`)
     await expect(po.heading(page)).toHaveText(weird)
   })
-  test.fixme('选手名含 % 可正常打开', async ({ page }) => {
+  test('选手名含 % 可正常打开', async ({ page }) => {
     await po.open(page, `/2025/player/${encodeURIComponent('张%三')}`)
     await expect(po.heading(page)).toHaveText('张%三')
   })
@@ -249,13 +249,13 @@ test.describe('B-A 数据分析', () => {
 })
 
 test.describe('D5 轨迹行与散点为真实链接（M5 启用）', () => {
-  test.fixme('轨迹行含指向名单页的链接', async ({ page }) => {
+  test('轨迹行含指向名单页的链接', async ({ page }) => {
     await po.open(page, '/2026/analysis?tab=trajectory')
     const panel = po.trajectoryTable(page)
     const link = panel.locator('tbody tr').first().getByRole('link')
     await expect(link).toHaveAttribute('href', `#/2026/trajectory/${tiersToCode(traj2026.rows[0].tiers)}`)
   })
-  test.fixme('Ctrl+点击散点在新标签打开', async ({ page, context }) => {
+  test('Ctrl+点击散点在新标签打开', async ({ page, context }) => {
     await po.open(page, '/2025/analysis?tab=players')
     const panel = po.tabPanel(page, 'players')
     await expect(panel).toContainText('多场选手的排名稳定性', { timeout: 60000 })

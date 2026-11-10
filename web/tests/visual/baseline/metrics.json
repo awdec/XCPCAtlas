@@ -1,0 +1,84 @@
+{
+  "1280 /": {
+    "readyMs": 1172,
+    "cls": 0
+  },
+  "1280 /announcement": {
+    "readyMs": 616,
+    "cls": 0
+  },
+  "1280 /2025/": {
+    "readyMs": 612,
+    "cls": 0
+  },
+  "1280 /2025/contest/nanjing": {
+    "readyMs": 614,
+    "cls": 0
+  },
+  "1280 /2025/summary": {
+    "readyMs": 608,
+    "cls": 0
+  },
+  "1280 /2025/players": {
+    "readyMs": 604,
+    "cls": 0
+  },
+  "1280 /2025/analysis": {
+    "readyMs": 615,
+    "cls": 0
+  },
+  "1280 /2025/analysis?tab=players": {
+    "readyMs": 614,
+    "cls": 0
+  },
+  "1280 /2026/trajectory/b-n-n-n-n": {
+    "readyMs": 610,
+    "cls": 0
+  },
+  "1280 /2025/school/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6": {
+    "readyMs": 616,
+    "cls": 0
+  },
+  "summary-search-frame-ms": 17.3,
+  "390 /": {
+    "readyMs": 1166,
+    "cls": 0
+  },
+  "390 /announcement": {
+    "readyMs": 607,
+    "cls": 0
+  },
+  "390 /2025/": {
+    "readyMs": 604,
+    "cls": 0
+  },
+  "390 /2025/contest/nanjing": {
+    "readyMs": 604,
+    "cls": 0
+  },
+  "390 /2025/summary": {
+    "readyMs": 615,
+    "cls": 0
+  },
+  "390 /2025/players": {
+    "readyMs": 615,
+    "cls": 0
+  },
+  "390 /2025/analysis": {
+    "readyMs": 601,
+    "cls": 0
+  },
+  "390 /2025/analysis?tab=players": {
+    "readyMs": 612,
+    "cls": 0
+  },
+  "390 /2026/trajectory/b-n-n-n-n": {
+    "readyMs": 611,
+    "cls": 0
+  },
+  "390 /2025/school/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6": {
+    "readyMs": 612,
+    "cls": 0
+  },
+  "totalJsBytes": 1239936
+}

@@ -172,7 +172,7 @@ test.describe('B-AN 公告', () => {
 })
 
 test.describe('D2 404 页面（M2 启用）', () => {
-  test.fixme('B-N1 未知路径显示 404', async ({ page }) => {
+  test('B-N1 未知路径显示 404', async ({ page }) => {
     for (const p of ['/2025/unknown', '/2025/contest', '/a/b/c/d']) {
       await po.open(page, p)
       await expect(po.main(page)).toContainText('页面不存在')
@@ -184,7 +184,7 @@ test.describe('D2 404 页面（M2 启用）', () => {
 })
 
 test.describe('D5 Logo 为真实链接（M2 启用）', () => {
-  test.fixme('Logo 是指向首页的链接', async ({ page }) => {
+  test('Logo 是指向首页的链接', async ({ page }) => {
     await po.open(page, '/2025/summary')
     await expect(po.logoLink(page)).toHaveAttribute('href', '#/')
   })

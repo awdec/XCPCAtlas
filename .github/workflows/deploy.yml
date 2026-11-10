@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # 单元 + golden + 构建：阻塞部署
+  # 类型、lint、单元、golden、构建、数据校验：阻塞部署
   test:
     runs-on: ubuntu-latest
     defaults:
@@ -29,14 +29,16 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
       - run: npm test
       - run: npm run test:golden
       - run: npm run build
+      - run: npm run verify:data
 
-  # E2E：暂不阻塞部署（计划 M7-T3 改为必需）
+  # E2E（含 axe 无障碍、动效约束、响应式）：阻塞部署（计划 M7-T3）
   e2e:
     runs-on: ubuntu-latest
-    continue-on-error: true
     defaults:
       run:
         working-directory: web
@@ -54,7 +56,7 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ hashFiles('web/package-lock.json') }}
       - run: npx playwright install --with-deps chromium webkit
-      - run: npm run test:e2e -- --project=chromium --project=webkit
+      - run: npm run test:e2e
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
@@ -63,7 +65,7 @@ jobs:
           retention-days: 7
 
   build:
-    needs: test
+    needs: [test, e2e]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:

@@ -18,8 +18,7 @@ const layerZones = LAYERS.flatMap((layer, i) =>
 
 export default tseslint.config(
   { ignores: ['dist/**', 'node_modules/**', 'test-results/**', 'playwright-report/**', 'tests/reference/**', 'tests/golden/__golden__/**', 'public/**',
-    // 过渡期：旧视图在 M3–M5 被逐页替换并删除，届时自动移出
-    'src/views/**', 'src/components/**', 'src/App.vue', 'src/main.ts'] },
+  ] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...vue.configs['flat/recommended'],
