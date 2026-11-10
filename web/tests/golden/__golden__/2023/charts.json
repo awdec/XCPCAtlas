@@ -1,0 +1,22 @@
+{
+ "__hashed__": true,
+ "sha256": "b0302d5c7ccb070bcd863d0ff04ee462232ab820b327e8a204827402638999af",
+ "length": 310089,
+ "keys": [
+  "overviewCards",
+  "overviewRegion",
+  "regionPerSite",
+  "playersPie",
+  "playersPart",
+  "playersScatter",
+  "playersAgg",
+  "playersFirstBest",
+  "playersFirstBestMissing",
+  "oierPlayerRate",
+  "oierTeamComp",
+  "schoolDistribution",
+  "schoolRate",
+  "schoolTierSummary",
+  "trajectoryRange"
+ ]
+}

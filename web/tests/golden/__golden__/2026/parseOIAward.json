@@ -1,0 +1,64 @@
+[
+ {
+  "level": 3,
+  "rank": 1,
+  "label": "NOI 金",
+  "year": 2023
+ },
+ {
+  "level": 3,
+  "rank": 1,
+  "label": "NOI 金",
+  "year": 2023
+ },
+ {
+  "level": 0,
+  "rank": 3,
+  "label": "入门 三等",
+  "year": 2022
+ },
+ {
+  "level": 1,
+  "rank": 2,
+  "label": "提高 二等",
+  "year": 2023
+ },
+ {
+  "level": 1,
+  "rank": 1,
+  "label": "提高 一等",
+  "year": 2023
+ },
+ {
+  "level": 2,
+  "rank": 1,
+  "label": "WC 级 金",
+  "year": 2021
+ },
+ {
+  "level": 2,
+  "rank": 2,
+  "label": "WC 级 银",
+  "year": 2020
+ },
+ {
+  "level": 3,
+  "rank": 3,
+  "label": "NOI 铜",
+  "year": 2021
+ },
+ {
+  "level": 4,
+  "rank": 1,
+  "label": "IOI 金",
+  "year": 2022
+ },
+ null,
+ null,
+ {
+  "level": 3,
+  "rank": 2,
+  "label": "NOI D类 二等",
+  "year": 2022
+ }
+]

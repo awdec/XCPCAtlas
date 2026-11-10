@@ -1,0 +1,126 @@
+{
+ "contests": 12,
+ "teams": 3683,
+ "appearances": 11029,
+ "players": 5005,
+ "medalPlayers": {
+  "gold": 582,
+  "silver": 1001,
+  "bronze": 1380,
+  "iron": 2042
+ },
+ "oierPlayers": 2242,
+ "oierRate": 0.44795204795204796,
+ "perRegion": [
+  {
+   "id": "chongqing",
+   "name": "CCPC 重庆",
+   "gold": 26,
+   "silver": 52,
+   "bronze": 77,
+   "iron": 105
+  },
+  {
+   "id": "haerbin",
+   "name": "CCPC 哈尔滨",
+   "gold": 26,
+   "silver": 50,
+   "bronze": 76,
+   "iron": 108
+  },
+  {
+   "id": "jinan",
+   "name": "CCPC 济南",
+   "gold": 26,
+   "silver": 52,
+   "bronze": 78,
+   "iron": 104
+  },
+  {
+   "id": "nanyang",
+   "name": "CCPC 南阳",
+   "gold": 14,
+   "silver": 23,
+   "bronze": 39,
+   "iron": 56
+  },
+  {
+   "id": "zhengzhou",
+   "name": "CCPC 郑州",
+   "gold": 25,
+   "silver": 50,
+   "bronze": 75,
+   "iron": 110
+  },
+  {
+   "id": "hangzhou",
+   "name": "ICPC 杭州",
+   "gold": 28,
+   "silver": 56,
+   "bronze": 84,
+   "iron": 112
+  },
+  {
+   "id": "chengdu",
+   "name": "ICPC 成都",
+   "gold": 32,
+   "silver": 64,
+   "bronze": 96,
+   "iron": 128
+  },
+  {
+   "id": "nanjing",
+   "name": "ICPC 南京",
+   "gold": 33,
+   "silver": 66,
+   "bronze": 100,
+   "iron": 136
+  },
+  {
+   "id": "shanghai",
+   "name": "ICPC 上海",
+   "gold": 30,
+   "silver": 60,
+   "bronze": 90,
+   "iron": 151
+  },
+  {
+   "id": "shenyang",
+   "name": "ICPC 沈阳",
+   "gold": 40,
+   "silver": 80,
+   "bronze": 120,
+   "iron": 160
+  },
+  {
+   "id": "wuhan",
+   "name": "ICPC 武汉",
+   "gold": 45,
+   "silver": 90,
+   "bronze": 136,
+   "iron": 175
+  },
+  {
+   "id": "xian",
+   "name": "ICPC 西安",
+   "gold": 40,
+   "silver": 80,
+   "bronze": 120,
+   "iron": 159
+  }
+ ],
+ "orgMedals": [
+  {
+   "org": "CCPC",
+   "gold": 117,
+   "silver": 227,
+   "bronze": 345
+  },
+  {
+   "org": "ICPC",
+   "gold": 248,
+   "silver": 496,
+   "bronze": 746
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "__hashed__": true,
+ "sha256": "a5abb1f6836dd6ade96bab39c0aa381ab74ae673699776da8e1a6c43e26eaf25",
+ "length": 287878,
+ "keys": [
+  "tierCounts",
+  "participation",
+  "stability",
+  "stabilityAgg"
+ ]
+}

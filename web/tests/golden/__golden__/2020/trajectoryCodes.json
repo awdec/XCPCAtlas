@@ -1,0 +1,32 @@
+[
+ {
+  "code": "b-n-n-n-n",
+  "back": [
+   "bronze",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-n-n-n",
+  "back": [
+   "silver",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-n-n-n-n",
+  "back": [
+   "gold",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ }
+]

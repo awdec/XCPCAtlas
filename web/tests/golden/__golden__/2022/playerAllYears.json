@@ -1,0 +1,1085 @@
+[
+ {
+  "name": "王展鹏",
+  "school": "北京大学",
+  "records": {
+   "icpc": [
+    {
+     "year": 2021,
+     "contest": "ICPC 昆明",
+     "contestId": "kunming",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 10,
+     "penalty": 917,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 哈尔滨",
+     "contestId": "haerbin",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 3,
+     "solved": 9,
+     "penalty": 1261,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 广州（总决赛）",
+     "contestId": "final",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1497,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 威海",
+     "contestId": "weihai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1259,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1861,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 济南",
+     "contestId": "jinan",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1312,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 合肥",
+     "contestId": "hefei",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 12,
+     "penalty": 1284,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1005,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 桂林",
+     "contestId": "guilin",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 11,
+     "penalty": 1482,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 济南",
+     "contestId": "jinan",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 12,
+     "penalty": 1272,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 3,
+     "solved": 9,
+     "penalty": 1260,
+     "medal": "Gold"
+    }
+   ],
+   "oi": [
+    {
+     "比赛": "NOIP2016普及",
+     "奖项": "一等奖",
+     "学校": "绍兴市文澜中学",
+     "年级": "初二"
+    },
+    {
+     "比赛": "NOIP2017提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市文澜中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "WC2018",
+     "奖项": "银牌",
+     "学校": "绍兴一中",
+     "年级": "初三"
+    },
+    {
+     "比赛": "CTSC2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "APIO2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOI2018",
+     "奖项": "银牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOIP2018提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "WC2019",
+     "奖项": "金牌",
+     "学校": "绍兴一中",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CTS2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "APIO2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "NOI2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CSP2019提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "NOI2020",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "APIO2020",
+     "奖项": "金牌",
+     "学校": "绍兴一中",
+     "年级": "高二"
+    },
+    {
+     "比赛": "IOI2020",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    }
+   ]
+  }
+ },
+ {
+  "name": "徐国琛",
+  "school": "中南大学",
+  "records": {
+   "icpc": [
+    {
+     "year": 2021,
+     "contest": "CCPC 广州",
+     "contestId": "guangzhou",
+     "school": "中南大学",
+     "team": "关于名字未定这件事",
+     "rank": 15,
+     "solved": 5,
+     "penalty": 870,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 南京",
+     "contestId": "final",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 15,
+     "solved": 7,
+     "penalty": 780,
+     "medal": "Silver"
+    },
+    {
+     "year": 2021,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "中南大学",
+     "team": "关于名字未定这件事",
+     "rank": 34,
+     "solved": 6,
+     "penalty": 617,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "中南大学",
+     "team": "关于名字未定这件事",
+     "rank": 39,
+     "solved": 7,
+     "penalty": 686,
+     "medal": "Silver"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 威海",
+     "contestId": "weihai",
+     "school": "中南大学",
+     "team": "关于名字未定这件事",
+     "rank": 49,
+     "solved": 6,
+     "penalty": 926,
+     "medal": "Silver"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 广州",
+     "contestId": "guangzhou",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 1,
+     "solved": 9,
+     "penalty": 1255,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 沈阳",
+     "contestId": "shenyang",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 5,
+     "solved": 7,
+     "penalty": 954,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 杭州",
+     "contestId": "hangzhou",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 13,
+     "solved": 7,
+     "penalty": 593,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 广州（总决赛）",
+     "contestId": "final",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 18,
+     "solved": 6,
+     "penalty": 910,
+     "medal": "Silver"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 绵阳",
+     "contestId": "mianyang",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 18,
+     "solved": 8,
+     "penalty": 1336,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 66,
+     "solved": 5,
+     "penalty": 513,
+     "medal": "Silver"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 合肥",
+     "contestId": "hefei",
+     "school": "中南大学",
+     "team": "普普三人组",
+     "rank": 23,
+     "solved": 7,
+     "penalty": 962,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 济南",
+     "contestId": "jinan",
+     "school": "中南大学",
+     "team": "普普三人组",
+     "rank": 26,
+     "solved": 8,
+     "penalty": 1149,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 哈尔滨",
+     "contestId": "haerbin",
+     "school": "中南大学",
+     "team": "普普三人组",
+     "rank": 35,
+     "solved": 5,
+     "penalty": 329,
+     "medal": "Silver"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "中南大学",
+     "team": "明日之风的三重奏",
+     "rank": 35,
+     "solved": 6,
+     "penalty": 670,
+     "medal": "Silver"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 桂林",
+     "contestId": "guilin",
+     "school": "中南大学",
+     "team": "普普三人组",
+     "rank": 61,
+     "solved": 5,
+     "penalty": 666,
+     "medal": "Silver"
+    }
+   ],
+   "oi": [
+    {
+     "比赛": "NOIP2016提高",
+     "奖项": "三等奖",
+     "学校": "中山市第一中学",
+     "年级": "初二"
+    },
+    {
+     "比赛": "NOIP2017提高",
+     "奖项": "一等奖",
+     "学校": "中山市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOIP2018提高",
+     "奖项": "一等奖",
+     "学校": "中山市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CSP2019提高",
+     "奖项": "一等奖",
+     "学校": "中山市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "WC2020",
+     "奖项": "铜牌",
+     "学校": "中山市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "APIO2020",
+     "奖项": "金牌",
+     "学校": "中山市第一中学",
+     "年级": "高二"
+    }
+   ]
+  }
+ },
+ {
+  "name": "周雨扬",
+  "school": "北京大学",
+  "records": {
+   "icpc": [
+    {
+     "year": 2020,
+     "contest": "CCPC 长春",
+     "contestId": "changchun",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1689,
+     "medal": "Gold"
+    },
+    {
+     "year": 2020,
+     "contest": "CCPC 绵阳",
+     "contestId": "mianyang",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1092,
+     "medal": "Gold"
+    },
+    {
+     "year": 2020,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 915,
+     "medal": "Gold"
+    },
+    {
+     "year": 2020,
+     "contest": "ICPC 沈阳",
+     "contestId": "shenyang",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1083,
+     "medal": "Gold"
+    },
+    {
+     "year": 2020,
+     "contest": "CCPC 北京",
+     "contestId": "final",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 2,
+     "solved": 10,
+     "penalty": 780,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 威海",
+     "contestId": "weihai",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1326,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1559,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 2,
+     "solved": 13,
+     "penalty": 1506,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 南京",
+     "contestId": "final",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 115,
+     "solved": 0,
+     "penalty": 0,
+     "medal": "Honorable"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 桂林",
+     "contestId": "guilin",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1616,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1456,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 杭州",
+     "contestId": "hangzhou",
+     "school": "北京大学",
+     "team": "逆十字",
+     "rank": 544,
+     "solved": 0,
+     "penalty": 0,
+     "medal": "Honorable"
+    }
+   ],
+   "oi": [
+    {
+     "比赛": "NOIP2014普及",
+     "奖项": "二等奖",
+     "学校": "绍兴市第一初级中学教育集团",
+     "年级": "初一"
+    },
+    {
+     "比赛": "NOIP2015普及",
+     "奖项": "二等奖",
+     "学校": "绍兴市第一初级中学教育集团",
+     "年级": "初二"
+    },
+    {
+     "比赛": "NOIP2016提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一初级中学教育集团龙山校区",
+     "年级": "初三"
+    },
+    {
+     "比赛": "WC2017",
+     "奖项": "铜牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOIP2017提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "WC2018",
+     "奖项": "金牌",
+     "学校": "绍兴一中",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CTSC2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "APIO2018",
+     "奖项": "银牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "NOI2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "NOIP2018提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "WC2019",
+     "奖项": "银牌",
+     "学校": "绍兴一中",
+     "年级": "高二"
+    },
+    {
+     "比赛": "CTS2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "APIO2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "NOI2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "CSP2019提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高三"
+    },
+    {
+     "比赛": "IOI2020",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高三"
+    }
+   ]
+  }
+ },
+ {
+  "name": "冯施源",
+  "school": "北京大学",
+  "records": {
+   "icpc": [
+    {
+     "year": 2022,
+     "contest": "CCPC 绵阳",
+     "contestId": "mianyang",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1511,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 杭州",
+     "contestId": "hangzhou",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1290,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 西安",
+     "contestId": "xian",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 827,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 广州（总决赛）",
+     "contestId": "final",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 2,
+     "solved": 10,
+     "penalty": 1198,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 6,
+     "solved": 9,
+     "penalty": 1266,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 哈尔滨",
+     "contestId": "haerbin",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1231,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 杭州",
+     "contestId": "hangzhou",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1028,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 成都",
+     "contestId": "chengdu",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 2,
+     "solved": 10,
+     "penalty": 1277,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "摆烂人",
+     "rank": 2,
+     "solved": 9,
+     "penalty": 1233,
+     "medal": "Gold"
+    }
+   ],
+   "oi": [
+    {
+     "比赛": "NOIP2017普及",
+     "奖项": "一等奖",
+     "学校": "成都石室联合中学",
+     "年级": "初二"
+    },
+    {
+     "比赛": "NOIP2018提高",
+     "奖项": "一等奖",
+     "学校": "成都石室联合中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "CSP2019提高",
+     "奖项": "一等奖",
+     "学校": "四川省成都市石室中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "WC2020",
+     "奖项": "银牌",
+     "学校": "四川省成都市石室中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "NOI2020",
+     "奖项": "银牌",
+     "学校": "四川省成都市石室中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "APIO2020",
+     "奖项": "银牌",
+     "学校": "四川省成都市石室中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CSP2020提高",
+     "奖项": "一等奖",
+     "学校": "成都市石室中学（文庙校区）",
+     "年级": "高二"
+    },
+    {
+     "比赛": "NOIP2020",
+     "奖项": "一等奖",
+     "学校": "四川省成都市石室中学（文庙校区）",
+     "年级": "高二"
+    },
+    {
+     "比赛": "WC2021",
+     "奖项": "金牌",
+     "学校": "四川省成都市石室中学（文庙校区）",
+     "年级": "高二"
+    },
+    {
+     "比赛": "NOI2021",
+     "奖项": "金牌",
+     "学校": "四川省成都市石室中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "CSP2021提高",
+     "奖项": "一等奖",
+     "学校": "四川省成都市石室中学文庙校区",
+     "年级": "高三"
+    },
+    {
+     "比赛": "NOIP2021",
+     "奖项": "一等奖",
+     "学校": "四川省成都市石室中学",
+     "年级": "高三"
+    }
+   ]
+  }
+ },
+ {
+  "name": "王展鹏",
+  "school": "北京大学",
+  "records": {
+   "icpc": [
+    {
+     "year": 2021,
+     "contest": "ICPC 昆明",
+     "contestId": "kunming",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 10,
+     "penalty": 917,
+     "medal": "Gold"
+    },
+    {
+     "year": 2021,
+     "contest": "CCPC 哈尔滨",
+     "contestId": "haerbin",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 3,
+     "solved": 9,
+     "penalty": 1261,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 广州（总决赛）",
+     "contestId": "final",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1497,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "CCPC 威海",
+     "contestId": "weihai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1259,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 11,
+     "penalty": 1861,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 济南",
+     "contestId": "jinan",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 12,
+     "penalty": 1312,
+     "medal": "Gold"
+    },
+    {
+     "year": 2022,
+     "contest": "ICPC 合肥",
+     "contestId": "hefei",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 12,
+     "penalty": 1284,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 南京",
+     "contestId": "nanjing",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 1,
+     "solved": 10,
+     "penalty": 1005,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "CCPC 桂林",
+     "contestId": "guilin",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 11,
+     "penalty": 1482,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 济南",
+     "contestId": "jinan",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 2,
+     "solved": 12,
+     "penalty": 1272,
+     "medal": "Gold"
+    },
+    {
+     "year": 2023,
+     "contest": "ICPC 上海",
+     "contestId": "shanghai",
+     "school": "北京大学",
+     "team": "重生之我是菜狗",
+     "rank": 3,
+     "solved": 9,
+     "penalty": 1260,
+     "medal": "Gold"
+    }
+   ],
+   "oi": [
+    {
+     "比赛": "NOIP2016普及",
+     "奖项": "一等奖",
+     "学校": "绍兴市文澜中学",
+     "年级": "初二"
+    },
+    {
+     "比赛": "NOIP2017提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市文澜中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "WC2018",
+     "奖项": "银牌",
+     "学校": "绍兴一中",
+     "年级": "初三"
+    },
+    {
+     "比赛": "CTSC2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "APIO2018",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOI2018",
+     "奖项": "银牌",
+     "学校": "绍兴市第一中学",
+     "年级": "初三"
+    },
+    {
+     "比赛": "NOIP2018提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "WC2019",
+     "奖项": "金牌",
+     "学校": "绍兴一中",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CTS2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "APIO2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "NOI2019",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高一"
+    },
+    {
+     "比赛": "CSP2019提高",
+     "奖项": "一等奖",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "NOI2020",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    },
+    {
+     "比赛": "APIO2020",
+     "奖项": "金牌",
+     "学校": "绍兴一中",
+     "年级": "高二"
+    },
+    {
+     "比赛": "IOI2020",
+     "奖项": "金牌",
+     "学校": "绍兴市第一中学",
+     "年级": "高二"
+    }
+   ]
+  }
+ }
+]

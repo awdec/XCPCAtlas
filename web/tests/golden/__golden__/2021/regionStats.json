@@ -1,0 +1,429 @@
+{
+ "perSite": [
+  {
+   "regionId": "guangzhou",
+   "name": "CCPC 广州",
+   "people": 693,
+   "gold": 69,
+   "silver": 132,
+   "bronze": 201,
+   "iron": 291
+  },
+  {
+   "regionId": "guilin",
+   "name": "CCPC 桂林",
+   "people": 716,
+   "gold": 72,
+   "silver": 144,
+   "bronze": 213,
+   "iron": 287
+  },
+  {
+   "regionId": "haerbin",
+   "name": "CCPC 哈尔滨",
+   "people": 720,
+   "gold": 72,
+   "silver": 144,
+   "bronze": 216,
+   "iron": 288
+  },
+  {
+   "regionId": "final",
+   "name": "CCPC 南京",
+   "people": 345,
+   "gold": 36,
+   "silver": 63,
+   "bronze": 105,
+   "iron": 141
+  },
+  {
+   "regionId": "weihai",
+   "name": "CCPC 威海",
+   "people": 720,
+   "gold": 72,
+   "silver": 144,
+   "bronze": 216,
+   "iron": 288
+  },
+  {
+   "regionId": "kunming",
+   "name": "ICPC 昆明",
+   "people": 616,
+   "gold": 105,
+   "silver": 205,
+   "bronze": 306,
+   "iron": 0
+  },
+  {
+   "regionId": "shanghai",
+   "name": "ICPC 上海",
+   "people": 1896,
+   "gold": 105,
+   "silver": 210,
+   "bronze": 315,
+   "iron": 1266
+  },
+  {
+   "regionId": "jinan",
+   "name": "ICPC 济南",
+   "people": 2177,
+   "gold": 105,
+   "silver": 210,
+   "bronze": 315,
+   "iron": 1547
+  },
+  {
+   "regionId": "nanjing",
+   "name": "ICPC 南京",
+   "people": 1923,
+   "gold": 105,
+   "silver": 210,
+   "bronze": 315,
+   "iron": 1293
+  }
+ ],
+ "migration": {
+  "guangzhou": {
+   "gold": {
+    "total": 64,
+    "other": {
+     "gold": 53,
+     "silver": 11,
+     "bronze": 0,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 121,
+    "other": {
+     "gold": 22,
+     "silver": 58,
+     "bronze": 32,
+     "iron": 9
+    }
+   },
+   "bronze": {
+    "total": 172,
+    "other": {
+     "gold": 26,
+     "silver": 37,
+     "bronze": 60,
+     "iron": 49
+    }
+   },
+   "iron": {
+    "total": 212,
+    "other": {
+     "gold": 4,
+     "silver": 35,
+     "bronze": 47,
+     "iron": 126
+    }
+   }
+  },
+  "guilin": {
+   "gold": {
+    "total": 67,
+    "other": {
+     "gold": 43,
+     "silver": 18,
+     "bronze": 6,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 142,
+    "other": {
+     "gold": 51,
+     "silver": 68,
+     "bronze": 21,
+     "iron": 2
+    }
+   },
+   "bronze": {
+    "total": 207,
+    "other": {
+     "gold": 17,
+     "silver": 67,
+     "bronze": 91,
+     "iron": 32
+    }
+   },
+   "iron": {
+    "total": 215,
+    "other": {
+     "gold": 3,
+     "silver": 32,
+     "bronze": 72,
+     "iron": 108
+    }
+   }
+  },
+  "haerbin": {
+   "gold": {
+    "total": 65,
+    "other": {
+     "gold": 30,
+     "silver": 31,
+     "bronze": 4,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 124,
+    "other": {
+     "gold": 22,
+     "silver": 48,
+     "bronze": 40,
+     "iron": 14
+    }
+   },
+   "bronze": {
+    "total": 192,
+    "other": {
+     "gold": 2,
+     "silver": 44,
+     "bronze": 64,
+     "iron": 82
+    }
+   },
+   "iron": {
+    "total": 195,
+    "other": {
+     "gold": 3,
+     "silver": 17,
+     "bronze": 47,
+     "iron": 128
+    }
+   }
+  },
+  "final": {
+   "gold": {
+    "total": 36,
+    "other": {
+     "gold": 34,
+     "silver": 1,
+     "bronze": 1,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 60,
+    "other": {
+     "gold": 43,
+     "silver": 14,
+     "bronze": 3,
+     "iron": 0
+    }
+   },
+   "bronze": {
+    "total": 100,
+    "other": {
+     "gold": 45,
+     "silver": 42,
+     "bronze": 11,
+     "iron": 2
+    }
+   },
+   "iron": {
+    "total": 138,
+    "other": {
+     "gold": 24,
+     "silver": 77,
+     "bronze": 27,
+     "iron": 10
+    }
+   }
+  },
+  "weihai": {
+   "gold": {
+    "total": 63,
+    "other": {
+     "gold": 58,
+     "silver": 5,
+     "bronze": 0,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 142,
+    "other": {
+     "gold": 45,
+     "silver": 57,
+     "bronze": 26,
+     "iron": 14
+    }
+   },
+   "bronze": {
+    "total": 202,
+    "other": {
+     "gold": 15,
+     "silver": 67,
+     "bronze": 79,
+     "iron": 41
+    }
+   },
+   "iron": {
+    "total": 256,
+    "other": {
+     "gold": 1,
+     "silver": 22,
+     "bronze": 73,
+     "iron": 160
+    }
+   }
+  },
+  "kunming": {
+   "gold": {
+    "total": 77,
+    "other": {
+     "gold": 51,
+     "silver": 23,
+     "bronze": 3,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 153,
+    "other": {
+     "gold": 26,
+     "silver": 60,
+     "bronze": 38,
+     "iron": 29
+    }
+   },
+   "bronze": {
+    "total": 226,
+    "other": {
+     "gold": 4,
+     "silver": 44,
+     "bronze": 77,
+     "iron": 101
+    }
+   },
+   "iron": {
+    "total": 0,
+    "other": {
+     "gold": 0,
+     "silver": 0,
+     "bronze": 0,
+     "iron": 0
+    }
+   }
+  },
+  "shanghai": {
+   "gold": {
+    "total": 93,
+    "other": {
+     "gold": 66,
+     "silver": 21,
+     "bronze": 6,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 184,
+    "other": {
+     "gold": 55,
+     "silver": 83,
+     "bronze": 42,
+     "iron": 4
+    }
+   },
+   "bronze": {
+    "total": 278,
+    "other": {
+     "gold": 23,
+     "silver": 81,
+     "bronze": 94,
+     "iron": 80
+    }
+   },
+   "iron": {
+    "total": 634,
+    "other": {
+     "gold": 0,
+     "silver": 50,
+     "bronze": 143,
+     "iron": 441
+    }
+   }
+  },
+  "jinan": {
+   "gold": {
+    "total": 92,
+    "other": {
+     "gold": 37,
+     "silver": 38,
+     "bronze": 14,
+     "iron": 3
+    }
+   },
+   "silver": {
+    "total": 178,
+    "other": {
+     "gold": 18,
+     "silver": 62,
+     "bronze": 74,
+     "iron": 24
+    }
+   },
+   "bronze": {
+    "total": 196,
+    "other": {
+     "gold": 11,
+     "silver": 28,
+     "bronze": 87,
+     "iron": 70
+    }
+   },
+   "iron": {
+    "total": 786,
+    "other": {
+     "gold": 0,
+     "silver": 33,
+     "bronze": 200,
+     "iron": 553
+    }
+   }
+  },
+  "nanjing": {
+   "gold": {
+    "total": 96,
+    "other": {
+     "gold": 72,
+     "silver": 18,
+     "bronze": 6,
+     "iron": 0
+    }
+   },
+   "silver": {
+    "total": 203,
+    "other": {
+     "gold": 61,
+     "silver": 108,
+     "bronze": 25,
+     "iron": 9
+    }
+   },
+   "bronze": {
+    "total": 283,
+    "other": {
+     "gold": 18,
+     "silver": 107,
+     "bronze": 110,
+     "iron": 48
+    }
+   },
+   "iron": {
+    "total": 745,
+    "other": {
+     "gold": 5,
+     "silver": 51,
+     "bronze": 195,
+     "iron": 494
+    }
+   }
+  }
+ }
+}

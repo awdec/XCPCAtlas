@@ -1,0 +1,26 @@
+[
+ {
+  "id": "changchun",
+  "name": "CCPC 长春"
+ },
+ {
+  "id": "leshan",
+  "name": "CCPC 乐山"
+ },
+ {
+  "id": "xian",
+  "name": "ICPC 西安"
+ },
+ {
+  "id": "chengdu",
+  "name": "ICPC 成都"
+ },
+ {
+  "id": "nanjing",
+  "name": "ICPC 南京"
+ },
+ {
+  "id": "wuhan",
+  "name": "ICPC 武汉"
+ }
+]

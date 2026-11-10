@@ -1,0 +1,18 @@
+{
+ "__hashed__": true,
+ "sha256": "d61c4710d92b3a980a1bf502ce1c1b7bb1998787fd6a5c8b347f0eb1fab8f612",
+ "length": 28112,
+ "keys": [
+  "chengdu",
+  "guilin",
+  "haerbin",
+  "qinhuangdao",
+  "shenzhen",
+  "shanghai",
+  "nanjing",
+  "hefei",
+  "hangzhou",
+  "shenyang",
+  "jinan"
+ ]
+}

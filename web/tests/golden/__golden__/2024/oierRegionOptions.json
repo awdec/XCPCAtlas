@@ -1,0 +1,50 @@
+[
+ {
+  "id": "chongqing",
+  "name": "CCPC 重庆"
+ },
+ {
+  "id": "final",
+  "name": "CCPC 广州"
+ },
+ {
+  "id": "haerbin",
+  "name": "CCPC 哈尔滨"
+ },
+ {
+  "id": "jinan",
+  "name": "CCPC 济南"
+ },
+ {
+  "id": "zhengzhou",
+  "name": "CCPC 郑州"
+ },
+ {
+  "id": "xian",
+  "name": "ICPC 西安"
+ },
+ {
+  "id": "shanghai",
+  "name": "ICPC 上海"
+ },
+ {
+  "id": "nanjing",
+  "name": "ICPC 南京"
+ },
+ {
+  "id": "chengdu",
+  "name": "ICPC 成都"
+ },
+ {
+  "id": "kunming",
+  "name": "ICPC 昆明"
+ },
+ {
+  "id": "hangzhou",
+  "name": "ICPC 杭州"
+ },
+ {
+  "id": "shenyang",
+  "name": "ICPC 沈阳"
+ }
+]

@@ -10,3 +10,8 @@ output/
 
 # 本地 AI 助手权限缓存
 .agents/settings.local.json
+
+# 前端测试产物
+web/test-results/
+web/playwright-report/
+web/blob-report/

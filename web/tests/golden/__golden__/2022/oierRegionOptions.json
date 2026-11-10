@@ -1,0 +1,50 @@
+[
+ {
+  "id": "final",
+  "name": "CCPC 广州（总决赛）"
+ },
+ {
+  "id": "guangzhou",
+  "name": "CCPC 广州"
+ },
+ {
+  "id": "guilin",
+  "name": "CCPC 桂林"
+ },
+ {
+  "id": "mianyang",
+  "name": "CCPC 绵阳"
+ },
+ {
+  "id": "weihai",
+  "name": "CCPC 威海"
+ },
+ {
+  "id": "shanghai",
+  "name": "ICPC 上海"
+ },
+ {
+  "id": "nanjing",
+  "name": "ICPC 南京"
+ },
+ {
+  "id": "hefei",
+  "name": "ICPC 合肥"
+ },
+ {
+  "id": "hangzhou",
+  "name": "ICPC 杭州"
+ },
+ {
+  "id": "shenyang",
+  "name": "ICPC 沈阳"
+ },
+ {
+  "id": "jinan",
+  "name": "ICPC 济南"
+ },
+ {
+  "id": "xian",
+  "name": "ICPC 西安"
+ }
+]

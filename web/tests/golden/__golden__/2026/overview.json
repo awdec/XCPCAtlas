@@ -1,0 +1,78 @@
+{
+ "contests": 6,
+ "teams": 2020,
+ "appearances": 6057,
+ "players": 4404,
+ "medalPlayers": {
+  "gold": 475,
+  "silver": 889,
+  "bronze": 1232,
+  "iron": 1808
+ },
+ "oierPlayers": 2177,
+ "oierRate": 0.49432334241598547,
+ "perRegion": [
+  {
+   "id": "changchun",
+   "name": "CCPC 长春",
+   "gold": 30,
+   "silver": 60,
+   "bronze": 90,
+   "iron": 119
+  },
+  {
+   "id": "leshan",
+   "name": "CCPC 乐山",
+   "gold": 30,
+   "silver": 60,
+   "bronze": 90,
+   "iron": 119
+  },
+  {
+   "id": "xian",
+   "name": "ICPC 西安",
+   "gold": 41,
+   "silver": 82,
+   "bronze": 123,
+   "iron": 156
+  },
+  {
+   "id": "chengdu",
+   "name": "ICPC 成都",
+   "gold": 32,
+   "silver": 64,
+   "bronze": 96,
+   "iron": 127
+  },
+  {
+   "id": "nanjing",
+   "name": "ICPC 南京",
+   "gold": 33,
+   "silver": 66,
+   "bronze": 99,
+   "iron": 134
+  },
+  {
+   "id": "wuhan",
+   "name": "ICPC 武汉",
+   "gold": 37,
+   "silver": 75,
+   "bronze": 110,
+   "iron": 147
+  }
+ ],
+ "orgMedals": [
+  {
+   "org": "CCPC",
+   "gold": 60,
+   "silver": 120,
+   "bronze": 180
+  },
+  {
+   "org": "ICPC",
+   "gold": 143,
+   "silver": 287,
+   "bronze": 428
+  }
+ ]
+}

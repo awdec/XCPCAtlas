@@ -1,0 +1,152 @@
+[
+ {
+  "code": "b-n-n-n-n",
+  "back": [
+   "bronze",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-b-n-n-n",
+  "back": [
+   "iron",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-n-n-n",
+  "back": [
+   "silver",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-b-n-n-n",
+  "back": [
+   "bronze",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-g-n-n-n",
+  "back": [
+   "gold",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-s-n-n-n",
+  "back": [
+   "bronze",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-n-n-n-n",
+  "back": [
+   "gold",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-s-n-n-n",
+  "back": [
+   "silver",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-s-n-n-n",
+  "back": [
+   "iron",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-g-n-n-n",
+  "back": [
+   "silver",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-b-n-n-n",
+  "back": [
+   "silver",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-s-n-n-n",
+  "back": [
+   "gold",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-g-n-n-n",
+  "back": [
+   "bronze",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-b-n-n-n",
+  "back": [
+   "gold",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-g-n-n-n",
+  "back": [
+   "iron",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ }
+]

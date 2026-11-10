@@ -1,0 +1,102 @@
+{
+ "contests": 9,
+ "teams": 3817,
+ "appearances": 9807,
+ "players": 5573,
+ "medalPlayers": {
+  "gold": 473,
+  "silver": 796,
+  "bronze": 1160,
+  "iron": 3144
+ },
+ "oierPlayers": 2076,
+ "oierRate": 0.37251031760272746,
+ "perRegion": [
+  {
+   "id": "guangzhou",
+   "name": "CCPC 广州",
+   "gold": 23,
+   "silver": 44,
+   "bronze": 67,
+   "iron": 97
+  },
+  {
+   "id": "guilin",
+   "name": "CCPC 桂林",
+   "gold": 24,
+   "silver": 48,
+   "bronze": 71,
+   "iron": 96
+  },
+  {
+   "id": "haerbin",
+   "name": "CCPC 哈尔滨",
+   "gold": 24,
+   "silver": 48,
+   "bronze": 72,
+   "iron": 96
+  },
+  {
+   "id": "final",
+   "name": "CCPC 南京",
+   "gold": 12,
+   "silver": 21,
+   "bronze": 35,
+   "iron": 47
+  },
+  {
+   "id": "weihai",
+   "name": "CCPC 威海",
+   "gold": 24,
+   "silver": 48,
+   "bronze": 72,
+   "iron": 96
+  },
+  {
+   "id": "kunming",
+   "name": "ICPC 昆明",
+   "gold": 35,
+   "silver": 70,
+   "bronze": 105,
+   "iron": 543
+  },
+  {
+   "id": "shanghai",
+   "name": "ICPC 上海",
+   "gold": 35,
+   "silver": 70,
+   "bronze": 105,
+   "iron": 422
+  },
+  {
+   "id": "jinan",
+   "name": "ICPC 济南",
+   "gold": 35,
+   "silver": 70,
+   "bronze": 105,
+   "iron": 516
+  },
+  {
+   "id": "nanjing",
+   "name": "ICPC 南京",
+   "gold": 35,
+   "silver": 70,
+   "bronze": 105,
+   "iron": 431
+  }
+ ],
+ "orgMedals": [
+  {
+   "org": "CCPC",
+   "gold": 107,
+   "silver": 209,
+   "bronze": 317
+  },
+  {
+   "org": "ICPC",
+   "gold": 140,
+   "silver": 280,
+   "bronze": 420
+  }
+ ]
+}

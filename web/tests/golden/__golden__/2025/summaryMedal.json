@@ -1,0 +1,38 @@
+[
+ [
+  0,
+  "🥇 金牌",
+  "text-yellow-600 font-semibold",
+  "row-medal-gold"
+ ],
+ [
+  1,
+  "🥈 银牌",
+  "text-gray-500 font-semibold",
+  "row-medal-silver"
+ ],
+ [
+  2,
+  "🥉 铜牌",
+  "text-amber-700 font-semibold",
+  "row-medal-bronze"
+ ],
+ [
+  3,
+  "Honorable",
+  "",
+  ""
+ ],
+ [
+  3,
+  "-",
+  "",
+  ""
+ ],
+ [
+  0,
+  "🥇 金牌",
+  "text-yellow-600 font-semibold",
+  "row-medal-gold"
+ ]
+]

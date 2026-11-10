@@ -1,0 +1,28 @@
+{
+ "__hashed__": true,
+ "sha256": "71d9a5415aafb5a91cf140d8e22337f08ee51813d97389e19f29c27349c1ef64",
+ "length": 39013,
+ "keys": [
+  "all:gold",
+  "all:silver",
+  "all:bronze",
+  "changchun:gold",
+  "changchun:silver",
+  "changchun:bronze",
+  "leshan:gold",
+  "leshan:silver",
+  "leshan:bronze",
+  "xian:gold",
+  "xian:silver",
+  "xian:bronze",
+  "chengdu:gold",
+  "chengdu:silver",
+  "chengdu:bronze",
+  "nanjing:gold",
+  "nanjing:silver",
+  "nanjing:bronze",
+  "wuhan:gold",
+  "wuhan:silver",
+  "wuhan:bronze"
+ ]
+}

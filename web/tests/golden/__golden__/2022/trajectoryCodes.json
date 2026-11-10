@@ -1,0 +1,662 @@
+[
+ {
+  "code": "b-n-n-n-n",
+  "back": [
+   "bronze",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-n-n-n",
+  "back": [
+   "silver",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-b-n-n-n",
+  "back": [
+   "iron",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-n-n-n-n",
+  "back": [
+   "gold",
+   "none",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-s-n-n-n",
+  "back": [
+   "iron",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-b-n-n-n",
+  "back": [
+   "bronze",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-s-n-n-n",
+  "back": [
+   "bronze",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-i-b-n-n",
+  "back": [
+   "iron",
+   "iron",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-g-g-n-n",
+  "back": [
+   "gold",
+   "gold",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-g-n-n-n",
+  "back": [
+   "gold",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-s-n-n-n",
+  "back": [
+   "silver",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-g-n-n-n",
+  "back": [
+   "silver",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-b-b-n-n",
+  "back": [
+   "iron",
+   "bronze",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-g-n-n-n",
+  "back": [
+   "bronze",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-b-b-n-n",
+  "back": [
+   "bronze",
+   "bronze",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-s-s-n-n",
+  "back": [
+   "bronze",
+   "silver",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-b-s-n-n",
+  "back": [
+   "bronze",
+   "bronze",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-g-g-n-n",
+  "back": [
+   "silver",
+   "gold",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-s-s-n-n",
+  "back": [
+   "silver",
+   "silver",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-b-n-n-n",
+  "back": [
+   "silver",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-b-s-n-n",
+  "back": [
+   "iron",
+   "bronze",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-s-g-n-n",
+  "back": [
+   "silver",
+   "silver",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-i-s-n-n",
+  "back": [
+   "iron",
+   "iron",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-s-n-n-n",
+  "back": [
+   "gold",
+   "silver",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-s-s-n-n",
+  "back": [
+   "iron",
+   "silver",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-i-b-n-n",
+  "back": [
+   "bronze",
+   "iron",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-b-s-n-n",
+  "back": [
+   "silver",
+   "bronze",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-g-s-n-n",
+  "back": [
+   "gold",
+   "gold",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-s-g-n-n",
+  "back": [
+   "gold",
+   "silver",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-g-s-n-n",
+  "back": [
+   "silver",
+   "gold",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-s-b-n-n",
+  "back": [
+   "bronze",
+   "silver",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-n-b-n-n",
+  "back": [
+   "iron",
+   "none",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-s-s-n-n",
+  "back": [
+   "gold",
+   "silver",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-g-g-n-n",
+  "back": [
+   "bronze",
+   "gold",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-s-g-n-n",
+  "back": [
+   "iron",
+   "silver",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-b-g-n-n",
+  "back": [
+   "iron",
+   "bronze",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-s-b-n-n",
+  "back": [
+   "silver",
+   "silver",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-g-s-n-n",
+  "back": [
+   "bronze",
+   "gold",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-s-g-n-n",
+  "back": [
+   "bronze",
+   "silver",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-i-s-n-n",
+  "back": [
+   "bronze",
+   "iron",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-g-n-n-n",
+  "back": [
+   "iron",
+   "gold",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-n-g-n-n",
+  "back": [
+   "gold",
+   "none",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-b-b-n-n",
+  "back": [
+   "silver",
+   "bronze",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-s-b-n-n",
+  "back": [
+   "iron",
+   "silver",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-g-b-n-n",
+  "back": [
+   "gold",
+   "gold",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-b-g-n-n",
+  "back": [
+   "gold",
+   "bronze",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-s-n-n",
+  "back": [
+   "silver",
+   "none",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-n-s-n-n",
+  "back": [
+   "bronze",
+   "none",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-n-s-n-n",
+  "back": [
+   "iron",
+   "none",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-b-n-n-n",
+  "back": [
+   "gold",
+   "bronze",
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-b-g-n-n",
+  "back": [
+   "silver",
+   "bronze",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-i-s-n-n",
+  "back": [
+   "silver",
+   "iron",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-i-b-n-n",
+  "back": [
+   "silver",
+   "iron",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-g-n-n",
+  "back": [
+   "silver",
+   "none",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-g-b-n-n",
+  "back": [
+   "bronze",
+   "gold",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-b-g-n-n",
+  "back": [
+   "bronze",
+   "bronze",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-i-g-n-n",
+  "back": [
+   "bronze",
+   "iron",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "b-n-b-n-n",
+  "back": [
+   "bronze",
+   "none",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-g-b-n-n",
+  "back": [
+   "iron",
+   "gold",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-i-g-n-n",
+  "back": [
+   "iron",
+   "iron",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-n-g-n-n",
+  "back": [
+   "iron",
+   "none",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "g-n-s-n-n",
+  "back": [
+   "gold",
+   "none",
+   "silver",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-g-b-n-n",
+  "back": [
+   "silver",
+   "gold",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-i-g-n-n",
+  "back": [
+   "silver",
+   "iron",
+   "gold",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "s-n-b-n-n",
+  "back": [
+   "silver",
+   "none",
+   "bronze",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "code": "i-g-s-n-n",
+  "back": [
+   "iron",
+   "gold",
+   "silver",
+   "none",
+   "none"
+  ]
+ }
+]
