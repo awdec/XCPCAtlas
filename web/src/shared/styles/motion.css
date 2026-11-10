@@ -1,0 +1,119 @@
+/*
+ * 动效样式（计划 §8）：页面过渡（View Transitions）、滚动驱动、入场。
+ * 只对 transform / opacity 做动画；减弱动效时由令牌归零。
+ */
+
+/* ---------------- View Transitions：页面切换 ---------------- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--dur-base);
+  animation-timing-function: var(--ease-standard);
+}
+/* 页眉不参与位移 */
+::view-transition-group(app-header) {
+  animation: none;
+}
+
+@keyframes vt-fade-out { to { opacity: 0; } }
+@keyframes vt-fade-in { from { opacity: 0; } }
+@keyframes vt-slide-out-left { to { transform: translateX(calc(-1 * var(--slide-page))); opacity: 0; } }
+@keyframes vt-slide-in-right { from { transform: translateX(var(--slide-page)); opacity: 0; } }
+@keyframes vt-slide-out-right { to { transform: translateX(var(--slide-page)); opacity: 0; } }
+@keyframes vt-slide-in-left { from { transform: translateX(calc(-1 * var(--slide-page))); opacity: 0; } }
+@keyframes vt-slide-out-up { to { transform: translateY(calc(-1 * var(--slide-el))); opacity: 0; } }
+@keyframes vt-slide-in-up { from { transform: translateY(var(--slide-el)); opacity: 0; } }
+
+html:active-view-transition-type(forward) {
+  &::view-transition-old(main) { animation: vt-slide-out-left calc(var(--dur-base) * 0.75) var(--ease-exit) both; }
+  &::view-transition-new(main) { animation: vt-slide-in-right var(--dur-base) var(--ease-enter) both; }
+}
+html:active-view-transition-type(back) {
+  &::view-transition-old(main) { animation: vt-slide-out-right calc(var(--dur-base) * 0.75) var(--ease-exit) both; }
+  &::view-transition-new(main) { animation: vt-slide-in-left var(--dur-base) var(--ease-enter) both; }
+}
+html:active-view-transition-type(lateral) {
+  &::view-transition-old(main) { animation: vt-fade-out calc(var(--dur-base) * 0.75) var(--ease-exit) both; }
+  &::view-transition-new(main) { animation: vt-fade-in var(--dur-base) var(--ease-enter) both; }
+}
+html:active-view-transition-type(swap) {
+  &::view-transition-old(main) { animation: vt-slide-out-up calc(var(--dur-base) * 0.75) var(--ease-exit) both; }
+  &::view-transition-new(main) { animation: vt-slide-in-up var(--dur-base) var(--ease-enter) both; }
+}
+/* 共享元素（年份卡片、赛区卡片、轨迹条）形变 */
+::view-transition-group(*.shared) {
+  animation-duration: var(--dur-slow);
+  animation-timing-function: var(--ease-standard);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* ---------------- 入场（CSS 版，供无 JS 动画的列表使用） ---------------- */
+@keyframes enter-up {
+  from { opacity: 0; transform: translateY(var(--slide-el)); }
+}
+.animate-enter {
+  animation: enter-up var(--dur-base) var(--ease-enter) both;
+  animation-delay: calc(min(var(--i, 0), 8) * var(--stagger));
+}
+
+/* 搜索防抖等待中：表体淡出（§8.3） */
+.pending-fade {
+  transition: opacity var(--dur-fast) var(--ease-standard);
+}
+.pending-fade[data-pending='true'] {
+  opacity: 0.6;
+}
+
+/* 顶部细进度条 */
+@keyframes topbar-indeterminate {
+  0% { transform: translateX(-100%) scaleX(0.3); }
+  60% { transform: translateX(40%) scaleX(0.6); }
+  100% { transform: translateX(100%) scaleX(0.3); }
+}
+
+/* 骨架闪烁：只动 opacity */
+@keyframes skeleton-pulse {
+  50% { opacity: 0.55; }
+}
+.skeleton {
+  background: var(--surface-3);
+  border-radius: var(--radius-sm);
+  animation: skeleton-pulse 1.6s var(--ease-standard) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}
+.reduce-motion .skeleton { animation: none; }
+
+/* ---------------- 滚动驱动（§8.5，渐进增强） ---------------- */
+@supports (animation-timeline: scroll()) {
+  @keyframes header-shadow-in { from { opacity: 0; } to { opacity: 1; } }
+  .header-shadow {
+    animation: header-shadow-in linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 64px;
+  }
+
+  @keyframes section-reveal {
+    from { opacity: 0; transform: translateY(12px); }
+  }
+  .scroll-reveal {
+    animation: section-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .header-shadow { animation: none; opacity: 1; }
+    .scroll-reveal { animation: none; }
+  }
+  .reduce-motion .scroll-reveal { animation: none; }
+}
+@supports not (animation-timeline: scroll()) {
+  .header-shadow { opacity: 0; }
+}

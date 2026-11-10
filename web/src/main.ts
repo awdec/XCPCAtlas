@@ -29,7 +29,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   // 如果路由包含年份参数，验证年份格式
   if (to.params.year) {
-    const year = parseInt(to.params.year)
+    const year = parseInt(String(to.params.year))
     if (isNaN(year) || year < 2020 || year > 2030) {
       // 无效年份，重定向到首页
       next({ name: 'Home' })

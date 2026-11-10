@@ -1,0 +1,255 @@
+/*
+ * 设计令牌（计划 §7.1 / §8.1）。
+ * - 亮色：数据色（奖牌、题目状态、OI 梯度、热力图）取值固定，属于业务规则
+ * - 文本色：同色相加深到 WCAG AA（≥4.5:1）；旧代码中 text-yellow-600 / gray-400 等小字未达标
+ * - 暗色：.dark 类（跟随系统，可在页眉切换），保持色相、调整明度
+ * - 动效：时长/缓动令牌；prefers-reduced-motion 下全部归零
+ */
+
+:root {
+  color-scheme: light;
+
+  /* 表面与文字 */
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-3: #f1f5f9;
+  --border: #e5e7eb;
+  --border-soft: #eef0f3;
+  --fg: #1f2937;
+  --fg-muted: #4b5563;
+  --fg-subtle: #6b7280;
+  --fg-faint: #9ca3af;
+
+  /* 品牌 */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-fg: #ffffff;
+  --primary-soft: #eff6ff;
+  --primary-soft-fg: #1d4ed8;
+  --ring: #3b82f6;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --danger-soft-fg: #b91c1c;
+  --warning-soft: #fff7ed;
+  --warning-soft-fg: #c2410c;
+  --success-soft: #f0fdf4;
+  --success-soft-fg: #15803d;
+
+  /* 赛事 */
+  --org-icpc: #3b82f6;
+  --org-icpc-soft: #dbeafe;
+  --org-icpc-fg: #1d4ed8;
+  --org-ccpc: #22c55e;
+  --org-ccpc-soft: #dcfce7;
+  --org-ccpc-fg: #15803d;
+  --org-other: #a855f7;
+  --org-other-soft: #f3e8ff;
+  --org-other-fg: #7e22ce;
+
+  /* 奖牌：数据色（图表、色块）——固定 */
+  --medal-gold: #e6a23c;
+  --medal-silver: #909399;
+  --medal-bronze: #b3703c;
+  --medal-iron: #dcdfe6;
+  /* 奖牌：文字色（AA） */
+  --medal-gold-text: #a16207;
+  --medal-silver-text: #4b5563;
+  --medal-bronze-text: #9a4f1b;
+  --medal-iron-text: #6b7280;
+  --medal-hm-text: #15803d;
+
+  /* 奖牌行底色（B-C6，固定） */
+  --row-gold: #fdf6e3;
+  --row-silver: #f4f4f5;
+  --row-bronze: #fdf2e9;
+  --row-gold-striped: #faf0d4;
+  --row-silver-striped: #ebebec;
+  --row-bronze-striped: #fae8d6;
+
+  /* 题目状态（B-C8，固定） */
+  --problem-solved: #67c23a;
+  --problem-solved-fg: #ffffff;
+  --problem-unsolved: #f56c6c;
+  --problem-unsolved-fg: #ffffff;
+  --problem-none: #e4e7ed;
+  --problem-none-fg: #606266;
+
+  /* 学校层次标签 */
+  --tag-985-bg: #fef0f0;
+  --tag-985-fg: #c45656;
+  --tag-985-border: #fbc4c4;
+  --tag-211-bg: #fdf6ec;
+  --tag-211-fg: #a8681a;
+  --tag-211-border: #f5dab1;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow-md: 0 4px 12px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(15 23 42 / 0.14);
+
+  /* 动效（§8.1） */
+  --dur-instant: 80ms;
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 320ms;
+  --stagger: 30ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-exit: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --slide-page: 16px;
+  --slide-el: 8px;
+
+  --radius: 0.625rem;
+  --header-h: 3.5rem;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --bg: #0e1116;
+  --surface: #161a21;
+  --surface-2: #1b2029;
+  --surface-3: #222833;
+  --border: #2b3240;
+  --border-soft: #232935;
+  --fg: #e6e8ec;
+  --fg-muted: #b3bac6;
+  --fg-subtle: #9aa3b2;
+  --fg-faint: #6f7887;
+
+  --primary: #4f8ff7;
+  --primary-hover: #6aa1f8;
+  --primary-fg: #0b1220;
+  --primary-soft: rgb(59 130 246 / 0.16);
+  --primary-soft-fg: #93c5fd;
+  --ring: #60a5fa;
+  --danger: #f87171;
+  --danger-soft: rgb(248 113 113 / 0.12);
+  --danger-soft-fg: #fca5a5;
+  --warning-soft: rgb(251 146 60 / 0.12);
+  --warning-soft-fg: #fdba74;
+  --success-soft: rgb(74 222 128 / 0.12);
+  --success-soft-fg: #86efac;
+
+  --org-icpc: #3b82f6;
+  --org-icpc-soft: rgb(59 130 246 / 0.18);
+  --org-icpc-fg: #93c5fd;
+  --org-ccpc: #22c55e;
+  --org-ccpc-soft: rgb(34 197 94 / 0.16);
+  --org-ccpc-fg: #86efac;
+  --org-other: #a855f7;
+  --org-other-soft: rgb(168 85 247 / 0.18);
+  --org-other-fg: #d8b4fe;
+
+  --medal-gold-text: #f0b44c;
+  --medal-silver-text: #c2c6cd;
+  --medal-bronze-text: #d9a070;
+  --medal-iron-text: #9aa3b2;
+  --medal-hm-text: #86efac;
+
+  --row-gold: rgb(230 162 60 / 0.13);
+  --row-silver: rgb(144 147 153 / 0.14);
+  --row-bronze: rgb(179 112 60 / 0.17);
+  --row-gold-striped: rgb(230 162 60 / 0.18);
+  --row-silver-striped: rgb(144 147 153 / 0.19);
+  --row-bronze-striped: rgb(179 112 60 / 0.22);
+
+  --problem-solved: #3f8a24;
+  --problem-solved-fg: #f0fdf4;
+  --problem-unsolved: #b83f3f;
+  --problem-unsolved-fg: #fff1f2;
+  --problem-none: #262c37;
+  --problem-none-fg: #9aa3b2;
+
+  --tag-985-bg: rgb(248 113 113 / 0.12);
+  --tag-985-fg: #fca5a5;
+  --tag-985-border: rgb(248 113 113 / 0.3);
+  --tag-211-bg: rgb(251 191 36 / 0.1);
+  --tag-211-fg: #fcd34d;
+  --tag-211-border: rgb(251 191 36 / 0.28);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 14px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 14px 36px rgb(0 0 0 / 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-instant: 0.01ms;
+    --dur-fast: 0.01ms;
+    --dur-base: 0.01ms;
+    --dur-slow: 0.01ms;
+    --stagger: 0ms;
+  }
+}
+
+/* 页眉开关强制减弱动效（Pinia: xcpc_reduced_motion） */
+.reduce-motion {
+  --dur-instant: 0.01ms;
+  --dur-fast: 0.01ms;
+  --dur-base: 0.01ms;
+  --dur-slow: 0.01ms;
+  --stagger: 0ms;
+}
+
+/* Tailwind 4：把令牌映射为工具类（bg-surface、text-fg-muted、border-border …） */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-fg-faint: var(--fg-faint);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-fg: var(--primary-fg);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-soft-fg: var(--primary-soft-fg);
+  --color-ring: var(--ring);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-soft-fg: var(--danger-soft-fg);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-soft-fg: var(--warning-soft-fg);
+  --color-success-soft: var(--success-soft);
+  --color-success-soft-fg: var(--success-soft-fg);
+  --color-org-icpc: var(--org-icpc);
+  --color-org-icpc-soft: var(--org-icpc-soft);
+  --color-org-icpc-fg: var(--org-icpc-fg);
+  --color-org-ccpc: var(--org-ccpc);
+  --color-org-ccpc-soft: var(--org-ccpc-soft);
+  --color-org-ccpc-fg: var(--org-ccpc-fg);
+  --color-org-other: var(--org-other);
+  --color-org-other-soft: var(--org-other-soft);
+  --color-org-other-fg: var(--org-other-fg);
+  --color-medal-gold: var(--medal-gold);
+  --color-medal-silver: var(--medal-silver);
+  --color-medal-bronze: var(--medal-bronze);
+  --color-medal-iron: var(--medal-iron);
+  --color-medal-gold-text: var(--medal-gold-text);
+  --color-medal-silver-text: var(--medal-silver-text);
+  --color-medal-bronze-text: var(--medal-bronze-text);
+  --color-medal-iron-text: var(--medal-iron-text);
+  --color-medal-hm-text: var(--medal-hm-text);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-xs: var(--shadow-sm);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+
+  --ease-standard: var(--ease-standard);
+  --ease-enter: var(--ease-enter);
+  --ease-exit: var(--ease-exit);
+
+  --font-sans: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+}

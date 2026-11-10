@@ -1,0 +1,100 @@
+/* 全局基础样式与领域样式类（替代旧 assets/styles/main.css） */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    background-color: var(--bg);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--fg);
+    font-feature-settings: 'cv11';
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 25%, transparent);
+  }
+  /* 细滚动条（保留旧样式意图） */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--fg-faint) 60%, transparent) transparent;
+  }
+}
+
+/* 表格与统计数字等宽 */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 题目状态色块（B-C8） */
+.problem-solved { background-color: var(--problem-solved); color: var(--problem-solved-fg); }
+.problem-unsolved { background-color: var(--problem-unsolved); color: var(--problem-unsolved-fg); }
+.problem-none { background-color: var(--problem-none); color: var(--problem-none-fg); }
+
+/* 奖牌文字（TeamDetail 标签等） */
+.medal-gold { color: var(--medal-gold-text); font-weight: 700; }
+.medal-silver { color: var(--medal-silver-text); font-weight: 700; }
+.medal-bronze { color: var(--medal-bronze-text); font-weight: 700; }
+
+/* 旧 Element Plus 表格的奖牌行底色（M3–M5 过渡期仍被旧视图使用） */
+.row-medal-gold td { background-color: var(--row-gold) !important; }
+.row-medal-silver td { background-color: var(--row-silver) !important; }
+.row-medal-bronze td { background-color: var(--row-bronze) !important; }
+.el-table--striped .row-medal-gold td.el-table__cell--striped { background-color: var(--row-gold-striped) !important; }
+.el-table--striped .row-medal-silver td.el-table__cell--striped { background-color: var(--row-silver-striped) !important; }
+.el-table--striped .row-medal-bronze td.el-table__cell--striped { background-color: var(--row-bronze-striped) !important; }
+
+/* 新 DataTable 的奖牌行底色（B-C6）：data-tone + 斑马纹 */
+[data-tone='gold'] > td { background-color: var(--row-gold); }
+[data-tone='silver'] > td { background-color: var(--row-silver); }
+[data-tone='bronze'] > td { background-color: var(--row-bronze); }
+[data-striped='true'][data-tone='gold'] > td { background-color: var(--row-gold-striped); }
+[data-striped='true'][data-tone='silver'] > td { background-color: var(--row-silver-striped); }
+[data-striped='true'][data-tone='bronze'] > td { background-color: var(--row-bronze-striped); }
+
+/* Summary 整行文字按奖牌着色（B-S6，有意与 Contest 的底色不同） */
+[data-text-tone='gold'] > td { color: var(--medal-gold-text); font-weight: 600; }
+[data-text-tone='silver'] > td { color: var(--medal-silver-text); font-weight: 600; }
+[data-text-tone='bronze'] > td { color: var(--medal-bronze-text); font-weight: 600; }
+
+/* 卡片悬停阴影：用伪元素透明度淡入，不对 box-shadow 做动画（§8.1） */
+.lift {
+  position: relative;
+  isolation: isolate;
+}
+.lift::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease-standard);
+  pointer-events: none;
+  z-index: -1;
+}
+.lift:hover::after,
+.lift:focus-visible::after {
+  opacity: 1;
+}
+
+/* 仅读屏 */
+.sr-only-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
