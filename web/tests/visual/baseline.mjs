@@ -1,5 +1,6 @@
-// M0-T5 / M6-T5：截图与性能基线。用法：node tests/visual/baseline.mjs <输出目录>
-// 需先运行 vite preview（端口 4173）。截图仅作对比参考，不做像素断言。
+// M0-T5：截图与性能指标采集（参考材料）。用法：node tests/visual/baseline.mjs <输出目录>
+// 需先运行 vite preview（端口 4173）。
+// 像素断言在 tests/e2e/visual.spec.js（--project=visual）；本脚本只产出指标与人工对比截图。
 import { chromium } from '@playwright/test'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -29,19 +30,24 @@ for (const [w, h] of [[1280, 900], [390, 844]]) {
     await page.screenshot({ path: path.join(out, `${name}.png`), fullPage: false })
     metrics[`${w} ${r}`] = { readyMs: ms, cls: Number(cls.toFixed(4)) }
   }
-  // INP 近似：Summary 搜索输入到结果更新的耗时
+  // 交互耗时：Summary 搜索输入到结果真正更新（含 300ms 防抖），不是防抖前的两帧
   if (w === 1280) {
     await page.goto(base + '#/2025/summary', { waitUntil: 'networkidle' })
-    await page.getByPlaceholder('搜索学校').waitFor()
-    const t = await page.evaluate(async () => {
-      const input = [...document.querySelectorAll('input')].find(i => i.placeholder === '搜索学校')
-      const t0 = performance.now()
-      input.value = '北京'
-      input.dispatchEvent(new Event('input', { bubbles: true }))
-      await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))
-      return performance.now() - t0
+    const input = page.getByPlaceholder('搜索学校')
+    await input.waitFor()
+    const countText = () => page.evaluate(() => {
+      const el = [...document.querySelectorAll('span')].find(s => /^共 \d+ (支队伍|条记录|位选手)$/.test((s.textContent || '').trim()))
+      return el?.textContent?.trim() ?? ''
     })
-    metrics['summary-search-frame-ms'] = Number(t.toFixed(1))
+    const before = await countText()
+    if (!before) throw new Error('未找到统计文案，无法测量搜索交互')
+    const t0 = Date.now()
+    await input.fill('北京')
+    await page.waitForFunction((prev) => {
+      const el = [...document.querySelectorAll('span')].find(s => /^共 \d+ (支队伍|条记录|位选手)$/.test((s.textContent || '').trim()))
+      return !!el && el.textContent.trim() !== prev
+    }, before, { timeout: 5000 })
+    metrics['summary-search-update-ms'] = Date.now() - t0
   }
   await ctx.close()
 }

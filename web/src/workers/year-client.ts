@@ -39,3 +39,11 @@ export function yearClient(): Client {
   if (!client) client = createClient()
   return client
 }
+
+/**
+ * 淘汰非 keepYear 的年份缓存（计划 M4-T5）。
+ * 仅在 Worker/主线程实现已创建时生效：不为淘汰而创建 Worker。
+ */
+export function evictYearCacheExcept(keepYear: string): void {
+  client?.evictExcept(keepYear)
+}

@@ -64,8 +64,38 @@ jobs:
           path: web/test-results
           retention-days: 7
 
+  # 视觉回归（计划 M6-T5）：像素断言，界面变化会失败。
+  # 基线按平台保存；Linux 基线需在 CI 上跑一次 `npx playwright test --project=visual --update-snapshots`
+  # 并提交 tests/e2e/visual.spec.js-snapshots/*-linux.png，在此之前该平台用例会跳过。
+  visual:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('web/package-lock.json') }}
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:visual
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: visual-diff
+          path: web/test-results
+          retention-days: 7
+
   build:
-    needs: [test, e2e]
+    needs: [test, e2e, visual]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:

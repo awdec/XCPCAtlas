@@ -58,8 +58,6 @@ export async function selectOptions(page, placeholder) {
   await page.keyboard.press('Escape')
   return texts
 }
-const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-
 /** 分页按钮（二进制偏移页码） */
 export const pager = (page) => main(page).getByRole('navigation', { name: '分页' })
 export const pagerButtons = (page) => pager(page).locator('button')

@@ -3,7 +3,9 @@ import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 import * as po from './po/app.js'
 
-const ROUTES = ['/', '/announcement', '/2025/', '/2025/contest/nanjing', '/2025/summary', '/2025/players', '/2025/analysis', '/2026/trajectory/b-n-n-n-n', '/2025/school/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6', '/2025/unknown']
+const nanjing = po.readData('2025/nanjing.json')
+const playerName = nanjing.sheets['正式队伍'][0].members[0].name
+const ROUTES = ['/', '/announcement', '/2025/', '/2025/contest/nanjing', '/2025/summary', '/2025/players', '/2025/analysis', '/2026/trajectory/b-n-n-n-n', '/2025/school/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6', `/2025/player/${encodeURIComponent(playerName)}`, '/2025/unknown']
 
 test.describe('§8.2 页面过渡', () => {
   test('Chromium：路由切换产生 view transition，类型为 forward', async ({ page, browserName }) => {
@@ -96,6 +98,36 @@ test.describe('§10.5 无障碍（axe）', () => {
       })
     }
   }
+})
+
+test.describe('§10.5 数据分析各 Tab 无障碍（axe）', () => {
+  for (const tab of ['region', 'players', 'trajectory', 'oier', 'school']) {
+    test(`analysis tab ${tab}`, async ({ page, browserName }) => {
+      test.skip(browserName !== 'chromium', 'axe 在 Chromium 上运行')
+      await page.emulateMedia({ colorScheme: 'light', reducedMotion: 'reduce' })
+      await po.open(page, `/2025/analysis?tab=${tab}`)
+      await expect(po.tabPanel(page, tab)).toBeVisible({ timeout: 60000 })
+      await page.waitForTimeout(800)
+      const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze()
+      const serious = results.violations.filter(v => v.impact === 'serious' || v.impact === 'critical')
+      expect(serious.map(v => `${v.id}: ${v.nodes.length} 处，例如 ${v.nodes[0]?.target}`)).toEqual([])
+    })
+  }
+})
+
+test.describe('§10.5 队伍详情弹窗无障碍（axe）', () => {
+  test('contest 队伍详情弹窗', async ({ page, browserName }) => {
+    test.skip(browserName !== 'chromium', 'axe 在 Chromium 上运行')
+    await page.emulateMedia({ colorScheme: 'light', reducedMotion: 'reduce' })
+    await po.open(page, '/2025/contest/nanjing')
+    await po.waitRows(page)
+    await po.tableRows(page).first().getByRole('button', { name: /查看队伍详情/ }).click()
+    await expect(po.dialog(page)).toBeVisible()
+    await page.waitForTimeout(500)
+    const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze()
+    const serious = results.violations.filter(v => v.impact === 'serious' || v.impact === 'critical')
+    expect(serious.map(v => `${v.id}: ${v.nodes.length} 处，例如 ${v.nodes[0]?.target}`)).toEqual([])
+  })
 })
 
 test.describe('§10.6 响应式（360px）', () => {

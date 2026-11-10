@@ -109,3 +109,4 @@ The pipeline also reads `xcpc/{year}/*.rank.json` snapshots from `rank.iccpc.cn`
 - **大榜单必须分页或虚拟化渲染**：用 `shared/components/DataTable.vue` + `usePagedList`（Contest 每页 100、Summary/Players 每页 20）或 DataTable 内置虚拟滚动（超过 200 行自动启用）；搜索输入用 `useDebouncedRef` 300ms 防抖。`PlayerLink` 的 OI 提示仅对有 OI 记录的队员挂载（提示实例数是渲染开销大头）
 - 新的加载态用 `AsyncState`（>120ms 才显示骨架、至少保持 300ms），多文件加载用 `LoadProgress`；错误文案沿用各页原文
 - 新增依赖须精确锁版本，且选择发布两周以上的版本
+- **每次工作完成后必须写报告**：在 `report/YYYY-MM-DD/` 下新建 `<任务简述>.md`（kebab-case 英文文件名，如 `frontend-refactor-report.md`），记录本次任务的目标、实际改动（含文件路径）、验证方式与结果、遗留问题或未验证的假设。若当天还没有报告，先创建日期文件夹（`mkdir -p report/$(date +%F)`）。报告写结论与证据，不复制代码全文

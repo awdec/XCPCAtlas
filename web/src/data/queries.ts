@@ -111,10 +111,16 @@ export function usePlayerRecords(
     () => [toValue(name), toValue(allYears), toValue(school)],
     () => toValue(year),
     async () => {
-      const years = toValue(allYears)
+      // 先固定本次请求的全部参数：await 期间路由可能已切换，
+      // 之后再读 toValue 会把新参数算进旧 queryKey 的缓存（B-PL3）
+      const pageYear = toValue(year)
+      const playerName = toValue(name)
+      const playerSchool = toValue(school)
+      const scopeAll = toValue(allYears)
+      const years = scopeAll
         ? (await client.fetchQuery({ queryKey: qk.years(), queryFn: () => L.loadYears(), staleTime: Infinity })).map(y => y.year)
-        : [toValue(year)]
-      return yearClient().playerRecords(years, toValue(year), toValue(name), toValue(school))
+        : [pageYear]
+      return yearClient().playerRecords(years, pageYear, playerName, playerSchool)
     },
     { gcTime: toValue(allYears) ? 60_000 : TEN_MIN },
   )

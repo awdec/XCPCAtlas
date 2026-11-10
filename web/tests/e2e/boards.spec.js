@@ -107,8 +107,14 @@ test.describe('B-C 赛区榜单 /2025/contest/nanjing', () => {
     await expect(link).toHaveAttribute('href', `#/2025/player/${encodeURIComponent(m.name)}`)
     if (m.oi.length) {
       await expect(row.locator('td').nth(4)).toContainText('☀️')
+      const tip = page.getByText(`${m.oi[0]['比赛']} · ${m.oi[0]['奖项']}`).first()
       await link.hover()
-      await expect(page.getByText(`${m.oi[0]['比赛']} · ${m.oi[0]['奖项']}`).first()).toBeVisible()
+      await expect(tip).toBeVisible()
+      // 键盘聚焦同样打开提示（B-C7 / 审查 P2-5）
+      await page.mouse.move(0, 0)
+      await expect(tip).toBeHidden()
+      await link.focus()
+      await expect(tip).toBeVisible()
     }
     const noOi = nanjingTeams.flatMap(x => x.members).find(x => !x.oi.length)
     expect(noOi).toBeTruthy()

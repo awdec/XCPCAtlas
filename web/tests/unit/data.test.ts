@@ -62,4 +62,23 @@ describe('year-core', () => {
     expect(calls.filter(u => u.endsWith('/a.json'))).toHaveLength(1)
     expect(calls.filter(u => u.endsWith('/b.json'))).toHaveLength(1)
   })
+
+  it('evictExcept 只保留指定年份：被淘汰的年份重新请求', async () => {
+    const calls: string[] = []
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      calls.push(url)
+      if (url.endsWith('contests.json')) return json([{ id: 'a', name: 'A', org: 'ICPC' }])
+      return json({ id: 'a', org: 'ICPC', city_cn: '', name: 'A', sheets: { 正式队伍: [] } })
+    }))
+    const core = createYearCore({ base: '/' })
+    const contestCalls = () => calls.filter(u => u === '/data/2025/a.json').length
+
+    await core.summaryRows('2025')
+    await core.summaryRows('2026')
+    expect(contestCalls()).toBe(1)
+
+    core.evictExcept('2026')
+    await core.summaryRows('2025')
+    expect(contestCalls()).toBe(2)
+  })
 })

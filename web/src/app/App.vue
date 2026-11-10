@@ -1,18 +1,12 @@
 <script setup lang="ts">
 /**
- * 根组件：主题同步 + motion-v 全局配置（减弱动效 = user，跟随系统与页眉开关）。
+ * 根组件：外壳。
+ * motion-v 的 MotionConfig 下沉到真正使用 motion 的懒加载页面（YearPage / SegmentedControl），
+ * 避免把约 43 KB 的 motion 分块带进首页初始请求（审查 P2-6）。
  */
-import { computed } from 'vue'
-import { MotionConfig } from 'motion-v'
 import AppShell from '@/layouts/AppShell.vue'
-import { useTheme } from '@/shared/composables/useTheme'
-
-const { prefs } = useTheme()
-const reducedMotion = computed(() => (prefs.reducedMotion ? 'always' : 'user'))
 </script>
 
 <template>
-  <MotionConfig :reduced-motion="reducedMotion">
-    <AppShell />
-  </MotionConfig>
+  <AppShell />
 </template>

@@ -9,11 +9,13 @@
     "preview": "vite preview",
     "test": "vitest run tests/unit",
     "test:golden": "vitest run tests/golden",
-    "test:e2e": "playwright test",
+    "test:e2e": "playwright test --project=chromium --project=webkit --project=mobile",
+    "test:visual": "playwright test --project=visual",
     "gen:golden": "node scripts/gen-golden.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
     "lint": "eslint .",
-    "verify:data": "node scripts/verify-data.mjs"
+    "verify:data": "node scripts/verify-data.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs"
   },
   "dependencies": {
     "@tanstack/vue-query": "5.105.0",
@@ -43,10 +45,12 @@
     "@vitejs/plugin-vue": "6.0.10",
     "@vue/test-utils": "2.5.1",
     "eslint": "9.39.5",
+    "eslint-import-resolver-typescript": "4.4.5",
     "eslint-plugin-import-x": "4.17.1",
     "eslint-plugin-vue": "10.12.0",
     "globals": "17.13.0",
     "happy-dom": "21.0.4",
+    "lighthouse": "13.5.0",
     "tailwindcss": "4.3.3",
     "typescript": "5.9.3",
     "typescript-eslint": "8.72.1",

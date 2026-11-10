@@ -27,7 +27,7 @@ describe('nextSort', () => {
 })
 
 describe('sortRows', () => {
-  it('升序：\ < 铁 < 铜 < 银 < 金，并列保持原顺序', () => {
+  it('升序：无奖牌 < 铁 < 铜 < 银 < 金，并列保持原顺序', () => {
     expect(sortRows(rows, cols, { key: 'y0', dir: 'asc' }).map(r => r.i)).toEqual([3, 0, 2, 1])
   })
   it('降序取反比较器而非反转数组：并列仍保持原顺序', () => {

@@ -87,14 +87,14 @@ const failed = computed(() => datasetQ.isError.value || tagsQ.isError.value)
         class="tab-panel focus-visible:outline-none data-[state=inactive]:hidden"
       >
         <div :id="`pane-${t.name}`">
-        <template v-if="visited.has(t.name) && dataset">
-          <OverviewTab v-if="t.name === 'overview' && overview" :overview="overview" />
-          <RegionTab v-else-if="t.name === 'region'" :dataset="dataset" />
-          <PlayersTab v-else-if="t.name === 'players'" :dataset="dataset" :year="year" :trajectories="trajectories" />
-          <TrajectoryTab v-else-if="t.name === 'trajectory'" :data="trajectories" :year="year" />
-          <OIerTab v-else-if="t.name === 'oier'" :dataset="dataset" />
-          <SchoolTab v-else-if="t.name === 'school'" :dataset="dataset" :tags="tags" />
-        </template>
+          <template v-if="visited.has(t.name) && dataset">
+            <OverviewTab v-if="t.name === 'overview' && overview" :overview="overview" />
+            <RegionTab v-else-if="t.name === 'region'" :dataset="dataset" />
+            <PlayersTab v-else-if="t.name === 'players'" :dataset="dataset" :year="year" :trajectories="trajectories" />
+            <TrajectoryTab v-else-if="t.name === 'trajectory'" :data="trajectories" :year="year" />
+            <OIerTab v-else-if="t.name === 'oier'" :dataset="dataset" />
+            <SchoolTab v-else-if="t.name === 'school'" :dataset="dataset" :tags="tags" />
+          </template>
         </div>
       </TabsContent>
     </TabsRoot>
@@ -103,7 +103,8 @@ const failed = computed(() => datasetQ.isError.value || tagsQ.isError.value)
 
 <style>
 .tab-indicator {
-  transition: translate var(--dur-slow) var(--ease-standard), width var(--dur-slow) var(--ease-standard);
+  /* §8.1：只动 transform/opacity；宽度变化直接跳变，不做过渡 */
+  transition: translate var(--dur-slow) var(--ease-standard);
 }
 .tab-panel[data-state='active'] {
   animation: tab-in var(--dur-base) var(--ease-enter);

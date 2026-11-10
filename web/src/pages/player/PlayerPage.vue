@@ -6,9 +6,10 @@
  * - OI 记录始终来自页面年份
  * - 切换 ICPC/CCPC 与 OI 奖项两张表
  */
-import { computed, ref } from 'vue'
+import { computed, onUnmounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { usePlayerRecords } from '@/data/queries'
+import { evictYearCacheExcept } from '@/workers/year-client'
 import type { PlayerContestRecord } from '@/domain/aggregate'
 import type { OIRecord } from '@/domain/types'
 import Skeleton from '@/shared/components/Skeleton.vue'
@@ -22,6 +23,15 @@ const props = defineProps<{ year: string; name: string }>()
 const route = useRoute()
 const allYears = computed(() => route.query.scope === 'all')
 const school = computed(() => (allYears.value && typeof route.query.school === 'string' ? route.query.school : ''))
+
+// M4-T5：scope=all 会把全部年份的原始数据留在 Worker 缓存里。
+// 离开本页（或退回单年 scope）时淘汰其他年份；保留目标路由的年份，
+// 避免下一页刚加载的数据被误删。
+onUnmounted(() => {
+  const next = route.params.year
+  evictYearCacheExcept(typeof next === 'string' ? next : '')
+})
+watch(allYears, all => { if (!all) evictYearCacheExcept(props.year) })
 
 const recQ = usePlayerRecords(() => props.year, () => props.name, allYears, school)
 const icpc = computed<PlayerContestRecord[]>(() => recQ.data.value?.icpc ?? [])

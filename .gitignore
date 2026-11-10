@@ -15,3 +15,5 @@ output/
 web/test-results/
 web/playwright-report/
 web/blob-report/
+# Lighthouse 本地测量结果（数字记录在 docs/frontend-refactor-plan.md §13）
+web/tests/visual/lighthouse.json

@@ -9,7 +9,7 @@
  */
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { Trophy, Moon, Sun, Menu } from 'lucide-vue-next'
+import { Trophy, Moon, Sun, Menu, Zap, ZapOff } from 'lucide-vue-next'
 import { globalNavItems, yearNavItems } from './nav'
 import MobileNavSheet from './MobileNavSheet.vue'
 import { useTheme } from '@/shared/composables/useTheme'
@@ -61,6 +61,20 @@ const menuOpen = ref(false)
             <Moon v-else class="size-4.5" aria-hidden="true" />
           </button>
           <template #content>{{ isDark ? '浅色模式' : '深色模式' }}</template>
+        </Tooltip>
+
+        <Tooltip :delay="400" side="bottom">
+          <button
+            type="button"
+            class="hidden size-9 place-items-center rounded-md text-fg-muted hover:bg-surface-3 hover:text-fg md:grid"
+            :aria-label="prefs.reducedMotion ? '关闭减少动效' : '开启减少动效'"
+            :aria-pressed="prefs.reducedMotion"
+            @click="prefs.reducedMotion = !prefs.reducedMotion"
+          >
+            <ZapOff v-if="prefs.reducedMotion" class="size-4.5" aria-hidden="true" />
+            <Zap v-else class="size-4.5" aria-hidden="true" />
+          </button>
+          <template #content>{{ prefs.reducedMotion ? '关闭减少动效' : '减少动效' }}</template>
         </Tooltip>
 
         <button
